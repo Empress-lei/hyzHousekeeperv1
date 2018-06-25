@@ -433,15 +433,15 @@ html {
 .slidepage .basics .basics_ul .basics_li .cell-right {
   float: left;
   width: 75%;
-  font-size: 0.34666667rem;
-  color: #333;
   position: relative;
 }
 .slidepage .basics .basics_ul .basics_li .cell-right .basics_add {
   display: block;
   width: 100%;
+  color: red;
   height: 0.66666667rem;
-  margin-top: -0.05333333rem;
+  font-size: 0.34666667rem;
+  margin-top: -0.08rem;
 }
 .slidepage .basics .basics_ul .basics_li .cell-right .add_deta {
   padding-top: 0.34666667rem;
