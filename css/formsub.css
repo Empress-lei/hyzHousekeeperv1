@@ -7,6 +7,35 @@ body {
 html {
   overflow: hidden;
 }
+.popup {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.popup .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.popup .bg img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .coverLayer {
   display: none;
   width: 100%;
@@ -126,6 +155,7 @@ html {
   height: 100%;
   position: fixed;
   top: 0;
+  overflow: auto;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -393,7 +423,14 @@ html {
 }
 .slidepage .basics .basics_ul .basics_li .acre_width {
   float: left;
-  width: 65%;
+  width: 57%;
+  line-height: 0.48rem;
+  font-size: 0.34666667rem;
+  color: #333;
+}
+.slidepage .basics .basics_ul .basics_li .acre_teac {
+  float: left;
+  width: 60%;
   line-height: 0.48rem;
   font-size: 0.34666667rem;
   color: #333;
@@ -408,6 +445,13 @@ html {
 .slidepage .basics .basics_ul .basics_li .basics_acre {
   float: left;
   width: 60%;
+  line-height: 0.48rem;
+  font-size: 0.34666667rem;
+  color: #333;
+}
+.slidepage .basics .basics_ul .basics_li .basics_class {
+  float: left;
+  width: 65%;
   line-height: 0.48rem;
   font-size: 0.34666667rem;
   color: #333;
@@ -438,10 +482,10 @@ html {
 .slidepage .basics .basics_ul .basics_li .cell-right .basics_add {
   display: block;
   width: 100%;
-  color: red;
+  color: #333;
   height: 0.66666667rem;
   font-size: 0.34666667rem;
-  margin-top: -0.08rem;
+  margin-top: -0.10666667rem;
 }
 .slidepage .basics .basics_ul .basics_li .cell-right .add_deta {
   padding-top: 0.34666667rem;
@@ -801,10 +845,10 @@ html {
 }
 .close_icon {
   position: absolute;
-  right: -0.37333333rem;
-  top: -0.37333333rem;
-  width: 0.74666667rem;
-  height: 0.74666667rem;
+  right: -0.18666667rem;
+  top: -0.18666667rem;
+  width: 0.37333333rem;
+  height: 0.37333333rem;
   z-index: 2;
 }
 .z_addImg .img_list {
