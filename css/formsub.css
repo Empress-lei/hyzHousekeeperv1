@@ -882,6 +882,7 @@ html {
   width: 2.24rem;
   height: 2.24rem;
   display: block;
+  opacity: 0;
   color: rgba(255, 255, 255, 0);
   vertical-align: middle;
 }
