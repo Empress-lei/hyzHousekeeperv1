@@ -66,6 +66,25 @@
   font-size: 0.32rem;
   color: #333;
 }
+.keyword {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 0.15rem;
+  padding-right: 0.3rem;
+}
+.searchicon {
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  padding-left: 0.4rem;
+  background: url(../images/fission/searchicon.png) left center no-repeat;
+  background-size: 0.4rem;
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+}
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #c6c6c6;
@@ -152,6 +171,7 @@ input::-webkit-input-placeholder {
 .recommendLi {
   width: 100%;
   min-height: 2rem;
+  padding: 0.4rem 0.3rem;
   border: 1px solid #F2F2F2 !important;
   border-bottom: none;
   -webkit-border-radius: 0.08rem;
@@ -165,6 +185,32 @@ input::-webkit-input-placeholder {
   -o-box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
   box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
   margin-bottom: 0.4rem;
+}
+.photo1 {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.photo1 img {
+  width: 100%;
+  height: 100%;
+}
+.info {
+  width: 85%;
+  padding-left: 0.32rem;
+  padding-top: 0.1rem;
+}
+.info .hottagTitle {
+  font-size: 0.36rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.info .other {
+  font-size: 0.3rem;
+  color: #BCBCBC;
 }
 .searchlabel {
   height: 1rem;
@@ -203,13 +249,12 @@ input::-webkit-input-placeholder {
   height: auto;
   left: 0;
   z-index: 2;
-  padding: 0 0.4rem;
+  padding: 0 0.4rem 0 0;
+  position: relative;
 }
 .sectionTit {
   font-size: 0.34rem;
   color: #797979;
   padding-left: 0.3rem;
-}
-* {
-  font-family: 'myFont' !important;
+  margin-bottom: 0.3rem;
 }
