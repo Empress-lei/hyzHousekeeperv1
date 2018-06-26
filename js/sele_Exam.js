@@ -35,6 +35,11 @@ $(function () {
         $(".training_target").hide();
     })
 
+
+    //餐
+    optab(".sample_menu dl");
+    $(".sample_menu dl").eq(0).children("dt").trigger("click");
+
 })
 
 //多选
@@ -93,8 +98,6 @@ $(function () {
 
 });
 
-optab(".sample_menu dl");
-$(".sample_menu dl").eq(0).children("dt").trigger("click");
 function optab(item){
     var dtc=$(item).children("dt");
     dtc.on("click",function(){

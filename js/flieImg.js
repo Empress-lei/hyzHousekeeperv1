@@ -39,7 +39,10 @@ function imgChange(obj1, obj2, obj3) {
         initMyImgShow();
         scrollSwiper.update();
         scrollSwiper2.update();
+        scrollSwiper3.update();
+        scrollSwiper4.update();
         scrollSwiper5.update();
+        scrollSwiper6.update();
         $(".close_icon").on("click",function(){
             removeImg(this);
         })

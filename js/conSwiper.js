@@ -2,7 +2,7 @@
 barwidth = 36 //导航橙色条的长度px
 tSpeed = 300 //切换速度300ms
 var navSwiper = new Swiper('#nav', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     freeMode: true,
     observer:true,//修改swiper自己或子元素时，自动初始化swiper
     observeParents:true,//修改swiper的父元素时，自动初始化swiper
@@ -253,8 +253,155 @@ var scrollSwiper2 = new Swiper('#scroll-v2', {
         },
     }
 })
+//课程体系
+var scrollSwiper3 = new Swiper('#scroll-v3', {
+    //65是头部的高
+    //36是top地址和搜索的高
+    slidesOffsetBefore: 72,
+    direction: 'vertical',
+    freeMode: true,
+    slidesPerView: 'auto',
 
-//餐谱样例
+    mousewheel: {
+        releaseOnEdges: true,
+    },
+    on: {
+        touchMove: function () {
+
+            if (this.translate > 72 - 36 && this.translate < 72) {
+                topBar.transform('translateY(' + (this.translate - 72) + 'px)');
+            }
+
+        },
+        touchStart: function () {
+            startPosition = this.translate
+        },
+        touchEnd: function () {
+            console.log("----touchEnd-----")
+            topBar.transition(tSpeed)
+            $('#page').animate({scrollTop: 0}, 10);
+            if (this.translate > 36 && this.translate < 72 && this.translate < startPosition) {
+                topBar.transform('translateY(-36px)');
+                for (sc = 0; sc < scrollSwiper.length; sc++) {
+                    if (scrollSwiper[sc].translate > 36) {
+                        scrollSwiper[sc].setTransition(tSpeed);
+                        scrollSwiper[sc].setTranslate(36)
+                    }
+                }
+            }
+            if (this.translate > 36 && this.translate < 72 && this.translate > startPosition) {
+                topBar.transform('translateY(0px)');
+                for (sc = 0; sc < scrollSwiper.length; sc++) {
+                    if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                        scrollSwiper[sc].setTransition(tSpeed);
+                        scrollSwiper[sc].setTranslate(72)
+                    }
+                }
+            }
+        },
+
+        transitionStart: function () {
+            topBar.transition(tSpeed)
+            if (this.translate < 72 - 36) {
+                topBar.transform('translateY(-36px)');
+                if (scrollSwiper) {
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate > 36) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(36)
+                        }
+                    }
+                }
+            } else {
+                topBar.transform('translateY(0px)');
+                if (scrollSwiper) {
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(72)
+                        }
+                    }
+                }
+            }
+        },
+    }
+})
+
+//师资团队
+var scrollSwiper4 = new Swiper('#scroll-v4', {
+    //65是头部的高
+    //36是top地址和搜索的高
+    slidesOffsetBefore: 72,
+    direction: 'vertical',
+    freeMode: true,
+    slidesPerView: 'auto',
+
+    mousewheel: {
+        releaseOnEdges: true,
+    },
+    on: {
+        touchMove: function () {
+
+            if (this.translate > 72 - 36 && this.translate < 72) {
+                topBar.transform('translateY(' + (this.translate - 72) + 'px)');
+            }
+
+        },
+        touchStart: function () {
+            startPosition = this.translate
+        },
+        touchEnd: function () {
+            console.log("----touchEnd-----")
+            topBar.transition(tSpeed)
+            $('#page').animate({scrollTop: 0}, 10);
+            if (this.translate > 36 && this.translate < 72 && this.translate < startPosition) {
+                topBar.transform('translateY(-36px)');
+                for (sc = 0; sc < scrollSwiper.length; sc++) {
+                    if (scrollSwiper[sc].translate > 36) {
+                        scrollSwiper[sc].setTransition(tSpeed);
+                        scrollSwiper[sc].setTranslate(36)
+                    }
+                }
+            }
+            if (this.translate > 36 && this.translate < 72 && this.translate > startPosition) {
+                topBar.transform('translateY(0px)');
+                for (sc = 0; sc < scrollSwiper.length; sc++) {
+                    if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                        scrollSwiper[sc].setTransition(tSpeed);
+                        scrollSwiper[sc].setTranslate(72)
+                    }
+                }
+            }
+        },
+
+        transitionStart: function () {
+            topBar.transition(tSpeed)
+            if (this.translate < 72 - 36) {
+                topBar.transform('translateY(-36px)');
+                if (scrollSwiper) {
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate > 36) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(36)
+                        }
+                    }
+                }
+            } else {
+                topBar.transform('translateY(0px)');
+                if (scrollSwiper) {
+                    for (sc = 0; sc < scrollSwiper.length; sc++) {
+                        if (scrollSwiper[sc].translate < 72 && scrollSwiper[sc].translate > 0) {
+                            scrollSwiper[sc].setTransition(tSpeed);
+                            scrollSwiper[sc].setTranslate(72)
+                        }
+                    }
+                }
+            }
+        },
+    }
+})
+
+//活动介绍
 var scrollSwiper5 = new Swiper('#scroll-v5', {
     //65是头部的高
     //36是top地址和搜索的高

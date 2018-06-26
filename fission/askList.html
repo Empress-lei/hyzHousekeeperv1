@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>3000问</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/askList.css">
+    <link rel="stylesheet" href="../css/swipercss/swiper-3.4.2.min.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/swiperjs/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/jweixin-1.0.0.js"></script>
+</head>
+<body style="font-family:'myFont'">
+<div class="warp">
+    <!--搜索框修改-->
+    <div class="askListBanner">
+        <img src="../images/fission/listBanner.png" class="bannerPic">
+        <div class="bannerText">
+            <p>育儿3000问</p>
+            <p>有问题立即查询靠谱答案</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="searchBar" style="position: relative;padding-left: 0;">
+            <span class="textSearch">搜 索</span>
+            <a href="javascript:void(0)" class="searchInput"
+               style="display:block;width: 90%;height:1rem;line-height:1rem;">
+                <input type="text" placeholder="点击这里查找你喜欢的内容..." id="keyword"
+                       style="display:block;width: 100%;height:1rem;line-height:1rem;padding-left: 0.15rem;padding-right: 0.3rem;">
+                <span style="display:block;width: 0.4rem;height: 0.4rem;padding-left: 0.4rem;background: url(../images/fission/searchicon.png) left center no-repeat;background-size: 0.4rem;position: absolute;top: 0.3rem;left: 0.3rem;"></span>
+            </a>
+        </div>
+    </div>
+    <!--音频分类修改-->
+    <div class="selectedAudio">
+        <span class="audioTitle">精选音频分类</span>
+        <div class="test1">
+            <div class="swiper-wrapper">
+                <!--睡觉-->
+                <div class="swiper-slide slide swiper-slide-active" style="margin-right: 10px;">
+                    <img src="../images/fission/sleep.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">睡觉</p>
+                    <p class="slideContent">27条音频答疑</p>
+                </div>
+                <!--吃饭-->
+                <div class="swiper-slide slide swiper-slide-next" style="margin-right: 10px;">
+                    <img src="../images/fission/eat.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">吃饭</p>
+                    <p class="slideContent">19条音频答疑</p>
+                </div>
+                <div class="swiper-slide slide" style="margin-right: 10px;">
+                    <img src="../images/fission/speak.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">说话</p>
+                    <p class="slideContent">20条音频答疑</p>
+                </div>
+                <div class="swiper-slide slide" style="margin-right: 10px;">
+                    <img src="../images/fission/sleep.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">睡觉</p>
+                    <p class="slideContent">27条音频答疑</p>
+                </div>
+                <div class="swiper-slide slide" style="margin-right: 10px;">
+                    <img src="../images/fission/eat.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">吃饭</p>
+                    <p class="slideContent">19条音频答疑</p>
+                </div>
+                <div class="swiper-slide slide" style="margin-right: 10px;">
+                    <img src="../images/fission/speak.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">说话</p>
+                    <p class="slideContent">20条音频答疑</p>
+                </div>
+                <div class="swiper-slide slide" style="margin-right: 10px;">
+                    <img src="../images/fission/sleep.jpg" alt="" class="slideImg">
+                    <p class="slideTitle">睡觉</p>
+                    <p class="slideContent">27条音频答疑</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--音频分类修改完毕-->
+    <div class="section sectionBorder0">
+        <div class="sectionTit box_align" style="margin-bottom: 0.3rem;">
+            <span class="sectitle">小喵推荐</span>
+        </div>
+        <ul class="recommendList">
+            <li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+                <a href="javascript:void(0)">
+                    <div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+                        <img src="../images/fission/play.png" style="width: 1.1rem;height: 1.1rem;">
+                    </div>
+                    <div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+                        <h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;"
+                            onclick="viewDetail(106)" class="hottagTitle">
+                            <span class="hottag"></span>这些给力绘本，让宝宝远离零食
+                        </h2>
+                        <div class="other" style="font-size: 0.3rem;color: #BCBCBC;">
+                            <span>时长：20分51秒   |  7170 次播放</span></div>
+                    </div>
+                </a>
+            </li>
+            <li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+                <a href="javascript:void(0)">
+                    <div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+                        <img src="../images/fission/play.png" style="width: 1.1rem;height: 1.1rem;">
+                    </div>
+                    <div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+                        <h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;"
+                            onclick="viewDetail(106)" class="hottagTitle">
+                            <span class="hottag"></span>爸妈用对方法，让孩子95%的胆小害怕
+                        </h2>
+                        <div class="other" style="font-size: 0.3rem;color: #BCBCBC;">
+                            <span>时长：20分51秒   |  7170 次播放</span></div>
+                    </div>
+                </a>
+            </li>
+            <li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+                <a href="javascript:void(0)">
+                    <div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+                        <img src="../images/fission/play.png" style="width: 1.1rem;height: 1.1rem;">
+                    </div>
+                    <div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+                        <h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;"
+                            onclick="viewDetail(106)" class="hottagTitle">
+                            <span class="hottag"></span>爸妈用对方法，让孩子95%的胆小害怕
+                        </h2>
+                        <div class="other" style="font-size: 0.3rem;color: #BCBCBC;">
+                            <span>时长：20分51秒   |  7170 次播放</span></div>
+                    </div>
+                </a>
+            </li>
+            <li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+                <a href="javascript:void(0)">
+                    <div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+                        <img src="../images/fission/play.png" style="width: 1.1rem;height: 1.1rem;">
+                    </div>
+                    <div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+                        <h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;"
+                            onclick="viewDetail(106)" class="hottagTitle">
+                            <span class="hottag"></span>爸妈用对方法，让孩子95%的胆小害怕
+                        </h2>
+                        <div class="other" style="font-size: 0.3rem;color: #BCBCBC;">
+                            <span>时长：20分51秒   |  7170 次播放</span></div>
+                    </div>
+                </a>
+            </li>
+            <li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+                <a href="javascript:void(0)">
+                    <div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+                        <img src="../images/fission/play.png" style="width: 1.1rem;height: 1.1rem;">
+                    </div>
+                    <div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+                        <h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;"
+                            onclick="viewDetail(106)" class="hottagTitle">
+                            <span class="hottag"></span>爸妈用对方法，让孩子95%的胆小害怕
+                        </h2>
+                        <div class="other" style="font-size: 0.3rem;color: #BCBCBC;">
+                            <span>时长：20分51秒   |  7170 次播放</span></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    var swiper = new Swiper('.test1', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+    });
+</script>
+</html>

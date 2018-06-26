@@ -1,0 +1,426 @@
+
+@import "base_mob.css";
+//留言页
+.messPage {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    overflow: auto;
+    padding: 0.4rem;
+    background-color: #fff;
+    :-moz-placeholder {
+        color: #A1A1A1;
+        opacity: 1;
+        font-size: 0.3rem;
+    }
+    ::-moz-placeholder {
+        color: #A1A1A1;
+        opacity: 1;
+        font-size: 0.3rem;
+    }
+    textarea:-ms-input-placeholder {
+        color: #A1A1A1;
+        opacity: 1;
+        font-size: 0.3rem;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #A1A1A1;
+        opacity: 1;
+        font-size: 0.3rem;
+    }
+    .messTitle {
+        text-align: left;
+        font-size: 0.5rem;
+        line-height: 0.65rem;
+        padding: 0.53333333rem 0;
+    }
+    .font13 {
+        width: 100%;
+        height: 3rem;
+        padding: 0.26666667rem;
+        position: relative;
+        font-size: 0.34rem;
+        border: 1px solid #F2F2F2;
+        -webkit-border-radius: 0.17333333rem;
+        -moz-border-radius: 0.17333333rem;
+        -ms-border-radius: 0.17333333rem;
+        -o-border-radius: 0.17333333rem;
+        border-radius: 0.17333333rem;
+        .txtarebox {
+            width: 100%;
+            height: 100%;
+            font-size: 0.32rem;
+            line-height: 0.6rem;
+            color: #333;
+
+        }
+        p {
+            display: none;
+            padding-right: 0.2rem;
+            position: absolute;
+            right: 0.26666667rem;
+            bottom: 0.26666667rem;
+            color: #BCBCBC;
+            font-size: 0.3rem;
+            span {
+                color: #ff9933;
+            }
+        }
+    }
+    .contentBtn {
+        width:100%;
+        padding: 20/37.5rem 15/37.5rem;
+        li {
+            float: right;
+            font-size: 0.38rem;
+        }
+        .submitCont {
+            color: #0099FF;
+            padding-left: 15/37.5rem;
+        }
+        .cancelCont {
+            color: #949494;
+            border-right: 1px solid #F2F2F2;
+            padding: 0 15/37.5rem;
+        }
+    }
+}
+//页面中所有的样式表
+.warp {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    //三千问首页
+    .askDetails {
+        width: 100%;
+        height: auto;
+        .bannerTop {
+            width:100%;
+            height: 3.5rem;
+        }
+        .askTitle {
+            text-align: center;
+            font-size:0.55rem;
+            padding: 20/37.5rem 0.4rem 5/37.5rem;
+        }
+        //音频
+        .audioDiv {
+            width:100%;
+            padding: 15/37.5rem;
+            //进度条和时间的样式
+            .section {
+                font-size: 0.32rem;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 0.5rem;
+                text-align: left;
+                overflow: visible!important;
+                .sectionTxt {
+                    font-size: 0.32rem;
+                    color: #515151;
+                    padding-top: 0.2rem;
+                }
+                .audioContTime {
+                    padding-top: 0.2rem;
+                    color: #BCBCBC;
+                }
+                .topaudio {
+                    .topaudioBox {
+                        position: relative;
+                        height: 20px;
+                        padding: 0 1.3rem;
+                        overflow: hidden;
+                        .txt {
+                            position: absolute;
+                            left: 0.13333333rem;
+                            top: 0;
+                            font-size: 0.3rem;
+                            color: #AEAEAE;
+                            padding-top: 0.08rem;
+                        }
+                        .txt2 {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            font-size: 0.3rem;
+                            color: #AEAEAE;
+                            padding-top: 0.08rem;
+                        }
+                        .audioLine {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .lineaft {
+                                display: block;
+                                width: 0.15454px;
+                                height: 0.10666667rem;
+                                position: absolute;
+                                left: 0;
+                                top: 0.24rem;
+                                z-index: 1;
+                                background: #ff9933;
+                            }
+                        }
+                        .audioLine:before {
+                            content: '';
+                            width: 100%;
+                            height: 0.10666667rem;
+                            position: absolute;
+                            left: 0;
+                            top: 0.24rem;
+                            z-index: 1;
+                            background: rgba(242, 242, 242, 1);
+                        }
+                        .circle {
+                            background: #ff9933;
+                            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+                            width: 0.28rem;
+                            height: 0.28rem;
+                            display: block;
+                            position: absolute;
+                            left: 0.15454px;
+                            top: 0.14rem;
+                            z-index: 55;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+            }
+            .recordNum {
+                text-align: center;
+                font-size:0.3rem;
+                color: #BCBCBC;
+                padding: 20/37.5rem 0;
+            }
+            //播放，点赞样式
+            .audiohandle {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                li {
+                    flex:1;
+                    text-align: center;
+                }
+                .unuseable {
+                    padding: 0.2rem 0;
+                    position: relative;
+                    .graySpan {
+                        padding-left: 0.4rem;
+                        //background-image: url();
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 0.4rem;
+                    }
+                    .unuseabletxt {
+                        padding-top: 8/37.5rem;
+                        font-size:0.3rem;
+                        color: #BCBCBC;
+                    }
+                }
+                .playDiv {
+                    .playBtn {
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        background: url(../images/fission/play.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    .play {
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        background: url(../images/fission/play.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    .pause {
+                        width: 1.61rem !important;
+                        height: 1.61rem !important;
+                        background: url(../images/fission/pause.png) no-repeat center center !important;
+                        background-size: 100% 100% !important;
+                        display: block !important;
+                        margin: 0 auto !important;
+                    }
+                }
+                .useable {
+                    padding: 0.2rem 0;
+                    position: relative;
+                    .graySpan {
+                        padding-left: 0.4rem;
+                        background-image: url(../images/fission/zanGray.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 0.4rem;
+                    }
+                    .oraSpan {
+                        padding-left: 0.4rem;
+                        background-image: url(../images/fission/zanOra.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 0.55rem;
+                    }
+                    i {
+                        width: 2.66666667rem;
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                        margin-left: -0.8rem;
+                        display: none;
+                        font-style: normal;
+                        color: #ff9933;
+                    }
+                    .useableGray {
+                        padding-top: 8/37.5rem;
+                        font-size:0.3rem;
+                        color: #BCBCBC;
+                    }
+                    .useableOra {
+                        padding-top: 8/37.5rem;
+                        font-size:0.3rem;
+                        color: #FF9933;
+                    }
+                }
+            }
+        }
+        //内容区域
+        .askCon {
+            width: 100%;
+            height: auto;
+            margin-top:0.2rem;
+            padding: 0.4rem 0.4rem;
+            border-top: 1px solid #F2F2F2;
+            .contentTop {
+                padding-bottom: 0.3rem;
+                img {
+                    width: 12%;
+                    float: left;
+                }
+                .topText {
+                    width: 88%;
+                    float: left;
+                    padding-left: 0.3rem;
+                    padding-top: 0.3rem;
+                    h2 {
+                        font-size: 0.38rem;
+                        color: rgba(255, 153, 51, 0.6);
+                        display: table-cell;
+                        vertical-align: bottom;
+                        padding-bottom: 0.3rem;
+                    }
+                    .contentTaskSkill {
+                        color: #868686;
+                        font-size: 0.34rem;
+                        padding-bottom: 0.2rem;
+                    }
+                    .contentTaskDetail {
+                        color: #868686;
+                        font-size: 0.34rem;
+                        line-height: 0.7rem;
+                    }
+                }
+            }
+            .bannerVipImg {
+                width: 100%;
+            }
+        }
+        .askButtonWrite {
+            display: block;
+            width: 80%;
+            background-color: #F39D39;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.38rem;
+            padding: 0.22rem;
+            border-radius: 100px;
+            margin: 0.5rem auto;
+        }
+        //相关推荐区域
+        .askRecommend {
+            width: 100%;
+            padding: 0.3rem 0.4rem 1rem;
+            background-color: #F2F2F2;
+            .recommendTit {
+                font-size: 0.38rem;
+                color: rgba(255, 153, 51, 0.6);
+                margin: 0.3rem 0 0.5rem;
+                background: url(../images/fission/recomend.png) no-repeat left center;
+                background-size: 0.6rem;
+                padding-left: 0.7rem;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+
+            }
+            //推荐内容
+            .recommendCon {
+                width: 100%;
+                min-height: 2rem;
+                border: 1px solid #F2F2F2;
+                border-bottom: none;
+                background-color: #fff;
+                -webkit-border-radius: 0.08rem;
+                -moz-border-radius: 0.08rem;
+                -ms-border-radius: 0.08rem;
+                -o-border-radius: 0.08rem;
+                border-radius: 0.08rem;
+                -webkit-box-shadow:1px 2px 3px rgba(161, 161, 161, 0.2);
+                -moz-box-shadow:1px 2px 3px rgba(161, 161, 161, 0.2);
+                -ms-box-shadow:1px 2px 3px rgba(161, 161, 161, 0.2);
+                -o-box-shadow:1px 2px 3px rgba(161, 161, 161, 0.2);
+                box-shadow:1px 2px 3px rgba(161, 161, 161, 0.2);
+                padding: 0.4rem 0.3rem;
+                margin-bottom: 0.4rem;
+                .recommendImg {
+                    width: 14%;
+                }
+                .recommendRight {
+                    width: 86%;
+                    padding-left: 0.13333333rem;
+                    h3 {
+                        font-size: 0.36rem;
+                        color: #333;
+                        padding-top: 0.2rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+                    p {
+                        font-size: 0.3rem;
+                        color: #BCBCBC;
+                        padding-top: 0.2rem;
+                    }
+                }
+            }
+            //我也要提问按钮
+            .askButton {
+                display: block;
+                width: 80%;
+                background-color: #F39D39;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                font-size: 0.38rem;
+                padding: 0.22rem;
+                border-radius: 100px;
+                margin: 0.7rem auto 0;
+            }
+        }
+    }
+}
+

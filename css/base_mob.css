@@ -70,6 +70,7 @@ textarea {
     outline-style: none ;
     outline-width: 0px ;
     border: none ;
+    outline:none;
     border-style: none ;
     text-shadow: none ;
     -webkit-appearance: none ;
@@ -83,7 +84,7 @@ button {
     border: none;
     background: none;
     border-radius: 0;
-    outline: none;
+    outline:none;
     outline-color: invert ;
     outline-style: none ;
     outline-width: 0px ;
