@@ -23,7 +23,7 @@ function initMyImgShow(){
 		myImg.src = $(this).attr("src");
 		var bg = "";
 		bg += '<div id="popup" class="popup" onclick="closeMyImg(this)">';
-		bg += '<div class="bg"><img  src="'+myImg.src+'" alt="" max-width="'+screen.width+'"/></div>';
+		bg += '<div class="bg"><img  src="'+myImg.src+'" alt="" /></div>';
 		bg += '</div>';
 		//$(this).parent().after(bg);
 		$("body").append(bg); 
