@@ -11,6 +11,25 @@
 }
 .warp .babymess {
   width: 100%;
+  padding-bottom: 1.33333333rem;
+  /* firefox 19+ */
+  /* ie */
+}
+.warp .babymess ::-webkit-input-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp .babymess ::-moz-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp .babymess :-ms-input-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp .babymess input:-moz-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
 }
 .warp .babymess .titlebaby {
   padding: 0.96rem 1.33333333rem 0.8rem;
@@ -36,24 +55,6 @@
   padding-bottom: 0.48rem;
   margin-bottom: 0.48rem;
   border-bottom: 1px solid #DDDDDD;
-  /* firefox 19+ */
-  /* ie */
-}
-.warp .babymess .baby_ul .babylist ::-webkit-input-placeholder {
-  font-size: 0.34666667rem;
-  color: #999;
-}
-.warp .babymess .baby_ul .babylist ::-moz-placeholder {
-  font-size: 0.34666667rem;
-  color: #999;
-}
-.warp .babymess .baby_ul .babylist :-ms-input-placeholder {
-  font-size: 0.34666667rem;
-  color: #999;
-}
-.warp .babymess .baby_ul .babylist input:-moz-placeholder {
-  font-size: 0.34666667rem;
-  color: #999;
 }
 .warp .babymess .baby_ul .babylist .name {
   color: #666666;
@@ -103,7 +104,7 @@
   opacity: 0;
 }
 .warp .babymess .baby_ul .babylist .con .opt-text {
-  padding-left: 0.4rem;
+  padding-left: 0.21333333rem;
 }
 .warp .babymess .baby_ul .babylist .baby_bri {
   padding-left: 1.06666667rem;
@@ -129,4 +130,101 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: #ffffff;
+}
+.warp .babymess .line_f {
+  width: 100%;
+  height: 0.16rem;
+  background-color: #F2F2F2;
+}
+.warp .babymess .phone_ul {
+  width: 100%;
+  padding: 0.8rem 1.33333333rem;
+}
+.warp .babymess .phone_ul .phone_li {
+  padding-bottom: 0.48rem;
+  margin-bottom: 0.48rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .babymess .phone_ul .phone_li .name {
+  color: #666666;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .babymess .phone_ul .phone_li .contact {
+  float: left;
+  width: 75%;
+  padding-left: 0.4rem;
+  position: relative;
+}
+.warp .babymess .phone_ul .phone_li .contact .phone_input {
+  width: 100%;
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .babymess .phone_ul .phone_li .contact .phone_num {
+  width: 100%;
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  padding-left: 0.4rem;
+}
+.warp .babymess .phone_ul .phone_li .contact .getyzm {
+  display: block;
+  position: absolute;
+  top: -0.16rem;
+  right: -0.4rem;
+  width: 2.37333333rem;
+  height: 0.8rem;
+  color: #fff;
+  font-size: 0.32rem;
+  text-align: center;
+  line-height: 0.8rem;
+  background-color: #0099FF;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+.warp .babymess .phone_ul .connum {
+  width: 100%;
+  margin-top: -0.26666667rem;
+}
+.warp .babymess .phone_ul .connum p {
+  text-align: right;
+  color: #FF1313;
+  font-size: 0.26666667rem;
+}
+.warp .babymess .comBtn {
+  display: block;
+  margin: 0 auto;
+  width: 5.97333333rem;
+  height: 1.12rem;
+  color: #fff;
+  font-size: 0.37433155rem;
+  line-height: 1.12rem;
+  text-align: center;
+  background-color: #DDDDDD;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  -o-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+}
+.warp .babymess .comBtnOrange {
+  display: block;
+  margin: 0 auto;
+  width: 5.97333333rem;
+  height: 1.12rem;
+  color: #fff;
+  font-size: 0.37433155rem;
+  line-height: 1.12rem;
+  text-align: center;
+  background-color: #FF530B;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  -o-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
 }

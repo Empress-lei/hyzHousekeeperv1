@@ -9,6 +9,25 @@
   -webkit-tap-highlight-color: transparent; /*清除点击高亮效果*/
   .babymess {
     width: 100%;
+    padding-bottom:50/37.5rem;
+    ::-webkit-input-placeholder {
+      font-size: 13/37.5rem;
+      color: #999;
+    }
+    ::-moz-placeholder {
+      font-size: 13/37.5rem;
+      color: #999;
+    }
+    /* firefox 19+ */
+    :-ms-input-placeholder {
+      font-size: 13/37.5rem;
+      color: #999;
+    }
+    /* ie */
+    input:-moz-placeholder {
+      font-size: 13/37.5rem;
+      color: #999;
+    }
     .titlebaby {
       padding: 36/37.5rem 50/37.5rem 30/37.5rem;
       .lineSpan {
@@ -32,24 +51,6 @@
         padding-bottom: 18/37.5rem;
         margin-bottom: 18/37.5rem;
         border-bottom: 1px solid #DDDDDD;
-        ::-webkit-input-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        ::-moz-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        /* firefox 19+ */
-        :-ms-input-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        /* ie */
-        input:-moz-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
         .name {
           color: #666666;
           font-size:13/37.5rem;
@@ -98,12 +99,9 @@
             opacity: 0;
           }
           .opt-text {
-            padding-left: 15/37.5rem;
+            padding-left: 8/37.5rem;
           }
-
-
         }
-
         //生日
         .baby_bri {
           padding-left: 40/37.5rem;
@@ -133,6 +131,102 @@
         }
       }
     }
-
+    .line_f {
+      width: 100%;
+      height: 6/37.5rem;
+      background-color: #F2F2F2;
+    }
+    .phone_ul {
+      width: 100%;
+      padding: 30/37.5rem 50/37.5rem;
+      .phone_li {
+        padding-bottom: 18/37.5rem;
+        margin-bottom: 18/37.5rem;
+        border-bottom: 1px solid #DDDDDD;
+        .name {
+          color: #666666;
+          font-size:13/37.5rem;
+          line-height: 18/37.5rem;
+        }
+        .contact {
+          float: left;
+          width: 75%;
+          padding-left: 15/37.5rem;
+          position: relative;
+          .phone_input {
+            width: 100%;
+            color: #333;
+            font-size:13/37.5rem;
+            line-height: 18/37.5rem;
+          }
+          .phone_num {
+            width: 100%;
+            color: #333;
+            font-size:13/37.5rem;
+            line-height: 18/37.5rem;
+            padding-left: 15/37.5rem;
+          }
+          .getyzm {
+            display: block;
+            position: absolute;
+            top: -6/37.5rem;
+            right: -15/37.5rem;
+            width: 89/37.5rem;
+            height: 30/37.5rem;
+            color: #fff;
+            font-size: 12/37.5rem;
+            text-align: center;
+            line-height: 30/37.5rem;
+            background-color: #0099FF;
+            -webkit-border-radius: 15/37.5rem;
+            -moz-border-radius: 15/37.5rem;
+            -ms-border-radius: 15/37.5rem;
+            -o-border-radius: 15/37.5rem;
+            border-radius: 15/37.5rem;
+          }
+        }
+      }
+      .connum {
+        width: 100%;
+        margin-top: -10/37.5rem;
+        p {
+          text-align: right;
+          color: #FF1313;
+          font-size: 10/37.5rem;
+        }
+      }
+    }
+    .comBtn {
+      display: block;
+      margin: 0 auto;
+      width: 224/37.5rem;
+      height: 42/37.5rem;
+      color: #fff;
+      font-size: 14/37.4rem;
+      line-height: 42/37.5rem;
+      text-align: center;
+      background-color: #DDDDDD;
+      -webkit-border-radius: 50/37.5rem;
+      -moz-border-radius: 50/37.5rem;
+      -ms-border-radius: 50/37.5rem;
+      -o-border-radius: 50/37.5rem;
+      border-radius: 50/37.5rem;
+    }
+    .comBtnOrange {
+      display: block;
+      margin: 0 auto;
+      width: 224/37.5rem;
+      height: 42/37.5rem;
+      color: #fff;
+      font-size: 14/37.4rem;
+      line-height: 42/37.5rem;
+      text-align: center;
+      background-color: #FF530B;
+      -webkit-border-radius: 50/37.5rem;
+      -moz-border-radius: 50/37.5rem;
+      -ms-border-radius: 50/37.5rem;
+      -o-border-radius: 50/37.5rem;
+      border-radius: 50/37.5rem;
+    }
   }
 }

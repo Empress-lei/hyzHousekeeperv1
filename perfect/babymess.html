@@ -74,12 +74,39 @@
                 </span>
             </li>
         </ul>
+        <div class="line_f"></div>
+        <ul class="phone_ul">
+            <li class="phone_li clearfix">
+                <span class="name fl">联系方式</span>
+                <div class="contact fl">
+                    <input name="mobile" type="tell" value="" class="phone_input" data_value="联系方式" placeholder="请输入联系方式">
+                    <span class="getyzm" flag="true">获取验证码</span>
+                </div>
+            </li>
+            <li class="phone_li clearfix">
+                <span class="name fl">验证码</span>
+                <div class="contact fl">
+                    <input name="mobile" type="tell" value="" class="phone_num" data_value="联系方式" placeholder="请输入验证码">
+                </div>
+            </li>
+            <li class="connum">
+                <p>验证码错误</p>
+            </li>
+        </ul>
+        <a href="javascript:void (0);" class="comBtn">完 成</a>
     </div>
 </div>
 </body>
 <script type="text/javascript">
 
     $(function () {
+
+        $(".babymess input").focus(function () {
+            $(".comBtn").addClass("comBtnOrange")
+        })
+
+
+        //选择宝宝年来
         var currYear = (new Date()).getFullYear();
         var opt = {};
         opt.date = {preset: 'date'};
