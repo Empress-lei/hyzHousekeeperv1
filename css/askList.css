@@ -71,6 +71,432 @@
   -webkit-tap-highlight-color: transparent;
   /*清除点击高亮效果*/
 }
+.warp .searchPage {
+  width: 100%;
+  height: auto;
+}
+.warp .searchPage .searchItem {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0.53333333rem 0.4rem;
+  background-color: #eee;
+}
+.warp .searchPage .searchItem .leftArrow {
+  width: 0.5rem;
+  float: left;
+  margin-right: 0.2rem;
+  margin-top: 0.25rem;
+}
+.warp .searchPage .searchItem .cancleBtn {
+  float: right;
+  width: 12%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: right;
+  font-size: 0.4rem;
+  color: #A1A1A1;
+}
+.warp .searchPage .searchItem .submitShow {
+  display: none;
+  float: right;
+  width: 12%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: right;
+  font-size: 0.4rem;
+  color: #ff9933;
+}
+.warp .searchPage .searchItem .searchTxt {
+  width: 85%;
+  position: relative;
+  height: 1rem;
+  padding: 0.15rem 0 0.15rem 0.3rem;
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+}
+.warp .searchPage .searchItem .searchTxt :-moz-placeholder {
+  opacity: 1;
+  font-size: 0.3rem;
+  color: #C9C9C9;
+}
+.warp .searchPage .searchItem .searchTxt ::-moz-placeholder {
+  opacity: 1;
+  font-size: 0.3rem;
+  color: #C9C9C9;
+}
+.warp .searchPage .searchItem .searchTxt input:-ms-input-placeholder {
+  opacity: 1;
+  font-size: 0.3rem;
+  color: #C9C9C9;
+}
+.warp .searchPage .searchItem .searchTxt input::-webkit-input-placeholder {
+  opacity: 1;
+  font-size: 0.3rem;
+  color: #C9C9C9;
+}
+.warp .searchPage .searchItem .searchTxt .inputFocus {
+  width: 90%;
+  line-height: 0.7rem;
+  background: url(../images/search/magnifier.png) no-repeat left center;
+  background-size: 0.6rem;
+  padding-left: 0.7rem;
+}
+.warp .searchPage .searchItem .searchTxt .clear {
+  width: 1rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../images/search/clear@2x.png) center center no-repeat;
+  background-size: 0.6rem;
+}
+.warp .searchPage .searchList .regionAge {
+  width: 100%;
+  padding: 0.4rem 0.4rem 0;
+}
+.warp .searchPage .searchList .regionAge .ageTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+  padding-bottom: 0.26666667rem;
+}
+.warp .searchPage .searchList .regionAge .relevantAge {
+  width: 100%;
+  min-height: 1rem;
+  display: flex;
+  display: -webkit-flex;
+  border-top: 0.02666667rem solid #f2f2f2;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .regionAge .relevantAge li {
+  flex: 1;
+  color: #333;
+  padding: 0.26666667rem 0;
+  font-size: 0.34rem;
+  text-align: center;
+}
+.warp .searchPage .searchList .regionAge .relevantAge .ageList {
+  border-right: 1px solid #F2F2F2;
+}
+.warp .searchPage .searchList .cruxBehavior {
+  width: 100%;
+  padding: 0.4rem 0.4rem 0;
+}
+.warp .searchPage .searchList .cruxBehavior .behaviorTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+  padding-bottom: 0.26666667rem;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .cruxBehavior .relevantBehavior {
+  width: 100%;
+  position: relative;
+}
+.warp .searchPage .searchList .cruxBehavior .relevantBehavior .relevantList {
+  float: left;
+  width: 25%;
+  color: #333;
+  padding: 0.26666667rem 0;
+  font-size: 0.34rem;
+  text-align: center;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .cruxBehavior .relevantBehavior .relevantfour {
+  float: left;
+  width: 50%;
+  color: #333;
+  padding: 0.26666667rem 0;
+  font-size: 0.34rem;
+  text-align: center;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .cruxBehavior .relevantBehavior .listBorder {
+  border-right: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .searchRecord {
+  padding: 0 0.4rem 0;
+}
+.warp .searchPage .searchList .searchRecord .title {
+  border-top: 1px solid #F2F2F2;
+  margin-top: -1px;
+  padding: 0.4rem 0 0.26666667rem;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .searchRecord .title .recordTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+}
+.warp .searchPage .searchList .searchRecord .title .clearAll {
+  font-size: 0.35rem;
+  color: #1296DB;
+  background: url("../images/search/clear.png") no-repeat left center;
+  background-size: 0.35rem;
+  padding-left: 0.4rem;
+}
+.warp .searchPage .searchList .searchRecord .recordList {
+  width: 100%;
+  height: auto;
+}
+.warp .searchPage .searchList .searchRecord .recordList .listClear {
+  padding: 0.2rem 0;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .searchList .searchRecord .recordList .listClear .clearTerm {
+  color: #333;
+  line-height: 0.6rem;
+  font-size: 0.34rem;
+  background: url("../images/search/recordImg.png") no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.65rem;
+}
+.warp .searchPage .searchList .searchRecord .recordList .listClear .clearImg {
+  width: 0.6rem;
+}
+.warp .searchPage .relevantList {
+  width: 100%;
+  padding: 0.4rem;
+}
+.warp .searchPage .relevantList .classtitle {
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.26666667rem;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .relevantList .classtitle .recordTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+  background: url("../images/search/ask.png") no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.55rem;
+}
+.warp .searchPage .relevantList .classtitle .tinyTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+  background: url("../images/search/tiny.png") no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.55rem;
+}
+.warp .searchPage .relevantList .classtitle .moreCont {
+  font-size: 0.35rem;
+  color: #1296DB;
+}
+.warp .searchPage .relevantList .tinyClass {
+  padding-top: 0.53333333rem;
+}
+.warp .searchPage .relevantList .classReco .recommendCon {
+  width: 100%;
+  min-height: 2rem;
+  border: 1px solid #F2F2F2;
+  border-bottom: none;
+  background-color: #fff;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  -webkit-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  -moz-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  -ms-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  -o-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  padding: 0.4rem 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .recommendImg {
+  width: 14%;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .headsetImg {
+  width: 13%;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .currentColor {
+  color: #ff9933;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .recommendRight {
+  width: 86%;
+  padding-left: 0.13333333rem;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .recommendRight h3 {
+  font-size: 0.36rem;
+  color: #333;
+  padding-top: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .recommendRight p {
+  font-size: 0.3rem;
+  color: #BCBCBC;
+  padding-top: 0.2rem;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .headsetRight {
+  width: 86%;
+  padding-left: 0.13333333rem;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .headsetRight h3 {
+  font-size: 0.36rem;
+  color: #333;
+  padding-top: 0.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.warp .searchPage .relevantList .classReco .recommendCon .headsetRight p {
+  font-size: 0.3rem;
+  color: #BCBCBC;
+  padding-top: 0.2rem;
+}
+.warp .searchPage .relevantList .noscheme {
+  text-align: center;
+  color: #0099FF;
+  font-size: 0.55rem;
+  padding: 0.66666667rem 0.4rem 0.4rem;
+}
+.warp .searchPage .relevantList .schemeTear {
+  text-align: center;
+  color: #0099FF;
+  font-size: 0.42rem;
+}
+.warp .searchPage .relevantList .answerBtn {
+  display: block;
+  width: 80%;
+  background-color: #F39D39;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.38rem;
+  padding: 0.22rem;
+  border-radius: 100px;
+  margin: 0.7rem auto 0 auto;
+}
+.warp .searchPage .relevantList .opportunity {
+  font-size: 0.32rem;
+  text-align: center;
+  color: #0099FF;
+  padding: 0.4rem 0.4rem;
+}
+.warp .searchPage .relevantList .opportunity1 {
+  font-size: 0.32rem;
+  text-align: center;
+  color: #868686;
+  padding: 0.5rem 0;
+  transform: scale(0.8);
+}
+.warp .searchPage .moreClassList {
+  width: 100%;
+  padding: 0.4rem;
+}
+.warp .searchPage .moreClassList .classtitle {
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.26666667rem;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.warp .searchPage .moreClassList .classtitle .recordTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+  background: url("../images/search/ask.png") no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.55rem;
+}
+.warp .searchPage .moreClassList .classtitle .tinyTitle {
+  font-size: 0.36rem;
+  color: #AEAEAE;
+  background: url("../images/search/tiny.png") no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.55rem;
+}
+.warp .searchPage .moreClassList .classtitle .moreCont {
+  font-size: 0.35rem;
+  color: #1296DB;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon {
+  width: 100%;
+  min-height: 2rem;
+  border: 1px solid #F2F2F2;
+  border-bottom: none;
+  background-color: #fff;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  -webkit-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  -moz-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  -ms-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  -o-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+  padding: 0.4rem 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .recommendImg {
+  width: 14%;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .headsetImg {
+  width: 13%;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .currentColor {
+  color: #ff9933;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .recommendRight {
+  width: 86%;
+  padding-left: 0.13333333rem;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .recommendRight h3 {
+  font-size: 0.36rem;
+  color: #333;
+  padding-top: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .recommendRight p {
+  font-size: 0.3rem;
+  color: #BCBCBC;
+  padding-top: 0.2rem;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .headsetRight {
+  width: 86%;
+  padding-left: 0.13333333rem;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .headsetRight h3 {
+  font-size: 0.36rem;
+  color: #333;
+  padding-top: 0.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.warp .searchPage .moreClassList .classReco .recommendCon .headsetRight p {
+  font-size: 0.3rem;
+  color: #BCBCBC;
+  padding-top: 0.2rem;
+}
+.warp .searchPage .noLookContent {
+  width: 100%;
+  padding: 0.4rem;
+}
+.warp .searchPage .noLookContent .bulbImg {
+  width: 4rem;
+  display: block;
+  margin: 2rem auto 1rem;
+}
+.warp .searchPage .noLookContent .noLookText {
+  text-align: center;
+  font-size: 0.34rem;
+  color: #949494;
+  padding-bottom: 0.53333333rem;
+}
 .section {
   border-bottom: 0.12rem solid #F2F2F2;
 }

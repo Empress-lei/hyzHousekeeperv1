@@ -73,6 +73,464 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /*清除点击高亮效果*/
+  //搜索页
+  .searchPage {
+    width:100%;
+    height: auto;
+    //顶部的搜索框
+    .searchItem {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 20/37.5rem 0.4rem;
+      background-color: #eee;
+      .leftArrow {
+        width: 0.5rem;
+        float: left;
+        margin-right: 0.2rem;
+        margin-top: 0.25rem;
+      }
+      //取消按钮
+      .cancleBtn {
+        float: right;
+        width: 12%;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: right;
+        font-size: 0.4rem;
+        color: #A1A1A1;
+      }
+      //搜素按钮
+      .submitShow {
+        display: none;
+        float: right;
+        width: 12%;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: right;
+        font-size: 0.4rem;
+        color: #ff9933;
+      }
+      //搜索框
+      .searchTxt {
+        width:85%;
+        position: relative;
+        height: 1rem;
+        //padding-left: 0.3rem;
+        padding: 0.15rem 0 0.15rem 0.3rem;
+        background: #ffffff;
+        border: 1px solid #f4f4f4;
+        -webkit-border-radius: 3/37.5rem;
+        -moz-border-radius: 3/37.5rem;
+        -ms-border-radius: 3/37.5rem;
+        -o-border-radius: 3/37.5rem;
+        border-radius: 3/37.5rem;
+        :-moz-placeholder {
+          opacity: 1;
+          font-size: 0.3rem;
+          color: #C9C9C9;
+        }
+        ::-moz-placeholder {
+          opacity: 1;
+          font-size: 0.3rem;
+          color: #C9C9C9;
+        }
+        input:-ms-input-placeholder {
+          opacity: 1;
+          font-size: 0.3rem;
+          color: #C9C9C9;
+        }
+        input::-webkit-input-placeholder {
+          opacity: 1;
+          font-size: 0.3rem;
+          color: #C9C9C9;
+        }
+        .inputFocus {
+          width:90%;
+          line-height: 0.7rem;
+          background: url(../images/search/magnifier.png) no-repeat left center;
+          background-size: 0.6rem;
+          padding-left: 0.7rem;
+        }
+        .clear {
+          //display: none;
+          width: 1rem;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          background: url(../images/search/clear@2x.png) center center no-repeat;
+          background-size: 0.6rem;
+        }
+      }
+    }
+    //搜索记录列表
+    .searchList {
+      //年龄列表
+      .regionAge {
+        width:100%;
+        padding: 15/37.5rem 15/37.5rem 0;
+        .ageTitle {
+          font-size:0.36rem;
+          color: #AEAEAE;
+          padding-bottom: 10/37.5rem;
+        }
+        .relevantAge {
+          width:100%;
+          min-height:1rem;
+          display: flex;
+          display: -webkit-flex;
+          border-top: 1/37.5rem solid #F2F2F2;
+          border-bottom: 1/37.5rem solid #F2F2F2;
+          li {
+            flex:1;
+            color: #333;
+            padding: 10/37.5rem 0;
+            font-size:0.34rem;
+            text-align: center;
+          }
+          .ageList {
+            border-right: 1px solid #F2F2F2;
+          }
+        }
+      }
+      //行为关键词
+      .cruxBehavior {
+        width:100%;
+        padding: 15/37.5rem 15/37.5rem 0;
+        .behaviorTitle {
+          font-size:0.36rem;
+          color: #AEAEAE;
+          padding-bottom: 10/37.5rem;
+          border-bottom: 1/37.5rem solid #F2F2F2;
+        }
+        //关键词列表
+        .relevantBehavior {
+          width:100%;
+          position: relative;
+          //文字少于四个的样式
+          .relevantList {
+            float: left;
+            width:25%;
+            color: #333;
+            padding: 10/37.5rem 0;
+            font-size:0.34rem;
+            text-align: center;
+            border-bottom: 1/37.5rem solid #F2F2F2;
+          }
+          .relevantfour {
+            float: left;
+            width:50%;
+            color: #333;
+            padding: 10/37.5rem 0;
+            font-size:0.34rem;
+            text-align: center;
+            border-bottom: 1/37.5rem solid #F2F2F2;
+          }
+          .listBorder {
+            border-right: 1/37.5rem solid #F2F2F2;
+          }
+        }
+
+      }
+      //搜索记录
+      .searchRecord {
+        padding: 0 15/37.5rem 0;
+        .title {
+          border-top:1px solid #F2F2F2;
+          margin-top:-1px;
+          padding: 15/37.5rem 0 0.26666667rem;
+          border-bottom: 1/37.5rem solid #F2F2F2;
+          .recordTitle {
+            font-size: 0.36rem;
+            color: #AEAEAE;
+          }
+          .clearAll {
+            font-size: 0.35rem;
+            color: #1296DB;
+            background: url("../images/search/clear.png") no-repeat left center;
+            background-size: 0.35rem;
+            padding-left: 0.4rem;
+          }
+        }
+        //记录列表
+        .recordList {
+          width:100%;
+          height: auto;
+          .listClear {
+            padding: 0.2rem 0;
+            border-bottom: 1/37.5rem solid #F2F2F2;
+            .clearTerm {
+              color: #333;
+              line-height: 0.6rem;
+              font-size: 0.34rem;
+              background: url("../images/search/recordImg.png") no-repeat left center;
+              background-size: 0.5rem;
+              padding-left: 0.65rem;
+            }
+            .clearImg {
+              width:0.6rem;
+            }
+          }
+        }
+      }
+    }
+    //课程列表
+    .relevantList {
+      width: 100%;
+      padding: 15/37.5rem;
+      .classtitle {
+        margin-bottom: 15/37.5rem;
+        padding-bottom: 0.26666667rem;
+        border-bottom: 1/37.5rem solid #F2F2F2;
+        .recordTitle {
+          font-size: 0.36rem;
+          color: #AEAEAE;
+          background: url("../images/search/ask.png") no-repeat left center;
+          background-size: 0.5rem;
+          padding-left: 0.55rem;
+        }
+        .tinyTitle {
+          font-size: 0.36rem;
+          color: #AEAEAE;
+          background: url("../images/search/tiny.png") no-repeat left center;
+          background-size: 0.5rem;
+          padding-left: 0.55rem;
+        }
+        .moreCont {
+          font-size: 0.35rem;
+          color: #1296DB;
+
+        }
+      }
+      .tinyClass {
+        padding-top: 20/37.5rem;
+      }
+      //课程列表
+      .classReco {
+        .recommendCon {
+          width: 100%;
+          min-height: 2rem;
+          border: 1px solid #F2F2F2;
+          border-bottom: none;
+          background-color: #fff;
+          -webkit-border-radius: 0.08rem;
+          -moz-border-radius: 0.08rem;
+          -ms-border-radius: 0.08rem;
+          -o-border-radius: 0.08rem;
+          border-radius: 0.08rem;
+          -webkit-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -moz-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -ms-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -o-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          padding: 0.4rem 0.3rem;
+          margin-bottom: 0.2rem;
+          .recommendImg {
+            width: 14%;
+          }
+          .headsetImg {
+            width:13%;
+          }
+          .currentColor {
+            color: #ff9933;
+          }
+          .recommendRight {
+            width: 86%;
+            padding-left: 0.13333333rem;
+            h3 {
+              font-size: 0.36rem;
+              color: #333;
+              padding-top: 0.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+
+            }
+            p {
+              font-size: 0.3rem;
+              color: #BCBCBC;
+              padding-top: 0.2rem;
+            }
+          }
+          .headsetRight {
+            width: 86%;
+            padding-left: 0.13333333rem;
+            h3 {
+              font-size: 0.36rem;
+              color: #333;
+              padding-top: 0.1rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+
+            }
+            p {
+              font-size: 0.3rem;
+              color: #BCBCBC;
+              padding-top: 0.2rem;
+            }
+          }
+        }
+      }
+      .noscheme {
+        text-align: center;
+        color: #0099FF;
+        font-size:0.55rem;
+        padding: 25/37.5rem 15/37.5rem 15/37.5rem;
+      }
+      .schemeTear {
+        text-align: center;
+        color: #0099FF;
+        font-size:0.42rem;
+      }
+      .answerBtn {
+        display: block;
+        width: 80%;
+        background-color: #F39D39;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.38rem;
+        padding: 0.22rem;
+        border-radius: 100px;
+        margin: 0.7rem auto 0 auto;
+      }
+      .opportunity {
+        font-size: 0.32rem;
+        text-align: center;
+        color: #0099FF;
+        padding: 0.4rem 0.4rem;
+      }
+      .opportunity1 {
+        font-size: 0.32rem;
+        text-align: center;
+        color: #868686;
+        padding: 0.5rem 0;
+        transform: scale(0.8);
+      }
+    }
+    //更多课程列表
+    .moreClassList {
+      width: 100%;
+      padding: 15/37.5rem;
+      .classtitle {
+        margin-bottom: 15/37.5rem;
+        padding-bottom: 0.26666667rem;
+        border-bottom: 1/37.5rem solid #F2F2F2;
+        .recordTitle {
+          font-size: 0.36rem;
+          color: #AEAEAE;
+          background: url("../images/search/ask.png") no-repeat left center;
+          background-size: 0.5rem;
+          padding-left: 0.55rem;
+        }
+        .tinyTitle {
+          font-size: 0.36rem;
+          color: #AEAEAE;
+          background: url("../images/search/tiny.png") no-repeat left center;
+          background-size: 0.5rem;
+          padding-left: 0.55rem;
+        }
+        .moreCont {
+          font-size: 0.35rem;
+          color: #1296DB;
+
+        }
+      }
+      //课程列表
+      .classReco {
+        .recommendCon {
+          width: 100%;
+          min-height: 2rem;
+          border: 1px solid #F2F2F2;
+          border-bottom: none;
+          background-color: #fff;
+          -webkit-border-radius: 0.08rem;
+          -moz-border-radius: 0.08rem;
+          -ms-border-radius: 0.08rem;
+          -o-border-radius: 0.08rem;
+          border-radius: 0.08rem;
+          -webkit-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -moz-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -ms-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -o-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          padding: 0.4rem 0.3rem;
+          margin-bottom: 0.2rem;
+          .recommendImg {
+            width: 14%;
+          }
+          .headsetImg {
+            width:13%;
+          }
+          .currentColor {
+            color: #ff9933;
+          }
+          .recommendRight {
+            width: 86%;
+            padding-left: 0.13333333rem;
+            h3 {
+              font-size: 0.36rem;
+              color: #333;
+              padding-top: 0.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+
+            }
+            p {
+              font-size: 0.3rem;
+              color: #BCBCBC;
+              padding-top: 0.2rem;
+            }
+          }
+          .headsetRight {
+            width: 86%;
+            padding-left: 0.13333333rem;
+            h3 {
+              font-size: 0.36rem;
+              color: #333;
+              padding-top: 0.1rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+
+            }
+            p {
+              font-size: 0.3rem;
+              color: #BCBCBC;
+              padding-top: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+    //遗憾没有查到内容
+    .noLookContent {
+      width: 100%;
+      padding: 15/37.5rem;
+      .bulbImg {
+        width:4rem;
+        display: block;
+        margin:2rem auto 1rem;
+      }
+      .noLookText {
+        text-align: center;
+        font-size:0.34rem;
+        color: #949494;
+        padding-bottom: 20/37.5rem;
+      }
+    }
+  }
 }
 
 .section {
