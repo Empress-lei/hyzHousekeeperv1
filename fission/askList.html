@@ -15,6 +15,21 @@
     <script type="text/javascript" src="../js/jweixin-1.0.0.js"></script>
 </head>
 <body style="font-family:'myFont'">
+<div class="mess_layer">
+    <div class="layer_box">
+        <div class="mess_icon">
+            <div class="clearfix">
+                <img src="../images/hyzicon/messlayericon.png" alt="" class="messlayericon fl">
+                <p class="messlayertxt fl">完善宝宝信息 <br>
+                    即可获得音频内容收听权限</p>
+            </div>
+            <div class="messlayerbtn clearfix">
+                <a href="javascript:void (0);" class="fr perfectmess">去完善</a>
+                <a href="javascript:void (0);" class="fr cancelbtn">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="warp">
     <!--搜索框修改-->
     <div class="askListBanner">
@@ -163,5 +178,10 @@
         slidesPerView: 'auto',
         spaceBetween: 10,
     });
+    $(function () {
+        $(".cancelbtn").click(function () {
+            $(".mess_layer").hide();
+        })
+    })
 </script>
 </html>
