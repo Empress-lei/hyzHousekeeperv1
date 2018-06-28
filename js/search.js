@@ -10,7 +10,7 @@ $(function () {
     //点击搜索框上面的搜索两个字
     $(".submitShow").click(function() {
         $(".searchList").hide();
-        $("#relevantList").fadeIn();
+        $(".openSearchResult").show();
     });
     //搜索页点击留言记录每一项的X号
     $(".clearImg").click(function() {
@@ -22,7 +22,7 @@ $(function () {
     });
     //点击更多内容
     $(".moreCont").click(function() {
-        $("#relevantList").hide();
+        $(".openSearchResult").hide();
         $(".leftArrow").show();
         $(".moreClassList").fadeIn();
         $(".searchTxt").css("width","80%");
