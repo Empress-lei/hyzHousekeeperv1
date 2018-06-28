@@ -637,6 +637,7 @@ input::-webkit-input-placeholder {
 .info .other {
   font-size: 0.3rem;
   color: #BCBCBC;
+  padding-top: 0.1rem;
 }
 .searchlabel {
   height: 1rem;
