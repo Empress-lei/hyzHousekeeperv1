@@ -45,7 +45,7 @@
   padding-top: 0.26666667rem;
   line-height: 0.58666667rem;
   font-size: 0.34666667rem;
-  color: #999999  ;
+  color: #333333;
 }
 .mess_layer .layer_box .mess_icon .messlayerbtn {
   padding-top: 0.82666667rem;
@@ -59,7 +59,7 @@
   color: #999999;
 }
 .mess_layer .layer_box .mess_icon .messlayerbtn .perfectmess {
-  color: #333;
+  color: #63A431;
 }
 .share_layer {
   display: none;
@@ -108,7 +108,7 @@
   padding-top: 0.29333333rem;
   line-height: 0.58666667rem;
   font-size: 0.34666667rem;
-  color: #999999;
+  color: #333333;
 }
 .share_layer .layer_box .mess_icon .sharelayerbtn {
   padding-top: 0.96rem;
@@ -123,7 +123,7 @@
   color: #999999;
 }
 .share_layer .layer_box .mess_icon .sharelayerbtn .sharemess {
-  color: #333;
+  color: #63A431;
 }
 .dissh_page {
   width: 100%;
@@ -139,20 +139,20 @@
 }
 .dissh_page .fingericon {
   display: block;
-  width: 2.90666667rem;
-  margin: 5.33333333rem auto 0.42666667rem;
+  width: 2.13333333rem;
+  margin: 0.56rem auto 1.94666667rem;
 }
 .dissh_page .fingertxt {
   text-align: center;
   font-size: 0.42666667rem;
   line-height: 0.58666667rem;
   color: #fff;
-  padding-bottom: 1.41333333rem;
+  padding-top: 5.33333333rem;
 }
 .dissh_page .fingerbtn {
   display: block;
   margin: 0 auto;
-  width: 3.36rem;
+  width: 4.26666667rem;
   height: 1.06666667rem;
   font-size: 0.34666667rem;
   line-height: 1.06666667rem;
