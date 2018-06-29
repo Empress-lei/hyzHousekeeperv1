@@ -125,3 +125,43 @@
 .share_layer .layer_box .mess_icon .sharelayerbtn .sharemess {
   color: #333;
 }
+.dissh_page {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 99999999;
+  padding: 0.53333333rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.dissh_page .fingericon {
+  display: block;
+  width: 2.90666667rem;
+  margin: 5.33333333rem auto 0.42666667rem;
+}
+.dissh_page .fingertxt {
+  text-align: center;
+  font-size: 0.42666667rem;
+  line-height: 0.58666667rem;
+  color: #fff;
+  padding-bottom: 1.41333333rem;
+}
+.dissh_page .fingerbtn {
+  display: block;
+  margin: 0 auto;
+  width: 3.36rem;
+  height: 1.06666667rem;
+  font-size: 0.34666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  -webkit-border-radius: 0.53333333rem 0.53333333rem;
+  -moz-border-radius: 0.53333333rem 0.53333333rem;
+  -ms-border-radius: 0.53333333rem 0.53333333rem;
+  -o-border-radius: 0.53333333rem 0.53333333rem;
+  border-radius: 0.53333333rem 0.53333333rem;
+}
