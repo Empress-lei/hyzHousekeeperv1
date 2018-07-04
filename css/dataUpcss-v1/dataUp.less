@@ -1004,7 +1004,7 @@
         }
       }
 
-    //  装饰材料
+      //装饰材料
       .certificate_txt {
         padding: 0 0 40/37.5rem;
         color: #333333;
@@ -1062,6 +1062,130 @@
         margin-bottom: -10/37.5rem;
       }
 
+    }
+  }
+  //基础资料上传预览
+  .preview {
+    width: 100%;
+    .kinder_na {
+      width: 100%;
+      height: 55/37.5rem;
+      color: #fff;
+      font-size: 16/37.5rem;
+      line-height: 55/37.5rem;
+      padding: 0 20/37.5rem;
+      background-color: #63A431;
+    }
+    .basics_title {
+      width: 100%;
+      height: 55/37.5rem;
+      color: #333;
+      font-size: 13/37.5rem;
+      line-height: 55/37.5rem;
+      padding: 0 20/37.5rem;
+      font-weight: 800;
+      background-color: #F9FCFA;
+    }
+    .basics_mess {
+      padding: 28/37.5rem 20/37.5rem 0;
+      .basicsmess_li {
+        width: 100%;
+        padding-bottom: 20/37.5rem;
+        margin-bottom: 18/37.5rem;
+        border-bottom: 1px solid #DDDDDD;
+        .li_title {
+          font-size: 15/37.5rem;
+          line-height: 21/37.5rem;
+          color: #333;
+          background: url("../../images/dataUp/edit_icon.png") no-repeat right center;
+          background-size: 12/37.5rem 12/37.5rem;
+        }
+        .li_titleback {
+          background: none;
+        }
+        .li_text {
+          padding-top: 14/37.5rem;
+          font-size: 13/37.5rem;
+          line-height: 18/37.5rem;
+          color: #666666;
+        }
+        //图片区域
+        .img_ol {
+          margin-left: -10/37.5rem;
+          padding: 20/37.5rem 30/37.5rem 0 25/37.5rem;
+          .img_li {
+            float: left;
+            width: 84/37.5rem;
+            height: 84/37.5rem;
+            margin-bottom: 10/37.5rem;
+            margin-left: 10/37.5rem;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+        }
+        //人数展示区域u
+        .num_list {
+          padding: 20/37.5rem 10/37.5rem 0;
+          position: relative;
+          .arr_san {
+            display: block;
+            width: 30/75rem;
+            height: 30/75rem;
+            position: absolute;
+            left: 30/37.5rem;
+            top: 15/37.5rem;
+            border: 3px solid transparent;
+            border-top: 3px solid #f3f3f3;
+            border-left: 3px solid #f3f3f3;
+            background-color: #f3f3f3;
+            z-index: 99;
+            opacity: .8;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          .num_ol {
+            width: 100%;
+            padding: 20/37.5rem 20/37.5rem 1/37.5rem;
+            background-color: #F3F3F3;
+            .num_li {
+              padding-bottom: 20/37.5rem;
+              margin-bottom: 20/37.5rem;
+              font-size: 13/37.5rem;
+              line-height: 18/37.5rem;
+              color: #666666;
+              border-bottom: 1px solid #DDDDDD;
+            }
+          }
+        }
+        .chara_list {
+          padding: 20/37.5rem 10/37.5rem 0;
+          .chara_ol {
+            width: 100%;
+            .chara_li {
+              float: left;
+              width: 50%;
+              height: 40/37.5rem;
+              color: #666666;
+              font-size: 13/37.5rem;
+              line-height: 40/37.5rem;
+              padding: 0 10/37.5rem;
+              background-color: #F3F3F3;
+              border-bottom: 1px solid #fff;
+              border-right: 1px solid #fff;
+            }
+          }
+        }
+      }
+      .basicsmess_nobor {
+        border-bottom: none;
+      }
     }
   }
 }
@@ -1180,6 +1304,61 @@
     background: url("../../images/dataUp/nextarr_icon.png") no-repeat 96/37.5rem center;
     background-size: 7/37.5rem 10/37.5rem;
     background-color: #63A431;
+  }
+}
+
+//预览页按钮
+.btnpreview {
+  width: 100%;
+  padding-bottom: 20/37.5rem;
+  .stap_div {
+    padding-left: 18/37.5rem;
+    padding-right: 18/37.5rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+  }
+  a {
+    display: block;
+    //float: left;
+    flex: 1;
+    //width: 130/37.5rem;
+    height: 47/37.5rem;
+    text-align: center;
+    line-height: 47/37.5rem;
+    font-size: 14/37.5rem;
+    -webkit-border-radius: 4/37.5rem;
+    -moz-border-radius: 4/37.5rem;
+    -ms-border-radius: 4/37.5rem;
+    -o-border-radius: 4/37.5rem;
+    border-radius: 4/37.5rem;
+  }
+  .upper_btn {
+    color: #999999;
+    background: url("../../images/dataUp/uparr_icon.png") no-repeat 40/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    border: 1px solid #dddddd;
+    margin-right: 40/37.5rem;
+  }
+  .next_btn {
+    color: #fff;
+    background: url("../../images/dataUp/nextarr_icon.png") no-repeat 130/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    background-color: #63A431;
+  }
+}
+
+//资料审核中 按钮
+.btnexamine {
+  width: 100%;
+  height: 54/37.5rem;
+  background-color: #F3F3F3;
+  .examine {
+    display: block;
+    line-height: 54/37.5rem;
+    font-size: 14/37.5rem;
+    color: #63A431;
+    text-align: center;
   }
 }
 //上传图片
