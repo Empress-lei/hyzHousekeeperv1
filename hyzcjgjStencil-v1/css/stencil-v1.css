@@ -286,6 +286,12 @@
   font-size: 0.34666667rem;
   line-height: 0.8rem;
 }
+.warp .myswiper-container .acre_div .render_acre .acre_size {
+  color: #FF4335;
+  font-size: 0.42666667rem;
+  line-height: 0.8rem;
+  font-weight: 800;
+}
 .warp .myswiper-container .footer3 {
   width: 100%;
   position: absolute;
