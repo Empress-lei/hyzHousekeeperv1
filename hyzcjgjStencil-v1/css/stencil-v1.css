@@ -52,7 +52,7 @@
   position: relative;
   z-index: 333;
 }
-.warp .arrow_right {
+.warp .arrow_next {
   display: block;
   width: 0.53333333rem;
   height: 0.53333333rem;
@@ -75,6 +75,29 @@
   -o-animation: arrow_top 1.5s infinite ease-in-out;
   animation: arrow_top 1.5s infinite ease-in-out;
 }
+.warp .arrow_up {
+  display: block;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0.66666667rem;
+  border: 3px solid transparent;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  z-index: 99;
+  opacity: .8;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: arrow_bot 1.5s infinite ease-in-out;
+  -moz-animation: arrow_bot 1.5s infinite ease-in-out;
+  -ms-animation: arrow_bot 1.5s infinite ease-in-out;
+  -o-animation: arrow_bot 1.5s infinite ease-in-out;
+  animation: arrow_bot 1.5s infinite ease-in-out;
+}
 .warp .myswiper-container {
   width: 100%;
   height: 100%;
@@ -91,8 +114,8 @@
 }
 .warp .myswiper-container .home_title {
   display: block;
-  width: 8.98666667rem;
-  margin: 1.06666667rem auto 0;
+  width: 8.53333333rem;
+  margin: 0.8rem auto 0;
 }
 .warp .myswiper-container .home_footer {
   position: absolute;
@@ -119,7 +142,7 @@
   background-color: #fff;
 }
 .warp .myswiper-container .intr_div .intr_bor {
-  padding: 0.4rem 0.37333333rem 1.33333333rem;
+  padding: 0.4rem 0.37333333rem 1.06666667rem;
   border: 0.02666667rem dashed #36d55b;
   -webkit-border-radius: 0.32rem;
   -moz-border-radius: 0.32rem;
@@ -158,7 +181,7 @@
   position: relative;
 }
 .warp .myswiper-container .culture_div .intr_bor {
-  padding: 0.4rem 0.37333333rem 1.33333333rem;
+  padding: 0.4rem 0.37333333rem 1.06666667rem;
   border: 0.02666667rem dashed #df546d;
   -webkit-border-radius: 0.32rem;
   -moz-border-radius: 0.32rem;
