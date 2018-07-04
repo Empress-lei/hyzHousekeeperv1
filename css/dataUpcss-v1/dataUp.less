@@ -618,10 +618,34 @@
     //填写幼儿园信息
     .basics_content {
       width: 100%;
-      padding: 30/37.5rem 20/37.5rem 25/37.5rem;
       position: relative;
+      .content_title {
+        width: 100%;
+        padding: 26/37.5rem 20/37.5rem 11/37.5rem;
+        background-color: #F9FCFA;
+        .title_h {
+          font-size: 13/37.5rem;
+          line-height: 18/37.5rem;
+          color: #333333;
+          font-weight: 800;
+          span {
+            font-size: 10/37.5rem;
+            line-height: 14/37.5rem;
+            color: #999999;
+            padding-top: 3/37.5rem;
+          }
+        }
+        //非必填
+        .non_compul {
+          font-size: 10/37.5rem;
+          line-height: 14/37.5rem;
+          color: #999999;
+          padding-top: 2/37.5rem;
+        }
+      }
       .render_mess {
         width: 100%;
+        padding: 30/37.5rem 20/37.5rem 25/37.5rem;
         .title_h {
           font-size: 14/37.5rem;
           line-height: 20/37.5rem;
@@ -898,7 +922,7 @@
         }
         li:nth-child(odd) {
           width: 45%;
-          margin-right: 25/37.5rem;
+          margin-right: 33.5/37.5rem;
         }
         li:nth-child(even) {
           width: 45%;
@@ -907,7 +931,7 @@
 
       //园所性质
       .characteristic {
-        padding-top: 20/37.5rem;
+        margin-top: -30/37.5rem;
         .charac_list {
           width: 100%;
           padding: 15/37.5rem 15/37.5rem;
@@ -982,10 +1006,11 @@
 
     //  装饰材料
       .certificate_txt {
-        padding: 30/37.5rem 0 40/37.5rem;
+        padding: 0 0 40/37.5rem;
         color: #333333;
         font-size: 13/37.5rem;
         line-height: 18/37.5rem;
+        margin-top: -10/37.5rem;
       }
       .yesno_ul {
         padding: 0 18/37.5rem;
@@ -1030,10 +1055,11 @@
         }
       }
       .certificate_file {
-        padding: 40/37.5rem 0 20/37.5rem;
+        padding: 40/37.5rem 0 0;
         color: #333333;
         font-size: 14/37.5rem;
         line-height: 20/37.5rem;
+        margin-bottom: -10/37.5rem;
       }
 
     }
