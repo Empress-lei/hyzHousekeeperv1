@@ -52,6 +52,6 @@ function initMyImgShow(){
 		
 	  });
 	
-	//$("img").click(function(event){})
+	// $("img").click(function(event){})
 }
 

@@ -1137,8 +1137,8 @@
   z-index: 10;
 }
 .btnstap .stap_div {
-  padding-left: 1.01333333rem;
-  padding-right: 1.01333333rem;
+  padding-left: 0.53333333rem;
+  padding-right: 0.53333333rem;
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -1146,9 +1146,9 @@
 .btnstap a {
   display: block;
   flex: 1;
-  height: 1.25333333rem;
+  height: 1.06666667rem;
   text-align: center;
-  line-height: 1.25333333rem;
+  line-height: 1.06666667rem;
   font-size: 0.37333333rem;
   -webkit-border-radius: 0.10666667rem;
   -moz-border-radius: 0.10666667rem;
@@ -1158,14 +1158,14 @@
 }
 .btnstap .upper_btn {
   color: #999999;
-  background: url("../../images/dataUp/uparr_icon.png") no-repeat 0.72rem center;
+  background: url("../../images/dataUp/uparr_icon.png") no-repeat 1.06666667rem center;
   background-size: 0.18666667rem 0.26666667rem;
   border: 1px solid #dddddd;
-  margin-right: 1.06666667rem;
+  margin-right: 0.53333333rem;
 }
 .btnstap .next_btn {
   color: #fff;
-  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.93333333rem center;
   background-size: 0.18666667rem 0.26666667rem;
   background-color: #63A431;
 }
@@ -1174,18 +1174,18 @@
   padding-top: 1.33333333rem;
 }
 .btnstap1 .stap_div {
-  padding-left: 0.48rem;
-  padding-right: 0.48rem;
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
+  padding-left: 0.53333333rem;
+  padding-right: 0.53333333rem;
 }
 .btnstap1 a {
   display: block;
   flex: 1;
-  height: 1.25333333rem;
+  height: 1.06666667rem;
   text-align: center;
-  line-height: 1.25333333rem;
+  line-height: 1.06666667rem;
   font-size: 0.37333333rem;
   -webkit-border-radius: 0.10666667rem;
   -moz-border-radius: 0.10666667rem;
@@ -1195,14 +1195,14 @@
 }
 .btnstap1 .upper_btn {
   color: #999999;
-  background: url("../../images/dataUp/uparr_icon.png") no-repeat 0.72rem center;
+  background: url("../../images/dataUp/uparr_icon.png") no-repeat 1.06666667rem center;
   background-size: 0.18666667rem 0.26666667rem;
   border: 1px solid #dddddd;
-  margin-right: 1.06666667rem;
+  margin-right: 0.53333333rem;
 }
 .btnstap1 .next_btn {
   color: #fff;
-  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.93333333rem center;
   background-size: 0.18666667rem 0.26666667rem;
   background-color: #63A431;
 }
@@ -1216,15 +1216,15 @@
 }
 .btnstap2 .stap_div {
   padding-left: 1.01333333rem;
-  padding-right: 1.01333333rem;
+  padding-right: 0.53333333rem;
 }
 .btnstap2 a {
   display: block;
   float: right;
-  width: 3.46666667rem;
-  height: 1.25333333rem;
+  width: 4.18666667rem;
+  height: 1.06666667rem;
   text-align: center;
-  line-height: 1.25333333rem;
+  line-height: 1.06666667rem;
   font-size: 0.37333333rem;
   -webkit-border-radius: 0.10666667rem;
   -moz-border-radius: 0.10666667rem;
@@ -1234,7 +1234,7 @@
 }
 .btnstap2 .next_btn {
   color: #fff;
-  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.93333333rem center;
   background-size: 0.18666667rem 0.26666667rem;
   background-color: #63A431;
 }
@@ -1243,8 +1243,8 @@
   padding-bottom: 0.53333333rem;
 }
 .btnpreview .stap_div {
-  padding-left: 0.48rem;
-  padding-right: 0.48rem;
+  padding-left: 0.53333333rem;
+  padding-right: 0.53333333rem;
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -1252,9 +1252,9 @@
 .btnpreview a {
   display: block;
   flex: 1;
-  height: 1.25333333rem;
+  height: 1.06666667rem;
   text-align: center;
-  line-height: 1.25333333rem;
+  line-height: 1.06666667rem;
   font-size: 0.37333333rem;
   -webkit-border-radius: 0.10666667rem;
   -moz-border-radius: 0.10666667rem;
@@ -1267,11 +1267,11 @@
   background: url("../../images/dataUp/uparr_icon.png") no-repeat 1.06666667rem center;
   background-size: 0.18666667rem 0.26666667rem;
   border: 1px solid #dddddd;
-  margin-right: 1.06666667rem;
+  margin-right: 0.53333333rem;
 }
 .btnpreview .next_btn {
   color: #fff;
-  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 3.46666667rem center;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 3.6rem center;
   background-size: 0.18666667rem 0.26666667rem;
   background-color: #63A431;
 }
