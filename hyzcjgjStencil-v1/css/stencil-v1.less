@@ -87,92 +87,209 @@
         background-size: 100% 100%;
       }
     }
+    //首页幼儿园名称
+    .home_title {
+      display: block;
+      width:337/37.5rem;
+      margin: 78/37.5rem auto 0;
+    }
+    //首页底部
+    .home_footer {
+      position: absolute;
+      bottom: 36/37.5rem;
+      left: 50%;
+      width:320/37.5rem;
+      margin-left: -160/37.5rem;
+    }
+    //第二屏的幼儿园名称
     .title-1 {
       display: block;
       width: 297/37.5rem;
       margin: 30/37.5rem auto 0;
     }
-    .render1 {
+    //第二屏园所介绍文字+图片（180以内文字区域）
+    .intr_div {
       display: block;
       width: 328/37.5rem;
+      padding: 10/37.5rem;
       margin: 16/37.5rem auto 0;
-    }
-    .render3 {
-      position: absolute;
-      top: 30/37.5rem;
-      left: 50%;
-      width: 328/37.5rem;
-      margin-left: -164/37.5rem;
-    }
-    .title-2 {
-      display: block;
-      width: 341/37.5rem;
-      margin: 30/37.5rem auto 0;
-    }
-    .render_intr {
-      position: absolute;
-      top: 123/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-      color: #2B4926;
-      font-size: 13/37.5rem;
-      line-height: 30/37.5rem;
-      .bold_size {
-        font-size: 14/37.5rem;
-        color: #3988EE;
-        font-weight: 800;
+      -webkit-border-radius: 12/37.5rem;
+      -moz-border-radius: 12/37.5rem;
+      -ms-border-radius: 12/37.5rem;
+      -o-border-radius: 12/37.5rem;
+      border-radius: 12/37.5rem;
+      background-color: #fff;
+      .intr_bor {
+        padding: 15/37.5rem 14/37.5rem 50/37.5rem;
+        border: 1/37.5rem dashed #36D55B;
+        -webkit-border-radius: 12/37.5rem;
+        -moz-border-radius: 12/37.5rem;
+        -ms-border-radius: 12/37.5rem;
+        -o-border-radius: 12/37.5rem;
+        border-radius: 12/37.5rem;
+      }
+      //文字
+      .render_intr {
+        color: #2B4926;
+        font-size: 13/37.5rem;
+        line-height: 30/37.5rem;
+      }
+      //图片
+      .theme_img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
       }
     }
-    .render_cont {
-      position: absolute;
-      top: 123/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-      color: #2B4926;
-      font-size: 13/37.5rem;
-      line-height: 30/37.5rem;
+    //第三屏的园所文化
+    .render_pub {
+      display: block;
+      width: 123/37.5rem;
+      margin: 30/37.5rem auto 0;
+      position: relative;
+      z-index: 3;
     }
-    .theme_img {
-      position: absolute;
-      top: 380/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
+    //第三屏园所文化文字+图片（180以内文字区域）
+    //第五屏荣誉
+    //第六屏 园所优势
+    //第七屏 园所环境
+    .culture_div {
+      display: block;
+      width: 328/37.5rem;
+      padding: 10/37.5rem;
+      margin: -19/37.5rem auto 0;
+      -webkit-border-radius: 12/37.5rem;
+      -moz-border-radius: 12/37.5rem;
+      -ms-border-radius: 12/37.5rem;
+      -o-border-radius: 12/37.5rem;
+      border-radius: 12/37.5rem;
+      background-color: #fff;
+      position: relative;
+      .intr_bor {
+        padding: 15/37.5rem 14/37.5rem 50/37.5rem;
+        border: 1/37.5rem dashed #DF546D;
+        -webkit-border-radius: 12/37.5rem;
+        -moz-border-radius: 12/37.5rem;
+        -ms-border-radius: 12/37.5rem;
+        -o-border-radius: 12/37.5rem;
+        border-radius: 12/37.5rem;
+      }
+      //文字
+      .render_intr {
+        color: #2B4926;
+        font-size: 13/37.5rem;
+        line-height: 30/37.5rem;
+      }
+      //图片
+      .theme_img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+      //第五屏（两张图）
+      .prize1_img {
+        display: block;
+        width: 100%;
+        margin: 10/37.5rem auto;
+      }
+      //第六屏图片（三张图）
+      .advant_ul {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        margin-left: -6/37.5rem;
+        li {
+          flex: 1;
+          margin-left: 6/37.5rem;
+          .advant_img {
+            width: 100%;
+          }
+        }
+      }
+      //第七屏 园所环境
+      .envi_ul {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        margin-left: -6/37.5rem;
+        li {
+          flex: 1;
+          margin-left: 6/37.5rem;
+          .advant_img {
+            width: 100%;
+          }
+        }
+      }
+      //第八屏 教师风采
+      .mien_ul {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        margin-left: -6/37.5rem;
+        li {
+          flex: 1;
+          margin-left: 6/37.5rem;
+          .mien3_img {
+            width: 100%;
+          }
+        }
+      }
+      .sunicon {
+        position: absolute;
+        top: -37/37.5rem;
+        left: -10/37.5rem;
+        width: 76/37.5rem;
+        z-index: 2;
+      }
+      .mien_img {
+        display: block;
+        width: 281/37.5rem;
+        margin: 10/37.5rem auto;
+      }
     }
-    .render_tit {
-      position: absolute;
-      text-align: center;
-      top: 95/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-      color: #FF4335;
-      font-size: 16/37.5rem;
-      line-height: 30/37.5rem;
-      font-weight: 800;
+    //第四屏的规模
+    .render4 {
+      display: block;
+      width: 178/37.5rem;
+      margin: 30/37.5rem auto 0;
     }
-    .render_prize {
-      position: absolute;
-      top: 95/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-      color: #2B4926;
-      font-size: 14/37.5rem;
-      line-height: 30/37.5rem;
+    //第四屏园所规模文字
+    .acre_div {
+      display: block;
+      width: 328/37.5rem;
+      padding: 10/37.5rem;
+      margin: -19/37.5rem auto 0;
+      -webkit-border-radius: 12/37.5rem;
+      -moz-border-radius: 12/37.5rem;
+      -ms-border-radius: 12/37.5rem;
+      -o-border-radius: 12/37.5rem;
+      border-radius: 12/37.5rem;
+      background-color: #fff;
+      .intr_bor {
+        padding: 15/37.5rem 14/37.5rem 50/37.5rem;
+        border: 1/37.5rem dashed #DF546D;
+        -webkit-border-radius: 12/37.5rem;
+        -moz-border-radius: 12/37.5rem;
+        -ms-border-radius: 12/37.5rem;
+        -o-border-radius: 12/37.5rem;
+        border-radius: 12/37.5rem;
+      }
+      //文字
+      .render_acre {
+        color: #2B4926;
+        font-size: 13/37.5rem;
+        line-height: 30/37.5rem;
+      }
     }
-    .render_advant {
+    //第四屏底部
+    .footer3 {
+      width: 100%;
       position: absolute;
-      top: 85/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-      color: #2B4926;
-      font-size: 14/37.5rem;
-      line-height: 30/37.5rem;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
     }
+
     .render_envi {
       position: absolute;
       top: 85/37.5rem;
@@ -188,13 +305,7 @@
         font-weight: 800;
       }
     }
-    .mien_img {
-      position: absolute;
-      top: 85/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-    }
+
     .mien_img2 {
       position: absolute;
       top: 240/37.5rem;
@@ -202,59 +313,7 @@
       width: 281/37.5rem;
       margin-left: -140.5/37.5rem;
     }
-    .advant_ul {
-      position: absolute;
-      top: 350/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -146.5/37.5rem;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: flex;
 
-      li {
-        flex: 1;
-        margin-left: 6/37.5rem;
-        .advant_img {
-          width: 100%;
-        }
-      }
-    }
-    .envi_ul {
-      position: absolute;
-      top: 200/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -143.5/37.5rem;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: flex;
-
-      li {
-        flex: 1;
-        margin-left: 6/37.5rem;
-        .advant_img {
-          width: 100%;
-        }
-      }
-    }
-    .mien_ul {
-      position: absolute;
-      top: 400/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -143.5/37.5rem;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: flex;
-      li {
-        flex: 1;
-        margin-left: 6/37.5rem;
-        .mien3_img {
-          width: 100%;
-        }
-      }
-    }
     .envi_bot {
       position: absolute;
       top: 361/37.5rem;
@@ -270,43 +329,14 @@
         font-weight: 800;
       }
     }
-    .render_acre {
+    .last_render {
       position: absolute;
-      top: 123/37.5rem;
+      top: 0.8rem;
       left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-      color: #2B4926;
-      font-size: 14/37.5rem;
-      line-height: 30/37.5rem;
-      .acre_size {
-        font-size: 14/37.5rem;
-        color: #FF4335;
-        font-weight: 800;
-      }
+      width: 8.74666667rem;
+      margin-left: -4.37333333rem;
     }
-    .footer3 {
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: 2;
-    }
-    .prize1_img {
-      position: absolute;
-      top: 180/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-    }
-    .prize2_img {
-      position: absolute;
-      top: 348/37.5rem;
-      left: 50%;
-      width: 281/37.5rem;
-      margin-left: -140.5/37.5rem;
-    }
-    .sten_mess {
+      .sten_mess {
       position: absolute;
       top: 41/37.5rem;
       left: 42/37.5rem;
