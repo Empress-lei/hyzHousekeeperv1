@@ -33,7 +33,8 @@
                     <span class="required_star fr">*</span>
                 </div>
                 <div class="basics_add">
-                    <div id="trigger4" class="add_input">省 / 市 / 区县</div>
+                    <div id="trigger4" class="add_input" data-val="">省 / 市 / 区县</div>
+
                 </div>
                 <h3 class="deta_tit">详细街道信息</h3>
                 <div class="add_deta">
@@ -102,6 +103,13 @@
         },
         callback:function(indexArr, data){
             console.log(data);
+            // console.log(data[value]);
+            console.log(indexArr);
+            $("#trigger4").data("val","");
+            $(data).each(function () {
+                $("#trigger4").data("val",$("#trigger4").data("val") + " " +this.value);
+            })
+
         }
     });
 </script>
