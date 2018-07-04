@@ -9,10 +9,20 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <title>教学理念</title>
-    <link rel="stylesheet" href="../../css/dataUpcss/dataUp.css">
+    <link rel="stylesheet" href="../../css/dataUpcss-v1/dataUp.css">
 
 </head>
 <body style="font-family: myFont;">
+
+<!--教学理念示例朦层-->
+<div class="teach_idea">
+    <div class="idea_box">
+        <h4 class="idea_tit">示例</h4>
+        <p class="idea_con">蒙台梭利，瑞吉欧</p>
+        <img src="../../images/hyzicon/close_share.png" alt="" class="idea_close">
+    </div>
+</div>
+
 <div class="warp">
     <div class="basicsUp">
         <!--进度条-->
@@ -44,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="prompt_img">上传奖章图片，最多可传9张</p>
+                <p class="prompt_img">教学理念 - 可配教学风采照，最多上传9张</p>
             </div>
             <div class="btnstap1">
                 <div class="clearfix stap_div">
@@ -68,6 +78,15 @@
             $('.currProgress1 .currProgress15').css('transition','width 1s linear');
             $('.currProgress1 .currProgress15').width('40%');
         },700);
+
+
+        $(".examples").click(function () {
+            $(".teach_idea").show();
+        })
+
+        $(".idea_close").click(function () {
+            $(".teach_idea").hide();
+        })
     })
 
     //记录文本框中的字数

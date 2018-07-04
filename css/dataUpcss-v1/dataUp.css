@@ -28,6 +28,42 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.teach_idea {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.teach_idea .idea_box {
+  width: 100%;
+  height: 100%;
+  padding: 3.46666667rem 1.86666667rem 0.53333333rem;
+}
+.teach_idea .idea_box .idea_tit {
+  color: #fff;
+  font-size: 0.53333333rem;
+  line-height: 0.74666667rem;
+  text-align: center;
+  padding-bottom: 0.37333333rem;
+}
+.teach_idea .idea_box .idea_con {
+  color: #fff;
+  font-size: 0.37333333rem;
+  line-height: 0.69333333rem;
+  text-align: center;
+  padding-bottom: 3.2rem;
+}
+.teach_idea .idea_box .idea_close {
+  display: block;
+  width: 0.96rem;
+  height: 0.96rem;
+  margin: 0 auto;
+}
 .warp {
   width: 100%;
   height: auto;
@@ -106,7 +142,7 @@
   height: 0.74666667rem;
 }
 .warp .dataUp .data_cen .data_cenli .cen_txt {
-  width: 70%;
+  min-width: 55%;
   padding-left: 0.29333333rem;
   position: relative;
 }
@@ -114,7 +150,9 @@
   font-size: 0.34666667rem;
   color: #333;
   line-height: 0.48rem;
-  padding-bottom: 0.13333333rem;
+  margin-bottom: 0.13333333rem;
+  background: url("../../images/dataUp/grayarr.png") no-repeat right center;
+  background-size: 0.13333333rem 0.21333333rem;
 }
 .warp .dataUp .data_cen .data_cenli .cen_txt .state_span {
   display: block;
@@ -664,10 +702,13 @@
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   color: #333;
-  text-align: center;
+  text-align: left;
 }
 .warp .basicsUp .basics_content .basics_marbot {
   margin-bottom: 0.8rem;
+}
+.warp .basicsUp .basics_content .basics_martop {
+  margin-top: 0.8rem;
 }
 .warp .basicsUp .basics_content .deta_tit {
   padding: 0.53333333rem 0;
@@ -772,7 +813,7 @@
 .warp .basicsUp .basics_content .line {
   width: 100%;
   border-bottom: 1px solid #DDDDDD;
-  margin: 0.8rem 0;
+  margin: 0 0 0.8rem;
 }
 .warp .basicsUp .basics_content .basics_acre {
   width: 50%;
@@ -900,12 +941,16 @@
 }
 .warp .basicsUp .basics_content .yesno_ul {
   padding: 0 0.48rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
 }
 .warp .basicsUp .basics_content .yesno_ul li {
-  float: left;
-  width: 3.46666667rem;
+  flex: 1;
+  padding: 0 1.06666667rem;
   height: 1.06666667rem;
-  text-align: center;
+  text-align: left;
   background-color: #F3F3F3;
 }
 .warp .basicsUp .basics_content .yesno_ul li a {
@@ -913,15 +958,17 @@
   font-size: 0.37333333rem;
   color: #333333;
   line-height: 1.06666667rem;
+  background: url("../../images/dataUp/graydui.png") no-repeat right center;
+  background-size: 0.34666667rem 0.26666667rem;
 }
 .warp .basicsUp .basics_content .yesno_ul .yesli {
   margin-right: 0.93333333rem;
 }
 .warp .basicsUp .basics_content .yesno_ul .active_first {
-  float: left;
-  width: 3.46666667rem;
+  flex: 1;
+  padding: 0 1.06666667rem;
   height: 1.06666667rem;
-  text-align: center;
+  text-align: left;
   background-color: #63A431;
 }
 .warp .basicsUp .basics_content .yesno_ul .active_first a {
@@ -929,6 +976,8 @@
   font-size: 0.37333333rem;
   color: #fff;
   line-height: 1.06666667rem;
+  background: url("../../images/dataUp/whitedui.png") no-repeat right center;
+  background-size: 0.34666667rem 0.26666667rem;
 }
 .warp .basicsUp .basics_content .certificate_file {
   padding: 1.06666667rem 0 0.53333333rem;
@@ -936,20 +985,24 @@
   font-size: 0.37333333rem;
   line-height: 0.53333333rem;
 }
-.warp .btnstap {
+.btnstap {
   width: 100%;
   position: fixed;
   bottom: 0.66666667rem;
+  left: 0;
   max-width: 540px;
   z-index: 10;
 }
-.warp .btnstap .stap_div {
-  padding-left: 0.48rem;
+.btnstap .stap_div {
+  padding-left: 1.01333333rem;
+  padding-right: 1.01333333rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
 }
-.warp .btnstap a {
+.btnstap a {
   display: block;
-  float: left;
-  width: 3.46666667rem;
+  flex: 1;
   height: 1.25333333rem;
   text-align: center;
   line-height: 1.25333333rem;
@@ -960,30 +1013,33 @@
   -o-border-radius: 0.10666667rem;
   border-radius: 0.10666667rem;
 }
-.warp .btnstap .upper_btn {
+.btnstap .upper_btn {
   color: #999999;
   background: url("../../images/dataUp/uparr_icon.png") no-repeat 0.72rem center;
   background-size: 0.18666667rem 0.26666667rem;
   border: 1px solid #dddddd;
   margin-right: 1.06666667rem;
 }
-.warp .btnstap .next_btn {
+.btnstap .next_btn {
   color: #fff;
   background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
   background-size: 0.18666667rem 0.26666667rem;
   background-color: #63A431;
 }
-.warp .btnstap1 {
+.btnstap1 {
   width: 100%;
   padding-top: 1.33333333rem;
 }
-.warp .btnstap1 .stap_div {
+.btnstap1 .stap_div {
   padding-left: 0.48rem;
+  padding-right: 0.48rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
 }
-.warp .btnstap1 a {
+.btnstap1 a {
   display: block;
-  float: left;
-  width: 3.46666667rem;
+  flex: 1;
   height: 1.25333333rem;
   text-align: center;
   line-height: 1.25333333rem;
@@ -994,14 +1050,14 @@
   -o-border-radius: 0.10666667rem;
   border-radius: 0.10666667rem;
 }
-.warp .btnstap1 .upper_btn {
+.btnstap1 .upper_btn {
   color: #999999;
   background: url("../../images/dataUp/uparr_icon.png") no-repeat 0.72rem center;
   background-size: 0.18666667rem 0.26666667rem;
   border: 1px solid #dddddd;
   margin-right: 1.06666667rem;
 }
-.warp .btnstap1 .next_btn {
+.btnstap1 .next_btn {
   color: #fff;
   background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
   background-size: 0.18666667rem 0.26666667rem;

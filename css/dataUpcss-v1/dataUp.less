@@ -31,6 +31,46 @@
 
   }
 }
+
+//教学理念示例朦层
+.teach_idea {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  .idea_box {
+    width: 100%;
+    height: 100%;
+    padding: 130/37.5rem 70/37.5rem 20/37.5rem;
+    .idea_tit {
+      color: #fff;
+      font-size: 20/37.5rem;
+      line-height: 28/37.5rem;
+      text-align: center;
+      padding-bottom: 14/37.5rem;
+    }
+    .idea_con {
+      color: #fff;
+      font-size: 14/37.5rem;
+      line-height: 26/37.5rem;
+      text-align: center;
+      padding-bottom: 120/37.5rem;
+    }
+    .idea_close {
+      display: block;
+      width: 36/37.5rem;
+      height: 36/37.5rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+
 .warp {
   width: 100%;
   height: auto;
@@ -108,14 +148,17 @@
 
         }
         .cen_txt {
-          width: 70%;
+          min-width: 55%;
           padding-left: 11/37.5rem;
           position: relative;
           h3 {
             font-size: 13/37.5rem;
             color: #333;
             line-height: 18/37.5rem;
-            padding-bottom: 5/37.5rem;
+            margin-bottom: 5/37.5rem;
+            background: url("../../images/dataUp/grayarr.png") no-repeat right center;
+            background-size: 5/37.5rem 8/37.5rem;
+
           }
           .state_span {
             display: block;
@@ -691,11 +734,14 @@
           font-size: 13/37.5rem;
           line-height: 18/37.5rem;
           color: #333;
-          text-align: center;
+          text-align: left;
         }
       }
       .basics_marbot {
         margin-bottom: 30/37.5rem;
+      }
+      .basics_martop {
+        margin-top: 30/37.5rem;
       }
       //详细地址
       .deta_tit {
@@ -808,7 +854,7 @@
       .line {
         width: 100%;
         border-bottom: 1px solid #DDDDDD;
-        margin: 30/37.5rem 0;
+        margin: 0 0 30/37.5rem;
       }
       //建筑面积
       .basics_acre {
@@ -943,33 +989,43 @@
       }
       .yesno_ul {
         padding: 0 18/37.5rem;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
         li {
-          float: left;
-          width: 130/37.5rem;
+          //float: left;
+          flex: 1;
+          //width: 130/37.5rem;
+          padding: 0 40/37.5rem;
           height: 40/37.5rem;
-          text-align: center;
+          text-align: left;
           background-color: #F3F3F3;
           a {
             display: block;
             font-size: 14/37.5rem;
             color: #333333;
             line-height: 40/37.5rem;
+            background: url("../../images/dataUp/graydui.png") no-repeat right center;
+            background-size: 13/37.5rem 10/37.5rem;
           }
         }
         .yesli{
           margin-right: 35/37.5rem;
         }
         .active_first {
-          float: left;
-          width: 130/37.5rem;
+          flex: 1;
+          padding: 0 40/37.5rem;
           height: 40/37.5rem;
-          text-align: center;
+          text-align: left;
           background-color: #63A431;
           a {
             display: block;
             font-size: 14/37.5rem;
             color: #fff;
             line-height: 40/37.5rem;
+            background: url("../../images/dataUp/whitedui.png") no-repeat right center;
+            background-size: 13/37.5rem 10/37.5rem;
           }
         }
       }
@@ -983,80 +1039,89 @@
     }
 
   }
-
-  .btnstap {
-    width: 100%;
-    position: fixed;
-    bottom: 25/37.5rem;
-    max-width: 540px;
-    z-index: 10;
-    .stap_div {
-      padding-left: 18/37.5rem;
-    }
-    a {
-      display: block;
-      float: left;
-      width: 130/37.5rem;
-      height: 47/37.5rem;
-      text-align: center;
-      line-height: 47/37.5rem;
-      font-size: 14/37.5rem;
-      -webkit-border-radius: 4/37.5rem;
-      -moz-border-radius: 4/37.5rem;
-      -ms-border-radius: 4/37.5rem;
-      -o-border-radius: 4/37.5rem;
-      border-radius: 4/37.5rem;
-    }
-    .upper_btn {
-      color: #999999;
-      background: url("../../images/dataUp/uparr_icon.png") no-repeat 27/37.5rem center;
-      background-size: 7/37.5rem 10/37.5rem;
-      border: 1px solid #dddddd;
-      margin-right: 40/37.5rem;
-    }
-    .next_btn {
-      color: #fff;
-      background: url("../../images/dataUp/nextarr_icon.png") no-repeat 96/37.5rem center;
-      background-size: 7/37.5rem 10/37.5rem;
-      background-color: #63A431;
-    }
+}
+.btnstap {
+  width: 100%;
+  position: fixed;
+  bottom: 25/37.5rem;
+  left: 0;
+  max-width: 540px;
+  z-index: 10;
+  .stap_div {
+    padding-left: 38/37.5rem;
+    padding-right: 38/37.5rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
   }
-  .btnstap1 {
-    width: 100%;
-    padding-top: 50/37.5rem;
-    .stap_div {
-      padding-left: 18/37.5rem;
-    }
-    a {
-      display: block;
-      float: left;
-      width: 130/37.5rem;
-      height: 47/37.5rem;
-      text-align: center;
-      line-height: 47/37.5rem;
-      font-size: 14/37.5rem;
-      -webkit-border-radius: 4/37.5rem;
-      -moz-border-radius: 4/37.5rem;
-      -ms-border-radius: 4/37.5rem;
-      -o-border-radius: 4/37.5rem;
-      border-radius: 4/37.5rem;
-    }
-    .upper_btn {
-      color: #999999;
-      background: url("../../images/dataUp/uparr_icon.png") no-repeat 27/37.5rem center;
-      background-size: 7/37.5rem 10/37.5rem;
-      border: 1px solid #dddddd;
-      margin-right: 40/37.5rem;
-    }
-    .next_btn {
-      color: #fff;
-      background: url("../../images/dataUp/nextarr_icon.png") no-repeat 96/37.5rem center;
-      background-size: 7/37.5rem 10/37.5rem;
-      background-color: #63A431;
-    }
+  a {
+    display: block;
+    //float: left;
+    flex: 1;
+    //width: 130/37.5rem;
+    height: 47/37.5rem;
+    text-align: center;
+    line-height: 47/37.5rem;
+    font-size: 14/37.5rem;
+    -webkit-border-radius: 4/37.5rem;
+    -moz-border-radius: 4/37.5rem;
+    -ms-border-radius: 4/37.5rem;
+    -o-border-radius: 4/37.5rem;
+    border-radius: 4/37.5rem;
+  }
+  .upper_btn {
+    color: #999999;
+    background: url("../../images/dataUp/uparr_icon.png") no-repeat 27/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    border: 1px solid #dddddd;
+    margin-right: 40/37.5rem;
+  }
+  .next_btn {
+    color: #fff;
+    background: url("../../images/dataUp/nextarr_icon.png") no-repeat 96/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    background-color: #63A431;
   }
 }
-
+.btnstap1 {
+  width: 100%;
+  padding-top: 50/37.5rem;
+  .stap_div {
+    padding-left: 18/37.5rem;
+    padding-right: 18/37.5rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+  }
+  a {
+    display: block;
+    //float: left;
+    flex: 1;
+    //width: 130/37.5rem;
+    height: 47/37.5rem;
+    text-align: center;
+    line-height: 47/37.5rem;
+    font-size: 14/37.5rem;
+    -webkit-border-radius: 4/37.5rem;
+    -moz-border-radius: 4/37.5rem;
+    -ms-border-radius: 4/37.5rem;
+    -o-border-radius: 4/37.5rem;
+    border-radius: 4/37.5rem;
+  }
+  .upper_btn {
+    color: #999999;
+    background: url("../../images/dataUp/uparr_icon.png") no-repeat 27/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    border: 1px solid #dddddd;
+    margin-right: 40/37.5rem;
+  }
+  .next_btn {
+    color: #fff;
+    background: url("../../images/dataUp/nextarr_icon.png") no-repeat 96/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    background-color: #63A431;
+  }
+}
 //上传图片
 .container {
   width: 100%;
