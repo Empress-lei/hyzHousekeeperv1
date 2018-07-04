@@ -80,7 +80,7 @@ $(function () {
     opt.time = {preset : 'time'};
     opt.default = {
         theme: 'android-ics light', //皮肤样式
-        display: 'modal', //显示方式
+        display: 'bottom', //显示方式
         mode: 'scroller', //日期选择模式
         lang:'zh',
         dateOrder:"yymm",

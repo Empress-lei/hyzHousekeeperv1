@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>成立时间</title>
+    <link rel="stylesheet" href="../../css/dataUpcss/mobiscroll.custom.min.css">
+    <link rel="stylesheet" href="../../css/dataUpcss/dataUp.css">
+
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="basicsUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress11">
+                    <div class="progress_value progress_zeo">已填写8%</div>
+                </div>
+            </div>
+        </div>
+        <div class="basics_content">
+            <!--幼儿园名称-->
+            <div class="render_mess">
+                <div class="clearfix">
+                    <h3 class="title_h fl">园所成立时间</h3>
+                    <span class="required_star fr">*</span>
+                </div>
+                <div class="clearfix setupin">
+                    <span class="fl">XXXX幼儿园</span>
+                    <span class="fr">成立于</span>
+                </div>
+                <div class="date_con">
+                    <input type="text" id="demo_date" class="demo_date" placeholder="2018 年 7 月" readonly="readonly"/>
+                    <span class="data_arr"></span>
+                </div>
+            </div>
+            <div class="btnstap">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="javascript:void (0);" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../js/jquery-1.11.1.min.js></script>
+<script src=../../js/sele/mobiscroll.custom.min.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress11').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress11').width('8%');
+        },700);
+
+        var theme = "ios";
+        var mode = "scroller";
+        var display = "bottom";
+        var lang="zh";
+        $('#demo_date').mobiscroll().date({
+            theme: theme,
+            mode: mode,
+            display: display,
+            lang: lang,
+            dateOrder:"yymm",
+            dateFormat: "yyyy 年 mm 月",
+        });
+    })
+</script>
+</html>

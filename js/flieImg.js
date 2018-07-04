@@ -7,7 +7,7 @@ function imgChange(obj1, obj2, obj3) {
     var fileList = file.files;
     //文本框的父级元素
     var input = document.getElementsByClassName(obj2)[0];
-    var closeSrc = "./images/hyzicon/close_icon.png"
+    var closeSrc = "../../images/hyzicon/close_icon.png"
     var imgArr = [];
     //遍历获取到得图片文件
     for (var i = 0; i < fileList.length; i++) {
@@ -37,12 +37,12 @@ function imgChange(obj1, obj2, obj3) {
         imgPar.appendChild(imgSrc);
         imgContainer.appendChild(imgPar);
         initMyImgShow();
-        scrollSwiper.update();
-        scrollSwiper2.update();
-        scrollSwiper3.update();
-        scrollSwiper4.update();
-        scrollSwiper5.update();
-        scrollSwiper6.update();
+        // scrollSwiper.update();
+        // scrollSwiper2.update();
+        // scrollSwiper3.update();
+        // scrollSwiper4.update();
+        // scrollSwiper5.update();
+        // scrollSwiper6.update();
         $(".close_icon").on("click",function(){
             removeImg(this);
         })

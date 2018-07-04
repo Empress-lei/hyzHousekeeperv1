@@ -1,0 +1,1127 @@
+@import "../base_mob.css";
+.popup {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.popup .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.popup .bg img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.warp {
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+  padding-bottom: 0.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /*清除点击高亮效果*/
+}
+.warp ::-webkit-input-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp ::-moz-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp :-ms-input-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp input:-moz-placeholder {
+  font-size: 0.34666667rem;
+  color: #999;
+}
+.warp .dataUp {
+  width: 100%;
+  padding-bottom: 0.53333333rem;
+}
+.warp .dataUp .data_top {
+  width: 100%;
+  padding: 0.8rem 0.53333333rem 0;
+  background-color: #fff;
+}
+.warp .dataUp .data_top .data_topli {
+  padding-bottom: 0.8rem;
+}
+.warp .dataUp .data_top .data_topli .top_tit {
+  font-size: 0.37333333rem;
+  color: #333;
+  line-height: 0.53333333rem;
+  padding-bottom: 0.13333333rem;
+}
+.warp .dataUp .data_top .data_topli .top_txt {
+  padding-left: 0.26666667rem;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  color: #666;
+}
+.warp .dataUp .data_cen {
+  margin-top: 0.26666667rem;
+  width: 100%;
+  padding: 0.26666667rem 0.53333333rem;
+  background-color: #fff;
+}
+.warp .dataUp .data_cen .data_cenli:nth-child(odd) {
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .dataUp .data_cen .data_cenli:nth-child(even) {
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .dataUp .data_cen .no_borcenli {
+  border-bottom: none !important;
+}
+.warp .dataUp .data_cen .data_cenli {
+  float: left;
+  width: 50%;
+  padding: 0.53333333rem 0 0.66666667rem 0.53333333rem;
+}
+.warp .dataUp .data_cen .data_cenli .icon_img {
+  display: block;
+  width: 0.74666667rem;
+  height: 0.74666667rem;
+}
+.warp .dataUp .data_cen .data_cenli .cen_txt {
+  width: 70%;
+  padding-left: 0.29333333rem;
+  position: relative;
+}
+.warp .dataUp .data_cen .data_cenli .cen_txt h3 {
+  font-size: 0.34666667rem;
+  color: #333;
+  line-height: 0.48rem;
+  padding-bottom: 0.13333333rem;
+}
+.warp .dataUp .data_cen .data_cenli .cen_txt .state_span {
+  display: block;
+  position: absolute;
+  left: 0.29333333rem;
+  font-size: 0.24rem;
+  color: #666;
+  line-height: 0.34666667rem;
+}
+.warp .dataUp .data_cen .active_cenli {
+  background-color: #F3F3F3;
+}
+.warp .dataUp .data_bottxt {
+  text-align: center;
+  padding-top: 0.98666667rem;
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+  color: #999;
+}
+.warp .basicsUp {
+  width: 100%;
+  padding-bottom: 0.53333333rem;
+}
+.warp .basicsUp .progressBar {
+  width: 100%;
+  padding: 0.48rem 0.53333333rem 0.98666667rem;
+  background-color: #f3f3f3;
+}
+.warp .basicsUp .progressBar .currProgress1 {
+  width: 100%;
+  height: 0.18666667rem;
+  background-color: #BEB0B0;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+}
+.warp .basicsUp .progressBar .currColor {
+  background-color: #ff9933;
+}
+.warp .basicsUp .progressBar .currProgress1 .currProgress11 {
+  background: #63A431;
+  height: 100%;
+  width: 0;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress11:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress12 {
+  width: 8%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress12:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress13 {
+  width: 16%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress13:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress14 {
+  width: 24%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress14:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress15 {
+  width: 32%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress15:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress16 {
+  width: 40%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress16:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress17 {
+  width: 48%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress17:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress18 {
+  width: 56%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress18:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress19 {
+  width: 64%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress19:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress20 {
+  width: 72%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress20:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress21 {
+  width: 80%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress21:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress22 {
+  width: 88%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress22:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .currProgress23 {
+  width: 96%;
+  background: #63A431;
+  height: 100%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .basicsUp .progressBar .currProgress23:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.21333333rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .basicsUp .progressBar .progress_value {
+  width: 2.13333333rem;
+  font-size: 0.32rem;
+  color: #666;
+  text-align: center;
+  position: absolute;
+  bottom: -0.61971831rem;
+  right: -0.53333333rem;
+}
+.warp .basicsUp .progressBar .progress_zeo {
+  width: 2.13333333rem;
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+  color: #999;
+  text-align: left;
+  position: absolute;
+  bottom: -0.61971831rem;
+  left: 0;
+}
+.warp .basicsUp .basics_content {
+  width: 100%;
+  padding: 0.8rem 0.53333333rem 0.66666667rem;
+  position: relative;
+}
+.warp .basicsUp .basics_content .render_mess {
+  width: 100%;
+}
+.warp .basicsUp .basics_content .render_mess .title_h {
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #333333;
+}
+.warp .basicsUp .basics_content .render_mess .title_h span {
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+  color: #999999;
+  padding-top: 0.08rem;
+}
+.warp .basicsUp .basics_content .render_mess .required_star {
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #FF4539;
+}
+.warp .basicsUp .basics_content .render_mess .required_multi {
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+  color: #FF4539;
+  padding-right: 0.26666667rem;
+  padding-top: 0.08rem;
+}
+.warp .basicsUp .basics_content .render_mess .non_compul {
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+  color: #999999;
+  padding-top: 0.08rem;
+}
+.warp .basicsUp .basics_content .render_mess .basics_render {
+  width: 100%;
+  padding: 0.8rem 0 0.32rem;
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .basicsUp .basics_content .setupin {
+  width: 100%;
+  padding: 0.8rem 0 0.32rem;
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .basicsUp .basics_content .date_con {
+  width: 100%;
+  padding-top: 0.4rem;
+  position: relative;
+}
+.warp .basicsUp .basics_content .date_con .demo_date {
+  width: 100%;
+  height: 1.25333333rem;
+  color: #333;
+  text-align: center;
+  font-size: 0.34666667rem;
+  line-height: 1.25333333rem;
+  background-color: #F3F3F3;
+}
+.warp .basicsUp .basics_content .date_con .data_arr {
+  position: absolute;
+  top: 0.82666667rem;
+  right: 0.26666667rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../../images/dataUp/arrboticon.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.warp .basicsUp .basics_content .record_ul {
+  padding-top: 0.53333333rem;
+}
+.warp .basicsUp .basics_content .record_ul .record_list {
+  width: 100%;
+  padding: 0.4rem 0.4rem;
+  background-color: #F3F3F3;
+  margin-bottom: 0.26666667rem;
+  -webkit-border-radius: 0.10666667rem;
+  -moz-border-radius: 0.10666667rem;
+  -ms-border-radius: 0.10666667rem;
+  -o-border-radius: 0.10666667rem;
+  border-radius: 0.10666667rem;
+}
+.warp .basicsUp .basics_content .record_ul .record_list p {
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .basicsUp .basics_content .record_ul .current_list p {
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .basicsUp .basics_content .basics_add {
+  padding: 0.53333333rem 0 0.32rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .basicsUp .basics_content .basics_add .add_input {
+  width: 100%;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  color: #333;
+  text-align: center;
+}
+.warp .basicsUp .basics_content .basics_marbot {
+  margin-bottom: 0.8rem;
+}
+.warp .basicsUp .basics_content .deta_tit {
+  padding: 0.53333333rem 0;
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #333;
+}
+.warp .basicsUp .basics_content .add_deta {
+  padding: 0 0 0.26666667rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .basicsUp .basics_content .add_deta .deta_text {
+  width: 100%;
+  height: 0.53333333rem;
+  font-size: 0.34666667rem;
+  color: #333;
+  line-height: 0.48rem;
+}
+.warp .basicsUp .basics_content .render_tell {
+  padding-top: 0.8rem;
+}
+.warp .basicsUp .basics_content .render_tell .tell_li {
+  margin-bottom: 0.8rem;
+}
+.warp .basicsUp .basics_content .render_tell .tell_li .basics_label {
+  display: block;
+  float: left;
+  width: 16%;
+  padding-top: 0.34666667rem;
+  line-height: 0.48rem;
+  font-size: 0.34666667rem;
+  color: #333;
+}
+.warp .basicsUp .basics_content .render_tell .tell_li .tall_input {
+  width: 84%;
+  height: 1.06666667rem;
+  float: left;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  padding: 0.29333333rem 0.34666667rem;
+  border: 1px solid #DDDDDD;
+  background-color: #f3f3f3;
+  -webkit-border-radius: 0.21333333rem;
+  -moz-border-radius: 0.21333333rem;
+  -ms-border-radius: 0.21333333rem;
+  -o-border-radius: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+.warp .basicsUp .basics_content .prompt_p {
+  text-align: right;
+  margin-top: -0.66666667rem;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+  color: #FF4539;
+}
+.warp .basicsUp .basics_content .basics_teach {
+  padding: 0.26666667rem 0 0;
+}
+.warp .basicsUp .basics_content .basics_teach .exam_text {
+  width: 100%;
+  min-height: 4rem;
+  padding: 0.26666667rem;
+  font-size: 0.34666667rem;
+  color: #333;
+  line-height: 0.48rem;
+  background-color: #F3F3F3;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0.21333333rem;
+  -moz-border-radius: 0.21333333rem;
+  -ms-border-radius: 0.21333333rem;
+  -o-border-radius: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+.warp .basicsUp .basics_content .basics_teach .examples {
+  padding-top: 0.13333333rem;
+}
+.warp .basicsUp .basics_content .basics_teach .examples .exam_teach {
+  color: #0099FF;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+}
+.warp .basicsUp .basics_content .basics_teach .examples .length {
+  color: #666666;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+}
+.warp .basicsUp .basics_content .basics_teach .examples .length span {
+  color: #FF530B;
+}
+.warp .basicsUp .basics_content .prompt_img {
+  padding-top: 0.26666667rem;
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+  color: #666666;
+  text-align: left;
+}
+.warp .basicsUp .basics_content .square {
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  color: #333;
+}
+.warp .basicsUp .basics_content .line {
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+  margin: 0.8rem 0;
+}
+.warp .basicsUp .basics_content .basics_acre {
+  width: 50%;
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .basicsUp .basics_content .equipment {
+  padding: 0.26666667rem 0 0.8rem;
+}
+.warp .basicsUp .basics_content .equipment li {
+  float: left;
+}
+.warp .basicsUp .basics_content .equipment li .equi_tit {
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  padding-top: 0.26666667rem;
+}
+.warp .basicsUp .basics_content .equipment li .basics_eui {
+  width: 1.97333333rem;
+  height: 1.06666667rem;
+  color: #333;
+  padding: 0 0.13333333rem;
+  background-color: #F3F3F3;
+  border: 1px solid #dddddd;
+  margin-left: 0.26666667rem;
+  -webkit-border-radius: 0.10666667rem;
+  -moz-border-radius: 0.10666667rem;
+  -ms-border-radius: 0.10666667rem;
+  -o-border-radius: 0.10666667rem;
+  border-radius: 0.10666667rem;
+}
+.warp .basicsUp .basics_content .equipment li .square1 {
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  padding-top: 0.26666667rem;
+  padding-left: 0.26666667rem;
+}
+.warp .basicsUp .basics_content .equipment li:nth-child(odd) {
+  width: 45%;
+  margin-right: 0.66666667rem;
+}
+.warp .basicsUp .basics_content .equipment li:nth-child(even) {
+  width: 45%;
+}
+.warp .basicsUp .basics_content .characteristic {
+  padding-top: 0.53333333rem;
+}
+.warp .basicsUp .basics_content .characteristic .charac_list {
+  width: 100%;
+  padding: 0.4rem 0.4rem;
+  margin-bottom: 0.26666667rem;
+  border-bottom: 1px solid #dddddd;
+}
+.warp .basicsUp .basics_content .characteristic .charac_list p {
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .basicsUp .basics_content .characteristic .current_list p {
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .basicsUp .basics_content .other_add {
+  width: 100%;
+  background-color: #F3F3F3;
+  margin-top: 0.56rem;
+  padding: 0.18666667rem 0.4rem 0.53333333rem;
+}
+.warp .basicsUp .basics_content .other_add h3 {
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  padding-bottom: 0.4rem;
+}
+.warp .basicsUp .basics_content .other_add .charac_list {
+  width: 100%;
+  padding: 0 0.4rem;
+  margin-bottom: 0.26666667rem;
+}
+.warp .basicsUp .basics_content .other_add .charac_list p {
+  color: #999;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .basicsUp .basics_content .other_add .current_list p {
+  color: #999;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .basicsUp .basics_content .other_add .add_mess {
+  width: 100%;
+  background-color: #fff;
+  line-height: 1.06666667rem;
+  height: 1.06666667rem;
+  color: #333;
+  padding: 0 0.4rem;
+  margin-top: 0.53333333rem;
+}
+.warp .basicsUp .basics_content .other_add .sure_addbtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.53333333rem;
+  color: #63A431;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .basicsUp .basics_content .certificate_txt {
+  padding: 0.8rem 0 1.06666667rem;
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .basicsUp .basics_content .yesno_ul {
+  padding: 0 0.48rem;
+}
+.warp .basicsUp .basics_content .yesno_ul li {
+  float: left;
+  width: 3.46666667rem;
+  height: 1.06666667rem;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+.warp .basicsUp .basics_content .yesno_ul li a {
+  display: block;
+  font-size: 0.37333333rem;
+  color: #333333;
+  line-height: 1.06666667rem;
+}
+.warp .basicsUp .basics_content .yesno_ul .yesli {
+  margin-right: 0.93333333rem;
+}
+.warp .basicsUp .basics_content .yesno_ul .active_first {
+  float: left;
+  width: 3.46666667rem;
+  height: 1.06666667rem;
+  text-align: center;
+  background-color: #63A431;
+}
+.warp .basicsUp .basics_content .yesno_ul .active_first a {
+  display: block;
+  font-size: 0.37333333rem;
+  color: #fff;
+  line-height: 1.06666667rem;
+}
+.warp .basicsUp .basics_content .certificate_file {
+  padding: 1.06666667rem 0 0.53333333rem;
+  color: #333333;
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+}
+.warp .btnstap {
+  width: 100%;
+  position: fixed;
+  bottom: 0.66666667rem;
+  max-width: 540px;
+  z-index: 10;
+}
+.warp .btnstap .stap_div {
+  padding-left: 0.48rem;
+}
+.warp .btnstap a {
+  display: block;
+  float: left;
+  width: 3.46666667rem;
+  height: 1.25333333rem;
+  text-align: center;
+  line-height: 1.25333333rem;
+  font-size: 0.37333333rem;
+  -webkit-border-radius: 0.10666667rem;
+  -moz-border-radius: 0.10666667rem;
+  -ms-border-radius: 0.10666667rem;
+  -o-border-radius: 0.10666667rem;
+  border-radius: 0.10666667rem;
+}
+.warp .btnstap .upper_btn {
+  color: #999999;
+  background: url("../../images/dataUp/uparr_icon.png") no-repeat 0.72rem center;
+  background-size: 0.18666667rem 0.26666667rem;
+  border: 1px solid #dddddd;
+  margin-right: 1.06666667rem;
+}
+.warp .btnstap .next_btn {
+  color: #fff;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
+  background-size: 0.18666667rem 0.26666667rem;
+  background-color: #63A431;
+}
+.warp .btnstap1 {
+  width: 100%;
+  padding-top: 1.33333333rem;
+}
+.warp .btnstap1 .stap_div {
+  padding-left: 0.48rem;
+}
+.warp .btnstap1 a {
+  display: block;
+  float: left;
+  width: 3.46666667rem;
+  height: 1.25333333rem;
+  text-align: center;
+  line-height: 1.25333333rem;
+  font-size: 0.37333333rem;
+  -webkit-border-radius: 0.10666667rem;
+  -moz-border-radius: 0.10666667rem;
+  -ms-border-radius: 0.10666667rem;
+  -o-border-radius: 0.10666667rem;
+  border-radius: 0.10666667rem;
+}
+.warp .btnstap1 .upper_btn {
+  color: #999999;
+  background: url("../../images/dataUp/uparr_icon.png") no-repeat 0.72rem center;
+  background-size: 0.18666667rem 0.26666667rem;
+  border: 1px solid #dddddd;
+  margin-right: 1.06666667rem;
+}
+.warp .btnstap1 .next_btn {
+  color: #fff;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 2.56rem center;
+  background-size: 0.18666667rem 0.26666667rem;
+  background-color: #63A431;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.8rem;
+}
+.z_photo {
+  margin-left: -0.32rem;
+}
+.z_photo .img_list {
+  width: 2.24rem;
+  height: 2.24rem;
+}
+.addimg_par {
+  float: left;
+  width: 2.24rem;
+  height: 2.24rem;
+  position: relative;
+  margin-left: 0.32rem;
+  margin-bottom: 0.32rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+  -mos-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+  -ms-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+  -o-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+  box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+}
+.z_addImg {
+  width: 2.24rem;
+  height: 2.24rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #EEEEEE;
+}
+.close_icon {
+  position: absolute;
+  right: -0.18666667rem;
+  top: -0.18666667rem;
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  z-index: 2;
+}
+.z_addImg .img_list {
+  width: 100%;
+  height: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+}
+.z_file {
+  width: 2.24rem;
+  height: 2.24rem;
+  background: url(../../images/hyzicon/z_add.png) no-repeat center;
+  background-size: 0.96rem 0.96rem;
+  float: left;
+  margin-left: 0.32rem;
+  background-color: #EEEEEE;
+}
+.z_file input::-webkit-file-upload-button {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  position: absolute;
+  outline: 0;
+  opacity: 0;
+}
+.z_file input {
+  width: 2.24rem;
+  height: 2.24rem;
+  display: block;
+  opacity: 0;
+  color: rgba(255, 255, 255, 0);
+  vertical-align: middle;
+}
+/*遮罩层*/
+.z_mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+.z_alert {
+  width: 3rem;
+  height: 2rem;
+  border-radius: .2rem;
+  background: #fff;
+  font-size: .24rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -1.5rem;
+  margin-top: -2rem;
+}
+.z_alert p:nth-child(1) {
+  line-height: 1.5rem;
+}
+.z_alert p:nth-child(2) span {
+  display: inline-block;
+  width: 49%;
+  height: .5rem;
+  line-height: .5rem;
+  float: left;
+  border-top: 1px solid #ddd;
+}
+.z_cancel {
+  border-right: 1px solid #ddd;
+}
