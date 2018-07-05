@@ -1444,6 +1444,7 @@
           font-size: 11/37.5rem;
           color: #666666;
           line-height: 16/37.5rem;
+          padding-bottom: 10/37.5rem;
         }
       }
       //特色选择
@@ -1946,6 +1947,7 @@
           font-size: 11/37.5rem;
           color: #666666;
           line-height: 16/37.5rem;
+          padding-bottom: 10/37.5rem;
         }
       }
       //特色选择
@@ -2110,6 +2112,464 @@
       }
     }
   }
+
+
+  //师资团队
+  .teacteamUp {
+    width: 100%;
+    padding-bottom: 20/37.5rem;
+    //进度条
+    .progressBar {
+      width: 100%;
+      padding: 18/37.5rem 20/37.5rem 37/37.5rem;
+      background-color: #f3f3f3;
+      .currProgress1 {
+        width: 100%;
+        height: 7/37.5rem;
+        background-color: #BEB0B0;
+        -webkit-border-radius: 4/37.5rem 4/37.5rem;
+        -moz-border-radius: 4/37.5rem 4/37.5rem;
+        -moz-border-radius: 4/37.5rem 4/37.5rem;
+        -o-border-radius: 4/37.5rem 4/37.5rem;
+        border-radius: 4/37.5rem 4/37.5rem;
+      }
+      .currColor {
+        background-color: #ff9933;
+      }
+      .currProgress1 .currProgress34{
+        background: #63A431;
+        height: 100%;
+        width: 0;
+        border-radius:1.333333rem 1.3333rem;
+        transition: width 1s linear;
+        /* Firefox 4 */
+        -moz-transition:width 1s linear;
+        /* Safari and Chrome */
+        -webkit-transition:width 1s linear;
+        /* Opera */
+        -o-transition:width 1s linear;
+        -webkit-border-radius: 4/37.5rem 4/37.5rem;
+        -moz-border-radius: 4/37.5rem 4/37.5rem;
+        -moz-border-radius: 4/37.5rem 4/37.5rem;
+        -o-border-radius: 4/37.5rem 4/37.5rem;
+        border-radius: 4/37.5rem 4/37.5rem;
+        position: relative;
+      }
+      .currProgress34:after {
+        content: "";
+        width: 7/37.5rem;
+        height: 7/37.5rem;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        right: -10/37.5rem;
+        top: -2/37.5rem;
+        border: 2/37.5rem solid #7DC744;
+      }
+      .progress_value {
+        width: 80/37.5rem;
+        font-size: 12/37.5rem;
+        color: #666;
+        text-align: center;
+        position: absolute;
+        bottom: -22/35.5rem;
+        right: -20/37.5rem;
+      }
+      .progress_zeo {
+        width: 80/37.5rem;
+        font-size: 12/37.5rem;
+        line-height: 17/37.5rem;
+        color: #999;
+        text-align: left;
+        position: absolute;
+        bottom: -22/35.5rem;
+        left: 0;
+      }
+    }
+    //内容区域
+    .teacteam_content {
+      width: 100%;
+      position: relative;
+      .content_title {
+        width: 100%;
+        height: 55/37.5rem;
+        padding: 0 20/37.5rem;
+        background-color: #F9FCFA;
+        .title_h {
+          font-size: 14/37.5rem;
+          color: #333333;
+          line-height: 55/37.5rem;
+        }
+        //是否必填内容
+        .compul {
+          font-size: 10/37.5rem;
+          line-height: 55/37.5rem;
+          color: #999999;
+        }
+      }
+      .envi_mess {
+        padding: 10/37.5rem 20/37.5rem 0;
+        .mess_hs {
+          padding-top: 20/37.5rem;
+          padding-bottom: 10/37.5rem;
+        }
+        .title_h {
+          font-size: 13/37.5rem;
+          line-height: 18/37.5rem;
+          color: #333333;
+        }
+        // 五角星的表示
+        .nocompul {
+          font-size: 10/37.5rem;
+          line-height: 14/37.5rem;
+          color: #999999;
+        }
+        .teach_prome {
+          width: 100%;
+          padding: 10/37.5rem;
+          background-color: #F9FCFA;
+          margin-top: 20/37.5rem;
+          font-size: 11/37.5rem;
+          color: #999999;
+          line-height: 16/37.5rem;
+        }
+
+        //园所地址
+        .teacteam_add {
+          padding: 10/37.5rem 0 12/37.5rem;
+          border-bottom: 1px solid #DDDDDD;
+          .add_input {
+            width: 100%;
+            font-size: 13/37.5rem;
+            line-height: 18/37.5rem;
+            color: #333;
+            text-align: left;
+          }
+        }
+        .teach_ul {
+          .teach_li {
+
+          }
+          .ol_li {
+            padding-bottom: 12/37.5rem;
+            padding-top: 30/37.5rem;
+            border-bottom: 1px solid #DDDDDD;
+            .name {
+              width: 25%;
+              font-size: 13/37.5rem;
+              line-height: 18/37.5rem;
+              color: #333;
+            }
+            .required {
+              width: 75%;
+              font-size: 13/37.5rem;
+              line-height: 18/37.5rem;
+              color: #333;
+            }
+            //性别
+            .con {
+              width:75%;
+              padding-left: 30/37.5rem;
+              .radio {
+                float: left;
+                color: #333;
+                margin-right: 28/37.5rem;
+                font-size:13/37.5rem;
+                line-height: 18/37.5rem;
+                .option {
+                  position: absolute;
+                  top: 5/37.5rem;
+                  left: 0;
+                  width: 9/37.5rem;
+                  height: 9/37.5rem;
+                  border: 2px solid #DDDDDD;
+                  background-color: #F3F3F3;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  border-radius: 50%;
+                }
+              }
+              .radio input[type=radio]:checked+div {
+                border: 2px solid #63A431;
+                background-color: #FFFFFF;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+              }
+              label {
+                position: relative;
+                display: block;
+                width: 100%;
+                line-height: 18/37.5rem;
+              }
+              .radio input[type=radio] {
+                display: inline-block;
+                margin-right: 5px;
+                opacity: 0;
+                -webkit-appearance: radio;
+                box-sizing: border-box;
+              }
+            }
+            //关系选择
+            .con_sele {
+              float: left;
+              width: 75%;
+              height: 40/37.5rem;
+              margin-top: -10/37.5rem;
+              padding-left: 88/37.5rem;
+              background-color: #F3F3F3;
+              line-height: 40/37.5rem;
+              text-align: center;
+              position: relative;
+              -webkit-border-radius: 4/37.5rem;
+              -moz-border-radius: 4/37.5rem;
+              -ms-border-radius: 4/37.5rem;
+              -o-border-radius: 4/37.5rem;
+              border-radius: 4/37.5rem;
+              select {
+                width: 100%;
+                line-height: 40/37.5rem;
+                text-align: center;
+                border: 0 none;
+                outline: none;
+                font-size: 10/37.5rem;
+                color: #333;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                background-color: rgba(255,255,255,0);
+              }
+              .arr_icon {
+                position: absolute;
+                right: 10/37.5rem;
+                top: 12/37.5rem;
+                width: 15/37.5rem;
+                height: 15/37.5rem;
+                background: url("../../images/hyzicon/expand_btn.png") no-repeat center;
+                background-size: 100% 100%;
+              }
+            }
+          }
+        }
+      }
+      .teach_mess {
+        padding: 20/37.5rem 0 30/37.5rem;
+        .teach_title {
+          padding-bottom: 10/37.5rem;
+          color: #333;
+          font-size: 14/37.5rem;
+          line-height: 20/37.5rem;
+        }
+        .envi_teach {
+          .exam_text {
+            width: 100%;
+            min-height: 180/37.5rem;
+            padding: 10/37.5rem;
+            font-size: 13/37.5rem;
+            color: #333;
+            line-height: 18/37.5rem;
+            background-color: #F3F3F3;
+            border: 1px solid #dddddd;
+            -webkit-border-radius: 8/37.5rem;
+            -moz-border-radius: 8/37.5rem;
+            -ms-border-radius: 8/37.5rem;
+            -o-border-radius: 8/37.5rem;
+            border-radius: 8/37.5rem;
+          }
+          .examples {
+            padding-top: 5/37.5rem;
+            .exam_teach {
+              color: #0099FF;
+              font-size: 10/37.5rem;
+              line-height: 14/37.5rem;
+            }
+            .length {
+              color: #666666;
+              font-size: 10/37.5rem;
+              line-height: 14/37.5rem;
+              span {
+                color: #FF530B;
+              }
+            }
+          }
+        }
+      }
+      //特色选择
+      .characteristic {
+        .charac_list {
+          width: 100%;
+          margin-bottom: 10/37.5rem;
+          border-bottom: 1px solid #dddddd;
+          .charac_p {
+            color: #333333;
+            font-size: 13/37.5rem;
+            line-height: 18/37.5rem;
+            padding: 0 15/37.5rem;
+            margin: 20/37.5rem 0;
+            background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+            background-size: 16/37.5rem 16/37.5rem;
+          }
+          .current_list {
+            color: #63A431;
+            font-size: 13/37.5rem;
+            line-height: 18/37.5rem;
+            background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+            background-size: 16/37.5rem 16/37.5rem;
+          }
+        }
+
+      }
+      //人数展示区域u
+      .num_list {
+        display: none;
+        position: relative;
+        .arr_san {
+          display: block;
+          width: 30/75rem;
+          height: 30/75rem;
+          position: absolute;
+          left: 30/37.5rem;
+          top: -5/37.5rem;
+          border: 3px solid transparent;
+          border-top: 3px solid #f3f3f3;
+          border-left: 3px solid #f3f3f3;
+          background-color: #f3f3f3;
+          z-index: 99;
+          opacity: .8;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        .num_ol {
+          width: 100%;
+          padding: 20/37.5rem 15/37.5rem 28/37.5rem;
+          background-color: #F3F3F3;
+          .num_teach {
+            margin-bottom: -20/37.5rem;
+          }
+        }
+      }
+      //textarea
+      .num_teach {
+        margin-bottom: -20/37.5rem;
+        .exam_text {
+          width: 100%;
+          min-height: 70/37.5rem;
+          padding: 10/37.5rem;
+          font-size: 13/37.5rem;
+          color: #333;
+          line-height: 18/37.5rem;
+          background-color: #FFFFFF;
+        }
+        .examples {
+          padding-top: 5/37.5rem;
+          .exam_teach {
+            color: #0099FF;
+            font-size: 10/37.5rem;
+            line-height: 14/37.5rem;
+          }
+          .length {
+            color: #666666;
+            font-size: 10/37.5rem;
+            line-height: 14/37.5rem;
+            span {
+              color: #FF530B;
+            }
+          }
+        }
+      }
+      // 添加其他特色
+      .other_characteristic {
+        width: 100%;
+        background-color: #f3f3f3;
+        .other_title {
+          padding: 20/37.5rem 15/37.5rem 0;
+          font-size: 13/37.5rem;
+          color: #333333;
+          line-height: 18/37.5rem;
+        }
+        .other_ul {
+          width: 100%;
+          .other_list {
+            width: 100%;
+            padding:  20/37.5rem 30/37.5rem;
+            border-bottom: 1px solid #dddddd;
+            .charac_p {
+              color: #333333;
+              font-size: 13/37.5rem;
+              line-height: 18/37.5rem;
+              background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+              background-size: 16/37.5rem 16/37.5rem;
+            }
+            .current_list {
+              color: #63A431;
+              font-size: 13/37.5rem;
+              line-height: 18/37.5rem;
+              background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+              background-size: 16/37.5rem 16/37.5rem;
+            }
+            .charac_content {
+              padding-top: 10/37.5rem;
+              color: #333333;
+              font-size: 13/37.5rem;
+              line-height: 18/37.5rem;
+            }
+            .img_ol {
+              margin-left: -10/37.5rem;
+              padding-top: 20/37.5rem;
+              .img_li {
+                float: left;
+                width: 84/37.5rem;
+                height: 84/37.5rem;
+                margin-bottom: 10/37.5rem;
+                margin-left: 10/37.5rem;
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+            }
+          }
+          .other_list:nth-last-child(1) {
+            border-bottom: none;
+          }
+        }
+        .input_content {
+          width: 100%;
+          .con_text {
+            width: 100%;
+            padding: 0 15/37.5rem;
+            .chara_name {
+              width: 100%;
+              font-size: 13/37.5rem;
+              padding: 11/37.5rem 15/37.5rem;
+              background-color: #fff;
+            }
+          }
+          //确认添加按钮
+          .addBtn {
+            display: block;
+            width: 100%;
+            height: 58/37.5rem;
+            color: #63A431;
+            line-height: 58/37.5rem;
+            font-size: 13/37.5rem;
+            margin-top: 0;
+            text-align: center;
+            border-top: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 //确认添加按钮
@@ -2123,6 +2583,22 @@
   margin-top: 20/37.5rem;
   text-align: center;
   border-top: 1px solid #DDDDDD;
+}
+.add_teach {
+  display: block;
+  width: 100%;
+  height: 54/37.5rem;
+  background-color: #F3F3F3;
+  .add_pro {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 54/37.5rem;
+    text-align: center;
+    color: #63A431;
+    font-size: 14/37.5rem;
+  }
+
 }
 //直接定位在底部
 .btnstap {

@@ -26,9 +26,9 @@ $(function () {
 //多选
 function selectOpt(ele) {
     var ele = $(ele);
-    if("true" == ele.data("click")){
-        return;
-    }
+    // if("true" == ele.data("click")){
+    //     return;
+    // }
     ele.on("click", function () {
         if ($(this).hasClass('current_list')) {
             $(this).removeClass('current_list');
@@ -40,5 +40,5 @@ function selectOpt(ele) {
             $(this).parent().find(".num_list").show();
         }
     })
-    ele.data("click","true");
+    // ele.data("click","true");
 }

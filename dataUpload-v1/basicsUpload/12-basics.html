@@ -102,9 +102,9 @@
     //多选
     function selectOpt(ele) {
         var ele = $(ele);
-        if("true" == ele.data("click")){
-            return;
-        }
+        // if("true" == ele.data("click")){
+        //     return;
+        // }
         ele.on("click", function () {
             if ($(this).hasClass('current_list')) {
                 $(this).removeClass('current_list');
@@ -112,7 +112,7 @@
                 $(this).addClass('current_list');
             }
         })
-        ele.data("click","true");
+        // ele.data("click","true");
     }
 
 </script>
