@@ -1155,6 +1155,17 @@
   margin-bottom: 0.26666667rem;
   border-bottom: 1px solid #dddddd;
 }
+.warp .preview .basics_mess .basicsmess_li .basicsmess_other .other_list .charac_p {
+  color: #333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .preview .basics_mess .basicsmess_li .basicsmess_other .other_list .charac_content {
+  padding-top: 0.26666667rem;
+  color: #666;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
 .warp .preview .basics_mess .basicsmess_li .basicsmess_other .other_list .img_ol {
   margin-left: -0.26666667rem;
   padding: 0.53333333rem 0 0;
@@ -1535,6 +1546,458 @@
   padding: 0 0.4rem;
 }
 .warp .enviUp .enviUp_content .other_characteristic .input_content .con_text .chara_name {
+  width: 100%;
+  font-size: 0.34666667rem;
+  padding: 0.29333333rem 0.4rem;
+  background-color: #fff;
+  margin-bottom: 0.26666667rem;
+}
+.warp .classUp {
+  width: 100%;
+  padding-bottom: 0.53333333rem;
+}
+.warp .classUp .progressBar {
+  width: 100%;
+  padding: 0.48rem 0.53333333rem 0.98666667rem;
+  background-color: #f3f3f3;
+}
+.warp .classUp .progressBar .currProgress1 {
+  width: 100%;
+  height: 0.18666667rem;
+  background-color: #BEB0B0;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+}
+.warp .classUp .progressBar .currColor {
+  background-color: #ff9933;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress27 {
+  background: #63A431;
+  height: 100%;
+  width: 0;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress27:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress28 {
+  background: #63A431;
+  height: 100%;
+  width: 0;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress28:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress29 {
+  background: #63A431;
+  height: 100%;
+  width: 15%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress29:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress30 {
+  background: #63A431;
+  height: 100%;
+  width: 30%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress30:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress31 {
+  background: #63A431;
+  height: 100%;
+  width: 45%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress31:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress32 {
+  background: #63A431;
+  height: 100%;
+  width: 60%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress32:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .currProgress1 .currProgress33 {
+  background: #63A431;
+  height: 100%;
+  width: 75%;
+  border-radius: 1.333333rem 1.3333rem;
+  transition: width 1s linear;
+  /* Firefox 4 */
+  -moz-transition: width 1s linear;
+  /* Safari and Chrome */
+  -webkit-transition: width 1s linear;
+  /* Opera */
+  -o-transition: width 1s linear;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0.10666667rem 0.10666667rem;
+  border-radius: 0.10666667rem 0.10666667rem;
+  position: relative;
+}
+.warp .classUp .progressBar .currProgress33:after {
+  content: "";
+  width: 0.18666667rem;
+  height: 0.18666667rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: -0.26666667rem;
+  top: -0.05333333rem;
+  border: 0.05333333rem solid #7dc744;
+}
+.warp .classUp .progressBar .progress_value {
+  width: 2.13333333rem;
+  font-size: 0.32rem;
+  color: #666;
+  text-align: center;
+  position: absolute;
+  bottom: -0.61971831rem;
+  right: -0.53333333rem;
+}
+.warp .classUp .progressBar .progress_zeo {
+  width: 2.13333333rem;
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+  color: #999;
+  text-align: left;
+  position: absolute;
+  bottom: -0.61971831rem;
+  left: 0;
+}
+.warp .classUp .classUp_content {
+  width: 100%;
+  position: relative;
+}
+.warp .classUp .classUp_content .content_title {
+  width: 100%;
+  height: 1.46666667rem;
+  padding: 0 0.53333333rem;
+  background-color: #F9FCFA;
+}
+.warp .classUp .classUp_content .content_title .title_h {
+  font-size: 0.37333333rem;
+  color: #333333;
+  line-height: 1.46666667rem;
+}
+.warp .classUp .classUp_content .content_title .compul {
+  font-size: 0.26666667rem;
+  line-height: 1.46666667rem;
+  color: #999999;
+}
+.warp .classUp .classUp_content .envi_mess {
+  padding: 0.26666667rem 0.53333333rem 0;
+}
+.warp .classUp .classUp_content .envi_mess .envi_teach .exam_text {
+  width: 100%;
+  min-height: 4.8rem;
+  padding: 0.26666667rem;
+  font-size: 0.34666667rem;
+  color: #333;
+  line-height: 0.48rem;
+  background-color: #F3F3F3;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0.21333333rem;
+  -moz-border-radius: 0.21333333rem;
+  -ms-border-radius: 0.21333333rem;
+  -o-border-radius: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+.warp .classUp .classUp_content .envi_mess .envi_teach .examples {
+  padding-top: 0.13333333rem;
+}
+.warp .classUp .classUp_content .envi_mess .envi_teach .examples .exam_teach {
+  color: #0099FF;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+}
+.warp .classUp .classUp_content .envi_mess .envi_teach .examples .length {
+  color: #666666;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+}
+.warp .classUp .classUp_content .envi_mess .envi_teach .examples .length span {
+  color: #FF530B;
+}
+.warp .classUp .classUp_content .envi_mess .sele_text {
+  font-size: 0.29333333rem;
+  color: #666666;
+  line-height: 0.42666667rem;
+}
+.warp .classUp .classUp_content .characteristic .charac_list {
+  width: 100%;
+  margin-bottom: 0.26666667rem;
+  border-bottom: 1px solid #dddddd;
+}
+.warp .classUp .classUp_content .characteristic .charac_list .charac_p {
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  padding: 0 0.4rem;
+  margin: 0.53333333rem 0;
+  background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .classUp .classUp_content .characteristic .charac_list .current_list {
+  color: #63A431;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .classUp .classUp_content .num_list {
+  display: none;
+  position: relative;
+}
+.warp .classUp .classUp_content .num_list .arr_san {
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 0.8rem;
+  top: -0.13333333rem;
+  border: 3px solid transparent;
+  border-top: 3px solid #f3f3f3;
+  border-left: 3px solid #f3f3f3;
+  background-color: #f3f3f3;
+  z-index: 99;
+  opacity: .8;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.warp .classUp .classUp_content .num_list .num_ol {
+  width: 100%;
+  padding: 0.53333333rem 0.4rem 0.74666667rem;
+  background-color: #F3F3F3;
+}
+.warp .classUp .classUp_content .num_list .num_ol .num_teach {
+  margin-bottom: -0.53333333rem;
+}
+.warp .classUp .classUp_content .num_teach {
+  margin-bottom: -0.53333333rem;
+}
+.warp .classUp .classUp_content .num_teach .exam_text {
+  width: 100%;
+  min-height: 1.86666667rem;
+  padding: 0.26666667rem;
+  font-size: 0.34666667rem;
+  color: #333;
+  line-height: 0.48rem;
+  background-color: #FFFFFF;
+}
+.warp .classUp .classUp_content .num_teach .examples {
+  padding-top: 0.13333333rem;
+}
+.warp .classUp .classUp_content .num_teach .examples .exam_teach {
+  color: #0099FF;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+}
+.warp .classUp .classUp_content .num_teach .examples .length {
+  color: #666666;
+  font-size: 0.26666667rem;
+  line-height: 0.37333333rem;
+}
+.warp .classUp .classUp_content .num_teach .examples .length span {
+  color: #FF530B;
+}
+.warp .classUp .classUp_content .other_characteristic {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.warp .classUp .classUp_content .other_characteristic .other_title {
+  padding: 0.53333333rem 0.4rem 0;
+  font-size: 0.34666667rem;
+  color: #333333;
+  line-height: 0.48rem;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul {
+  width: 100%;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list {
+  width: 100%;
+  padding: 0.53333333rem 0.8rem;
+  margin-bottom: 0.26666667rem;
+  border-bottom: 1px solid #dddddd;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .charac_p {
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/graydui.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .current_list {
+  color: #63A431;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
+  background-size: 0.42666667rem 0.42666667rem;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .charac_content {
+  padding-top: 0.26666667rem;
+  color: #333333;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .img_ol {
+  margin-left: -0.26666667rem;
+  padding-top: 0.53333333rem;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .img_ol .img_li {
+  float: left;
+  width: 2.24rem;
+  height: 2.24rem;
+  margin-bottom: 0.26666667rem;
+  margin-left: 0.26666667rem;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .img_ol .img_li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.warp .classUp .classUp_content .other_characteristic .input_content {
+  width: 100%;
+  padding: 0.53333333rem 0 0;
+}
+.warp .classUp .classUp_content .other_characteristic .input_content .con_text {
+  width: 100%;
+  padding: 0 0.4rem;
+}
+.warp .classUp .classUp_content .other_characteristic .input_content .con_text .chara_name {
   width: 100%;
   font-size: 0.34666667rem;
   padding: 0.29333333rem 0.4rem;

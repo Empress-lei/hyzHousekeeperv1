@@ -5,16 +5,13 @@ $(function () {
         var imgUrl = $(".photo_flie10 .z_addImg img").attr("src");
         var imgArr = $(".photo_flie10 .addimg_par .img_list");
         var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
-        $("<p class='charac_p other_p current_list'>" + txtTitle + "</p>").appendTo(li_);
-        $("<p class='charac_content other_content'>" + contText + "</p>").appendTo(li_);
+        $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
+        $("<p class='charac_content'>" + contText + "</p>").appendTo(li_);
         var ol_ = $("<ol class='img_ol clearfix'>").appendTo(li_);
         imgArr.each(function(){
             var li_z_ = $("<li class='img_li z_addImg'>").appendTo(ol_)
             $("<img src='" + $(this).attr('src') + "' />").appendTo(li_z_);
-        });
-        if(imgUrl== "" || imgUrl == undefined){
-            $(".img_ol").hide();
-        }if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
+        });if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
             $(".other_p").hide();
         }if($(".other_content").text() == "" || $(".other_content").text() == undefined) {
             $(".other_content").hide();
@@ -23,6 +20,7 @@ $(function () {
         initMyImgShow();
         $(".chara_name").val("");
         $(".add_txt").val("");
+        $(".input_content .addimg_par").remove();
     })
     //园所性质
     selectOpt(".characteristic li .charac_p")
