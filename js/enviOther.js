@@ -12,7 +12,6 @@ $(function () {
             var li_z_ = $("<li class='img_li z_addImg'>").appendTo(ol_)
             $("<img src='" + $(this).attr('src') + "' />").appendTo(li_z_);
         });
-
         if(imgUrl== "" || imgUrl == undefined){
             $(".img_ol").hide();
         }if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
