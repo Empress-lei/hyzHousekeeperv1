@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
-    <title>餐谱</title>
+    <title>餐谱上传图片</title>
     <link rel="stylesheet" href="../../css/dataUpcss-v1/dataUp.css">
 </head>
 <body style="font-family: myFont;">
@@ -24,24 +24,6 @@
         </div>
         <div class="mealUp_content">
             <div class="envi_mess">
-                <h3 class="week_title">星期一</h3>
-                <ul class="week_ul">
-                    <li class="week_li clearfix">
-                        <label class="week_label">早餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
-                    </li>
-                    <li class="week_li clearfix">
-                        <label class="week_label">间点</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
-                    </li>
-                    <li class="week_li clearfix">
-                        <label class="week_label">午餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
-                    </li>
-                    <li class="week_li clearfix">
-                        <label class="week_label">间点</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
-                    </li>
-                    <li class="week_li clearfix">
-                        <label class="week_label">晚餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
-                    </li>
-                </ul>
                 <div class="container">
                     <div class="z_photo photo_flie1 clearfix">
                         <div class="z_file p_flie1">
@@ -50,16 +32,11 @@
                     </div>
                 </div>
                 <p class="prompt_img">可配餐点照，最多可添加9张</p>
-
-                <div class="week_txt">
-                    <h3 class="txt_tit">上传食谱太麻烦？</h3>
-                    <p class="txt_p">一天一天上传食谱太耗时间怎么办？点击这里可以上传一周食谱图哦 ~</p>
-                    <a href="javascript: void (0);" class="file_a">去上传食谱图 </a>
-                </div>
             </div>
-            <div class="btnstap3">
+            <div class="btnstap">
                 <div class="clearfix stap_div">
-                    <a href="javascript:void (0);" class="next_btn">下一步</a>
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="javascript:void (0);" class="next_btn">提 交</a>
                 </div>
             </div>
         </div>
@@ -73,8 +50,8 @@
     $(function () {
         var timer = null;
         timer = setInterval(function(){
-            $('.currProgress1 .currProgress34').css('transition','width 1s linear');
-            $('.currProgress1 .currProgress34').width('0');
+            $('.currProgress1 .currProgress40').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress40').width('80%');
         },700);
     })
 

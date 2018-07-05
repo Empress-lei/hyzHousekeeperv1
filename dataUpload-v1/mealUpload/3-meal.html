@@ -17,14 +17,14 @@
         <!--进度条-->
         <div class="progressBar">
             <div class="currProgress1">
-                <div class="currProgress34">
-                    <div class="progress_value progress_zeo">已填写0%</div>
+                <div class="currProgress38">
+                    <div class="progress_value">已填写40%</div>
                 </div>
             </div>
         </div>
         <div class="mealUp_content">
             <div class="envi_mess">
-                <h3 class="week_title">星期一</h3>
+                <h3 class="week_title">星期三</h3>
                 <ul class="week_ul">
                     <li class="week_li clearfix">
                         <label class="week_label">早餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
@@ -57,8 +57,9 @@
                     <a href="javascript: void (0);" class="file_a">去上传食谱图 </a>
                 </div>
             </div>
-            <div class="btnstap3">
+            <div class="btnstap1">
                 <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
                     <a href="javascript:void (0);" class="next_btn">下一步</a>
                 </div>
             </div>
@@ -73,8 +74,8 @@
     $(function () {
         var timer = null;
         timer = setInterval(function(){
-            $('.currProgress1 .currProgress34').css('transition','width 1s linear');
-            $('.currProgress1 .currProgress34').width('0');
+            $('.currProgress1 .currProgress38').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress38').width('40%');
         },700);
     })
 
