@@ -1092,12 +1092,20 @@
         padding-bottom: 20/37.5rem;
         margin-bottom: 18/37.5rem;
         border-bottom: 1px solid #EEEEEE;
-        .li_title {
-          font-size: 15/37.5rem;
-          line-height: 21/37.5rem;
-          color: #333;
-          background: url("../../images/dataUp/edit_icon.png") no-repeat right center;
-          background-size: 12/37.5rem 12/37.5rem;
+        .li_tit {
+          .li_title {
+            font-size: 15/37.5rem;
+            line-height: 21/37.5rem;
+            color: #333;
+            //background: url("../../images/dataUp/edit_icon.png") no-repeat right center;
+            //background-size: 12/37.5rem 12/37.5rem;
+          }
+          .edit_icon {
+            display: block;
+            width: 12/37.5rem;
+            height: 12/37.5rem;
+            margin: 5/37.5rem 0;
+          }
         }
         .li_titleback {
           background: none;
@@ -1106,6 +1114,12 @@
           padding-top: 14/37.5rem;
           font-size: 13/37.5rem;
           line-height: 18/37.5rem;
+          color: #666666;
+        }
+        .li_phone {
+          padding-top: 14/37.5rem;
+          font-size: 13/37.5rem;
+          line-height: 30/37.5rem;
           color: #666666;
         }
         //图片区域
@@ -1280,497 +1294,6 @@
         border-bottom: none;
       }
     }
-  }
-
-  #top {
-    position:fixed;
-    top:0;
-    z-index:5;
-    width:100%;
-    background:#fff;
-    transform: translateY(0) !important;
-  }
-  #nav {
-    -webkit-box-shadow: 0 3/37.5rem 6/37.5rem 0 rgba(227, 227, 227, 0.5);
-    -mos-box-shadow: 0 3/37.5rem 6/37.5rem 0 rgba(227, 227, 227, 0.5);
-    -ms-box-shadow: 0 3/37.5rem 6/37.5rem 0 rgba(227, 227, 227, 0.5);
-    -o-box-shadow: 0 3/37.5rem 6/37.5rem 0 rgba(227, 227, 227, 0.5);
-    box-shadow: 0 3/37.5rem 6/37.5rem 0 rgba(227, 227, 227, 0.5);
-  }
-  #nav .swiper-slide span {
-    margin: 13/37.5rem 0;
-    text-align:center;
-    display:block;
-    line-height: 20/37.5rem;
-    font-size: 14/37.5rem;
-    color: #999999;
-  }
-  #nav .bar {
-    width: 62/37.5rem;
-    height:2/37.5rem;
-    position:absolute;
-    bottom:0px;
-  }
-  #nav .bar .color {
-    width: 62/37.5rem;
-    height:2/37.5rem;
-    margin:0 auto;
-    background: rgba(255, 83, 11, 1);
-  }
-
-  #page {
-    margin-bottom:50/37.5rem;
-    height:100%;
-  }
-  #page .slidepage {
-    height:100%;
-  }
-  .scroll {
-    height:100%;
-  }
-  .slidepage {
-    //基础信息
-    .basics{
-      padding: 0 20/37.5rem 108/37.5rem !important;
-      .basics_top {
-        width: 100%;
-        height: 30/37.5rem;
-        background-color: #FFF7F4;
-        padding: 0 8/37.5rem;
-        -webkit-border-radius: 4/37.5rem;
-        -moz-border-radius: 4/37.5rem;
-        -ms-border-radius: 4/37.5rem;
-        -o-border-radius: 4/37.5rem;
-        border-radius: 4/37.5rem;
-        .top_p {
-          text-align: right;
-          font-size: 10px;
-          color: #FF530B;
-          position: relative;
-          line-height: 30/37.5rem;
-          span {
-            position: absolute;
-            right: 72/37.5rem;
-            top: 13/37.5rem;
-            display: block;
-            width: 5/37.5rem;
-            height: 5/37.5rem;
-            background-image: url("../images/hyzicon/star.png");
-            background-repeat:  no-repeat;
-            background-size: 100% 100%;
-            background-position: center;
-          }
-        }
-      }
-      .basics_ul {
-        width: 100%;
-        ::-webkit-input-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        ::-moz-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        /* firefox 19+ */
-        :-ms-input-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        /* ie */
-        input:-moz-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        .basics_li {
-          position: relative;
-          padding: 18/37.5rem 0;
-          border-bottom: 1px solid #DDDDDD;
-          .basics_label {
-            display: block;
-            float: left;
-            width: 20%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .basics_width {
-            display: block;
-            float: left;
-            width: 28%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .basics_width1 {
-            display: block;
-            float: left;
-            width: 25%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .acre_width {
-            float: left;
-            width: 57%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .acre_teac {
-            float: left;
-            width: 60%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .basics_render {
-            float: left;
-            width: 75%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          //面积
-          .basics_acre {
-            float: left;
-            width: 60%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .basics_class {
-            float: left;
-            width: 65%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          //平米
-          .square {
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .basics_text {
-            float: left;
-            width: 75%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-            position: relative;
-            .basics_intr {
-              display: block;
-              width: 100%;
-              height: 18/37.5rem;
-            }
-          }
-          //地址
-          .cell-right {
-            float: left;
-            width: 75%;
-            position: relative;
-            .basics_add {
-              display: block;
-              width: 100%;
-              color: #333;
-              height: 25/37.5rem;
-              font-size: 13/37.5rem;
-              margin-top: -4/37.5rem;
-            }
-            .add_deta {
-              padding-top: 13/37.5rem;
-              line-height: 18/37.5rem;
-              font-size: 13/37.5rem;
-              color: #333;
-              display: block;
-              width: 100%;
-              .deta_text {
-                display: block;
-                width: 100%;
-                height: 18/37.5rem;
-              }
-            }
-          }
-          .basics_teach {
-            float: left;
-            width: 65%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-            position: relative;
-            .exam_text {
-              display: block;
-              width: 100%;
-              height: 18/37.5rem;
-            }
-          }
-          .star_pos {
-            position: absolute;
-            top: 24/37.5rem;
-            right: 0;
-            display: block;
-            width: 5/37.5rem;
-            height: 5/37.5rem;
-            background-image: url("../images/hyzicon/star.png");
-            background-repeat:  no-repeat;
-            background-size: 100% 100%;
-            background-position: center;
-          }
-
-        }
-        .flie_img {
-          position: relative;
-          padding: 18/37.5rem 0;
-          border-bottom: 1px solid #DDDDDD;
-          .img_title {
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .prompt_img {
-            padding-top: 18/37.5rem;
-            font-size: 10/37.5rem;
-            line-height: 14/37.5rem;
-            color: #FF530B;
-            text-align: right;
-          }
-        }
-        .flie_activ {
-          position: relative;
-          padding: 18/37.5rem 0;
-          .img_title {
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .prompt_img {
-            padding-top: 18/37.5rem;
-            font-size: 10/37.5rem;
-            line-height: 14/37.5rem;
-            color: #FF530B;
-            text-align: right;
-          }
-          .basics_activ {
-            padding-top: 18px;
-            width: 100%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-            position: relative;
-            .exam_text {
-              display: block;
-              width: 100%;
-              min-height: 36/37.5rem;
-              height: 36/37.5rem;
-            }
-            .exam_height {
-              display: block;
-              width: 100%;
-              min-height: 18/37.5rem;
-              height: 18/37.5rem;
-            }
-            .exam_you {
-              display: block;
-              width: 100%;
-              min-height: 72/37.5rem;
-              height: 73/37.5rem;
-            }
-          }
-        }
-      }
-    }
-
-
-    //活动介绍
-    .act_intr {
-      padding: 0 20/37.5rem 108/37.5rem !important;
-      .basics_top {
-        width: 100%;
-        height: 30/37.5rem;
-        background-color: #FFF7F4;
-        padding: 0 8/37.5rem;
-        -webkit-border-radius: 4/37.5rem;
-        -moz-border-radius: 4/37.5rem;
-        -ms-border-radius: 4/37.5rem;
-        -o-border-radius: 4/37.5rem;
-        border-radius: 4/37.5rem;
-        .top_p {
-          text-align: right;
-          font-size: 10px;
-          color: #FF530B;
-          position: relative;
-          line-height: 30/37.5rem;
-          span {
-            position: absolute;
-            right: 72/37.5rem;
-            top: 13/37.5rem;
-            display: block;
-            width: 5/37.5rem;
-            height: 5/37.5rem;
-            background-image: url("../images/hyzicon/star.png");
-            background-repeat:  no-repeat;
-            background-size: 100% 100%;
-            background-position: center;
-          }
-        }
-      }
-      .intr_ul {
-        width: 100%;
-        ::-webkit-input-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        ::-moz-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        /* firefox 19+ */
-        :-ms-input-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        /* ie */
-        input:-moz-placeholder {
-          font-size: 13/37.5rem;
-          color: #999;
-        }
-        .flie_img {
-          position: relative;
-          padding: 18/37.5rem 0;
-          border-bottom: 1px solid #DDDDDD;
-          .img_title {
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .prompt_img {
-            padding-top: 18/37.5rem;
-            font-size: 10/37.5rem;
-            line-height: 14/37.5rem;
-            color: #FF530B;
-            text-align: right;
-          }
-        }
-        .flie_activ {
-          position: relative;
-          padding: 18/37.5rem 0;
-          .img_title {
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-          }
-          .prompt_img {
-            padding-top: 18/37.5rem;
-            font-size: 10/37.5rem;
-            line-height: 14/37.5rem;
-            color: #FF530B;
-            text-align: right;
-          }
-          .star_posstar {
-            position: absolute;
-            top: 24/37.5rem;
-            right: 0;
-            display: block;
-            width: 8/37.5rem;
-            height: 8/37.5rem;
-            background-image: url("../images/hyzicon/star.png");
-            background-repeat:  no-repeat;
-            background-size: 100% 100%;
-            background-position: center;
-          }
-          .basics_activ {
-            padding-top: 18px;
-            padding-left: 20/37.5rem;
-            padding-right: 20/37.5rem;
-            width: 100%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-            position: relative;
-            .exam_text {
-              display: block;
-              width: 100%;
-              min-height: 36/37.5rem;
-              height: 36/37.5rem;
-            }
-            .exam_height {
-              display: block;
-              width: 100%;
-              min-height: 18/37.5rem;
-              height: 18/37.5rem;
-            }
-            .exam_you {
-              display: block;
-              width: 100%;
-              min-height: 72/37.5rem;
-              height: 73/37.5rem;
-            }
-          }
-        }
-      }
-    }
-    //餐谱样例
-    .sample_menu {
-      padding: 0 20/37.5rem 108/37.5rem !important;
-      .menu_week {
-        width: 100%;
-
-        .menu_div {
-          padding: 15/37.5rem 10/37.5rem;
-          background-color: #F3F3F3;
-        }
-        .week_num {
-          font-size: 14/37.5rem;
-          color: #333;
-          line-height: 20/37.5rem;
-        }
-        .expand_btn {
-          font-size: 12/37.5rem;
-          color: #333;
-          line-height: 17/37.5rem;
-          background: url("../images/hyzicon/expand_btn.png") no-repeat right;
-          background-size: 15/37.5rem 15/37.5rem;
-          padding-right: 20/37.5rem;
-        }
-        .active_side {
-          padding: 15/37.5rem 10/37.5rem;
-          background-color: #F3F3F3;
-          .week_num {
-            font-size: 14/37.5rem;
-            color: #FF530B;
-            line-height: 20/37.5rem;
-          }
-          .expand_btn {
-            font-size: 12/37.5rem;
-            color: #FF530B;
-            line-height: 17/37.5rem;
-            background: url("../images/hyzicon/oraex_btn.png") no-repeat right;
-            background-size: 15/37.5rem 15/37.5rem;
-            padding-right: 20/37.5rem;
-          }
-        }
-        .food_li {
-          display: none;
-          padding: 18/37.5rem 10/37.5rem;
-          border: 1px solid #DDDDDD;
-          border-top: none;
-          .food_label {
-            width: 15%;
-            line-height: 18/37.5rem;
-            font-size: 13/37.5rem;
-            color: #333;
-            line-height: 18/37.5rem;
-          }
-          .food_render {
-            width: 84%;
-            line-height: 18/37.5rem;
-          }
-        }
-
-      }
-    }
-
   }
 
   //环境资料上传
@@ -2633,8 +2156,6 @@
       }
     }
   }
-
-
   //师资团队
   .teacteamUp {
     width: 100%;
@@ -3108,7 +2629,6 @@
       }
     }
   }
-
   //活动介绍
   .intrUp {
     width: 100%;
@@ -3631,7 +3151,6 @@
       }
     }
   }
-
   //餐谱
   .mealUp {
     width: 100%;
@@ -3893,7 +3412,6 @@
     }
   }
 }
-
 //确认添加按钮
 .addBtn {
   display: block;
