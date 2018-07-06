@@ -2422,7 +2422,7 @@
   background-color: #f3f3f3;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_title {
-  padding: 0.53333333rem 0.4rem 0;
+  padding: 0.53333333rem 0.4rem 0.53333333rem;
   font-size: 0.34666667rem;
   color: #333333;
   line-height: 0.48rem;
@@ -2432,7 +2432,8 @@
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_ul .other_list {
   width: 100%;
-  padding: 0.53333333rem 0.8rem;
+  padding: 0 0.8rem 0.53333333rem;
+  margin-bottom: 0.53333333rem;
   border-bottom: 1px solid #dddddd;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_ul .other_list .charac_p {
@@ -2928,7 +2929,7 @@
   background-color: #f3f3f3;
 }
 .warp .intrUp .intrUp_content .other_characteristic .other_title {
-  padding: 0.53333333rem 0.4rem 0;
+  padding: 0.53333333rem 0.4rem 0.53333333rem;
   font-size: 0.34666667rem;
   color: #333333;
   line-height: 0.48rem;
@@ -2938,7 +2939,8 @@
 }
 .warp .intrUp .intrUp_content .other_characteristic .other_ul .other_list {
   width: 100%;
-  padding: 0.53333333rem 0.8rem;
+  padding: 0 0.8rem 0.53333333rem;
+  margin-bottom: 0.53333333rem;
   border-bottom: 1px solid #dddddd;
 }
 .warp .intrUp .intrUp_content .other_characteristic .other_ul .other_list .charac_p {
@@ -2979,6 +2981,7 @@
 }
 .warp .intrUp .intrUp_content .other_characteristic .other_ul .other_list:nth-last-child(1) {
   border-bottom: none;
+  margin-bottom: 0;
 }
 .warp .intrUp .intrUp_content .other_characteristic .input_content {
   width: 100%;
