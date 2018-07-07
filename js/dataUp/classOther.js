@@ -16,9 +16,9 @@ $(function () {
             $("<img src='" + $(this).attr('src') + "' />").appendTo(li_z_);
         });
         selectOpt(".other_ul li .charac_p")
-        // if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
-        //     $(".other_p").hide();
-        // }
+        if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
+            $(".other_p").hide();
+        }
         selectOpt(".other_ul li .charac_p")
         initMyImgShow();
         $(".chara_name").val("");

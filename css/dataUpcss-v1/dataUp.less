@@ -2429,6 +2429,28 @@
                 -webkit-appearance: radio;
                 box-sizing: border-box;
               }
+              .radio input[type=checkbox]:checked+div {
+                border: 2px solid #63A431;
+                background-color: #FFFFFF;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+              }
+              label {
+                position: relative;
+                display: block;
+                width: 100%;
+                line-height: 18/37.5rem;
+              }
+              .radio input[type=checkbox] {
+                display: inline-block;
+                margin-right: 5px;
+                opacity: 0;
+                -webkit-appearance: checkbox;
+                box-sizing: border-box;
+              }
             }
             //关系选择
             .con_sele {
