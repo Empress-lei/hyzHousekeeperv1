@@ -2072,11 +2072,20 @@
   height: 2.24rem;
   margin-bottom: 0.26666667rem;
   margin-left: 0.26666667rem;
+  position: relative;
 }
 .warp .classUp .classUp_content .other_characteristic .other_ul .other_list .img_ol .img_li img {
   display: block;
   width: 100%;
   height: 100%;
+}
+.warp .classUp .classUp_content .other_characteristic .other_ul .other_list .img_ol .img_li .close_icon {
+  position: absolute;
+  right: -0.18666667rem;
+  top: -0.18666667rem;
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  z-index: 2;
 }
 .warp .classUp .classUp_content .other_characteristic .input_content {
   width: 100%;
