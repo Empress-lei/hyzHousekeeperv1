@@ -43,6 +43,7 @@ function selectOpt(ele) {
     // if("true" == ele.data("click")){
     //     return;
     // }
+    ele.unbind('click');
     ele.on("click", function () {
         if ($(this).hasClass('current_list')) {
             $(this).removeClass('current_list');

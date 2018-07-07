@@ -20,7 +20,8 @@ $(function () {
 //多选
 function selectOpt(ele) {
     var ele = $(ele);
-    $(".other_charac li").unbind('click');
+    // $(".other_charac li").unbind('click');
+    ele.unbind('click');
     ele.on("click", function () {
         if ($(this).hasClass('current_list')) {
             $(this).removeClass('current_list');
