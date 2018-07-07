@@ -1,7 +1,12 @@
 $(function () {
     $(".addBtn").on("click", function () {
         var txtTitle = $(".chara_name").val();
+        console.log(txtTitle)
         var imgUrl = $(".photo_flie10 .z_addImg img").attr("src");
+        console.log(imgUrl)
+        if(txtTitle == "" & imgUrl == undefined) {
+            return;
+        }
         var imgArr = $(".photo_flie10 .addimg_par .img_list");
         var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
         $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);

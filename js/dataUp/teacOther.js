@@ -1,6 +1,9 @@
 $(function () {
     $(".addBtn").on("click", function () {
         var txtTitle = $(".chara_name").val();
+        if(txtTitle == "") {
+            return;
+        }
         var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
         $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
         selectOpt(".other_ul li .charac_p")

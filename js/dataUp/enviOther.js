@@ -4,6 +4,9 @@ $(function () {
         var contText = $(".add_txt").val();
         var imgUrl = $(".photo_flie10 .z_addImg img").attr("src");
         var imgArr = $(".photo_flie10 .addimg_par .img_list");
+        if(txtTitle == "" & imgUrl == undefined & contText == "") {
+            return;
+        }
         var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
         $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
         $("<p class='charac_content'>" + contText + "</p>").appendTo(li_);
