@@ -9,7 +9,9 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <title>师资--园长介绍</title>
+    <link rel="stylesheet" href="../../css/dataUpcss-v1/magic-check.css">
     <link rel="stylesheet" href="../../css/dataUpcss-v1/dataUp.css">
+
 </head>
 <body style="font-family: myFont;">
 <div class="warp">
@@ -43,32 +45,14 @@
                             <li class="ol_li clearfix">
                                 <span class="name fl">园长性别：</span>
                                 <div class="con fl">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="checkbox" name="sex" value="1">
-                                            <!--<div class="option"></div>-->
-                                            <span class="opt-text">男</span>
-                                        </label>
+                                    <div class="radio checkbox_label">
+                                        <input class="magic-checkbox" type="checkbox" name="sex" id="sex1">
+                                        <label for="sex1" class="chevkbox_list">男</label>
                                     </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="checkbox" name="sex" value="2">
-                                            <!--<div class="option"></div>-->
-                                            <span class="opt-text">女</span>
-                                        </label>
+                                    <div class="radio checkbox_label">
+                                        <input class="magic-checkbox" type="checkbox" name="layout" id="sex2">
+                                        <label for="sex2" class="chevkbox_list">女</label>
                                     </div>
-                                    <!--<div class="radio">-->
-                                        <!--<lable>-->
-                                            <!--<i class="input_style checkbox_bg"><input type="checkbox" name="q" value="11"></i>-->
-                                            <!--男-->
-                                        <!--</lable>-->
-                                    <!--</div>-->
-                                    <!--<div class="radio">-->
-                                        <!--<lable>-->
-                                            <!--<i class="input_style checkbox_bg"><input type="checkbox" name="q" value="11"></i>-->
-                                            <!--女-->
-                                        <!--</lable>-->
-                                    <!--</div>-->
                                 </div>
                             </li>
                             <li class="ol_li clearfix">
@@ -147,6 +131,5 @@
         var len = obj.val().length;
         obj.parent().find(".examples p span").text(len);
     }
-
 </script>
 </html>
