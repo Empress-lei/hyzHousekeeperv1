@@ -109,8 +109,6 @@
 }
 .warp .dataUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .dataUp .data_top {
@@ -192,8 +190,6 @@
 }
 .warp .basicsUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .basicsUp .progressBar {
@@ -1031,8 +1027,6 @@
 }
 .warp .enviUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .enviUp .progressBar {
@@ -1395,8 +1389,6 @@
 }
 .warp .classUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .classUp .progressBar {
@@ -1859,8 +1851,6 @@
 }
 .warp .teacteamUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .teacteamUp .progressBar {
@@ -2283,8 +2273,6 @@
 }
 .warp .intrUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .intrUp .progressBar {
@@ -2628,8 +2616,6 @@
 }
 .warp .mealUp {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
 .warp .mealUp .progressBar {
@@ -2891,8 +2877,6 @@
 }
 .warp .preview {
   width: 100%;
-  min-height: 100%;
-  background-color: #fff;
 }
 .warp .preview .kinder_na {
   width: 100%;
@@ -3370,7 +3354,7 @@
 }
 .btnpreview .next_btn {
   color: #fff;
-  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 3.6rem center;
+  background: url("../../images/dataUp/nextarr_icon.png") no-repeat 3.73333333rem center;
   background-size: 0.18666667rem 0.26666667rem;
   background-color: #63A431;
 }
