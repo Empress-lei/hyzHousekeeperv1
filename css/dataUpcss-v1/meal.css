@@ -7,6 +7,17 @@ body {
 html {
   overflow: hidden;
 }
+.warp {
+  width: 100%;
+  min-height: 100%;
+  max-width: 540px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /*清除点击高亮效果*/
+  background-color: #fff;
+}
 #top {
   position: fixed;
   top: 0;
