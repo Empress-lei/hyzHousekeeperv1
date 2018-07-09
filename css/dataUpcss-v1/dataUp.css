@@ -2938,6 +2938,7 @@
   font-size: 0.34666667rem;
   line-height: 0.8rem;
   color: #666666;
+  padding-left: 0.53333333rem;
 }
 .warp .preview .basics_mess .basicsmess_li .img_ol {
   margin-left: -0.26666667rem;
@@ -2976,6 +2977,10 @@
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   color: #666;
+  max-width: 100%;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  word-wrap: break-word !important;
 }
 .warp .preview .basics_mess .basicsmess_li .kinder_list .kinderimg_ol {
   margin-left: -0.26666667rem;
@@ -3072,6 +3077,10 @@
   line-height: 0.48rem;
   color: #666;
   padding: 0.26666667rem 0.53333333rem 0;
+  max-width: 100%;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  word-wrap: break-word !important;
 }
 .warp .preview .basics_mess .basicsmess_li .chara_list {
   padding: 0.53333333rem 0.26666667rem 0;
@@ -3131,6 +3140,10 @@
   color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
+  max-width: 100%;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  word-wrap: break-word !important;
 }
 .warp .preview .basics_mess .basicsmess_li .basicsmess_other .other_list .img_ol {
   margin-left: -0.26666667rem;
