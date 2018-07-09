@@ -1873,13 +1873,9 @@
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
-  transition: width 1s linear;
   /* Firefox 4 */
-  -moz-transition: width 1s linear;
   /* Safari and Chrome */
-  -webkit-transition: width 1s linear;
   /* Opera */
-  -o-transition: width 1s linear;
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -3147,7 +3143,7 @@
 }
 .warp .preview .basics_mess .basicsmess_li .basicsmess_other .other_list .img_ol {
   margin-left: -0.26666667rem;
-  padding: 0.53333333rem 0 0;
+  padding: 0.53333333rem 0 0 0.32rem;
 }
 .warp .preview .basics_mess .basicsmess_li .basicsmess_other .other_list .img_ol .img_li {
   float: left;
