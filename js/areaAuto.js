@@ -17,7 +17,7 @@ jQuery.fn.extend({
         function _adjustH(elem) {
             var $obj = jQuery(elem);
             return $obj.css({height: $obj.attr('_initAdjustHeight'), 'overflow-y': 'hidden'})
-                .height(elem.scrollHeight);
+                .height(elem.scrollHeight-40);
         }
     }
 });

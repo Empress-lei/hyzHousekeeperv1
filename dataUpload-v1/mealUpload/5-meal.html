@@ -27,19 +27,29 @@
                 <h3 class="week_title">星期五</h3>
                 <ul class="week_ul">
                     <li class="week_li clearfix">
-                        <label class="week_label">早餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
+                        <label class="week_label">早餐</label><textarea class="week_input" onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)"  onfocus="$(this).autoHeight();"
+                                                                      maxlength="200" placeholder="请输入
+"></textarea>
                     </li>
                     <li class="week_li clearfix">
-                        <label class="week_label">间点</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
+                        <label class="week_label">间点</label><textarea class="week_input" onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)"  onfocus="$(this).autoHeight();"
+                                                                      maxlength="200" placeholder="请输入
+"></textarea>
                     </li>
                     <li class="week_li clearfix">
-                        <label class="week_label">午餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
+                        <label class="week_label">午餐</label><textarea class="week_input" onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)"  onfocus="$(this).autoHeight();"
+                                                                      maxlength="200" placeholder="请输入
+"></textarea>
                     </li>
                     <li class="week_li clearfix">
-                        <label class="week_label">间点</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
+                        <label class="week_label">间点</label><textarea class="week_input" onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)"  onfocus="$(this).autoHeight();"
+                                                                      maxlength="200" placeholder="请输入
+"></textarea>
                     </li>
                     <li class="week_li clearfix">
-                        <label class="week_label">晚餐</label><input type="tell" placeholder="请输入" class="week_input" pattern="[0-9]*">
+                        <label class="week_label">晚餐</label><textarea class="week_input" onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)"  onfocus="$(this).autoHeight();"
+                                                                      maxlength="200" placeholder="请输入
+"></textarea>
                     </li>
                 </ul>
                 <div class="container">
@@ -70,6 +80,7 @@
 <script src=../../js/jquery-1.11.1.min.js></script>
 <script src=../../js/flieImg.js></script>
 <script src=../../js/lightbox.js></script>
+<script src=../../js/areaAuto.js></script>
 <script>
     $(function () {
         var timer = null;
