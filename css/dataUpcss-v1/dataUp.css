@@ -905,9 +905,6 @@
 .warp .basicsUp .basics_content .equipment li:nth-child(even) {
   width: 45%;
 }
-.warp .basicsUp .basics_content .characteristic {
-  margin-top: -0.8rem;
-}
 .warp .basicsUp .basics_content .characteristic .charac_list {
   width: 100%;
   padding: 0.4rem 0.4rem;
@@ -915,14 +912,14 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .basicsUp .basics_content .characteristic .charac_list p {
-  color: #333333;
+  color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   background: url(../../images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .characteristic .current_list p {
-  color: #333333;
+  color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
@@ -945,14 +942,14 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .basicsUp .basics_content .other_add .charac_list p {
-  color: #999;
+  color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   background: url(../../images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .other_add .current_list p {
-  color: #999;
+  color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
@@ -2120,7 +2117,7 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .teacteamUp .teacteam_content .characteristic .charac_list .charac_p {
-  color: #333333;
+  color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   padding: 0 0.4rem;
@@ -2214,7 +2211,7 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_ul .other_list .charac_p {
-  color: #333333;
+  color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   background: url(../../images/hyzicon/graydui.png) no-repeat right center;
@@ -2425,161 +2422,6 @@
 }
 .warp .intrUp .intrUp_content .envi_mess {
   padding: 0.26666667rem 0.53333333rem 0;
-}
-.warp .intrUp .intrUp_content .envi_mess .mess_hs {
-  padding-top: 0.53333333rem;
-  padding-bottom: 0.26666667rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .title_h {
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
-  color: #333333;
-}
-.warp .intrUp .intrUp_content .envi_mess .nocompul {
-  font-size: 0.26666667rem;
-  line-height: 0.37333333rem;
-  color: #999999;
-}
-.warp .intrUp .intrUp_content .envi_mess .cook_input {
-  width: 100%;
-  background-color: #F3F3F3;
-  height: 1.06666667rem;
-  padding: 0 0.4rem;
-  margin-top: 0.32rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .cook_input .cook_acre {
-  width: 80%;
-  height: 100%;
-  color: #333;
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .cook_input .square {
-  line-height: 1.06666667rem;
-  color: #333;
-  font-size: 0.34666667rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_prome {
-  width: 100%;
-  padding: 0.26666667rem;
-  background-color: #F9FCFA;
-  margin-top: 0.53333333rem;
-  font-size: 0.29333333rem;
-  color: #999999;
-  line-height: 0.42666667rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .teacteam_add {
-  padding: 0.26666667rem 0 0.32rem;
-  border-bottom: 1px solid #DDDDDD;
-}
-.warp .intrUp .intrUp_content .envi_mess .teacteam_add .add_input {
-  width: 100%;
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
-  color: #333;
-  text-align: left;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li {
-  padding-bottom: 0.32rem;
-  padding-top: 0.8rem;
-  border-bottom: 1px solid #DDDDDD;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .name {
-  width: 25%;
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
-  color: #333;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .required {
-  width: 75%;
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
-  color: #333;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con {
-  width: 75%;
-  padding-left: 0.8rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con .radio {
-  float: left;
-  color: #333;
-  margin-right: 0.74666667rem;
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con .radio .option {
-  position: absolute;
-  top: 0.13333333rem;
-  left: 0;
-  width: 0.24rem;
-  height: 0.24rem;
-  border: 2px solid #DDDDDD;
-  background-color: #F3F3F3;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con .radio input[type=radio]:checked + div {
-  border: 2px solid #63A431;
-  background-color: #FFFFFF;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con label {
-  position: relative;
-  display: block;
-  width: 100%;
-  line-height: 0.48rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con .radio input[type=radio] {
-  display: inline-block;
-  margin-right: 5px;
-  opacity: 0;
-  -webkit-appearance: radio;
-  box-sizing: border-box;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con_sele {
-  float: left;
-  width: 75%;
-  height: 1.06666667rem;
-  margin-top: -0.26666667rem;
-  background-color: #F3F3F3;
-  line-height: 1.06666667rem;
-  text-align: center;
-  position: relative;
-  padding-left: 2.34666667rem;
-  -webkit-border-radius: 0.10666667rem;
-  -moz-border-radius: 0.10666667rem;
-  -ms-border-radius: 0.10666667rem;
-  -o-border-radius: 0.10666667rem;
-  border-radius: 0.10666667rem;
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con_sele select {
-  width: 100%;
-  line-height: 1.06666667rem;
-  text-align: center;
-  border: 0 none;
-  outline: none;
-  font-size: 0.26666667rem;
-  color: #333;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background-color: rgba(255, 255, 255, 0);
-}
-.warp .intrUp .intrUp_content .envi_mess .teach_ul .ol_li .con_sele .arr_icon {
-  position: absolute;
-  right: 0.26666667rem;
-  top: 0.32rem;
-  width: 0.4rem;
-  height: 0.4rem;
-  background: url("../../images/hyzicon/expand_btn.png") no-repeat center;
-  background-size: 100% 100%;
 }
 .warp .intrUp .intrUp_content .teach_mess {
   padding: 0 0 0.8rem;
@@ -3085,6 +2927,8 @@
 }
 .warp .preview .basics_mess .basicsmess_li .li_text {
   padding-top: 0.37333333rem;
+  padding-left: 0.53333333rem;
+  padding-right: 0.53333333rem;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   color: #666666;
@@ -3192,6 +3036,14 @@
   line-height: 0.48rem;
   color: #666666;
   border-bottom: 1px solid #DDDDDD;
+}
+.warp .preview .basics_mess .basicsmess_li .num_list .num_ol .num_li:nth-last-child(1) {
+  padding-bottom: 0.53333333rem;
+  margin-bottom: 0;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  color: #666666;
+  border-bottom: none;
 }
 .warp .preview .basics_mess .basicsmess_li .num_list .num_div {
   width: 100%;

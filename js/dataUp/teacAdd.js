@@ -44,7 +44,7 @@ function addTeach() {
     str += "<div class=\"teach_mess\">"
     str += "<h3 class=\"teach_title\">园长简介</h3>"
     str += " <div class=\"envi_teach\">"
-    str += "<textarea class=\"exam_text\" onkeyup=\"fn1(this)\" onfocus=\"$(this).autoHeight();\" maxlength=\"200\" placeholder=\"示例：让孩子在快乐中体验、学习、成长！多元探索，创造性学习等\">"
+    str += "<textarea class=\"exam_text\" onkeyup=\"fn1(this)\" onPaste=\"fn1(this)\" oninput=\"fn1(this)\"  onfocus=\"$(this).autoHeight();\" maxlength=\"200\" placeholder=\"示例：让孩子在快乐中体验、学习、成长！多元探索，创造性学习等\">"
     str += "</textarea>"
     str += " <div class=\"clearfix examples\">"
     str += "<p class=\"length fr\">（可输入"
