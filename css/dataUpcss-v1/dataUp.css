@@ -109,7 +109,7 @@
 }
 .warp .dataUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
@@ -192,7 +192,7 @@
 }
 .warp .basicsUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
@@ -1031,7 +1031,7 @@
 }
 .warp .enviUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
@@ -1395,7 +1395,7 @@
 }
 .warp .classUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
@@ -1859,7 +1859,7 @@
 }
 .warp .teacteamUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
@@ -2283,7 +2283,7 @@
 }
 .warp .intrUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
@@ -2628,7 +2628,7 @@
 }
 .warp .mealUp {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   background-color: #fff;
   padding-bottom: 0.53333333rem;
 }
