@@ -2002,24 +2002,23 @@
   text-align: left;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li {
-  padding-bottom: 0.32rem;
   padding-top: 0.53333333rem;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #EEEEEE;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .name {
-  width: 25%;
+  width: 28%;
   font-size: 0.34666667rem;
   line-height: 1.14666667rem;
   color: #333;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .required {
-  width: 75%;
+  width: 72%;
   font-size: 0.34666667rem;
   line-height: 1.14666667rem;
   color: #333;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .con {
-  width: 75%;
+  width: 72%;
   padding-left: 0.8rem;
   padding-top: 0.29333333rem;
 }
@@ -2032,7 +2031,8 @@
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .con_sele {
   float: left;
-  width: 75%;
+  width: 72%;
+  margin-bottom: 0.53333333rem;
   height: 1.06666667rem;
   background-color: #F3F3F3;
   line-height: 1.06666667rem;
@@ -2928,6 +2928,10 @@
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   color: #666666;
+  max-width: 100%;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  word-wrap: break-word !important;
 }
 .warp .preview .basics_mess .basicsmess_li .li_phone {
   padding-top: 0.37333333rem;
