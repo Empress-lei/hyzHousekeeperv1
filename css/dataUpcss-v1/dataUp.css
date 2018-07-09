@@ -73,6 +73,7 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   /*清除点击高亮效果*/
+  background-color: #fff;
 }
 .warp ::-webkit-input-placeholder {
   font-size: 0.34666667rem;
