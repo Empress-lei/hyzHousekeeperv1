@@ -587,7 +587,7 @@
 .warp .basicsUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #666;
+  color: #999;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1134,7 +1134,7 @@
 .warp .enviUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #666;
+  color: #999;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1612,7 +1612,7 @@
 .warp .classUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #666;
+  color: #999;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1896,7 +1896,7 @@
 .warp .teacteamUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #666;
+  color: #999;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -2002,20 +2002,20 @@
   border-bottom: 1px solid #EEEEEE;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .name {
-  width: 28%;
+  width: 38%;
   font-size: 0.34666667rem;
   line-height: 1.14666667rem;
   color: #333;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .required {
-  width: 72%;
+  width: 62%;
   font-size: 0.34666667rem;
   line-height: 1.14666667rem;
   color: #333;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .con {
-  width: 72%;
-  padding-left: 0.8rem;
+  float: right;
+  width: 62%;
   padding-top: 0.29333333rem;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .con .radio {
@@ -2026,8 +2026,8 @@
   line-height: 0.48rem;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .teach_ul .ol_li .con_sele {
-  float: left;
-  width: 72%;
+  float: right;
+  width: 62%;
   margin-bottom: 0.53333333rem;
   height: 1.06666667rem;
   background-color: #F3F3F3;
@@ -2069,7 +2069,7 @@
 .warp .teacteamUp .teacteam_content .teach_mess .teach_title {
   padding-bottom: 0.26666667rem;
   color: #333;
-  font-size: 0.37333333rem;
+  font-size: 0.34666667rem;
   line-height: 0.53333333rem;
 }
 .warp .teacteamUp .teacteam_content .teach_mess .envi_teach .exam_text {
@@ -2376,7 +2376,7 @@
 .warp .intrUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #666;
+  color: #999;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -2777,7 +2777,7 @@
 .warp .mealUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #666;
+  color: #999;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
