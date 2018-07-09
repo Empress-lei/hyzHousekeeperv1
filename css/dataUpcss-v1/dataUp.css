@@ -720,9 +720,6 @@
   background: url("../../images/dataUp/arrboticon.png") no-repeat center;
   background-size: 100% 100%;
 }
-.warp .basicsUp .basics_content .record_ul {
-  padding-top: 0.53333333rem;
-}
 .warp .basicsUp .basics_content .record_ul .record_list {
   width: 100%;
   padding: 0.4rem 0.4rem;

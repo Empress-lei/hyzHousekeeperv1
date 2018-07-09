@@ -21,3 +21,12 @@ jQuery.fn.extend({
         }
     }
 });
+$(function () {
+    var textLen = $("textarea").val().length;
+    $("textarea").each(function () {
+        if($(this).val() != "") {
+            console.log((this))
+            $(this).parent().find(".examples p span").text(textLen);
+        }
+    });
+})
