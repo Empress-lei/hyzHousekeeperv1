@@ -193,12 +193,12 @@
 .warp .basicsUp .progressBar {
   width: 100%;
   padding: 0.48rem 0.53333333rem 0.98666667rem;
-  background-color: #f3f3f3;
+  background-color: #63A431;
 }
 .warp .basicsUp .progressBar .currProgress1 {
   width: 100%;
   height: 0.18666667rem;
-  background-color: #BEB0B0;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -208,7 +208,7 @@
   background-color: #ff9933;
 }
 .warp .basicsUp .progressBar .currProgress1 .currProgress11 {
-  background: #63A431;
+  background: #FFFFFF;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -230,15 +230,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress12 {
   width: 8%;
-  background: #63A431;
+  background: #FFFFFF;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -259,15 +259,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress13 {
   width: 16%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -288,15 +288,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress14 {
   width: 24%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -317,15 +317,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress15 {
   width: 32%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -346,15 +346,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress16 {
   width: 40%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -375,15 +375,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress17 {
   width: 48%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -404,15 +404,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress18 {
   width: 56%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -433,15 +433,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress19 {
   width: 64%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -462,15 +462,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress20 {
   width: 72%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -491,15 +491,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress21 {
   width: 80%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -520,15 +520,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress22 {
   width: 88%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -549,15 +549,15 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .currProgress23 {
   width: 96%;
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   border-radius: 1.333333rem 1.3333rem;
   transition: width 1s linear;
@@ -578,16 +578,16 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
-  right: -0.21333333rem;
+  right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .basicsUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #999;
+  color: #ffffff;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -597,7 +597,7 @@
   width: 2.13333333rem;
   font-size: 0.32rem;
   line-height: 0.45333333rem;
-  color: #999;
+  color: #ffffff;
   text-align: left;
   position: absolute;
   bottom: -0.61971831rem;
@@ -611,7 +611,7 @@
   width: 100%;
   padding: 0 0.53333333rem 0;
   height: 1.46666667rem;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .basicsUp .basics_content .content_title .title_h {
   font-size: 0.37333333rem;
@@ -1028,12 +1028,12 @@
 .warp .enviUp .progressBar {
   width: 100%;
   padding: 0.48rem 0.53333333rem 0.98666667rem;
-  background-color: #f3f3f3;
+  background-color: #63A431;
 }
 .warp .enviUp .progressBar .currProgress1 {
   width: 100%;
   height: 0.18666667rem;
-  background-color: #BEB0B0;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -1043,7 +1043,7 @@
   background-color: #ff9933;
 }
 .warp .enviUp .progressBar .currProgress1 .currProgress24 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -1065,14 +1065,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .enviUp .progressBar .currProgress1 .currProgress25 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -1094,14 +1094,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .enviUp .progressBar .currProgress1 .currProgress26 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 33%;
   border-radius: 1.333333rem 1.3333rem;
@@ -1123,16 +1123,16 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .enviUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #999;
+  color: #ffffff;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1142,7 +1142,7 @@
   width: 2.13333333rem;
   font-size: 0.32rem;
   line-height: 0.45333333rem;
-  color: #999;
+  color: #ffffff;
   text-align: left;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1156,7 +1156,7 @@
   width: 100%;
   height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .enviUp .enviUp_content .content_title .title_h {
   font-size: 0.37333333rem;
@@ -1390,12 +1390,12 @@
 .warp .classUp .progressBar {
   width: 100%;
   padding: 0.48rem 0.53333333rem 0.98666667rem;
-  background-color: #f3f3f3;
+  background-color: #63A431;
 }
 .warp .classUp .progressBar .currProgress1 {
   width: 100%;
   height: 0.18666667rem;
-  background-color: #BEB0B0;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -1405,7 +1405,7 @@
   background-color: #ff9933;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress27 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -1427,14 +1427,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress28 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -1456,14 +1456,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress29 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 15%;
   border-radius: 1.333333rem 1.3333rem;
@@ -1485,14 +1485,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress30 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 30%;
   border-radius: 1.333333rem 1.3333rem;
@@ -1514,14 +1514,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress31 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 45%;
   border-radius: 1.333333rem 1.3333rem;
@@ -1543,14 +1543,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress32 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 60%;
   border-radius: 1.333333rem 1.3333rem;
@@ -1572,14 +1572,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .currProgress1 .currProgress33 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 75%;
   border-radius: 1.333333rem 1.3333rem;
@@ -1601,16 +1601,16 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .classUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #999;
+  color: #ffffff;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1620,7 +1620,7 @@
   width: 2.13333333rem;
   font-size: 0.32rem;
   line-height: 0.45333333rem;
-  color: #999;
+  color: #ffffff;
   text-align: left;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1634,7 +1634,7 @@
   width: 100%;
   height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .classUp .classUp_content .content_title .title_h {
   font-size: 0.37333333rem;
@@ -1852,12 +1852,12 @@
 .warp .teacteamUp .progressBar {
   width: 100%;
   padding: 0.48rem 0.53333333rem 0.98666667rem;
-  background-color: #f3f3f3;
+  background-color: #63A431;
 }
 .warp .teacteamUp .progressBar .currProgress1 {
   width: 100%;
   height: 0.18666667rem;
-  background-color: #BEB0B0;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -1867,7 +1867,7 @@
   background-color: #ff9933;
 }
 .warp .teacteamUp .progressBar .currProgress1 .currProgress34 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -1885,16 +1885,16 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .teacteamUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #999;
+  color: #ffffff;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1904,7 +1904,7 @@
   width: 2.13333333rem;
   font-size: 0.32rem;
   line-height: 0.45333333rem;
-  color: #999;
+  color: #ffffff;
   text-align: left;
   position: absolute;
   bottom: -0.61971831rem;
@@ -1918,7 +1918,7 @@
   width: 100%;
   height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .teacteamUp .teacteam_content .content_title .title_h {
   font-size: 0.37333333rem;
@@ -2270,12 +2270,12 @@
 .warp .intrUp .progressBar {
   width: 100%;
   padding: 0.48rem 0.53333333rem 0.98666667rem;
-  background-color: #f3f3f3;
+  background-color: #63A431;
 }
 .warp .intrUp .progressBar .currProgress1 {
   width: 100%;
   height: 0.18666667rem;
-  background-color: #BEB0B0;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -2285,7 +2285,7 @@
   background-color: #ff9933;
 }
 .warp .intrUp .progressBar .currProgress1 .currProgress34 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -2307,14 +2307,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .intrUp .progressBar .currProgress1 .currProgress35 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -2336,14 +2336,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .intrUp .progressBar .currProgress1 .currProgress36 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 33%;
   border-radius: 1.333333rem 1.3333rem;
@@ -2365,16 +2365,16 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .intrUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #999;
+  color: #ffffff;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -2384,7 +2384,7 @@
   width: 2.13333333rem;
   font-size: 0.32rem;
   line-height: 0.45333333rem;
-  color: #999;
+  color: #ffffff;
   text-align: left;
   position: absolute;
   bottom: -0.61971831rem;
@@ -2398,7 +2398,7 @@
   width: 100%;
   height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .intrUp .intrUp_content .content_title .title_h {
   font-size: 0.37333333rem;
@@ -2613,12 +2613,12 @@
 .warp .mealUp .progressBar {
   width: 100%;
   padding: 0.48rem 0.53333333rem 0.98666667rem;
-  background-color: #f3f3f3;
+  background-color: #63A431;
 }
 .warp .mealUp .progressBar .currProgress1 {
   width: 100%;
   height: 0.18666667rem;
-  background-color: #BEB0B0;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 0.10666667rem 0.10666667rem;
   -moz-border-radius: 0.10666667rem 0.10666667rem;
   -o-border-radius: 0.10666667rem 0.10666667rem;
@@ -2628,7 +2628,7 @@
   background-color: #ff9933;
 }
 .warp .mealUp .progressBar .currProgress1 .currProgress34 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -2650,14 +2650,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .mealUp .progressBar .currProgress1 .currProgress37 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 0;
   border-radius: 1.333333rem 1.3333rem;
@@ -2679,14 +2679,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .mealUp .progressBar .currProgress1 .currProgress38 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 20%;
   border-radius: 1.333333rem 1.3333rem;
@@ -2708,14 +2708,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .mealUp .progressBar .currProgress1 .currProgress39 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 40%;
   border-radius: 1.333333rem 1.3333rem;
@@ -2737,14 +2737,14 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .mealUp .progressBar .currProgress1 .currProgress40 {
-  background: #63A431;
+  background: #ffffff;
   height: 100%;
   width: 60%;
   border-radius: 1.333333rem 1.3333rem;
@@ -2766,16 +2766,16 @@
   width: 0.18666667rem;
   height: 0.18666667rem;
   border-radius: 50%;
-  background: #fff;
+  background: #7DC744;
   position: absolute;
   right: -0.26666667rem;
   top: -0.05333333rem;
-  border: 0.05333333rem solid #7dc744;
+  border: 0.05333333rem solid #ffffff;
 }
 .warp .mealUp .progressBar .progress_value {
   width: 2.13333333rem;
   font-size: 0.32rem;
-  color: #999;
+  color: #ffffff;
   text-align: center;
   position: absolute;
   bottom: -0.61971831rem;
@@ -2785,7 +2785,7 @@
   width: 2.13333333rem;
   font-size: 0.32rem;
   line-height: 0.45333333rem;
-  color: #999;
+  color: #ffffff;
   text-align: left;
   position: absolute;
   bottom: -0.61971831rem;
@@ -2799,11 +2799,10 @@
   width: 100%;
   height: 1.46666667rem;
   color: #333;
-  font-size: 0.34666667rem;
+  font-size: 0.37333333rem;
   line-height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  font-weight: 800;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .mealUp .mealUp_content .envi_mess {
   padding: 0.26666667rem 0.53333333rem 0;
@@ -2886,7 +2885,7 @@
   font-size: 0.37333333rem;
   line-height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  background-color: #F9FCFA;
+  background-color: #F2FDF1;
 }
 .warp .preview .basics_mess {
   padding: 0.74666667rem 0.53333333rem 0;
