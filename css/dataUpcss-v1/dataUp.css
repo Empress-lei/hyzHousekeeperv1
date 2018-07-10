@@ -614,10 +614,9 @@
   background-color: #F9FCFA;
 }
 .warp .basicsUp .basics_content .content_title .title_h {
-  font-size: 0.34666667rem;
+  font-size: 0.37333333rem;
   line-height: 1.46666667rem;
   color: #333333;
-  font-weight: 800;
 }
 .warp .basicsUp .basics_content .content_title .title_h span {
   font-size: 0.26666667rem;
@@ -630,7 +629,6 @@
   font-size: 0.26666667rem;
   line-height: 1.46666667rem;
   color: #999999;
-  padding-top: 0.05333333rem;
 }
 .warp .basicsUp .basics_content .content_title .required_star {
   display: block;
@@ -680,7 +678,7 @@
   font-size: 0.26666667rem;
   line-height: 0.37333333rem;
   color: #999999;
-  padding-top: 0.08rem;
+  padding-top: 0.32rem;
 }
 .warp .basicsUp .basics_content .render_mess .basics_render {
   width: 100%;
@@ -1940,7 +1938,7 @@
   padding-bottom: 0.26666667rem;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .title_h {
-  font-size: 0.34666667rem;
+  font-size: 0.37333333rem;
   line-height: 0.48rem;
   color: #333333;
 }
@@ -2109,7 +2107,7 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .teacteamUp .teacteam_content .characteristic .charac_list .charac_p {
-  color: #666;
+  color: #333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   padding: 0 0.4rem;
@@ -2203,7 +2201,7 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_ul .other_list .charac_p {
-  color: #666;
+  color: #333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   background: url(../../images/hyzicon/graydui.png) no-repeat right center;
@@ -2813,8 +2811,8 @@
 .warp .mealUp .mealUp_content .envi_mess .week_title {
   padding-top: 0.53333333rem;
   color: #333;
-  font-size: 0.34666667rem;
-  line-height: 0.48rem;
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
 }
 .warp .mealUp .mealUp_content .envi_mess .week_ul {
   padding-top: 0.53333333rem;
@@ -2885,10 +2883,9 @@
   width: 100%;
   height: 1.46666667rem;
   color: #333;
-  font-size: 0.34666667rem;
+  font-size: 0.37333333rem;
   line-height: 1.46666667rem;
   padding: 0 0.53333333rem;
-  font-weight: 800;
   background-color: #F9FCFA;
 }
 .warp .preview .basics_mess {
@@ -3046,6 +3043,14 @@
   color: #666666;
   border-bottom: none;
 }
+.warp .preview .basics_mess .basicsmess_li .num_list .num_ol .other_li {
+  padding-bottom: 0.53333333rem;
+  margin-bottom: 0.53333333rem  !important;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  color: #666666;
+  border-bottom: 1px solid #DDDDDD  !important;
+}
 .warp .preview .basics_mess .basicsmess_li .num_list .num_div {
   width: 100%;
   padding: 0.53333333rem 0 0.53333333rem;
@@ -3065,7 +3070,7 @@
 .warp .preview .basics_mess .basicsmess_li .render_list .num_div .get_text {
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  color: #333;
+  color: #666;
   padding: 0 0.53333333rem;
 }
 .warp .preview .basics_mess .basicsmess_li .render_list .num_div .get_content {
