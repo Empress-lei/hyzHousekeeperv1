@@ -7,7 +7,7 @@ nav {
   top: 0;
   height: 1.25333333rem;
   background-color: #fff;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #EEEEEE;
 }
 nav .meteral_nav {
   width: 100%;
@@ -51,7 +51,7 @@ nav .meteral_nav .activi_li a {
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 1.65333333rem 1.81333333rem 0;
+  padding: 1.65333333rem 0 0;
 }
 .warp .meteral_h5 .meteral_swiper .swiper-slide {
   width: 6.4rem;
@@ -175,7 +175,7 @@ nav .meteral_nav .activi_li a {
   padding-bottom: 0.4rem;
   margin-left: 0.24rem;
   margin-bottom: 0.4rem;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #EEEEEE;
 }
 .warp .atlas_list .atlas_ul .atlas_li .atlas_back1 {
   width: 91%;
