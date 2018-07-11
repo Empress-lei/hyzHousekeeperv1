@@ -49,6 +49,7 @@ nav .meteral_nav .activi_li a {
 }
 .warp .meteral_h5 .meteral_swiper {
   width: 100%;
+  height: 14.64rem;
   overflow: hidden;
   position: relative;
   padding: 1.65333333rem 0 0;
@@ -83,13 +84,10 @@ nav .meteral_nav .activi_li a {
   height: 11.38666667rem;
 }
 .warp .meteral_h5 .scroll_btn {
-  position: fixed;
-  bottom: 0.53333333rem;
-  left: 50%;
   display: block;
   width: 6.8rem;
   height: 1.12rem;
-  margin-left: -3.4rem;
+  margin: 0 auto;
   font-size: 0.37333333rem;
   color: #fff;
   text-align: center;
@@ -102,10 +100,6 @@ nav .meteral_nav .activi_li a {
   border-radius: 0.10666667rem;
 }
 .warp .meteral_h5 .scroll_pro {
-  display: none;
-  width: 100%;
-  position: fixed;
-  bottom: 1.06666667rem;
   text-align: center;
   padding-top: 0.26666667rem;
   font-size: 0.34666667rem;
