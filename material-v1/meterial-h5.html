@@ -67,15 +67,6 @@
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../js/swiperjs/swiper.min.js"></script>
 <script>
-    // $(function () {
-    //     var swiper = new Swiper('.myswiper', {
-    //         slidesPerView : "auto",
-    //
-    //         spaceBetween : 30,
-    //         centeredSlides: true,
-    //         autoplayDisableOnInteraction: false,//点击后打断auto-play
-    //     });
-    // })
     var mySwiper = new Swiper('.myswiper',{
         slidesPerView : 'auto',
         centeredSlides : true,
@@ -98,6 +89,7 @@
         onSetTransition: function(swiper, speed) {
             for (var i = 0; i < swiper.slides.length; i++) {
                 es = swiper.slides[i].style;
+                // console.log(es)
                 es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
             }
 
