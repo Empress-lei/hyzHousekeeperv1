@@ -1,0 +1,224 @@
+@import "../base_mob.css";
+.warp {
+  width: 100%;
+  max-width: 540px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /*清除点击高亮效果*/
+  //名单采集列表
+  .namelist {
+    width: 100%;
+    padding-bottom: 20/37.5rem;
+    //顶部
+    .list_total {
+      width: 100%;
+      height: 181/37.5rem;
+      text-align: center;
+      background: url("../../images/namelist/backTop.png") no-repeat center;
+      background-size: 100% 100%;
+      .total_text {
+        padding: 44/37.5rem 124/37.5rem 0 134/37.5rem;
+        font-size: 13/37.5rem;
+        line-height: 18/37.5rem;
+        color: #fff;
+
+      }
+      .total_num {
+        font-size: 54/37.5rem;
+        line-height: 75/37.5rem;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
+    //分割线
+    .line_f {
+      width: 100%;
+      height: 10/37.5rem;
+      background-color: #F3F3F3;
+    }
+    .name_tit {
+      padding: 0 20/37.5rem;
+      h3 {
+        padding: 20/37.5rem 0;
+        font-size: 14/37.5rem;
+        line-height: 20/37.5rem;
+        color: #333;
+        border-bottom: 1px solid #DDDDDD;
+      }
+    }
+    //名单信息
+    .name_mess {
+      width: 100%;
+      padding: 0 20/37.5rem;
+      .name_li {
+        padding: 15/37.5rem 0;
+        border-bottom: 1px solid #DDDDDD;
+        span {
+          display: block;
+        }
+        .new_span {
+          width: 17/37.5rem;
+          height: 19/37.5rem;
+          font-size: 11/37.5rem;
+          line-height: 13/37.5rem;
+          padding-top: 1/37.5rem;
+          color: #ffffff;
+          text-align: center;
+          background: url("../../images/namelist/backNew.png") no-repeat center;
+          background-size: cover;
+          margin-top: 2/37.5rem;
+          margin-right: 8/37.5rem;
+        }
+        .name_left {
+          text-align: left;
+          .name_txt {
+            font-size: 14/37.5rem;
+            color: #333;
+            line-height: 20/37.5rem;
+            padding-bottom: 15/37.5rem;
+          }
+          .time_txt {
+            font-size: 10/37.5rem;
+            color: #999;
+            line-height: 14/37.5rem;
+          }
+        }
+        .name_right {
+          text-align: right;
+          .right_top {
+            font-size: 11/37.5rem;
+            color: #333;
+            line-height: 16/37.5rem;
+            margin-top: 3/37.5rem;
+            margin-bottom: 16/37.5rem;
+            background: url("../../images/hyzicon/grayarr.png") no-repeat right 3/37.5rem;
+            background-size: 5/37.5rem 9/37.5rem;
+            padding-right: 19/37.5rem;
+          }
+          .right_source {
+            font-size: 10/37.5rem;
+            color: #999;
+            line-height: 14/37.5rem;
+            padding-right: 20/37.5rem;
+          }
+        }
+      }
+      .name_li:nth-last-child(1) {
+        border-bottom: none;
+      }
+    }
+  }
+  //名单详情
+  .detailslist {
+    width: 100%;
+    padding-bottom: 20/37.5rem;
+    .detail_top {
+      padding: 30/37.5rem 15/37.5rem 10/37.5rem;
+      .top_h {
+        font-size: 16/37.5rem;
+        line-height: 22/37.5rem;
+        color: #333;
+        padding-right: 5/37.5rem;
+      }
+      .top_img {
+        width: 18/37.5rem;
+        height: 18/37.5rem;
+        margin-top: 2/37.5rem;
+      }
+    }
+    .list_mess {
+      padding: 0 15/37.5rem;
+      .mess_li {
+        margin-bottom: 15/37.5rem;
+        .li_top {
+          padding: 12/37.5rem 20/37.5rem;
+          background-color: #F2FDF1;
+          -webkit-border-radius: 4/37.5rem 4/37.5rem 0 0;
+          -moz-border-radius: 4/37.5rem 4/37.5rem 0 0;
+          -ms-border-radius: 4/37.5rem 4/37.5rem 0 0;
+          -o-border-radius: 4/37.5rem 4/37.5rem 0 0;
+          border-radius: 4/37.5rem 4/37.5rem 0 0;
+          .top_title {
+            font-size: 15/37.5rem;
+            line-height: 21/37.5rem;
+            color: #999;
+          }
+          .baby_icon {
+            background: url("../../images/namelist/baby_icon.png") no-repeat left center;
+            background-size: 18/37.5rem 18/37.5rem;
+            padding-left: 28/37.5rem;
+          }
+          .parent_icon {
+            background: url("../../images/namelist/parent_icon.png") no-repeat left center;
+            background-size: 18/37.5rem 18/37.5rem;
+            padding-left: 28/37.5rem;
+          }
+        }
+        .li_content {
+          padding: 20/37.5rem 12/37.5rem 2/37.5rem 51/37.5rem;
+          background-color: #ffffff;
+          -webkit-border-radius: 0 0 4/37.5rem 4/37.5rem;
+          -moz-border-radius: 0 0 4/37.5rem 4/37.5rem;
+          -ms-border-radius: 0 0 4/37.5rem 4/37.5rem;
+          -o-border-radius: 0 0 4/37.5rem 4/37.5rem;
+          border-radius: 0 0 4/37.5rem 4/37.5rem;
+          .con_name {
+            font-size: 18/37.5rem;
+            line-height: 25/37.5rem;
+            color: #333;
+            padding-bottom: 13/37.5rem;
+          }
+          .con_p {
+            font-size: 14/37.5rem;
+            line-height: 20/37.5rem;
+            color: #333;
+          }
+          //性别图标
+          .con_sex {
+            background: url("../../images/namelist/sex_icon.png") no-repeat left center;
+            background-size: 18/37.5rem 18/37.5rem;
+            padding-left: 28/37.5rem;
+            margin-bottom: 18/37.5rem;
+          }
+          //生日
+          .con_bri {
+            background: url("../../images/namelist/con_bri.png") no-repeat left center;
+            background-size: 18/37.5rem 18/37.5rem;
+            padding-left: 28/37.5rem;
+            margin-bottom: 18/37.5rem;
+          }
+          //关系
+          .con_rela {
+            background: url("../../images/namelist/con_rela.png") no-repeat left center;
+            background-size: 18/37.5rem 18/37.5rem;
+            padding-left: 28/37.5rem;
+            margin-bottom: 18/37.5rem;
+          }
+          //联系电话
+          .con_tell {
+            background: url("../../images/namelist/con_tell.png") no-repeat left center;
+            background-size: 18/37.5rem 18/37.5rem;
+            padding-left: 28/37.5rem;
+            margin-bottom: 18/37.5rem;
+          }
+        }
+      }
+    }
+    .mess_sour {
+      margin-top: -5/37.5rem;
+      padding: 0 15/37.5rem;
+      p {
+        width: 50%;
+        font-size: 12/37.5rem;
+        line-height: 17/37.5rem;
+        color: #666;
+        text-align: left  ;
+      }
+      .sour_p {
+        text-align: right;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,214 @@
+@import "../base_mob.css";
+.warp {
+  width: 100%;
+  max-width: 540px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /*清除点击高亮效果*/
+}
+.warp .namelist {
+  width: 100%;
+  padding-bottom: 0.53333333rem;
+}
+.warp .namelist .list_total {
+  width: 100%;
+  height: 4.82666667rem;
+  text-align: center;
+  background: url("../../images/namelist/backTop.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.warp .namelist .list_total .total_text {
+  padding: 1.17333333rem 3.30666667rem 0 3.57333333rem;
+  font-size: 0.34666667rem;
+  line-height: 0.48rem;
+  color: #fff;
+}
+.warp .namelist .list_total .total_num {
+  font-size: 1.44rem;
+  line-height: 2rem;
+  color: #fff;
+  font-weight: 800;
+}
+.warp .namelist .line_f {
+  width: 100%;
+  height: 0.26666667rem;
+  background-color: #F3F3F3;
+}
+.warp .namelist .name_tit {
+  padding: 0 0.53333333rem;
+}
+.warp .namelist .name_tit h3 {
+  padding: 0.53333333rem 0;
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #333;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .namelist .name_mess {
+  width: 100%;
+  padding: 0 0.53333333rem;
+}
+.warp .namelist .name_mess .name_li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+.warp .namelist .name_mess .name_li span {
+  display: block;
+}
+.warp .namelist .name_mess .name_li .new_span {
+  width: 0.45333333rem;
+  height: 0.50666667rem;
+  font-size: 0.29333333rem;
+  line-height: 0.34666667rem;
+  padding-top: 0.02666667rem;
+  color: #ffffff;
+  text-align: center;
+  background: url("../../images/namelist/backNew.png") no-repeat center;
+  background-size: cover;
+  margin-top: 0.05333333rem;
+  margin-right: 0.21333333rem;
+}
+.warp .namelist .name_mess .name_li .name_left {
+  text-align: left;
+}
+.warp .namelist .name_mess .name_li .name_left .name_txt {
+  font-size: 0.37333333rem;
+  color: #333;
+  line-height: 0.53333333rem;
+  padding-bottom: 0.4rem;
+}
+.warp .namelist .name_mess .name_li .name_left .time_txt {
+  font-size: 0.26666667rem;
+  color: #999;
+  line-height: 0.37333333rem;
+}
+.warp .namelist .name_mess .name_li .name_right {
+  text-align: right;
+}
+.warp .namelist .name_mess .name_li .name_right .right_top {
+  font-size: 0.29333333rem;
+  color: #333;
+  line-height: 0.42666667rem;
+  margin-top: 0.08rem;
+  margin-bottom: 0.42666667rem;
+  background: url("../../images/hyzicon/grayarr.png") no-repeat right 0.08rem;
+  background-size: 0.13333333rem 0.24rem;
+  padding-right: 0.50666667rem;
+}
+.warp .namelist .name_mess .name_li .name_right .right_source {
+  font-size: 0.26666667rem;
+  color: #999;
+  line-height: 0.37333333rem;
+  padding-right: 0.53333333rem;
+}
+.warp .namelist .name_mess .name_li:nth-last-child(1) {
+  border-bottom: none;
+}
+.warp .detailslist {
+  width: 100%;
+  padding-bottom: 0.53333333rem;
+}
+.warp .detailslist .detail_top {
+  padding: 0.8rem 0.4rem 0.26666667rem;
+}
+.warp .detailslist .detail_top .top_h {
+  font-size: 0.42666667rem;
+  line-height: 0.58666667rem;
+  color: #333;
+  padding-right: 0.13333333rem;
+}
+.warp .detailslist .detail_top .top_img {
+  width: 0.48rem;
+  height: 0.48rem;
+  margin-top: 0.05333333rem;
+}
+.warp .detailslist .list_mess {
+  padding: 0 0.4rem;
+}
+.warp .detailslist .list_mess .mess_li {
+  margin-bottom: 0.4rem;
+}
+.warp .detailslist .list_mess .mess_li .li_top {
+  padding: 0.32rem 0.53333333rem;
+  background-color: #F2FDF1;
+  -webkit-border-radius: 0.10666667rem 0.10666667rem 0 0;
+  -moz-border-radius: 0.10666667rem 0.10666667rem 0 0;
+  -ms-border-radius: 0.10666667rem 0.10666667rem 0 0;
+  -o-border-radius: 0.10666667rem 0.10666667rem 0 0;
+  border-radius: 0.10666667rem 0.10666667rem 0 0;
+}
+.warp .detailslist .list_mess .mess_li .li_top .top_title {
+  font-size: 0.4rem;
+  line-height: 0.56rem;
+  color: #999;
+}
+.warp .detailslist .list_mess .mess_li .li_top .baby_icon {
+  background: url("../../images/namelist/baby_icon.png") no-repeat left center;
+  background-size: 0.48rem 0.48rem;
+  padding-left: 0.74666667rem;
+}
+.warp .detailslist .list_mess .mess_li .li_top .parent_icon {
+  background: url("../../images/namelist/parent_icon.png") no-repeat left center;
+  background-size: 0.48rem 0.48rem;
+  padding-left: 0.74666667rem;
+}
+.warp .detailslist .list_mess .mess_li .li_content {
+  padding: 0.53333333rem 0.32rem 0.05333333rem 1.36rem;
+  background-color: #ffffff;
+  -webkit-border-radius: 0 0 0.10666667rem 0.10666667rem;
+  -moz-border-radius: 0 0 0.10666667rem 0.10666667rem;
+  -ms-border-radius: 0 0 0.10666667rem 0.10666667rem;
+  -o-border-radius: 0 0 0.10666667rem 0.10666667rem;
+  border-radius: 0 0 0.10666667rem 0.10666667rem;
+}
+.warp .detailslist .list_mess .mess_li .li_content .con_name {
+  font-size: 0.48rem;
+  line-height: 0.66666667rem;
+  color: #333;
+  padding-bottom: 0.34666667rem;
+}
+.warp .detailslist .list_mess .mess_li .li_content .con_p {
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #333;
+}
+.warp .detailslist .list_mess .mess_li .li_content .con_sex {
+  background: url("../../images/namelist/sex_icon.png") no-repeat left center;
+  background-size: 0.48rem 0.48rem;
+  padding-left: 0.74666667rem;
+  margin-bottom: 0.48rem;
+}
+.warp .detailslist .list_mess .mess_li .li_content .con_bri {
+  background: url("../../images/namelist/con_bri.png") no-repeat left center;
+  background-size: 0.48rem 0.48rem;
+  padding-left: 0.74666667rem;
+  margin-bottom: 0.48rem;
+}
+.warp .detailslist .list_mess .mess_li .li_content .con_rela {
+  background: url("../../images/namelist/con_rela.png") no-repeat left center;
+  background-size: 0.48rem 0.48rem;
+  padding-left: 0.74666667rem;
+  margin-bottom: 0.48rem;
+}
+.warp .detailslist .list_mess .mess_li .li_content .con_tell {
+  background: url("../../images/namelist/con_tell.png") no-repeat left center;
+  background-size: 0.48rem 0.48rem;
+  padding-left: 0.74666667rem;
+  margin-bottom: 0.48rem;
+}
+.warp .detailslist .mess_sour {
+  margin-top: -0.13333333rem;
+  padding: 0 0.4rem;
+}
+.warp .detailslist .mess_sour p {
+  width: 50%;
+  font-size: 0.32rem;
+  line-height: 0.45333333rem;
+  color: #666;
+  text-align: left  ;
+}
+.warp .detailslist .mess_sour .sour_p {
+  text-align: right;
+}
