@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>图集详情页</title>
+    <link rel="stylesheet" href="../../css/swipercss/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../../css/meterial-v1/meterial.css">
+
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="atlas_pages">
+        <div class="myswiper atlas_swiper swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cst">
+                    <img src="../../images/meterial/yearpo_1.png" class="scroll_h5">
+                </div>
+                <div class="swiper-slide cst">
+                    <img src="../../images/meterial/yearpo_2.png" class="scroll_h5">
+                </div>
+                <div class="swiper-slide cst">
+                    <img src="../../images/meterial/yearpo_3.png" class="scroll_h5">
+                </div>
+                <div class="swiper-slide cst">
+                    <img src="../../images/meterial/yearpo_4.png" class="scroll_h5">
+                </div>
+                <div class="swiper-slide cst">
+                    <img src="../../images/meterial/yearpo_5.png" class="scroll_h5">
+                </div>
+                <div class="swiper-slide cst">
+                    <img src="../../images/meterial/yearpo_1.png" class="scroll_h5">
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets">
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                <span class="swiper-pagination-bullet"></span>
+            </div>
+        </div>
+        <!--两者只会存在一种情况-->
+        <p class="atlas_pro">素材模板仅供浏览，托管成功，即可定制宣品。</p>
+        <p class="atlas_pre">长按图片区域保存</p>
+    </div>
+
+</div>
+</body>
+<script src="../../js/jquery-1.11.1.min.js"></script>
+<script src="../../js/swiperjs/swiper-3.4.2.min.js"></script>
+<script>
+    $(function () {
+        var swiper = new Swiper('.myswiper', {
+            slidesPerView : "auto",
+            spaceBetween : 30,
+            setWrapperSize :true,//自动轮播
+            centeredSlides: true,
+            pagination: '.swiper-pagination',
+            autoplayDisableOnInteraction: false,//点击后打断auto-play
+        });
+    })
+</script>
+</html>
