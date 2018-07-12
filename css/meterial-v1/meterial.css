@@ -47,6 +47,25 @@ nav .meteral_nav .activi_li a {
 .warp .meteral_h5 {
   padding-bottom: 0.26666667rem;
 }
+.warp .meteral_h5 .swiper-container {
+  width: 100%;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+}
+.warp .meteral_h5 #pagination {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+.warp .meteral_h5 #pagination .swiper-pagination-bullet {
+  width: 9.5%;
+  float: left;
+  margin: 0 0 0 6.15%;
+  background: 0;
+  opacity: 1;
+}
 .warp .meteral_h5 .meteral_swiper {
   width: 100%;
   height: 14.64rem;
@@ -56,11 +75,15 @@ nav .meteral_nav .activi_li a {
 }
 .warp .meteral_h5 .meteral_swiper .swiper-slide {
   width: 6.4rem;
-  margin-top: 0.53333333rem;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .warp .meteral_h5 .meteral_swiper .swiper-slide .scroll_h5 {
+  display: block;
+  margin: 0 auto;
   width: 6.4rem;
-  height: 9.97333333rem;
   border: 0.10666667rem solid #ffffff;
   -webkit-box-shadow: 0 0.05333333rem 0.26666667rem 0 rgba(162, 162, 162, 0.5);
   -moz-box-shadow: 0 0.05333333rem 0.26666667rem 0 rgba(162, 162, 162, 0.5);
@@ -272,6 +295,25 @@ nav .meteral_nav .activi_li a {
 .warp .atlas_pages {
   padding-bottom: 0.72rem;
 }
+.warp .atlas_pages .swiper-container {
+  width: 100%;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+}
+.warp .atlas_pages #pagination {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+.warp .atlas_pages #pagination .swiper-pagination-bullet {
+  width: 9.5%;
+  float: left;
+  margin: 0 0 0 6.15%;
+  background: 0;
+  opacity: 1;
+}
 .warp .atlas_pages .atlas_swiper {
   width: 100%;
   height: 14.37333333rem;
@@ -292,11 +334,14 @@ nav .meteral_nav .activi_li a {
 }
 .warp .atlas_pages .atlas_swiper .swiper-slide {
   width: 7.2rem;
-  margin-top: 1.41333333rem;
+  margin-top: 0.26666667rem;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .warp .atlas_pages .atlas_swiper .swiper-slide .scroll_h5 {
   width: 7.2rem;
-  height: 9.97333333rem;
   border: 0.10666667rem solid #ffffff;
   -webkit-box-shadow: 0 0.05333333rem 0.26666667rem 0 rgba(162, 162, 162, 0.5);
   -moz-box-shadow: 0 0.05333333rem 0.26666667rem 0 rgba(162, 162, 162, 0.5);

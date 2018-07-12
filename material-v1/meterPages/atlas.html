@@ -16,31 +16,30 @@
 <body style="font-family: myFont;">
 <div class="warp">
     <div class="atlas_pages">
-        <div class="myswiper atlas_swiper swiper-container-horizontal">
+        <div class="swiper-container atlas_swiper myswiper">
+            <!--</div>-->
             <div class="swiper-wrapper">
-                <div class="swiper-slide cst">
+                <div class="swiper-slide">
                     <img src="../../images/meterial/yearpo_1.png" class="scroll_h5">
                 </div>
-                <div class="swiper-slide cst">
+                <div class="swiper-slide">
                     <img src="../../images/meterial/yearpo_2.png" class="scroll_h5">
                 </div>
-                <div class="swiper-slide cst">
+                <div class="swiper-slide">
                     <img src="../../images/meterial/yearpo_3.png" class="scroll_h5">
                 </div>
-                <div class="swiper-slide cst">
+                <div class="swiper-slide">
                     <img src="../../images/meterial/yearpo_4.png" class="scroll_h5">
                 </div>
-                <div class="swiper-slide cst">
+                <div class="swiper-slide">
                     <img src="../../images/meterial/yearpo_5.png" class="scroll_h5">
                 </div>
-                <div class="swiper-slide cst">
-                    <img src="../../images/meterial/yearpo_1.png" class="scroll_h5">
+                <div class="swiper-slide">
+                    <img src="../images/meterial/yearpo_1.png" class="scroll_h5">
                 </div>
             </div>
-            <div class="swiper-pagination swiper-pagination-bullets">
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-                <span class="swiper-pagination-bullet"></span>
-            </div>
+
+
         </div>
         <!--两者只会存在一种情况-->
         <p class="atlas_pro">素材模板仅供浏览，托管成功，即可定制宣品。</p>
@@ -50,44 +49,24 @@
 </div>
 </body>
 <script src="../../js/jquery-1.11.1.min.js"></script>
-<!--<script src="../../js/swiperjs/swiper-3.4.2.min.js"></script>-->
 <script src="../../js/swiperjs/swiper.min.js"></script>
 <script>
     $(function () {
-        // var swiper = new Swiper('.myswiper', {
-        //     slidesPerView : "auto",
-        //     spaceBetween : 30,
-        //     setWrapperSize :true,//自动轮播
-        //     centeredSlides: true,
-        //     pagination: '.swiper-pagination',
-        //     autoplayDisableOnInteraction: false,//点击后打断auto-play
-        // });
-        var mySwiper = new Swiper('.myswiper',{
-            slidesPerView : 'auto',
-            centeredSlides : true,
-            spaceBetween : 30,
-            watchSlidesProgress: true,
-            pagination : '.swiper-pagination',
-            paginationClickable: true,
-            onProgress: function(swiper){
-                for (var i = 0; i < swiper.slides.length; i++){
-                    var slide = swiper.slides[i];
-                    var progress = slide.progress;
-                    scale = 1 - Math.min(Math.abs(progress * 0.2), 1);
-                    es = slide.style;
-                    // es.opacity = 1 - Math.min(Math.abs(progress/2),1);
-                    es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0px,0,'+(-Math.abs(progress))+'px)';
-
-                }
+        var mySwiper = new Swiper(".swiper-container", {
+            slidesPerView: "auto",
+            centeredSlides: !0,
+            watchSlidesProgress: !0,
+            pagination: ".swiper-pagination",
+            paginationClickable: !0,
+            spaceBetween: 50,
+            onProgress: function (a) {
+                var b, c, d;
+                for (b = 0; b < a.slides.length; b++) c = a.slides[b], d = c.progress, scale = 1 - Math.min(Math.abs(.2 * d), 1), es = c.style,
+                    // es.opacity = 1 - Math.min(Math.abs(d / 2), 1),
+                    es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = "translate3d(0px,0," + -Math.abs(150 * d) + "px)"
             },
-
-            onSetTransition: function(swiper, speed) {
-                for (var i = 0; i < swiper.slides.length; i++) {
-                    es = swiper.slides[i].style;
-                    // console.log(es)
-                    es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
-                }
-
+            onSetTransition: function (a, b) {
+                for (var c = 0; c < a.slides.length; c++) es = a.slides[c].style, es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = b + "ms"
             }
         });
     })
