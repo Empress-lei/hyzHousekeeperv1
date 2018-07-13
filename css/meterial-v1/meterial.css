@@ -141,7 +141,7 @@ nav .meteral_nav .activi_li a {
 .warp .poster_list .poster_ul .poster_li {
   float: left;
   width: 30%;
-  height: 4.26666667rem;
+  height: 6.10666667rem;
   margin-left: 0.26666667rem;
   margin-bottom: 0.4rem;
   -webkit-box-shadow: 0 0.05333333rem 0.10666667rem 0 rgba(195, 195, 195, 0.5);
@@ -152,12 +152,11 @@ nav .meteral_nav .activi_li a {
 }
 .warp .poster_list .poster_ul .poster_li .x_div {
   width: 100%;
-  height: 4.26666667rem;
   background-color: #fff;
 }
 .warp .poster_list .poster_ul .poster_li .x_div .x_img {
   width: 100%;
-  height: 2.90666667rem;
+  height: 4.74666667rem;
 }
 .warp .poster_list .poster_ul .poster_li .x_div .x_con {
   padding: 0.10666667rem 0.10666667rem 0.26666667rem;
