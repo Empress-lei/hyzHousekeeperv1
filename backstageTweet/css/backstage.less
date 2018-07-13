@@ -69,7 +69,7 @@
       //左边推文的区域
       .article_region {
         width: 70%;
-        padding: 30px 20px;
+        padding: 20px 20px;
         border-right: 1px solid #EEEEEE;
         //搜索区域
         .search_div {
@@ -98,6 +98,7 @@
         #biuuu_city_list {
           min-height: 450px;
           li {
+            cursor: pointer;
             padding: 15px 0;
             min-height: 93px;
             border-bottom: 1px solid #EEEEEE;
@@ -130,6 +131,10 @@
                   -webkit-box-orient: vertical;
               }
             }
+          }
+          li:hover {
+            cursor: pointer;
+            background-color: #EEEEEE;
           }
         }
         //分页标签
@@ -211,7 +216,7 @@
       //右边已经托管幼儿园的列表
       .garden_region {
         width: 30%;
-        padding: 30px 20px;
+        padding: 20px 20px;
         .garden_num {
           line-height: 43px;
           font-size: 16px;
@@ -222,6 +227,7 @@
         .garden_list {
           min-height: 450px;
           .garden_li {
+            cursor: pointer;
             padding: 15px;
             min-height: 93px;
             border-bottom: 1px solid #EEEEEE;
@@ -260,6 +266,10 @@
               }
             }
           }
+          .garden_li:hover {
+            cursor: pointer;
+            background-color: #EEEEEE;
+          }
         }
         //首页查看全部按钮
         .look_div {
@@ -279,6 +289,153 @@
             -ms-border-radius: 4px;
             -o-border-radius: 4px;
             border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  //推文详情
+  .article_details {
+    width: 100%;
+    height: 100%;
+    padding: 20px 106px;
+    .details_container {
+      width: 100%;
+      height: 100%;
+      min-width: 1228px;
+      position: relative;
+      .details_title {
+        padding: 20px 0;
+        font-size: 18px;
+        color: #333;
+        border-bottom: 1px solid #EEEEEE;
+      }
+      .container_content {
+        width: 100%;
+        .article {
+          width: 375px;
+          padding: 20px 0 0;
+          .myschedule {
+            .textarea {
+              display: block;
+              font-size: 14px;
+              color: #333;
+              outline: none;
+              line-height: 28px;
+              letter-spacing: 2px;
+              border: 1px dotted #fff;
+              textarea {
+                width: 100%;
+                color: #0099FF;
+                border: 1px dotted #fff;
+              }
+            }
+            .rice_text {
+              font-size: 10px;
+              color: #FF530B;
+              line-height: 14px;
+              padding: 46px 0 19px;
+              letter-spacing: 2px;
+            }
+            .rice_num {
+              font-size: 30px;
+              line-height: 42px;
+              color: #FF530B;
+              text-align: center;
+              font-weight: 800;
+              letter-spacing: 2px;
+            }
+            .rice_tit {
+              font-size: 16px;
+              line-height: 22px;
+              color: #FF530B;
+              text-align: center;
+              padding-bottom: 15/37.5rem;
+              letter-spacing: 2px;
+            }
+            .rice_ba::before {
+              content: "";
+              position: absolute;
+              z-index: 555;
+              width: 12px;
+              height: 14px;
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAAAXNSR0IArs4c6QAAAglJREFUKBVdULtrFEEc/mZ2dmf37vYewcMzRgKCioKkUBAbQaJdohIbKwXBRhuxleCj8A+w0e60CzYxoIiPQq4RC/FBVIJIMCKH5HLruXe5nd2dGWdPI0e+KX6/33yPeRD8w3IwX27FmOaUyNI6ezI+PhVscMOVZEOj+WDf966a43Zuf41rlJj+nLcKZ3aOHPswLM56Mr9cL6+E6uVocfuEnTL4zBjyMRwlGqt93BBKTHLXHilZ/OmBrdMLZPb17bPbSrX7VVqENoshRtkBbNJHpBxwLwdKCJhKULG9GWZTu7bFcU2igkWUEQIec6GUBd/xIBOJHKNItUSUdOs0z9iiSCMjTuFZCkWbQ2ttLssglQCngNIExILZTx/RL+3wfU/Ebc5suJZtjIaAhJARWv0OfiddCJUiltCu69+hdyev/AilWOgb0WoUIUwzscZ6qtEzVUgKwhkMXd9TOf7KHJglpnNd0TdJGoGIESYppKYoOD4qpSJIHD3b5SaXCSFqYPgUNBvdOHlXcD1wy4JDLfO1PjybCJ12bx0aHZupVk+GWfjAcO/o9ShIxEPHZqi4PjTnaPbW3vaitanDtRNXCZnoZeIMA0PWtJPk+a8oxtf1IFlsrdxcij8eObX73IuMG4Z5zV/kHdpf6vz8JmV06drBi4839jfX/4axwo6WTDqnL+w9/2azaHj+AzRZ3qJh0mkXAAAAAElFTkSuQmCC");
+              background-size: 100% 100%;
+              background-position: left center;
+              background-repeat: no-repeat;
+              margin-left: -22px;
+              margin-top: 4px;
+            }
+            .rice_ba::after {
+              content: "";
+              position: absolute;
+              z-index: 555;
+              width: 12px;
+              height: 14px;
+              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAAAXNSR0IArs4c6QAAAglJREFUKBVdULtrFEEc/mZ2dmf37vYewcMzRgKCioKkUBAbQaJdohIbKwXBRhuxleCj8A+w0e60CzYxoIiPQq4RC/FBVIJIMCKH5HLruXe5nd2dGWdPI0e+KX6/33yPeRD8w3IwX27FmOaUyNI6ezI+PhVscMOVZEOj+WDf966a43Zuf41rlJj+nLcKZ3aOHPswLM56Mr9cL6+E6uVocfuEnTL4zBjyMRwlGqt93BBKTHLXHilZ/OmBrdMLZPb17bPbSrX7VVqENoshRtkBbNJHpBxwLwdKCJhKULG9GWZTu7bFcU2igkWUEQIec6GUBd/xIBOJHKNItUSUdOs0z9iiSCMjTuFZCkWbQ2ttLssglQCngNIExILZTx/RL+3wfU/Ebc5suJZtjIaAhJARWv0OfiddCJUiltCu69+hdyev/AilWOgb0WoUIUwzscZ6qtEzVUgKwhkMXd9TOf7KHJglpnNd0TdJGoGIESYppKYoOD4qpSJIHD3b5SaXCSFqYPgUNBvdOHlXcD1wy4JDLfO1PjybCJ12bx0aHZupVk+GWfjAcO/o9ShIxEPHZqi4PjTnaPbW3vaitanDtRNXCZnoZeIMA0PWtJPk+a8oxtf1IFlsrdxcij8eObX73IuMG4Z5zV/kHdpf6vz8JmV06drBi4839jfX/4axwo6WTDqnL+w9/2azaHj+AzRZ3qJh0mkXAAAAAElFTkSuQmCC");
+              background-size: 100% 100%;
+              background-position: right center;
+              background-repeat: no-repeat;
+              margin-top: 4px;
+              margin-left: 8px;
+            }
+            .mar_bot {
+              margin-bottom: 15px;
+            }
+            .mar_bott {
+              margin-bottom: 30px;
+            }
+            .loo_text {
+              font-size: 14px;
+              color: #FF530B;
+              line-height: 20px;
+              text-align: center;
+              letter-spacing: 2px;
+            }
+            //图片
+            .file_img {
+              height: auto;
+              position: relative;
+              .img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                cursor: pointer;
+                margin: 0 auto;
+              }
+              .imgbor {
+                border: 8px solid #fff;
+                -webkit-box-shadow: 0 12px 25px 0 rgba(218, 218, 218, 0.5);
+                -moz-box-shadow: 0 12px 25px 0 rgba(218, 218, 218, 0.5);
+                box-shadow: 0 12px 25px 0 rgba(218, 218, 218, 0.5);
+              }
+              .imgclose {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 20px;
+                height: 20px;
+              }
+            }
+            .file_img:hover {
+              .imgclose {
+                display: block;
+              }
+            }
+          }
+        }
+        .record {
+          width: 850px;
+          padding: 50px 0 0 30px;
+          .record_title {
+            font-size: 16px;
+            color: #333;
+            padding-bottom: 20px;
+          }
+          .record_subtitle {
+            font-size: 10px;
+            color: #999;
           }
         }
       }
