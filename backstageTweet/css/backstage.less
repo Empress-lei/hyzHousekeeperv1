@@ -1,4 +1,258 @@
 @import "base_bast.css";
+//幼儿园列表
+.kinder_lay {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 860px;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.7);
+  .kinder_list {
+    width: 100%;
+    padding: 50px;
+    .deta_share{
+      width: 100%;
+      min-height: 500px;
+      padding: 50px 30px;
+      background-color: #fff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      .kinder_top {
+        position: relative;
+        .kinder_tit {
+          font-size: 20px;
+          color: #333;
+          font-weight: 800;
+          padding-bottom: 30px;
+        }
+        .kinder_close {
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      #biuuu_city_list {
+        min-height: 450px;
+        li {
+          cursor: pointer;
+          padding: 15px;
+          min-height: 93px;
+          border-bottom: 1px solid #EEEEEE;
+          .news_img {
+            display: block;
+            width: 45px;
+            height: 45px;
+            margin-top: 10px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            border: 2px solid #dddddd;
+          }
+          .news_activity {
+            width: 95%;
+            float: left;
+            padding: 0 0 0 20px;
+            position: relative;
+            h4 {
+              font-size: 14px;
+              margin: 9px 0 16px;
+              height: 20px;
+              line-height: 20px;
+              color: #333;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+            .like_txt {
+              font-size: 10px;
+              color: #999;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+          }
+          .magic-checkbox {
+            display: block !important;
+            position: absolute;
+            right: -10px;
+            top: 13px;
+          }
+        }
+        li:nth-last-child(1) {
+          border-bottom: none;
+        }
+        li:hover {
+          cursor: pointer;
+          background-color: #EEEEEE;
+        }
+      }
+    }
+  }
+}
+//幼儿园提交信息确认页
+.submess_lay {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 860px;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.7);
+  .kinder_list {
+    width: 100%;
+    padding: 50px;
+    .deta_share{
+      width: 100%;
+      min-height: 500px;
+      padding: 50px 30px;
+      background-color: #fff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      .kinder_top {
+        position: relative;
+        .kinder_tit {
+          font-size: 20px;
+          color: #333;
+          font-weight: 800;
+          padding-bottom: 30px;
+        }
+        .kinder_close {
+          cursor: pointer;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .region_mess {
+        padding: 10px 0;
+        .region_txt {
+          font-size: 14px;
+          color: #333;
+          line-height: 32px;
+        }
+      }
+      //确认页
+      .record_ul {
+        width: 100%;
+        float: left;
+        padding: 20px 0;
+        .record_list {
+          float: left;
+          width: 12.5%;
+          margin-bottom: 10px;
+          .list_img {
+            display: block;
+            width: 45px;
+            height: 45px;
+            margin: 0 auto;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            border: 2px solid #dddddd;
+          }
+          .list_name {
+            font-size: 14px;
+            margin: 10px;
+            color: #333;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+          .list_time {
+            font-size: 10px;
+            color: #999;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+      .check-txt {
+        padding: 20px;
+        text-align: center;
+        font-size: 10px;
+        color: #999;
+      }
+      .mine_div {
+        width: 100%;
+        margin-top: 50px;
+        .sure_btn {
+          display: block;
+          margin: 0 auto;
+          width: 140px;
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          background-color: rgba(22, 155, 213, 1);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+        }
+      }
+
+      //提交成功
+      .suresuc_p {
+        padding: 50px 0;
+        font-size: 14px;
+        color: #333;
+      }
+      .suresuc {
+        width: 100%;
+        .suresuc_btn {
+          display: block;
+          width: 140px;
+          height: 40px;
+          line-height: 40px;
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          background-color: rgba(22, 155, 213, 1);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+        }
+        .suresuc_span {
+          font-size: 12px;
+          color: #FF0000;
+          line-height: 40px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
 .warp {
   width: 100%;
   height: auto;
@@ -114,6 +368,8 @@
               h4 {
                 font-size: 14px;
                 margin: 9px 0 16px;
+                height: 20px;
+                line-height: 20px;
                 color: #333;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -312,122 +568,35 @@
       }
       .container_content {
         width: 100%;
+        padding-top: 30px;
         .article {
           width: 375px;
-          padding: 20px 0 0;
-          .myschedule {
-            .textarea {
-              display: block;
-              font-size: 14px;
-              color: #333;
-              outline: none;
-              line-height: 28px;
-              letter-spacing: 2px;
-              border: 1px dotted #fff;
-              textarea {
-                width: 100%;
-                color: #0099FF;
-                border: 1px dotted #fff;
-              }
-            }
-            .rice_text {
-              font-size: 10px;
-              color: #FF530B;
-              line-height: 14px;
-              padding: 46px 0 19px;
-              letter-spacing: 2px;
-            }
-            .rice_num {
-              font-size: 30px;
-              line-height: 42px;
-              color: #FF530B;
-              text-align: center;
-              font-weight: 800;
-              letter-spacing: 2px;
-            }
-            .rice_tit {
-              font-size: 16px;
-              line-height: 22px;
-              color: #FF530B;
-              text-align: center;
-              padding-bottom: 15/37.5rem;
-              letter-spacing: 2px;
-            }
-            .rice_ba::before {
-              content: "";
-              position: absolute;
-              z-index: 555;
-              width: 12px;
-              height: 14px;
-              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAAAXNSR0IArs4c6QAAAglJREFUKBVdULtrFEEc/mZ2dmf37vYewcMzRgKCioKkUBAbQaJdohIbKwXBRhuxleCj8A+w0e60CzYxoIiPQq4RC/FBVIJIMCKH5HLruXe5nd2dGWdPI0e+KX6/33yPeRD8w3IwX27FmOaUyNI6ezI+PhVscMOVZEOj+WDf966a43Zuf41rlJj+nLcKZ3aOHPswLM56Mr9cL6+E6uVocfuEnTL4zBjyMRwlGqt93BBKTHLXHilZ/OmBrdMLZPb17bPbSrX7VVqENoshRtkBbNJHpBxwLwdKCJhKULG9GWZTu7bFcU2igkWUEQIec6GUBd/xIBOJHKNItUSUdOs0z9iiSCMjTuFZCkWbQ2ttLssglQCngNIExILZTx/RL+3wfU/Ebc5suJZtjIaAhJARWv0OfiddCJUiltCu69+hdyev/AilWOgb0WoUIUwzscZ6qtEzVUgKwhkMXd9TOf7KHJglpnNd0TdJGoGIESYppKYoOD4qpSJIHD3b5SaXCSFqYPgUNBvdOHlXcD1wy4JDLfO1PjybCJ12bx0aHZupVk+GWfjAcO/o9ShIxEPHZqi4PjTnaPbW3vaitanDtRNXCZnoZeIMA0PWtJPk+a8oxtf1IFlsrdxcij8eObX73IuMG4Z5zV/kHdpf6vz8JmV06drBi4839jfX/4axwo6WTDqnL+w9/2azaHj+AzRZ3qJh0mkXAAAAAElFTkSuQmCC");
-              background-size: 100% 100%;
-              background-position: left center;
-              background-repeat: no-repeat;
-              margin-left: -22px;
-              margin-top: 4px;
-            }
-            .rice_ba::after {
-              content: "";
-              position: absolute;
-              z-index: 555;
-              width: 12px;
-              height: 14px;
-              background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAAAXNSR0IArs4c6QAAAglJREFUKBVdULtrFEEc/mZ2dmf37vYewcMzRgKCioKkUBAbQaJdohIbKwXBRhuxleCj8A+w0e60CzYxoIiPQq4RC/FBVIJIMCKH5HLruXe5nd2dGWdPI0e+KX6/33yPeRD8w3IwX27FmOaUyNI6ezI+PhVscMOVZEOj+WDf966a43Zuf41rlJj+nLcKZ3aOHPswLM56Mr9cL6+E6uVocfuEnTL4zBjyMRwlGqt93BBKTHLXHilZ/OmBrdMLZPb17bPbSrX7VVqENoshRtkBbNJHpBxwLwdKCJhKULG9GWZTu7bFcU2igkWUEQIec6GUBd/xIBOJHKNItUSUdOs0z9iiSCMjTuFZCkWbQ2ttLssglQCngNIExILZTx/RL+3wfU/Ebc5suJZtjIaAhJARWv0OfiddCJUiltCu69+hdyev/AilWOgb0WoUIUwzscZ6qtEzVUgKwhkMXd9TOf7KHJglpnNd0TdJGoGIESYppKYoOD4qpSJIHD3b5SaXCSFqYPgUNBvdOHlXcD1wy4JDLfO1PjybCJ12bx0aHZupVk+GWfjAcO/o9ShIxEPHZqi4PjTnaPbW3vaitanDtRNXCZnoZeIMA0PWtJPk+a8oxtf1IFlsrdxcij8eObX73IuMG4Z5zV/kHdpf6vz8JmV06drBi4839jfX/4axwo6WTDqnL+w9/2azaHj+AzRZ3qJh0mkXAAAAAElFTkSuQmCC");
-              background-size: 100% 100%;
-              background-position: right center;
-              background-repeat: no-repeat;
-              margin-top: 4px;
-              margin-left: 8px;
-            }
-            .mar_bot {
-              margin-bottom: 15px;
-            }
-            .mar_bott {
-              margin-bottom: 30px;
-            }
-            .loo_text {
-              font-size: 14px;
-              color: #FF530B;
-              line-height: 20px;
-              text-align: center;
-              letter-spacing: 2px;
-            }
-            //图片
-            .file_img {
-              height: auto;
-              position: relative;
-              .img {
-                display: block;
-                max-width: 100%;
-                height: auto;
-                cursor: pointer;
-                margin: 0 auto;
-              }
-              .imgbor {
-                border: 8px solid #fff;
-                -webkit-box-shadow: 0 12px 25px 0 rgba(218, 218, 218, 0.5);
-                -moz-box-shadow: 0 12px 25px 0 rgba(218, 218, 218, 0.5);
-                box-shadow: 0 12px 25px 0 rgba(218, 218, 218, 0.5);
-              }
-              .imgclose {
-                display: none;
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 20px;
-                height: 20px;
-              }
-            }
-            .file_img:hover {
-              .imgclose {
-                display: block;
-              }
-            }
+          padding: 20px 20px 20px;
+          border-right: 1px solid #EEEEEE;
+         .article_title {
+           font-size: 16px;
+           color: #333;
+           text-align: center;
+           font-weight: 800;
+           padding-bottom: 20px;
+         }
+          .article_introduce {
+            font-size: 14px;
+            color: #333;
+            line-height: 25px;
+            letter-spacing: 2px;
+            text-indent: 35px;
+            padding-bottom: 20px;
+          }
+          .article_img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
           }
         }
         .record {
           width: 850px;
-          padding: 50px 0 0 30px;
+          padding: 20px 0 0 30px;
           .record_title {
             font-size: 16px;
             color: #333;
@@ -437,8 +606,603 @@
             font-size: 10px;
             color: #999;
           }
+          .record_region {
+            width: 100%;
+            padding: 30px 20px 10px;
+            border-bottom: 1px solid #EEEEEE;
+            .record_ul {
+              width: 80%;
+              float: left;
+              .record_list {
+                float: left;
+                width: 20%;
+                margin-bottom: 10px;
+                .list_img {
+                  display: block;
+                  width: 45px;
+                  height: 45px;
+                  margin: 0 auto;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  border-radius: 50%;
+                  border: 2px solid #dddddd;
+                }
+                .list_name {
+                  font-size: 14px;
+                  margin: 10px;
+                  color: #333;
+                  height: 20px;
+                  line-height: 20px;
+                  text-align: center;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+                .list_time {
+                  font-size: 10px;
+                  color: #999;
+                  text-align: center;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+              }
+            }
+            .look_all {
+              display: block;
+              width: 20%;
+              text-align: right;
+              line-height: 100px;
+              font-size: 16px;
+              color: #0099FF;
+              letter-spacing: 2px;
+            }
+          }
         }
       }
     }
+    //批量推送按钮
+    .push_div {
+      padding-top: 30px;
+      .push_button {
+        display: block;
+        width: 140px;
+        height: 38px;
+        text-align: center;
+        line-height: 38px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: #999;
+        border: 1px solid #ddd;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+      }
+    }
+  }
+  //选择幼儿园
+  .push_kinder {
+    width: 100%;
+    height: 100%;
+    padding: 20px 106px;
+    .push_container {
+      width: 100%;
+      height: 100%;
+      min-width: 1228px;
+      position: relative;
+      .push_title {
+        padding: 20px 0;
+        font-size: 18px;
+        color: #333;
+        border-bottom: 1px solid #EEEEEE;
+      }
+      .push_content {
+        width: 100%;
+        padding-top: 30px;
+        .article {
+          width: 375px;
+          padding: 20px;
+          .article_title {
+            font-size: 16px;
+            color: #333;
+            font-weight: 800;
+            text-align: center;
+            padding-bottom: 20px;
+          }
+          .article_introduce {
+            font-size: 14px;
+            color: #333;
+            line-height: 25px;
+            letter-spacing: 2px;
+            text-indent: 35px;
+            padding-bottom: 20px;
+          }
+          .article_img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+        .push_record {
+          width: 850px;
+          border-left: 1px solid #EEEEEE;
+          padding: 0 20px;
+          .push_title {
+            font-size: 16px;
+            color: #333;
+            padding-bottom: 20px;
+          }
+          //选择幼儿园分页区域
+          #biuuu_city_list {
+            min-height: 450px;
+            li {
+              cursor: pointer;
+              padding: 15px;
+              min-height: 93px;
+              border-bottom: 1px solid #EEEEEE;
+              .news_img {
+                display: block;
+                width: 45px;
+                height: 45px;
+                margin-top: 10px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                border: 2px solid #dddddd;
+              }
+              .news_activity {
+                width: 90%;
+                float: left;
+                padding: 0 20px;
+                position: relative;
+                h4 {
+                  font-size: 14px;
+                  margin: 9px 0 16px;
+                  height: 20px;
+                  line-height: 20px;
+                  color: #333;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+                .like_txt {
+                  font-size: 10px;
+                  color: #999;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+              }
+              .magic-checkbox {
+                display: block !important;
+                right: -30px;
+                top: 13px;
+              }
+            }
+            li:hover {
+              cursor: pointer;
+              background-color: #EEEEEE;
+            }
+          }
+          //下一步按钮
+          .push_div {
+            padding: 30px 20px;
+            .sele_num {
+              padding-right: 50px;
+              font-size: 14px;
+              color: #333;
+              line-height: 38px;
+            }
+            .next_button {
+              display: block;
+              width: 140px;
+              height: 38px;
+              text-align: center;
+              line-height: 38px;
+              margin: 0 auto;
+              font-size: 14px;
+              color: #999;
+              border: 1px solid #ddd;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              -o-border-radius: 4px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //已经选择的幼儿园
+  .sele_kinder {
+    width: 100%;
+    height: 100%;
+    padding: 20px 106px;
+    .sele_container {
+      width: 100%;
+      height: 100%;
+      min-width: 1228px;
+      position: relative;
+      .sele_title {
+        padding: 20px 0;
+        font-size: 18px;
+        color: #333;
+        border-bottom: 1px solid #EEEEEE;
+      }
+      .sele_content {
+        width: 100%;
+        padding-top: 30px;
+        .article {
+          width: 375px;
+          padding: 20px;
+          .article_title {
+            font-size: 16px;
+            color: #333;
+            font-weight: 800;
+            text-align: center;
+            padding-bottom: 20px;
+          }
+          .article_introduce {
+            font-size: 14px;
+            color: #333;
+            line-height: 25px;
+            letter-spacing: 2px;
+            text-indent: 35px;
+            padding-bottom: 20px;
+          }
+          .article_img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+        .sele_record {
+          width: 850px;
+          border-left: 1px solid #EEEEEE;
+          padding: 0 20px;
+          .sele_title {
+            font-size: 16px;
+            color: #333;
+            padding-bottom: 20px;
+          }
+          //已经选择的幼儿园列表
+          .sele_region {
+            width: 100%;
+            padding: 30px 20px 10px;
+            border-bottom: 1px solid #EEEEEE;
+            .record_ul {
+              width: 80%;
+              float: left;
+              .record_list {
+                float: left;
+                width: 20%;
+                margin-bottom: 10px;
+                position: relative;
+                .list_img {
+                  display: block;
+                  width: 45px;
+                  height: 45px;
+                  margin: 0 auto;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  border-radius: 50%;
+                  border: 2px solid #dddddd;
+                }
+                .list_name {
+                  font-size: 14px;
+                  line-height: 20px;
+                  height: 20px;
+                  margin: 10px;
+                  color: #333;
+                  text-align: center;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+                .list_time {
+                  font-size: 10px;
+                  color: #999;
+                  text-align: center;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+                .close_icon {
+                  cursor: pointer;
+                  position: absolute;
+                  top: -10px;
+                  right: -10px;
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+            .look_all {
+              display: block;
+              width: 20%;
+              text-align: right;
+              line-height: 100px;
+              font-size: 16px;
+              color: #0099FF;
+              letter-spacing: 2px;
+            }
+          }
+          //选择时间
+          .sele_time {
+            width: 100%;
+            padding: 30px 20px 30px;
+            border-bottom: 1px solid #EEEEEE;
+            .time_title {
+              font-size: 16px;
+              color: #333;
+              padding-bottom: 20px;
+            }
+            .time_content {
+              width: 100%;
+              .sele_month {
+                width: 400px;
+                padding: 10px 20px;
+                border-right: 1px solid #EEEEEE;
+                .month {
+                  font-size: 22px;
+                  color: #333;
+                  font-weight: 800;
+                  line-height: 44px;
+                }
+
+                #schedule-box{
+                  width: 100%;
+                  padding: 35px 0;
+                  margin: 0 auto;
+                  font-size: 13px;
+                }
+                .schedule-hd{
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 0 15px 20px;
+                }
+                .today{
+                  flex: 1;
+                  text-align: center;
+                }
+                .ul-box{
+                  overflow: hidden;
+                }
+                .ul-box > li{
+                  float: left;
+                  width: 14.28%;
+                  text-align: center;
+                  padding: 5px 0;
+                }
+                .other-month{
+                  color: #999999;
+                }
+                .current-month{
+                  color: #333333;
+                }
+                .today-style{
+                  border-radius: 50%;
+                  background: #58d321;
+                }
+                .arrow{
+                  cursor: pointer;
+                }
+                .dayStyle{
+                  display: inline-block;
+                  width: 35px;
+                  height: 35px;
+                  border-radius: 50%;
+                  text-align: center;
+                  line-height: 35px;
+                  cursor: pointer;
+                }
+                .current-month > .dayStyle:hover{
+                  background: #00BDFF;
+                  color: #ffffff;
+                }
+                .today-flag{
+                  background: #00C2B1;
+                  color: #fff;
+                }
+                .selected-style {
+                  background: #00BDFF;
+                  color: #ffffff;
+                }
+              }
+              .dateTime {
+                width: 350px;
+                padding: 10px 20px;
+                .time {
+                  font-size: 22px;
+                  color: #333;
+                  font-weight: 800;
+                  line-height: 44px;
+                  .startTimeCurrent {
+                    padding-left: 15px;
+                  }
+                }
+                .choiceDate {
+                  width: 100%;
+                  .dateBox {
+                    width: 100%;
+                    background-color: #fff;
+                    .swiper-slide-active {
+                      color: #FF530B;
+
+                    }
+                    .swiper-slide {
+                      line-height: 60px;
+                    }
+                    // <!--顶部的确定和时间-->
+                    .dateTime {
+                      width: 90%;
+                      margin: 0 auto;
+                      height: auto;
+                      // 左右时间
+                      .timeNum {
+                        width: 100%;
+                        .startNum {
+                          width: 100%;
+                          height: 180px;
+                          text-align: center;
+                          overflow: hidden;
+                          position: relative;
+                          .swiper-slide {
+                            font-size: 14px;
+                          }
+                          .line {
+                            width: 100%;
+                            position: absolute;
+                            top: 60px;
+                            border-bottom: 1px solid #EEEEEE;
+                          }
+                          .startHour {
+                            float: left;
+                            font-size: 0.5rem;
+                            width: 47.5%;
+
+                          }
+                          .startMinute {
+                            float: left;
+                            font-size: 0.5rem;
+                            width: 47.5%;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          //确定按钮
+          .push_div {
+            padding: 30px 20px;
+            .sele_num {
+              padding-right: 50px;
+              font-size: 14px;
+              color: #333;
+              line-height: 38px;
+            }
+            .startTimeCurrent {
+              padding-left: 15px;
+            }
+            .next_button {
+              display: block;
+              width: 140px;
+              height: 38px;
+              text-align: center;
+              line-height: 38px;
+              margin: 0 auto;
+              font-size: 14px;
+              color: #999;
+              border: 1px solid #ddd;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              -o-border-radius: 4px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//分页标签
+#pageGro {
+  position: relative;
+  padding: 20px 20px 0;
+  div {
+    width: 100%;
+    height: 28px;
+    text-align: center;
+    position: relative;
+    a {
+      display: none;
+    }
+  }
+  .on {
+    font-size: 14px;
+    color: #FF530B !important;
+  }
+  .layui-laypage .layui-laypage-curr em {
+    font-size: 20px !important;
+    color: #FF530B !important;
+  }
+  .layui-laypage-limits {
+    position: absolute;
+    left: -10px;
+    border: none;
+    select {
+      height: 28px;
+      line-height: 28px;
+      border: none;
+      padding: 0;
+      background-color: #fff;
+      /*很关键：将默认的select选择框样式清除*/
+      appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none;
+    }
+    select::-ms-expand {
+      display: none;
+    }
+  }
+  .layui-laypage-count {
+    float: left;
+    position: absolute;
+    left: 70px;
+  }
+  .layui-laypage .layui-laypage-curr {
+    position: absolute;
+    right: 240px;
+  }
+  .layui-laypage .layui-laypage-skip {
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    position: absolute;
+    right: 0;
+  }
+  .pageUp {
+    position: absolute;
+    right: 300px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .pageDown {
+    position: absolute;
+    right: 180px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
   }
 }

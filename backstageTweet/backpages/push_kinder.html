@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <title>超级公众号管家--推送文章</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../layui-v1/css/layui.css">
+    <link rel="stylesheet" href="../css/magic-check.css">
+    <link rel="stylesheet" href="../css/backstage.css">
+</head>
+<body>
+<div class="warp">
+    <div class="hrader_nav">
+        <header class="home_header clearfix">
+            <a href="javascript:void(0);" class="fl">
+                <img src="../images/hyzlogo.png" alt="hyzlogo" class="hyzlogo_img fl">
+            </a>
+            <p class="manaplat">超级公众号管家</p>
+        </header>
+    </div>
+    <div class="push_kinder">
+        <div class="push_container">
+            <h3 class="push_title">
+                日常推文列表&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;4岁天才女孩懂3国语言，只因为爸爸这么做&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;幼儿园选择
+            </h3>
+            <div class="push_content clearfix">
+                <div class="article fl">
+                    <h3 class="article_title">4岁天才女孩懂3国语言，只因为爸爸这么做</h3>
+                    <p class="article_introduce">
+                        前阵子同事给我安利了一档
+
+                        芒果台的节目《少年说》，
+
+                        她说这是一档让你笑着笑着就会哭的节目。
+
+                        有这么神奇吗？
+
+                        于是老母亲趁孩子睡觉的时候看了几集，
+
+                        这档节目看的时候想笑，
+
+                        稚子童言真的很有趣，
+
+                        然而看完之后，又忍不住想哭。
+                    </p>
+                    <img src="../images/article/paint/page1.png" alt="" class="article_img">
+                </div>
+                <div class="push_record fl">
+                    <h3 class="push_title">请勾选目标幼儿园进行批量推送</h3>
+                    <div class="biuuu">
+                        <ul id="biuuu_city_list"></ul>
+                        <div id="pageGro"></div>
+                    </div>
+                    <div class="push_div clearfix">
+                        <a href="javascript:void (0);" class="next_button fr">下一步</a>
+                        <span class="sele_num fr">已选择 5 家园所</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../layui-v1/layui.js"></script>
+<script>
+    $(function () {
+        var html = '';
+        $.ajax({
+            type: "GET",
+            url: "../json/push.json",
+            success: function (ts) {
+                var laypage = layui.laypage, layer = layui.layer;
+                var count = ts.count;
+                var data = ts.data;
+                //调用分页
+                layui.use(['laypage', 'layer'], function () {
+                    var laypage = layui.laypage, layer = layui.layer;
+                    laypage.render({
+                        elem: 'pageGro',
+                        count: count,
+                        limit: count / 3,
+                        limits:[15],
+                        prev: '上一页',
+                        next: '下一页',
+                        layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'],
+                        jump: function (obj) {
+                            //模拟渲染
+                            console.log(obj.limit)
+                            document.getElementById('biuuu_city_list').innerHTML = function () {
+                                var arr = [];
+//                            thisData = data.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
+//                            console.log(thisData)
+                                layui.each(data, function (index, item) {
+                                    console.log(item)
+                                    arr.push('<li class="clearfix">' +
+                                        '<img src="' + item.images + '" class="news_img fl"/>' +
+                                        '<div class="news_activity">' +
+                                            '<div class="clearfix">' +
+                                                '<h4 class="fl">' + item.title + '</h4>' +
+                                                '<input class="magic-checkbox fr" type="checkbox" name="seleCheck" id="seleCheck">'+
+                                            '</div>' +
+                                            '<p class="like_txt">' + item.accumulative + '</p>' +
+                                        '</div>' +
+                                        '</li>');
+                                });
+                                return arr.join('');
+                            }();
+                        }
+                    });
+                })
+            }
+        })
+    })
+</script>
+</html>
