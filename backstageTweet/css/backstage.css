@@ -7,17 +7,20 @@
   min-width: 860px;
   position: fixed;
   top: 0;
-  overflow: auto;
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .kinder_lay .kinder_list {
   width: 100%;
+  height: 100%;
   padding: 50px;
+  position: relative;
 }
 .kinder_lay .kinder_list .deta_share {
-  width: 100%;
-  min-height: 500px;
+  width: 1000px;
+  height: 90%;
+  overflow: auto;
+  margin: 0 auto;
   padding: 50px 30px;
   background-color: #fff;
   -webkit-border-radius: 5px;
@@ -93,8 +96,12 @@
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li .magic-checkbox {
   display: block !important;
   position: absolute;
-  right: -10px;
-  top: 13px;
+  right: 20px;
+  top: 15px;
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li:nth-last-child(1) {
   border-bottom: none;
@@ -102,6 +109,24 @@
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li:hover {
   cursor: pointer;
   background-color: #EEEEEE;
+}
+.kinder_lay .kinder_list .mine_div {
+  width: 100%;
+  margin-top: 30px;
+}
+.kinder_lay .kinder_list .mine_div .sure_btn {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  background-color: #169bd5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .submess_lay {
   display: none;
@@ -111,17 +136,20 @@
   min-width: 860px;
   position: fixed;
   top: 0;
-  overflow: auto;
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .submess_lay .kinder_list {
   width: 100%;
+  height: 100%;
   padding: 50px;
+  position: relative;
 }
 .submess_lay .kinder_list .deta_share {
-  width: 100%;
-  min-height: 500px;
+  width: 1000px;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
   padding: 50px 30px;
   background-color: #fff;
   -webkit-border-radius: 5px;
@@ -781,7 +809,11 @@
   position: absolute;
   display: block !important;
   right: -30px;
-  top: 13px;
+  top: 15px;
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 .warp .push_kinder .push_container .push_content .push_record #biuuu_city_list li:hover {
   cursor: pointer;
