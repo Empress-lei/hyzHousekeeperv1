@@ -69,6 +69,7 @@
   position: relative;
 }
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_activity h4 {
+  width: 50%;
   font-size: 14px;
   margin: 9px 0 16px;
   height: 20px;
@@ -81,7 +82,7 @@
   -webkit-box-orient: vertical;
 }
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_activity .like_txt {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -188,7 +189,7 @@
   -webkit-box-orient: vertical;
 }
 .submess_lay .kinder_list .deta_share .record_ul .record_list .list_time {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   text-align: center;
   overflow: hidden;
@@ -357,7 +358,7 @@
   margin-right: 20px;
 }
 .warp .list_container .cont_region .article_region #biuuu_city_list li .news_activity {
-  width: 90%;
+  width: 50%;
   padding: 0 20px;
 }
 .warp .list_container .cont_region .article_region #biuuu_city_list li .news_activity h4 {
@@ -373,7 +374,7 @@
   -webkit-box-orient: vertical;
 }
 .warp .list_container .cont_region .article_region #biuuu_city_list li .news_activity .like_txt {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -505,7 +506,7 @@
   -webkit-box-orient: vertical;
 }
 .warp .list_container .cont_region .garden_region .garden_list .garden_li .garden_mess .garden_p {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -635,7 +636,7 @@
   -webkit-box-orient: vertical;
 }
 .warp .article_details .details_container .container_content .record .record_region .record_ul .record_list .list_time {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   text-align: center;
   overflow: hidden;
@@ -755,6 +756,7 @@
   position: relative;
 }
 .warp .push_kinder .push_container .push_content .push_record #biuuu_city_list li .news_activity h4 {
+  width: 50%;
   font-size: 14px;
   margin: 9px 0 16px;
   height: 20px;
@@ -767,7 +769,7 @@
   -webkit-box-orient: vertical;
 }
 .warp .push_kinder .push_container .push_content .push_record #biuuu_city_list li .news_activity .like_txt {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -776,6 +778,7 @@
   -webkit-box-orient: vertical;
 }
 .warp .push_kinder .push_container .push_content .push_record #biuuu_city_list li .magic-checkbox {
+  position: absolute;
   display: block !important;
   right: -30px;
   top: 13px;
@@ -905,7 +908,7 @@
   -webkit-box-orient: vertical;
 }
 .warp .sele_kinder .sele_container .sele_content .sele_record .sele_region .record_ul .record_list .list_time {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
   text-align: center;
   overflow: hidden;
@@ -1028,6 +1031,7 @@
 }
 .warp .sele_kinder .sele_container .sele_content .sele_record .sele_time .time_content .dateTime .choiceDate {
   width: 100%;
+  padding: 70px 0 45px;
 }
 .warp .sele_kinder .sele_container .sele_content .sele_record .sele_time .time_content .dateTime .choiceDate .dateBox {
   width: 100%;

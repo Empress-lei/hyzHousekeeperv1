@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../layui-v1/css/layui.css">
-    <link rel="stylesheet" href="../css/magic-check.css">
+    <!--<link rel="stylesheet" href="../css/magic-check.css">-->
     <link rel="stylesheet" href="../css/backstage.css">
 </head>
 <body>
@@ -96,13 +96,13 @@
 //                            thisData = data.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
 //                            console.log(thisData)
                                 layui.each(data, function (index, item) {
-                                    console.log(item)
-                                    arr.push('<li class="clearfix">' +
+                                    // console.log(item)
+                                    arr.push('<li class="clearfix sele_li">' +
                                         '<img src="' + item.images + '" class="news_img fl"/>' +
                                         '<div class="news_activity">' +
                                             '<div class="clearfix">' +
                                                 '<h4 class="fl">' + item.title + '</h4>' +
-                                                '<input class="magic-checkbox fr" type="checkbox" name="seleCheck" id="seleCheck">'+
+                                                '<input class="magic-checkbox fr" type="checkbox" name="seleCheck">'+
                                             '</div>' +
                                             '<p class="like_txt">' + item.accumulative + '</p>' +
                                         '</div>' +
@@ -110,6 +110,9 @@
                                 });
                                 return arr.join('');
                             }();
+                            $(".sele_li").click(function () {
+                                $(this).find("input").click()
+                            })
                         }
                     });
                 })
