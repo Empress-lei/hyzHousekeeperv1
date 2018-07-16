@@ -97,7 +97,7 @@
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li .magic-checkbox {
   display: block !important;
   position: absolute;
-  right: 20px;
+  right: -18%;
   top: 15px;
 }
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li:nth-last-child(1) {
@@ -609,6 +609,13 @@
   width: 100%;
   margin: 0 auto;
 }
+.warp .article_details .details_container .container_content .article .original_look {
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  padding: 30px 0;
+  color: #1ba1e2;
+}
 .warp .article_details .details_container .container_content .record {
   width: 850px;
   padding: 20px 0 0 30px;
@@ -743,6 +750,13 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+}
+.warp .push_kinder .push_container .push_content .article .original_look {
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  padding: 30px 0;
+  color: #1ba1e2;
 }
 .warp .push_kinder .push_container .push_content .push_record {
   width: 850px;
@@ -882,6 +896,13 @@
   display: block;
   width: 100%;
   margin: 0 auto;
+}
+.warp .sele_kinder .sele_container .sele_content .article .original_look {
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  padding: 30px 0;
+  color: #1ba1e2;
 }
 .warp .sele_kinder .sele_container .sele_content .sele_record {
   width: 850px;
