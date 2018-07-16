@@ -4,9 +4,10 @@
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-width: 860px;
+  min-width: 1000px;
   position: fixed;
   top: 0;
+  overflow: auto;
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -66,7 +67,7 @@
   border: 2px solid #dddddd;
 }
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_activity {
-  width: 95%;
+  width: 80%;
   float: left;
   padding: 0 0 0 20px;
   position: relative;
@@ -98,10 +99,6 @@
   position: absolute;
   right: 20px;
   top: 15px;
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
 }
 .kinder_lay .kinder_list .deta_share .biuuu_city_list li:nth-last-child(1) {
   border-bottom: none;
@@ -133,7 +130,8 @@
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-width: 860px;
+  min-width: 1000px;
+  overflow: auto;
   position: fixed;
   top: 0;
   z-index: 200;
@@ -621,7 +619,7 @@
   padding-bottom: 20px;
 }
 .warp .article_details .details_container .container_content .record .record_subtitle {
-  font-size: 10px;
+  font-size: 13px;
   color: #999;
 }
 .warp .article_details .details_container .container_content .record .record_region {
@@ -810,10 +808,6 @@
   display: block !important;
   right: -30px;
   top: 15px;
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
 }
 .warp .push_kinder .push_container .push_content .push_record #biuuu_city_list li:hover {
   cursor: pointer;

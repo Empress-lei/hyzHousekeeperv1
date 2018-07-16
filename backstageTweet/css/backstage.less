@@ -5,9 +5,10 @@
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-width: 860px;
+  min-width: 1000px;
   position: fixed;
   top: 0;
+  overflow: auto;
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.7);
   .kinder_list {
@@ -15,7 +16,7 @@
     height: 100%;
     padding: 50px;
     position: relative;
-    .deta_share{
+    .deta_share {
       width: 1000px;
       height: 90%;
       overflow: auto;
@@ -62,7 +63,7 @@
             border: 2px solid #dddddd;
           }
           .news_activity {
-            width: 95%;
+            width: 80%;
             float: left;
             padding: 0 0 0 20px;
             position: relative;
@@ -94,10 +95,6 @@
             position: absolute;
             right: 20px;
             top: 15px;
-            -moz-transform:scale(1.5);
-            -ms-transform:scale(1.5);
-            -webkit-transform:scale(1.5);
-            -o-transform:scale(1.5);
           }
         }
         li:nth-last-child(1) {
@@ -129,13 +126,15 @@
     }
   }
 }
+
 //幼儿园提交信息确认页
 .submess_lay {
   display: none;
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-width: 860px;
+  min-width: 1000px;
+  overflow: auto;
   position: fixed;
   top: 0;
   z-index: 200;
@@ -145,7 +144,7 @@
     height: 100%;
     padding: 50px;
     position: relative;
-    .deta_share{
+    .deta_share {
       width: 1000px;
       height: 100%;
       overflow: auto;
@@ -282,6 +281,7 @@
     }
   }
 }
+
 .warp {
   width: 100%;
   height: auto;
@@ -407,13 +407,13 @@
                 -webkit-box-orient: vertical;
               }
               .like_txt {
-                  font-size: 13px;
-                  color: #999;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  display: -webkit-box;
-                  -webkit-line-clamp: 1;
-                  -webkit-box-orient: vertical;
+                font-size: 13px;
+                color: #999;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
               }
             }
           }
@@ -454,9 +454,9 @@
               padding: 0;
               background-color: #fff;
               /*很关键：将默认的select选择框样式清除*/
-              appearance:none;
-              -moz-appearance:none;
-              -webkit-appearance:none;
+              appearance: none;
+              -moz-appearance: none;
+              -webkit-appearance: none;
             }
             select::-ms-expand {
               display: none;
@@ -602,13 +602,13 @@
           width: 375px;
           padding: 20px 20px 20px;
           border-right: 1px solid #EEEEEE;
-         .article_title {
-           font-size: 16px;
-           color: #333;
-           text-align: center;
-           font-weight: 800;
-           padding-bottom: 20px;
-         }
+          .article_title {
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            font-weight: 800;
+            padding-bottom: 20px;
+          }
           .article_introduce {
             font-size: 14px;
             color: #333;
@@ -632,7 +632,7 @@
             padding-bottom: 20px;
           }
           .record_subtitle {
-            font-size: 10px;
+            font-size: 13px;
             color: #999;
           }
           .record_region {
@@ -822,10 +822,7 @@
                 display: block !important;
                 right: -30px;
                 top: 15px;
-                -moz-transform:scale(1.5);
-                -ms-transform:scale(1.5);
-                -webkit-transform:scale(1.5);
-                -o-transform:scale(1.5);
+
               }
             }
             li:hover {
@@ -1006,44 +1003,44 @@
                   line-height: 44px;
                 }
 
-                #schedule-box{
+                #schedule-box {
                   width: 100%;
                   padding: 35px 0;
                   margin: 0 auto;
                   font-size: 13px;
                 }
-                .schedule-hd{
+                .schedule-hd {
                   display: flex;
                   justify-content: space-between;
                   padding: 0 15px 20px;
                 }
-                .today{
+                .today {
                   flex: 1;
                   text-align: center;
                 }
-                .ul-box{
+                .ul-box {
                   overflow: hidden;
                 }
-                .ul-box > li{
+                .ul-box > li {
                   float: left;
                   width: 14.28%;
                   text-align: center;
                   padding: 5px 0;
                 }
-                .other-month{
+                .other-month {
                   color: #999999;
                 }
-                .current-month{
+                .current-month {
                   color: #333333;
                 }
-                .today-style{
+                .today-style {
                   border-radius: 50%;
                   background: #58d321;
                 }
-                .arrow{
+                .arrow {
                   cursor: pointer;
                 }
-                .dayStyle{
+                .dayStyle {
                   display: inline-block;
                   width: 35px;
                   height: 35px;
@@ -1052,11 +1049,11 @@
                   line-height: 35px;
                   cursor: pointer;
                 }
-                .current-month > .dayStyle:hover{
+                .current-month > .dayStyle:hover {
                   background: #00BDFF;
                   color: #ffffff;
                 }
-                .today-flag{
+                .today-flag {
                   background: #00C2B1;
                   color: #fff;
                 }
@@ -1199,9 +1196,9 @@
       padding: 0;
       background-color: #fff;
       /*很关键：将默认的select选择框样式清除*/
-      appearance:none;
-      -moz-appearance:none;
-      -webkit-appearance:none;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
     }
     select::-ms-expand {
       display: none;
