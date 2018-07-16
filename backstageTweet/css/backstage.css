@@ -41,16 +41,16 @@
   width: 20px;
   height: 20px;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list {
   min-height: 450px;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li {
   cursor: pointer;
   padding: 15px;
   min-height: 93px;
   border-bottom: 1px solid #EEEEEE;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li .news_img {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_img {
   display: block;
   width: 45px;
   height: 45px;
@@ -62,13 +62,13 @@
   border-radius: 50%;
   border: 2px solid #dddddd;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li .news_activity {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_activity {
   width: 95%;
   float: left;
   padding: 0 0 0 20px;
   position: relative;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li .news_activity h4 {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_activity h4 {
   font-size: 14px;
   margin: 9px 0 16px;
   height: 20px;
@@ -80,7 +80,7 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li .news_activity .like_txt {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li .news_activity .like_txt {
   font-size: 10px;
   color: #999;
   overflow: hidden;
@@ -89,16 +89,16 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li .magic-checkbox {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li .magic-checkbox {
   display: block !important;
   position: absolute;
   right: -10px;
   top: 13px;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li:nth-last-child(1) {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li:nth-last-child(1) {
   border-bottom: none;
 }
-.kinder_lay .kinder_list .deta_share #biuuu_city_list li:hover {
+.kinder_lay .kinder_list .deta_share .biuuu_city_list li:hover {
   cursor: pointer;
   background-color: #EEEEEE;
 }
