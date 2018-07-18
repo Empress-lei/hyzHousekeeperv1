@@ -9,7 +9,13 @@ $(function () {
     })
 
     $(".next_button").click(function () {
-        $(".submess_lay").show()
+        var yearShow = $("#h3Ele").text();
+        var houerShow = $("#dateHourLeft .swiper-slide-active").text();
+        console.log(houerShow)
+        var minuteShow = $("#dateMinuteLeft .swiper-slide-active").text();
+        console.log(minuteShow)
+        $(".region_time span").text(yearShow + ' ' + houerShow+':'+minuteShow)
+        $(".submess_lay").show();
     })
     //提交蒙城上的关闭按钮
     $(".submess_lay .kinder_close").click(function () {
@@ -50,23 +56,23 @@ $(function () {
         el: '#schedule-box',
         //date: '2018-9-20',
         clickCb: function (y, m, d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：' + y + '年' + m + '月' + d + "日"
+            document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
             $(".month span").text(m + "月")
         },
         nextMonthCb: function (y, m, d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：' + y + '年' + m + '月' + d + "日"
+            document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
             $(".month span").text(m + "月")
         },
         nextYeayCb: function (y, m, d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：' + y + '年' + m + '月' + d + "日"
+            document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
             $(".month span").text(m + "月")
         },
         prevMonthCb: function (y, m, d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：' + y + '年' + m + '月' + d + "日"
+            document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
             $(".month span").text(m + "月")
         },
         prevYearCb: function (y, m, d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：' + y + '年' + m + '月' + d + "日"
+            document.querySelector('#h3Ele').innerHTML =  y + '年' + m + '月' + d + "日"
             $(".month span").text(m + "月")
         }
     });
