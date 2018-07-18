@@ -116,8 +116,8 @@
                             $(".sele_li").click(function () {
                                 $(this).find("input").click()
                             })
-                            $("input").click(function () {
-                                $(this).click()
+                            $("input").click(function (e) {
+                                e.stopPropagation();
                             })
                         }
                     });
