@@ -71,12 +71,4 @@ $(function () {
         }
     });
 
-    $(".close_icon").on("click", function () {
-        removeImg(this);
-    })
 })
-
-function removeImg(ele) {
-    var ele = $(ele)
-    ele.parent().remove();
-}
