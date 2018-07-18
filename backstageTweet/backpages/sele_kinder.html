@@ -42,7 +42,7 @@
             <div class="region_mess">
                 <p class="region_txt">推送文章：<span>4岁天才女孩懂3国语言，只因为爸爸这么做！</span></p>
                 <p class="region_txt">推送时间：<span>2018.07.13     13：30</span></p>
-                <p class="region_txt">已选园所：<span>共15家</span></p>
+                <p class="region_txt region_length">已选园所：共<span>15</span>家</p>
             </div>
 
             <!--
@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="sele_record fl">
-                    <h3 class="sele_title">已选推送 幼儿园 列表 - 共 <span data-text="5">5</span> 家</h3>
+                    <h3 class="sele_title">已选推送 幼儿园 列表 - 共 <span>5</span> 家</h3>
                     <div class="sele_region clearfix">
                         <ul class="record_ul clearfix"></ul>
                         <a href="javascript:void (0);" class="look_all fr">查看全部</a>
@@ -314,13 +314,20 @@
         var parLength = $(".sele_region .record_list").length;
         $(".sele_title span").text(parLength);
         $(".list_num").text(parLength);
+        $(".region_length span").text(parLength);
+        //点击关闭按钮
         $(".close_icon").on("click", function () {
             removeImg(this);
+            //获取页面列表的长度
             var parLength = $(".sele_region .record_list").length;
             $(".sele_title span").text(parLength);
             $(".list_num").text(parLength);
+            $(".region_length span").text(parLength);
+            //获取页面列表的dataid
             var closeIcon = $(this).parent().data("id");
+            //获取朦层上的全部列表
             var listLi = $(".biuuu_city_list li");
+            //获取提交朦层上的列表
             var sureLi = $(".sure_page ul li");
             var listArr = [];
             var sureArr = [];
@@ -339,9 +346,13 @@
                 }
             }
         })
+        //点击朦层上的确定按钮
         $(".sure_btn").click(function () {
+            //朦层上的列表
             var listLi = $(".biuuu_city_list li");
-            var seleList = $(".sele_region .record_list")
+            //页面上的列表
+            var seleList = $(".sele_region .record_list");
+            //提交页朦层上的列表
             var sureLi = $(".sure_page ul li");
             for (var i=0; i< listLi.length; i++) {
                 var closeIcon =  $(listLi[i]).data("id");
@@ -366,6 +377,7 @@
             var parLength = $(".sele_region .record_list").length;
             $(".sele_title span").text(parLength);
             $(".list_num").text(parLength);
+            $(".region_length span").text(parLength);
         })
     }
     function removeImg(ele) {
