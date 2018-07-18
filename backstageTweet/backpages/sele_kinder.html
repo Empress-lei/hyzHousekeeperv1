@@ -51,67 +51,7 @@
             <!--确认页-->
             <div class="sure_page">
                 <ul class="record_ul clearfix">
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
 
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
-                    <li class="record_list">
-                        <img src="../images/yearpo_2.png" alt="" class="list_img">
-                        <p class="list_name">北京世纪阳光幼儿园北京世纪阳光幼儿园</p>
-                        <p class="list_time">1周前</p>
-                    </li>
                 </ul>
                 <p class="check-txt">请仔细核查，信息无误后点击确定按钮，提交后不可更改</p>
                 <div class="mine_div clearfix">
@@ -315,11 +255,13 @@
     ]
     var liList = "";
     var shareList = "";
+    var subList = "";
     window.onload = function () {
         var houerTime = $("#dateHourLeft .swiper-slide-active").text();
         $(".startTimeCurrent .show-houer").text(houerTime)
         var minuteTime = $("#dateMinuteLeft .swiper-slide-active").text();
         $(".startTimeCurrent .show-minute").text(minuteTime)
+        //页面
         $.each(objJSson, function (key, val) {
             var str = "";
             str += '<li class="record_list" id="'+val.id+'">';
@@ -330,6 +272,8 @@
             str += '</li>';
             liList += str;
         });
+        $(".sele_region .record_ul").append(liList);
+        //列表蒙城
         $.each(objJSson, function (key, val) {
             var str = "";
             str += '<li class="clearfix sele_li" id="'+val.id+'">';
@@ -344,8 +288,18 @@
             str += '</li>';
             shareList += str;
         });
-        $(".sele_region .record_ul").append(liList);
         $(".biuuu_city_list").append(shareList);
+        //提交
+        $.each(objJSson, function (key, val) {
+            var str = "";
+            str += '<li class="record_list" id="'+val.id+'">';
+            str += '<img src="'+val.images+'" alt="" class="list_img">';
+            str += '<p class="list_name">'+val.title+'</p>';
+            str += '<p class="list_time">'+val.accumulative+'</p>';
+            str += '</li>';
+            subList += str;
+        });
+        $(".sure_page .record_ul").append(subList);
         $(".magic-checkbox").click();
         $(".sele_li").click(function () {
             $(this).find("input").click()
