@@ -42,7 +42,6 @@ $(function () {
         slidesPerview:'auto',
         loopAdditionalSlides : 1,
         autoplayDisableOnInteraction: false,
-        // initialSlide :firstMins,
         height: 60,
         centeredSlides: true,
         paginationClickable: true,
@@ -57,23 +56,28 @@ $(function () {
         //date: '2018-9-20',
         clickCb: function (y, m, d) {
             document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
-            $(".month span").text(m + "月")
+            $(".month span").text(m + "月");
+            $('#h3Ele').data('date',y + '/' + m + '/' + d);
         },
         nextMonthCb: function (y, m, d) {
             document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
-            $(".month span").text(m + "月")
+            $(".month span").text(m + "月");
+            $('#h3Ele').data('date',y + '/' + m + '/' + d);
         },
         nextYeayCb: function (y, m, d) {
             document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
-            $(".month span").text(m + "月")
+            $(".month span").text(m + "月");
+            $('#h3Ele').data('date',y + '/' + m + '/' + d);
         },
         prevMonthCb: function (y, m, d) {
             document.querySelector('#h3Ele').innerHTML = y + '年' + m + '月' + d + "日"
-            $(".month span").text(m + "月")
+            $(".month span").text(m + "月");
+            $('#h3Ele').data('date',y + '/' + m + '/' + d);
         },
         prevYearCb: function (y, m, d) {
             document.querySelector('#h3Ele').innerHTML =  y + '年' + m + '月' + d + "日"
-            $(".month span").text(m + "月")
+            $(".month span").text(m + "月");
+            $('#h3Ele').data('date',y + '/' + m + '/' + d);
         }
     });
 
