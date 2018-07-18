@@ -264,7 +264,7 @@
         //页面
         $.each(objJSson, function (key, val) {
             var str = "";
-            str += '<li class="record_list" id="'+val.id+'">';
+            str += '<li class="record_list" data-id="'+val.id+'">';
             str += '<img src="'+val.images+'" alt="" class="list_img">';
             str += '<p class="list_name">'+val.title+'</p>';
             str += '<p class="list_time">'+val.accumulative+'</p>';
@@ -276,12 +276,12 @@
         //列表蒙城
         $.each(objJSson, function (key, val) {
             var str = "";
-            str += '<li class="clearfix sele_li" id="'+val.id+'">';
+            str += '<li class="clearfix sele_li" data-id="'+val.id+'">';
             str += '<img src="'+val.images+'" alt="" class="news_img fl">';
             str += '<div class="news_activity">';
             str += '<div class="clearfix">';
             str += '<h4 class="fl">'+val.title+'</h4>';
-            str += '<input class="magic-checkbox fr" type="checkbox" name="seleCheck">';
+            str += '<input class="magic-checkbox fr" type="checkbox" name="seleCheck" checked="true">';
             str += '</div>';
             str += '<p class="like_txt">'+val.accumulative+'</p>';
             str += '</div>'
@@ -292,7 +292,7 @@
         //提交
         $.each(objJSson, function (key, val) {
             var str = "";
-            str += '<li class="record_list" id="'+val.id+'">';
+            str += '<li class="record_list" data-id="'+val.id+'">';
             str += '<img src="'+val.images+'" alt="" class="list_img">';
             str += '<p class="list_name">'+val.title+'</p>';
             str += '<p class="list_time">'+val.accumulative+'</p>';
@@ -300,12 +300,16 @@
             subList += str;
         });
         $(".sure_page .record_ul").append(subList);
-        $(".magic-checkbox").click();
         $(".sele_li").click(function () {
-            $(this).find("input").click()
+            if ($(this).find(".magic-checkbox").prop("checked")) {
+                $(this).find(".magic-checkbox").prop("checked",false);
+            }
+            else {
+                $(this).find(".magic-checkbox").prop("checked",true)
+            }
         })
-        $(".magic-checkbox").click(function () {
-            $(this).click()
+        $(".magic-checkbox").click(function (e) {
+            e.stopPropagation();
         })
         var parLength = $(".sele_region .record_list").length;
         $(".sele_title span").text(parLength);
@@ -315,26 +319,55 @@
             var parLength = $(".sele_region .record_list").length;
             $(".sele_title span").text(parLength);
             $(".list_num").text(parLength);
-            var closeIcon = $(this).parent().attr("id");
+            var closeIcon = $(this).parent().data("id");
             var listLi = $(".biuuu_city_list li");
+            var sureLi = $(".sure_page ul li");
             var listArr = [];
+            var sureArr = [];
             for (var i=0; i< listLi.length; i++) {
-                var listType = $(listLi[i]).attr("id");
+                var listType = $(listLi[i]).data("id");
                 listArr.push(listType);
                 if (listArr[i] == closeIcon) {
                     $(listLi[i]).remove();
                 }
             }
+            for (var i=0; i< sureLi.length; i++) {
+                var sureType = $(sureLi[i]).data("id");
+                sureArr.push(sureType);
+                if (sureArr[i] == closeIcon) {
+                    $(sureLi[i]).remove();
+                }
+            }
+        })
+        $(".sure_btn").click(function () {
+            var listLi = $(".biuuu_city_list li");
+            var seleList = $(".sele_region .record_list")
+            var sureLi = $(".sure_page ul li");
+            for (var i=0; i< listLi.length; i++) {
+                var closeIcon =  $(listLi[i]).data("id");
+                if ($(listLi[i]).find(".magic-checkbox").prop("checked") == false) {
+                    $(listLi[i]).remove();
+                    for (var i=0; i< seleList.length; i++) {
+                        var seleId = $(seleList[i]).data("id");
+                        if (closeIcon== seleId) {
+                            $(seleList[i]).remove();
+                        }
+                    }
+                    for (var i=0; i< sureLi.length; i++) {
+                        var sureId = $(sureLi[i]).data("id");
+                        if (closeIcon== sureId) {
+                            $(sureLi[i]).remove();
+                        }
+                    }
+                }
+
+            }
+            $(".kinder_lay").hide();
+            var parLength = $(".sele_region .record_list").length;
+            $(".sele_title span").text(parLength);
+            $(".list_num").text(parLength);
         })
     }
-    $(function () {
-        $(".sele_li").click(function () {
-            $(this).find("input").click()
-        })
-        $("input").click(function () {
-            $(this).click()
-        })
-    })
     function removeImg(ele) {
         var ele = $(ele)
         ele.parent().remove();
