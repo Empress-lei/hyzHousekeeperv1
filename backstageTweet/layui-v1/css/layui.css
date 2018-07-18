@@ -2499,6 +2499,7 @@ a cite {
 }
 
 .layui-laypage .layui-laypage-spr {
+    display: none;
     color: #999;
     font-weight: 700
 }
