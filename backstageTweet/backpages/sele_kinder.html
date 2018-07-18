@@ -329,13 +329,13 @@
             var listLi = $(".biuuu_city_list li");
             //获取提交朦层上的列表
             var sureLi = $(".sure_page ul li");
-            for (let i=0; i< listLi.length; i++) {
+            for (var i=0; i< listLi.length; i++) {
                 var listId = $(listLi[i]).data("id");
                 if (listId == closeIcon) {
                     $(listLi[i]).remove();
                 }
             }
-            for (let i=0; i< sureLi.length; i++) {
+            for (var i=0; i< sureLi.length; i++) {
                 var sureId = $(sureLi[i]).data("id");
                 if (sureId == closeIcon) {
                     $(sureLi[i]).remove();
@@ -350,17 +350,17 @@
             var seleList = $(".sele_region .record_list");
             //提交页朦层上的列表
             var sureLi = $(".sure_page ul li");
-            for (let i=0; i< listLi.length; i++) {
-                var listId =  $(listLi[i]).data("id");
-                if ($(listLi[i]).find(".magic-checkbox").prop("checked") == false) {
-                    $(listLi[i]).remove();
-                    for (let i=0; i< seleList.length; i++) {
+            for (var j=0; j< listLi.length; j++) {
+                var listId =  $(listLi[j]).data("id");
+                if ($(listLi[j]).find(".magic-checkbox").prop("checked") == false) {
+                    $(listLi[j]).remove();
+                    for (var i=0; i< seleList.length; i++) {
                         var seleId = $(seleList[i]).data("id");
                         if (listId== seleId) {
                             $(seleList[i]).remove();
                         }
                     }
-                    for (let i=0; i< sureLi.length; i++) {
+                    for (var i=0; i< sureLi.length; i++) {
                         var sureId = $(sureLi[i]).data("id");
                         if (listId== sureId) {
                             $(sureLi[i]).remove();

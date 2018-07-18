@@ -9,6 +9,10 @@ $(function () {
     })
 
     $(".next_button").click(function () {
+        if($('.sele_region .record_ul li').size() == 0){
+            alert('请选择目标园所');
+            return;
+        }
         var yearShow = $("#h3Ele").text();
         var houerShow = $("#dateHourLeft .swiper-slide-active").text();
         console.log(houerShow)
