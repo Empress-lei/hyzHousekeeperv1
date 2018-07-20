@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>环境展示--教师特色</title>
+    <link rel="stylesheet" href="../css/dataUp.css">
+
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="enviUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress24">
+                    <div class="progress_value progress_zeo">已填写0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="enviUp_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">教室特色</h3>
+                <span class="compul fr">必填内容</span>
+            </div>
+            <div class="envi_mess">
+                <div class="envi_teach">
+                    <textarea class="exam_text" onkeyup="fn()" onPaste="fn()" oninput="fn()" onfocus="$(this).autoHeight();" maxlength="200" placeholder="在这里可以简单描述一下教室特色···"></textarea>
+                    <div class="clearfix examples">
+                        <p class="length fr">（可输入<span>0</span>/200字）</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="z_photo photo_flie1 clearfix">
+                        <div class="z_file p_flie1">
+                            <input type="file" name="file" id="file1" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie1','p_flie1','file1');">
+                        </div>
+                    </div>
+                </div>
+                <p class="prompt_img">添加教室特色配图，最多可传9张</p>
+            </div>
+            <div class="btnstap3">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script src=../../hyzRes/js/flieImg.js></script>
+<script src=../../hyzRes/js/lightbox.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress24').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress24').width('0');
+        },700);
+    })
+
+
+    //记录文本框中的字数
+    function fn() {
+        var len = $(".exam_text").val().length;
+        $(".examples p span").text(len);
+    }
+</script>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>活动介绍</title>
+    <link rel="stylesheet" href="../css/dataUp.css">
+    <style>
+        .z_file {
+            width: 2.24rem;
+            height: 2.24rem;
+            background: url(../../hyzRes/images/hyzicon/z_add.png) no-repeat center;
+            background-size: 0.96rem 0.96rem;
+            float: left;
+            margin-left: 0.32rem;
+            background-color: #fff;
+        }
+        .addimg_par {
+            float: left;
+            width: 2.24rem;
+            height: 2.24rem;
+            position: relative;
+            margin-left: 0.32rem;
+            margin-bottom: 0.32rem;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+            -mos-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+            -ms-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+            -o-box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+            box-shadow: 0 0 0.32rem 0 rgba(218, 218, 218, 0.5);
+        }
+        .z_addImg {
+            width: 2.24rem;
+            height: 2.24rem;
+            overflow: hidden;
+            position: relative;
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="intrUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress36">
+                    <div class="progress_value">已填写66%</div>
+                </div>
+            </div>
+        </div>
+        <div class="intrUp_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">园所多元化活动风采</h3>
+                <span class="compul fr">非必填</span>
+            </div>
+            <div class="envi_mess">
+                <ul class="characteristic">
+                    <li class="charac_list">
+                        <p class="charac_p" data-text="才艺展示活动">才艺展示活动</p>
+                        <div class="num_list">
+                            <div class="arr_san"></div>
+                            <div class="num_ol">
+                                <div class="num_teach">
+                                    <textarea class="exam_text" onkeyup=fn1(this); onfocus="$(this).autoHeight();" maxlength="200" placeholder="简单描述一下该特色区域呗~"></textarea>
+                                    <div class="clearfix examples">
+                                        <p class="length fr">（可输入<span>0</span>/200字）</p>
+                                    </div>
+                                </div>
+                                <div class="container container1">
+                                    <div class="z_photo photo_flie1 clearfix">
+                                        <div class="z_file p_flie1">
+                                            <input type="file" name="file" id="file1" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie1','p_flie1','file1');">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="prompt_img prompt_img1">上传园所特色区域图，最多可传9张</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="charac_list">
+                        <p class="charac_p" data-text="英语教学活动">英语教学活动</p>
+                        <div class="num_list">
+                            <div class="arr_san"></div>
+                            <div class="num_ol">
+                                <div class="num_teach">
+                                    <textarea class="exam_text"  onkeyup=fn1(this); onfocus="$(this).autoHeight();" maxlength="200" placeholder="简单描述一下该特色区域呗~"></textarea>
+                                    <div class="clearfix examples">
+                                        <p class="length fr">（可输入<span>0</span>/200字）</p>
+                                    </div>
+                                </div>
+                                <div class="container container1">
+                                    <div class="z_photo photo_flie2 clearfix">
+                                        <div class="z_file p_flie2">
+                                            <input type="file" name="file" id="file2" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie2','p_flie2','file2');">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="prompt_img prompt_img1">上传园所特色区域图，最多可传9张</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="charac_list">
+                        <p class="charac_p" data-text="社会实践活动">社会实践活动</p>
+                        <div class="num_list">
+                            <div class="arr_san"></div>
+                            <div class="num_ol">
+                                <div class="num_teach">
+                                    <textarea class="exam_text"onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)" onfocus="$(this).autoHeight();" maxlength="200" placeholder="简单描述一下该特色区域呗~"></textarea>
+                                    <div class="clearfix examples">
+                                        <p class="length fr">（可输入<span>0</span>/200字）</p>
+                                    </div>
+                                </div>
+                                <div class="container container1">
+                                    <div class="z_photo photo_flie3 clearfix">
+                                        <div class="z_file p_flie3">
+                                            <input type="file" name="file" id="file3" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie3','p_flie3','file3');">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="prompt_img prompt_img1">上传园所特色区域图，最多可传9张</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="charac_list">
+                        <p class="charac_p" data-text="节日特色活动">节日特色活动</p>
+                        <div class="num_list">
+                            <div class="arr_san"></div>
+                            <div class="num_ol">
+                                <div class="num_teach">
+                                    <textarea class="exam_text"onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)" onfocus="$(this).autoHeight();" maxlength="200" placeholder="简单描述一下该特色区域呗~"></textarea>
+                                    <div class="clearfix examples">
+                                        <p class="length fr">（可输入<span>0</span>/200字）</p>
+                                    </div>
+                                </div>
+                                <div class="container container1">
+                                    <div class="z_photo photo_flie4 clearfix">
+                                        <div class="z_file p_flie4">
+                                            <input type="file" name="file" id="file4" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie4','p_flie4','file4');">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="prompt_img prompt_img1">上传园所特色区域图，最多可传9张</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="charac_list">
+                        <p class="charac_p" data-text="定制是多元活动">定制式多元活动</p>
+                        <div class="num_list">
+                            <div class="arr_san"></div>
+                            <div class="num_ol">
+                                <div class="num_teach">
+                                    <textarea class="exam_text"onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)" onfocus="$(this).autoHeight();" maxlength="200" placeholder="简单描述一下该特色区域呗~"></textarea>
+                                    <div class="clearfix examples">
+                                        <p class="length fr">（可输入<span>0</span>/200字）</p>
+                                    </div>
+                                </div>
+                                <div class="container container1">
+                                    <div class="z_photo photo_flie5 clearfix">
+                                        <div class="z_file p_flie5">
+                                            <input type="file" name="file" id="file5" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie5','p_flie5','file5');">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="prompt_img prompt_img1">上传园所特色区域图，最多可传9张</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="other_characteristic">
+                    <h3 class="other_title">其他特色区域</h3>
+                    <ul class="other_ul">
+                        <!--样板-->
+                        <li class="other_list sele_cur">
+                            <p class="charac_p current_list" data-text="艺术手工区">音乐区</p>
+                            <p class="charac_content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                            </p>
+                            <ol class="img_ol clearfix">
+                                <li class="img_li z_addImg">
+                                    <img src="../../hyzRes/images/pay_pages/page5.png" alt="">
+                                </li>
+                                <li class="img_li z_addImg">
+                                    <img src="../../hyzRes/images/pay_pages/page5.png" alt="">
+                                </li>
+                                <li class="img_li z_addImg">
+                                    <img src="../../hyzRes/images/pay_pages/page5.png" alt="">
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <div class="input_content">
+                        <div class="con_text">
+                            <input type="text" placeholder="请输入特色区域名称" class="chara_name">
+                            <div class="num_teach">
+                                <textarea class="exam_text add_txt"onkeyup="fn1(this)" onPaste="fn1(this)" oninput="fn1(this)" onfocus="$(this).autoHeight();" maxlength="200" placeholder="简单描述一下该特色区域呗~"></textarea>
+                                <div class="clearfix examples add_examples">
+                                    <p class="length fr">（可输入<span>0</span>/200字）</p>
+                                </div>
+                            </div>
+                            <div class="container container1">
+                                <div class="z_photo photo_flie10 clearfix">
+                                    <div class="z_file p_flie10">
+                                        <input type="file" name="file" id="file10" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie10','p_flie10','file10');">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="prompt_img prompt_img1">上传园所活动现场照，最多可传9张</p>
+                        </div>
+                        <a href="javascript:void (0);" class="addBtn">确认添加</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="javascript:void (0);" class="next_btn">提 交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script src=../../hyzRes/js/flieImg.js></script>
+<script src=../../hyzRes/js/lightbox.js></script>
+<script src=../js/enviOther.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress36').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress36').width('66%');
+        },700);
+    })
+</script>
+</html>

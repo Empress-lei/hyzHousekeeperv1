@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>资料上传列表</title>
+    <link rel="stylesheet" href="css/dataUp.css">
+
+</head>
+<body style="font-family: myFont;background-color: #F3F3F3;">
+
+<div class="warp">
+    <div class="dataUp">
+        <ul class="data_top">
+            <li class="data_topli">
+                <h3 class="top_tit">1. 为什么要上传园所资料？</h3>
+                <p class="top_txt">慧园长超极管家会根据园所上传的资料个性化制作宣品素材，精心打造园所特色，塑造品牌形象。</p>
+            </li>
+            <li class="data_topli">
+                <h3 class="top_tit">2. 资料上传内容格式</h3>
+                <p class="top_txt">内容全面精炼，建议每部分都有相应配图，图片须清晰明亮；您提交的全部内容，将会有专业内容团队重新编排包装，从6大视角全面展现园所特色和亮点。</p>
+            </li>
+        </ul>
+        <ul class="data_cen clearfix">
+            <li class="data_cenli">
+                <img src="images/basics_icon.png" alt="基础信息" class="fl icon_img">
+                <div class="fl cen_txt">
+                    <h3>基础信息</h3>
+                    <span class="state_span">审核中</span>
+                </div>
+            </li>
+            <li class="data_cenli">
+                <img src="images/teac_icon.png" alt="教师教学" class="fl icon_img">
+                <div class="fl cen_txt">
+                    <h3>教师教学</h3>
+                    <span class="state_span">已完成25%</span>
+                </div>
+            </li>
+            <li class="data_cenli">
+                <img src="images/class_icon.png" alt="课程体系" class="fl icon_img">
+                <div class="fl cen_txt">
+                    <h3>课程体系</h3>
+                    <span class="state_span">审核中</span>
+                </div>
+            </li>
+            <li class="data_cenli">
+                <img src="images/envisci_icon.png" alt="园所环境" class="fl icon_img">
+                <div class="fl cen_txt">
+                    <h3>园所环境</h3>
+                    <span class="state_span">推广中</span>
+                </div>
+            </li>
+            <li class="data_cenli no_borcenli">
+                <img src="images/activi_icon.png" alt="活动现场" class="fl icon_img">
+                <div class="fl cen_txt">
+                    <h3>活动现场</h3>
+                </div>
+            </li>
+            <li class="data_cenli no_borcenli">
+                <img src="images/food_icon.png" alt="营养膳食" class="fl icon_img">
+                <div class="fl cen_txt">
+                    <h3>营养膳食</h3>
+                </div>
+            </li>
+        </ul>
+        <p class="data_bottxt">以上6大模块可自由选择填写，<br>
+            提交资料越多，园所形象更鲜明哦！</p>
+    </div>
+</div>
+</body>
+<script src="../hyzRes/js/jquery-1.11.1.min.js"></script>
+<script>
+    $(function () {
+        seleRender(".data_cen li")
+    })
+    //单选选择标签
+    function seleRender(item) {
+        var item = $(item);
+        item.on("click", function () {
+            item.removeClass("active_cenli");
+            $(this).addClass("active_cenli");
+        })
+    }
+</script>
+</html>

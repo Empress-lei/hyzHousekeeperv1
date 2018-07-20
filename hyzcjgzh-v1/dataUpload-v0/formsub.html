@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园上传信息</title>
+    <link rel="stylesheet" href="../hyzRes/css/myswiper.min.css">
+    <link rel="stylesheet" href="css/formsub.css">
+    <link rel="stylesheet" href="css/ydui.css">
+    <link href="../hyzRes/dev/css/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css"/>
+    <link href="../hyzRes/dev/css/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css"/>
+    <link href="../hyzRes/dev/css/mobiscroll.android-ics-2.5.2.css" rel="stylesheet" type="text/css"/>
+</head>
+<body style="font-family: myFont;">
+<div class="coverLayer">
+    <p class="layerText">
+        左右滑动切换内容
+    </p>
+    <img src="../hyzRes/images/hyzicon/silde_icon.png" alt="" class="layerImg">
+    <div class="layerBtn">
+        <a href="#">知道了</a>
+    </div>
+</div>
+<!--园所性质-->
+<div class="gar_nature">
+    <div class="nature">
+        <div class="nature_sele">
+            <div class="nature_tit clearfix">
+                <h3 class="fl">可多选</h3>
+                <a href="javascript:void (0);" class="fr sureBut">确定</a>
+            </div>
+
+            <ul class="record_ul">
+                <li class="record_list">
+                    <p data-text="公立幼儿园">公立幼儿园</p>
+                </li>
+                <li class="record_list">
+                    <p data-text="私立幼儿园">私立幼儿园</p>
+                </li>
+                <li class="record_list">
+                    <p data-text="国际幼儿园">国际幼儿园</p>
+                </li>
+                <li class="record_list record_norbor">
+                    <p data-text="其他">其他</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--提交提示朦层-->
+<div class="sub_pages">
+    <div class="sub_box">
+        <div class="box_con">
+            <h3 class="care_tit">注意</h3>
+            <div class="care_con">
+                <p>提交成功后，信息会上传到慧园长超级管家后台，由相关工作人员为您完成内容定制，定制期间会进入“资料审核态……” 期间不可以再次修改哦～ 如果内容需要更改，资料审核过后再次编辑上传哈！ </p>
+            </div>
+            <ul class="care_ul clearfix">
+                <li class="care_li again_look">
+                    再检查一遍
+                </li>
+                <li class="care_li deter_sun">
+                    确定提交
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!--教学理念示例朦层-->
+<div class="teach_idea">
+    <div class="idea_box">
+        <h4 class="idea_tit">示例</h4>
+        <p class="idea_con">蒙台梭利，瑞吉欧</p>
+        <img src="../hyzRes/images/hyzicon/close_share.png" alt="" class="idea_close">
+    </div>
+</div>
+<!--培养目标示例朦层-->
+<div class="training_target">
+    <div class="idea_box">
+        <h4 class="target_tit">示例</h4>
+        <p class="target_con">为儿童的现在与未来优秀做人、成功做事、幸福生活而奠基。</p>
+        <img src="../hyzRes/images/hyzicon/close_share.png" alt="" class="target_close">
+    </div>
+</div>
+<div id="top">
+    <div class="swiper-container" id="nav">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide activiClass">
+                <span style="color:rgba(51, 51, 51, 1);font-size: 16px">基础信息</span></div>
+            <div class="swiper-slide">
+                <span>环境展示</span></div>
+            <div class="swiper-slide">
+                <span>课程体系</span></div>
+            <div class="swiper-slide">
+                <span>师资团队</span></div>
+            <div class="swiper-slide">
+                <span>活动介绍</span></div>
+            <div class="swiper-slide">
+                <span>餐谱样例</span></div>
+            <div class="bar">
+                <div class="color"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-container" id="page">
+    <div class="swiper-wrapper">
+        <!--基础展示-->
+        <div class="swiper-slide slidepage">
+            <div class="swiper-container scroll" id="scroll-v1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slidescroll">
+                        <div class="basics">
+                            <div class="basics_top">
+                                <p class="top_p">“&nbsp;&nbsp;<span></span>&nbsp;&nbsp;”为必填选项</p>
+                            </div>
+                            <ul class="basics_ul">
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">园所名称：</label><input type="text" placeholder="请输入幼儿园全称"
+                                                                                    class="basics_render">
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">成立时间：</label><input type="text" readonly="readonly"
+                                                                                    class="basics_render" name="appDate"
+                                                                                    id="appDate"
+                                                                                    placeholder="2018 / 06"/>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">园所性质：</label><input type="text" placeholder="选择幼儿园性质"
+                                                                                    class="basics_render render_nature"
+                                                                                    readonly=readonly>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">办园方向：</label>
+                                    <div class="basics_text fl">
+                                        <textarea class="basics_intr" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200" placeholder="请输入办园方向"></textarea>
+                                    </div>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">办园宗旨：</label>
+                                    <div class="basics_text fl">
+                                        <textarea class="basics_intr" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200" placeholder="请输入办园宗旨"></textarea>
+                                    </div>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">教学理念：</label>
+                                    <div class="basics_teach fl">
+                                        <textarea class="exam_text" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200" placeholder="示例：蒙台梭利，瑞吉欧"></textarea>
+                                    </div>
+                                    <span class="examples idea_teach">示例</span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">培养目标：</label>
+                                    <div class="basics_teach fl">
+                                        <textarea class="exam_text" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200"
+                                                  placeholder="示例：为儿童的现在与未来优秀做人、成功做事、幸福生活而奠基。"></textarea>
+                                    </div>
+                                    <span class="examples target_btn">示例</span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">学校地址：</label>
+                                    <div class="cell-right cell-arrow fl">
+                                        <input type="text" class="cell-input basics_add" readonly id="J_Address2"
+                                               value="" placeholder="省 / 市 / 区县">
+                                        <div class="add_deta">
+                                            <textarea class="deta_text" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                      maxlength="200" placeholder="请补充具体地址信息"></textarea>
+                                        </div>
+                                    </div>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">联系方式：</label><input type="number" placeholder="请输入手机号码"
+                                                                                    class="basics_render">
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">占地面积：</label><input type="number" placeholder="请输入占地面积"
+                                                                                    class="basics_acre"><label
+                                        class="fl square">（平米）</label>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">建筑面积：</label><input type="number" placeholder="请输入建筑面积"
+                                                                                    class="basics_acre"><label
+                                        class="fl square">（平米）</label>
+                                </li>
+                                <li class="flie_img">
+                                    <h3 class="img_title">全貌图:</h3>
+                                    <!--<input type="file" name="file" id="file" value="" style="display: none" accept="image/*" multiple="multiple" />-->
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie1 clearfix">
+                                            <div class="z_file p_flie1">
+                                                <input type="file" name="file" id="file1" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie1','p_flie1','file1');"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">可添加9张图片</p>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">班级数量：</label><input type="number"
+                                                                                    class="basics_acre basics_class"><label
+                                        class="fl square">（个）</label>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_width">容纳幼儿人数：</label><input type="number"
+                                                                                      class="acre_width"><label
+                                        class="fl square">（人）</label>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_width1">教职工数量：</label><input type="number"
+                                                                                      class="acre_width acre_teac"><label
+                                        class="fl square">（人）</label>
+                                    <span class="star_pos"></span>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">教室数量：</label><input type="number"
+                                                                                    class="basics_acre basics_class"><label
+                                        class="fl square">（个）</label>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">活动区类型及数量:</h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200"
+                                                  placeholder="请输入：如一个舞蹈厅、一个户外操场、一个绘本馆、一个沙坑、一个攀爬器械、一处生态景观等等"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie2 clearfix">
+                                            <div class="z_file p_flie2">
+                                                <input type="file" name="file" id="file2" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie2','p_flie2','file2');"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">特色区域:</h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200"
+                                                  placeholder="示例：有别于其他幼儿园的特色区域，如科学探究乐园、科学实验室、航天体验馆等"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie3 clearfix">
+                                            <div class="z_file p_flie3">
+                                                <input type="file" name="file" id="file3" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie3','p_flie3','file3');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">获得荣誉:</h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text" onkeyup="fn()" onfocus="$(this).autoHeight();"
+                                                  maxlength="200"
+                                                  placeholder="示例：被评为省市、区示范园，成为中国领先的跨地区运营的优质幼教品牌。"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie4 clearfix">
+                                            <div class="z_file p_flie4">
+                                                <input type="file" name="file" id="file4" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie4','p_flie4','file4');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">园所优势： </h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_you" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="示例：丰富的幼儿园活动、专业的队伍与设施、特色的混龄环境、完善的健康安全与保障等，河南神品牌幼儿园，正规师资，正规示范毕业，一流课程专注幼儿园创造力培养。"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie5 clearfix">
+                                            <div class="z_file p_flie5">
+                                                <input type="file" name="file" id="file5" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie5','p_flie5','file5');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="basics_li clearfix">
+                                    <label class="basics_label">园所文化：</label><input type="tell" class="basics_acre"
+                                                                                    placeholder="办园理念及特色">
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">装修装饰材料： </h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="示例：通过国家环保机构检测，有证书。"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie6 clearfix">
+                                            <div class="z_file p_flie6">
+                                                <input type="file" name="file" id="file6" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie6','p_flie6','file6');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">室内外设施设备： </h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="示例：设施全景照片"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie7 clearfix">
+                                            <div class="z_file p_flie7">
+                                                <input type="file" name="file" id="file7" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie7','p_flie7','file7');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">环境特色： </h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="示例：上传各个区域的照片"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie8 clearfix">
+                                            <div class="z_file p_flie8">
+                                                <input type="file" name="file" id="file8" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie8','p_flie8','file8');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--环境展示-->
+        <div class="swiper-slide slidepage">
+            <div class="swiper-container scroll" id="scroll-v2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slidescroll">
+                        <div class="act_intr">
+                            <div class="basics_top">
+                                <p class="top_p">“&nbsp;&nbsp;<span></span>&nbsp;&nbsp;”为必填选项</p>
+                            </div>
+
+                            <ul class="intr_ul">
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">教室特色： </h3><span
+                                            class="intt_examples exam_teach">示例</span><span class="star_posstar"></span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie17 clearfix">
+                                            <div class="z_file p_flie17">
+                                                <input type="file" name="file" id="file17" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie17','p_flie17','file17');"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">户外操场： </h3><span
+                                            class="intt_examples exam_teach">示例</span><span class="star_posstar"></span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie18 clearfix">
+                                            <div class="z_file p_flie18">
+                                                <input type="file" name="file" id="file18" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie18','p_flie18','file18');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">多功能厅： </h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie19 clearfix">
+                                            <div class="z_file p_flie19">
+                                                <input type="file" name="file" id="file19" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie19','p_flie19','file19');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">走廊设计： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie20 clearfix">
+                                            <div class="z_file p_flie20">
+                                                <input type="file" name="file" id="file20" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie20','p_flie20','file20');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">绘本馆或者阅读区： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie21 clearfix">
+                                            <div class="z_file p_flie21">
+                                                <input type="file" name="file" id="file21" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie21','p_flie21','file21');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">艺术手工区： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie22 clearfix">
+                                            <div class="z_file p_flie22">
+                                                <input type="file" name="file" id="file22" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie22','p_flie22','file22');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">攀爬组合沙坑： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie23 clearfix">
+                                            <div class="z_file p_flie23">
+                                                <input type="file" name="file" id="file23" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie23','p_flie23','file23');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">“微菜园”或植物区： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie24 clearfix">
+                                            <div class="z_file p_flie24">
+                                                <input type="file" name="file" id="file24" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie24','p_flie24','file24');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">美工区： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie25 clearfix">
+                                            <div class="z_file p_flie25">
+                                                <input type="file" name="file" id="file25" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie25','p_flie25','file25');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">科学区： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie26 clearfix">
+                                            <div class="z_file p_flie26">
+                                                <input type="file" name="file" id="file26" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie26','p_flie26','file26');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">音乐区： </h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie27 clearfix">
+                                            <div class="z_file p_flie27">
+                                                <input type="file" name="file" id="file27" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie27','p_flie27','file27');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">休息区： </h3><span class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie28 clearfix">
+                                            <div class="z_file p_flie28">
+                                                <input type="file" name="file" id="file28" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie28','p_flie28','file28');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">盥洗室： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie29 clearfix">
+                                            <div class="z_file p_flie29">
+                                                <input type="file" name="file" id="file29" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie29','p_flie29','file29');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">其他特色区： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie30 clearfix">
+                                            <div class="z_file p_flie230">
+                                                <input type="file" name="file" id="file30" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie30','p_flie30','file30');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--课程体系-->
+        <div class="swiper-slide slidepage">
+            <div class="swiper-container scroll" id="scroll-v3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slidescroll">
+                        <div class="basics">
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">时间:</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        活动前一天
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">关键点:</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        方式：电话通知 <br>
+                                        注意：统计人数，如不能按时参加问明原因并记录，邀请其参加下次活动 <br>
+                                        关键：语调亲切适中，有电话记录 <br>
+                                        责任人：活动教师或招生负责人
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">具体内容:</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        话术指导：亲爱的XXX小朋友家长您好，明天上午（XX点）幼儿园与“粽”不同端午节活动就开始了，请您提前10分钟带宝贝入园。幼儿园里为宝贝准备了充足的饮用水，保证宝贝足够喝水量，活动内容在学丰富，请您和宝宝穿着便于运动的衣服鞋子参加。今晚和宝贝早点睡觉哦，明天精神充沛一起来幼儿园。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--师资团队-->
+        <div class="swiper-slide slidepage" >
+            <div class="swiper-container scroll" id="scroll-v4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slidescroll">
+                        <div class="basics">
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">具体内容:</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        确认背景音乐、话筒、音响设备、准备到位并能正常使用和播放，音控人员负责所有有关设备使用和播放。
+                                    </p>
+                                    <p class="point">
+                                        关键点：所有音乐按照播放顺序储存在播放器（可准备2个备用）
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">签到处：</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        1、户外游戏区：摆放户外游戏物品，张贴户外玩具安全提示，告知家长和幼儿注意安全，老师巡视指导。<br>
+                                        2、室内暖场区：摆放儿童桌椅，桌上摆放好各类手头玩具，供幼儿进入等待区游戏。
+                                    </p>
+                                    <p class="point">
+                                        关键点：品牌露出 摆放合理
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">等待区:</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        1、户外游戏区：摆放户外游戏物品，张贴户外玩具安全提示，告知家长和幼儿注意安全，老师巡视指导。<br>
+                                        2、室内暖场区：摆放儿童桌椅，桌上摆放好各类手头玩具，供幼儿进入等待区游戏。
+                                    </p>
+                                    <p class="point">
+                                        关键点：品牌露出 摆放合理
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="intr_div">
+                                <div class="intr_tit clearfix">
+                                    <span class="fl line_sp"></span>
+                                    <h3 class="fl title_h">检查：</h3>
+                                </div>
+                                <div class="intr_text">
+                                    <p>
+                                        检查活动需要的材料到位、老师准备工作到位。
+                                    </p>
+                                    <p class="point">
+                                        关键点：摆放合理 活动物品摆放整齐
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--活动介绍-->
+        <div class="swiper-slide slidepage">
+            <div class="swiper-container scroll" id="scroll-v5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slidescroll">
+                        <div class="act_intr">
+                            <div class="basics_top">
+                                <p class="top_p">“&nbsp;&nbsp;<span></span>&nbsp;&nbsp;”为必填选项</p>
+                            </div>
+
+                            <ul class="intr_ul">
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">主题单元探究活动： </h3><span class="intt_examples exam_teach">示例</span><span
+                                            class="star_posstar"></span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie9 clearfix">
+                                            <div class="z_file p_flie9">
+                                                <input type="file" name="file" id="file9" value="" accept="image/*"
+                                                       multiple onchange="imgChange('photo_flie9','p_flie9','file9');"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">养成教育活动： </h3><span
+                                            class="intt_examples exam_teach">示例</span><span class="star_posstar"></span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie10 clearfix">
+                                            <div class="z_file p_flie10">
+                                                <input type="file" name="file" id="file10" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie10','p_flie10','file10');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">才艺展示活动： </h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie11 clearfix">
+                                            <div class="z_file p_flie11">
+                                                <input type="file" name="file" id="file11" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie11','p_flie11','file11');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">英语教学活动： </h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie12 clearfix">
+                                            <div class="z_file p_flie12">
+                                                <input type="file" name="file" id="file12" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie12','p_flie12','file12');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">社会实践活动： </h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie13 clearfix">
+                                            <div class="z_file p_flie13">
+                                                <input type="file" name="file" id="file13" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie13','p_flie13','file13');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">节日特色活动： </h3><span
+                                            class="examples exam_teach">示例</span>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie14 clearfix">
+                                            <div class="z_file p_flie14">
+                                                <input type="file" name="file" id="file14" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie14','p_flie14','file14');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">定制式多元活动： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie15 clearfix">
+                                            <div class="z_file p_flie15">
+                                                <input type="file" name="file" id="file15" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie15','p_flie15','file15');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                                <li class="flie_img flie_activ">
+                                    <div class="clearfix">
+                                        <h3 class="img_title fl">其他特色活动： </h3>
+                                    </div>
+                                    <div class="basics_activ">
+                                        <textarea class="exam_text exam_height" onkeyup="fn()"
+                                                  onfocus="$(this).autoHeight();" maxlength="200"
+                                                  placeholder="请输入"></textarea>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="z_photo photo_flie16 clearfix">
+                                            <div class="z_file p_flie16">
+                                                <input type="file" name="file" id="file16" value="" accept="image/*"
+                                                       multiple
+                                                       onchange="imgChange('photo_flie16','p_flie16','file16');"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="prompt_img">文字限制200字数以内，图片可添加9张图片</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--餐普样例-->
+        <div class="swiper-slide slidepage">
+            <div class="swiper-container scroll" id="scroll-v6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slidescroll">
+                        <div class="sample_menu">
+                            <dl class="menu_week">
+                                <dt class="menu_div clearfix">
+                                    <p class="fl week_num">星期一</p>
+                                    <a href="javascript:void (0);" class="fr expand_btn">收起</a>
+                                </dt>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">早餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">午餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">晚餐：</label><input type="text" class="food_render">
+                                </dd>
+                            </dl>
+                            <dl class="menu_week">
+                                <dt class="menu_div clearfix">
+                                    <p class="fl week_num">星期二</p>
+                                    <a href="javascript:void (0);" class="fr expand_btn">收起</a>
+                                </dt>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">早餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">午餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">晚餐：</label><input type="text" class="food_render">
+                                </dd>
+                            </dl>
+                            <dl class="menu_week">
+                                <dt class="menu_div clearfix">
+                                    <p class="fl week_num">星期三</p>
+                                    <a href="javascript:void (0);" class="fr expand_btn">收起</a>
+                                </dt>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">早餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">午餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">晚餐：</label><input type="text" class="food_render">
+                                </dd>
+                            </dl>
+                            <dl class="menu_week">
+                                <dt class="menu_div clearfix">
+                                    <p class="fl week_num">星期四</p>
+                                    <a href="javascript:void (0);" class="fr expand_btn">收起</a>
+                                </dt>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">早餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">午餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">晚餐：</label><input type="text" class="food_render">
+                                </dd>
+                            </dl>
+                            <dl class="menu_week">
+                                <dt class="menu_div clearfix">
+                                    <p class="fl week_num">星期五</p>
+                                    <a href="javascript:void (0);" class="fr expand_btn">收起</a>
+                                </dt>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">早餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">午餐：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">间点：</label><input type="text" class="food_render">
+                                </dd>
+                                <dd class="food_li clearfix">
+                                    <label class="food_label">晚餐：</label><input type="text" class="food_render">
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <ul class="footer_nav clearfix">
+        <!--<li class="nav_li nav_pad">-->
+        <!--<p class="nav_text">查看示例</p>-->
+        <!--</li>-->
+        <li class="nav_li nav_pad">
+            <p class="nav_text">预览</p>
+        </li>
+        <!--可提交状态  nav_subactivi-->
+        <li class="nav_li nav_sub ">
+            <p class="nav_text">提交</p>
+        </li>
+    </ul>
+</footer>
+
+<script src="../hyzRes/js/jquery-1.11.1.min.js"></script>
+<script src="../hyzRes/js/myswiper.min.js"></script>
+<script src="../hyzRes/js/areaAuto.js"></script>
+<script src="../hyzRes/js/selecity/ydui.citys.js"></script>
+<script src="../hyzRes/js/selecity/ydui.js"></script>
+<script src="../hyzRes/js/lightbox.js"></script>
+<script src="js/sele_Exam.js"></script>
+<script src="js/conSwiper.js"></script>
+<script src="../hyzRes/js/flieImg.js"></script>
+<script src="../hyzRes/dev/js/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+<script src="../hyzRes/dev/js/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+<script src="../hyzRes/dev/js/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+<script src="../hyzRes/dev/js/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+<!-- S 可根据自己喜好引入样式风格文件 -->
+<script src="../hyzRes/dev/js/mobiscroll.android-ics-2.5.2.js" type="text/javascript"></script>
+<script>
+    //记录文本框中的字数
+    function fn() {
+        var len = $(".basics_intr").val().length;
+        if (len > 200) {
+            alert("字数不能超过200")
+        }
+    }
+
+    $(function () {
+        $("textarea").keyup(function () {
+            scrollSwiper.update();
+            scrollSwiper2.update();
+            scrollSwiper5.update();
+        })
+
+        //提交按钮的显影
+        $(".nav_sub").click(function () {
+            $(".sub_pages").show();
+        })
+        $(".again_look").click(function () {
+            $(".sub_pages").hide();
+        })
+
+    })
+</script>
+</body>
+</html>
