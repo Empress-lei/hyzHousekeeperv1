@@ -49,11 +49,11 @@ function imginfo(){
     var imglis = [];
     var imgObj = $(".z_addImg img");//img对象
     for(var i=0; i<imgObj.length; i++){
-        imglis.push('http://192.168.10.116'+imgObj.eq(i).attr('src'))
-        console.log('http://192.168.10.116'+imgObj.eq(i).attr('src'))
+        imglis.push(imgObj.eq(i).attr('src'))
+        console.log(imgObj.eq(i).attr('src'))
         imgObj.eq(i).click(function(){
             console.log($(this).attr('src'))
-            var Imgurl = 'http://192.168.10.116'+$(this).attr('src');
+            var Imgurl = $(this).attr('src');
             WeixinJSBridge.invoke("imagePreview",{
                 "urls":imglis,
                 "current":Imgurl
