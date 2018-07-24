@@ -9,10 +9,20 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <title>课程设置可编辑</title>
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/dataUp.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
 
 </head>
 <body style="font-family: myFont;">
+<div class="big_img">
+    <div class="swiper-container2">
+        <div class="swiper-wrapper">
+
+        </div>
+    </div>
+    <div class="swiper-pagination2"></div>
+</div>
 <div class="warp">
     <!--预览可编辑的状态-->
     <div class="preview">
@@ -196,10 +206,43 @@
 </div>
 </body>
 <script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
-<script src=../../hyzRes/js/lightbox.js></script>
+<script src="../../hyzRes/js/swiperjs/swiper-3.4.2.min.js"></script>
 <script>
-    $(function () {
-        initMyImgShow();
-    })
+    $(document).ready(function () {
+        /*调起大图 S*/
+        var mySwiper = new Swiper('.swiper-container2', {
+            loop: false,
+            pagination: '.swiper-pagination2',
+        })
+        $(".img_ol .z_addImg").on("click",
+            function () {
+                console.log(this)
+                var imgBox = $(this).parent().find("img");
+                console.log(imgBox.length)
+                var i = $(this).index();
+                console.log(i)
+                $(".big_img .swiper-wrapper").html("")
+                for (var j = 0, c = imgBox.length; j < c; j++) {
+                    $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
+                }
+                mySwiper.updateSlidesSize();
+                mySwiper.updatePagination();
+                $(".big_img").css({
+                    "z-index": 1001,
+                    "opacity": "1"
+                });
+                mySwiper.slideTo(i, 0, false);
+                return false;
+            });
+
+        $(".big_img").on("click",
+            function () {
+                $(this).css({
+                    "z-index": "-1",
+                    "opacity": "0"
+                });
+
+            });
+    });
 </script>
 </html>
