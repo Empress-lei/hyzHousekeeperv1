@@ -36,13 +36,43 @@ function imgChange(obj1, obj2, obj3) {
         //关闭按钮放入 上层div上
         imgPar.appendChild(imgSrc);
         imgContainer.appendChild(imgPar);
-        initMyImgShow();
-        // scrollSwiper.update();
-        // scrollSwiper2.update();
-        // scrollSwiper3.update();
-        // scrollSwiper4.update();
-        // scrollSwiper5.update();
-        // scrollSwiper6.update();
+        // initMyImgShow();
+        $(document).ready(function () {
+            /*调起大图 S*/
+            var mySwiper = new Swiper('.swiper-container2', {
+                loop: false,
+                pagination: '.swiper-pagination2',
+            })
+            $(".z_photo_div .addimg_par").on("click",
+                function () {
+                    console.log(this)
+                    var imgBox = $(this).parent().parent().find(".img_list");
+                    console.log(imgBox.length)
+                    var i = $(this).index();
+                    console.log(i)
+                    $(".big_img .swiper-wrapper").html("")
+                    for (var j = 0, c = imgBox.length; j < c; j++) {
+                        $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
+                    }
+                    mySwiper.updateSlidesSize();
+                    mySwiper.updatePagination();
+                    $(".big_img").css({
+                        "z-index": 1001,
+                        "opacity": "1"
+                    });
+                    mySwiper.slideTo(i, 0, false);
+                    return false;
+                });
+
+            $(".big_img").on("click",
+                function () {
+                    $(this).css({
+                        "z-index": "-1",
+                        "opacity": "0"
+                    });
+
+                });
+        });
         $(".close_icon").on("click",function(){
             removeImg(this);
         })
