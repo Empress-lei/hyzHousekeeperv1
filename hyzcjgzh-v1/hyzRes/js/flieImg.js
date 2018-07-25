@@ -52,9 +52,9 @@ function imginfo(){
         imglis.push(imgObj.eq(i).attr('src'))
         console.log(imgObj.eq(i).attr('src'))
         imgObj.eq(i).click(function(){
-            console.log($(this).attr('src'))
             var Imgurl = $(this).attr('src');
-            WeixinJSBridge.invoke("imagePreview",{
+            console.log(Imgurl)
+            WeixinJSBridge  .invoke("imagePreview",{
                 "urls":imglis,
                 "current":Imgurl
             });
