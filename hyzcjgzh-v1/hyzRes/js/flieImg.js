@@ -1,3 +1,19 @@
+
+/*调起大图 S*/
+var mySwiper = new Swiper('.swiper-container2', {
+    loop: false,
+    pagination: '.swiper-pagination2',
+    observer:false,//修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true,//修改swiper的父元素时，自动初始化swiper
+    onSlideChangeEnd:function () {
+        console.log(mySwiper.activeIndex);
+    },
+    preventLinksPropagation : false, //拖动时阻止click事件
+    slidesPerView: 1, //容器同时显示slides的数量
+    paginationClickable: true, //分页指示点可切换图片
+    speed: 500,
+})
+
 function imgChange(obj1, obj2, obj3) {
     //获取点击的文本框
     var file = document.getElementById(obj3);
@@ -40,44 +56,10 @@ function imgChange(obj1, obj2, obj3) {
             removeImg(this);
         })
     }
-    // imagesPre();
-    imginfo();
+    imagesPre();
+    //imginfo();
 };
-
-
-function imginfo(){
-    var imglis = [];
-    var imgObj = $(".z_addImg img");//img对象
-    for(var i=0; i<imgObj.length; i++){
-        imglis.push(imgObj.eq(i).attr('src'))
-        console.log(imgObj.eq(i).attr('src'))
-        imgObj.eq(i).click(function(){
-            var Imgurl = $(this).attr('src');
-            console.log(Imgurl)
-            WeixinJSBridge  .invoke("imagePreview",{
-                "urls":imglis,
-                "current":Imgurl
-            });
-        });
-    }
-
-}
 function imagesPre() {
-    /*调起大图 S*/
-    var mySwiper = new Swiper('.swiper-container2', {
-        loop: false,
-        pagination: '.swiper-pagination2',
-        observer:true,//修改swiper自己或子元素时，自动初始化swiper
-        observeParents:true,//修改swiper的父元素时，自动初始化swiper
-        onSlideChangeEnd:function () {
-            console.log(mySwiper.activeIndex);
-        },
-        preventLinksPropagation : false, //拖动时阻止click事件
-        slidesPerView: 1, //容器同时显示slides的数量
-        paginationClickable: true, //分页指示点可切换图片
-        observer: true, //图片删除修改时，自动初始化swiper
-        speed: 500,
-    })
     $(".z_photo_div .addimg_par").click(function (e) {
         var imgBox = $(this).parent().find(".img_list");
         console.log(imgBox)
@@ -88,47 +70,28 @@ function imagesPre() {
         for (var j = 0, c = imgBox.length; j < c; j++) {
             $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
         }
-        //重新计算Slides的数量
-        mySwiper.updateSlidesSize();
-        //动态更新分页器
-        mySwiper.updatePagination();
         $(".big_img").css({
             "z-index": 1001,
             "opacity": "1"
         });
+
+        mySwiper.update();
+
+        console.log('mySwiper.slides.length:'+mySwiper.slides.length);
+
         mySwiper.slideTo(i, 0, false);
-        e.stopPropagation();
-        return false;
-    });
-    $(".img_ol .img_li").click(function (e) {
-        var imgBox = $(this).parent().find(".img_list");
-        console.log(imgBox)
-        console.log(imgBox.length)
-        var i = $(this).index();
-        console.log(i)
-        $(".big_img .swiper-wrapper").html("");
-        for (var j = 0, c = imgBox.length; j < c; j++) {
-            $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
-        }
-        //重新计算Slides的数量
-        mySwiper.updateSlidesSize();
-        //动态更新分页器
-        mySwiper.updatePagination();
-        $(".big_img").css({
-            "z-index": 1001,
-            "opacity": "1"
-        });
-        mySwiper.slideTo(i, 0, false);
+
         e.stopPropagation();
         return false;
     });
     $(".big_img").on("click",
-        function () {
+        function (e) {
             $(this).css({
                 "z-index": "-1",
                 "opacity": "0"
             });
             $(".big_img .swiper-wrapper").html("");
+            e.stopPropagation();
         });
 }
 
@@ -136,3 +99,24 @@ function removeImg(ele) {
     var ele = $(ele)
     ele.parent().remove();
 }
+
+
+
+//pass
+// function imginfo(){
+//     var imglis = [];
+//     var imgObj = $(".z_addImg img");//img对象
+//     for(var i=0; i<imgObj.length; i++){
+//         imglis.push(imgObj.eq(i).attr('src'))
+//         console.log(imgObj.eq(i).attr('src'))
+//         imgObj.eq(i).click(function(){
+//             var Imgurl = $(this).attr('src');
+//             console.log(Imgurl)
+//             WeixinJSBridge  .invoke("imagePreview",{
+//                 "urls":imglis,
+//                 "current":Imgurl
+//             });
+//         });
+//     }
+//
+// }

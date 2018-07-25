@@ -9,9 +9,18 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <title>师资--园所教职工总人数</title>
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/dataUp.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
 </head>
 <body style="font-family: myFont;">
+<div class="big_img">
+    <div class="swiper-container2">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+    <div class="swiper-pagination2"></div>
+</div>
 <div class="warp">
     <div class="teacteamUp">
         <!--进度条-->
@@ -33,9 +42,12 @@
                         class="fr square">人</label>
                 </div>
                 <div class="container">
-                    <div class="z_photo photo_flie1 clearfix">
+                    <div class="z_photo clearfix">
                         <div class="z_file p_flie1">
                             <input type="file" name="file" id="file1" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie1','p_flie1','file1');">
+                        </div>
+                        <div class="z_photo_div photo_flie1 clearfix">
+
                         </div>
                     </div>
                 </div>
@@ -51,8 +63,8 @@
 </div>
 </body>
 <script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/swiperjs/swiper-3.4.2.min.js></script>
 <script src=../../hyzRes/js/flieImg.js></script>
-<script src=../../hyzRes/js/lightbox.js></script>
 <script>
     $(function () {
         var timer = null;

@@ -13,23 +13,53 @@ $(function () {
         var ol_ = $("<ol class='img_ol clearfix'>").appendTo(li_);
         imgArr.each(function(){
             var li_z_ = $("<li class='img_li z_addImg'>").appendTo(ol_)
-            $("<img src='" + $(this).attr('src') + "' />").appendTo(li_z_);
+            $("<img class='img_list' src='" + $(this).attr('src') + "' />").appendTo(li_z_);
         });if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
             $(".other_p").hide();
         }if($(".other_content").text() == "" || $(".other_content").text() == undefined) {
             $(".other_content").hide();
         }
         selectOpt(".other_ul li .charac_p")
-        initMyImgShow();
+        enviImagesPre();
         $(".chara_name").val("");
         $(".add_txt").val("");
         $(".input_content .addimg_par").remove();
     })
     //园所性质
     selectOpt(".characteristic li .charac_p")
-    initMyImgShow();
+    enviImagesPre();
 })
-
+/*调起大图 S*/
+function enviImagesPre() {
+    $(".img_ol .img_li").click(function (e) {
+        var imgBox = $(this).parent().find(".img_list");
+        console.log(imgBox)
+        console.log(imgBox.length)
+        var i = $(this).index();
+        console.log(i)
+        $(".big_img .swiper-wrapper").html("");
+        for (var j = 0, c = imgBox.length; j < c; j++) {
+            $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
+        }
+        $(".big_img").css({
+            "z-index": 1001,
+            "opacity": "1"
+        });
+        mySwiper.update();
+        mySwiper.slideTo(i, 0, false);
+        e.stopPropagation();
+        return false;
+    });
+    $(".big_img").on("click",
+        function (e) {
+            $(this).css({
+                "z-index": "-1",
+                "opacity": "0"
+            });
+            $(".big_img .swiper-wrapper").html("");
+            e.stopPropagation();
+        });
+}
 //记录文本框中的字数
 function fn1(obj) {
     var obj = $(obj);

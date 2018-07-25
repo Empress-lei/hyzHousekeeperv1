@@ -9,7 +9,9 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <title>课程设置--年龄分级课程</title>
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/dataUp.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
     <style>
         .z_file {
             width: 2.24rem;
@@ -51,6 +53,13 @@
     </style>
 </head>
 <body style="font-family: myFont;">
+<div class="big_img">
+    <div class="swiper-container2">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+    <div class="swiper-pagination2"></div>
+</div>
 <div class="warp">
     <div class="classUp">
         <!--进度条-->
@@ -75,9 +84,12 @@
                             <div class="arr_san"></div>
                             <div class="num_ol">
                                 <div class="container container1 ">
-                                    <div class="z_photo photo_flie1 clearfix">
+                                    <div class="z_photo  clearfix">
                                         <div class="z_file p_flie1">
                                             <input type="file" name="file" id="file1" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie1','p_flie1','file1');">
+                                        </div>
+                                        <div class="z_photo_div photo_flie1 clearfix">
+
                                         </div>
                                     </div>
                                 </div>
@@ -91,9 +103,12 @@
                             <div class="arr_san"></div>
                             <div class="num_ol">
                                 <div class="container container1">
-                                    <div class="z_photo photo_flie2 clearfix">
+                                    <div class="z_photo  clearfix">
                                         <div class="z_file p_flie2">
                                             <input type="file" name="file" id="file2" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie2','p_flie2','file2');">
+                                        </div>
+                                        <div class="z_photo_div photo_flie2 clearfix">
+
                                         </div>
                                     </div>
                                 </div>
@@ -107,9 +122,12 @@
                             <div class="arr_san"></div>
                             <div class="num_ol">
                                 <div class="container container1">
-                                    <div class="z_photo photo_flie3 clearfix">
+                                    <div class="z_photo  clearfix">
                                         <div class="z_file p_flie3">
                                             <input type="file" name="file" id="file3" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie3','p_flie3','file3');">
+                                        </div>
+                                        <div class="z_photo_div photo_flie3 clearfix">
+
                                         </div>
                                     </div>
                                 </div>
@@ -123,9 +141,12 @@
                             <div class="arr_san"></div>
                             <div class="num_ol">
                                 <div class="container container1">
-                                    <div class="z_photo photo_flie4 clearfix">
+                                    <div class="z_photo  clearfix">
                                         <div class="z_file p_flie4">
                                             <input type="file" name="file" id="file4" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie4','p_flie4','file4');">
+                                        </div>
+                                        <div class="z_photo_div photo_flie4 clearfix">
+
                                         </div>
                                     </div>
                                 </div>
@@ -139,9 +160,12 @@
                             <div class="arr_san"></div>
                             <div class="num_ol">
                                 <div class="container container1">
-                                    <div class="z_photo photo_flie5 clearfix">
+                                    <div class="z_photo  clearfix">
                                         <div class="z_file p_flie5">
                                             <input type="file" name="file" id="file5" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie5','p_flie5','file5');">
+                                        </div>
+                                        <div class="z_photo_div photo_flie5 clearfix">
+
                                         </div>
                                     </div>
                                 </div>
@@ -155,9 +179,12 @@
                             <div class="arr_san"></div>
                             <div class="num_ol">
                                 <div class="container container1">
-                                    <div class="z_photo photo_flie6 clearfix">
+                                    <div class="z_photo  clearfix">
                                         <div class="z_file p_flie6">
                                             <input type="file" name="file" id="file6" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie6','p_flie6','file6');">
+                                        </div>
+                                        <div class="z_photo_div photo_flie6 clearfix">
+
                                         </div>
                                     </div>
                                 </div>
@@ -190,9 +217,12 @@
                         <div class="con_text">
                             <input type="text" placeholder="请输入课程标题" class="chara_name">
                             <div class="container container1">
-                                <div class="z_photo photo_flie10 clearfix">
+                                <div class="z_photo  clearfix">
                                     <div class="z_file p_flie10">
                                         <input type="file" name="file" id="file10" value="" accept="image/*" multiple="" onchange="imgChange('photo_flie10','p_flie10','file10');">
+                                    </div>
+                                    <div class="z_photo_div photo_flie10 clearfix">
+
                                     </div>
                                 </div>
                             </div>
@@ -213,9 +243,10 @@
 </div>
 </body>
 <script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/swiperjs/swiper-3.4.2.min.js></script>
 <script src=../../hyzRes/js/areaAuto.js></script>
 <script src=../../hyzRes/js/flieImg.js></script>
-<script src=../../hyzRes/js/lightbox.js></script>
+<!--<script src=../../hyzRes/js/lightbox.js></script>-->
 <script src=../js/classOther.js></script>
 <script>
     $(function () {

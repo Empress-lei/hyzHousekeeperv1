@@ -53,15 +53,16 @@ function addTeach() {
     str += "</div>"
     str += " </div>"
     str += "<div class=\"container\">"
-    str += "<div class=\"z_photo photo_flie"+(i)+" clearfix\">"
+    str += "<div class=\"z_photo  clearfix\">"
     str += "<div class=\"z_file p_flie"+(i)+"\">"
     str += "<input type=\"file\" name=\"file\" id=\"file"+(i)+"\" value=\"\" accept=\"image/*\" multiple=\"\" onchange=\"imgChange('photo_flie"+(i)+"','p_flie"+(i)+"','file"+(i)+"');\">"
+    str += "</div>"
+    str += "<div class=\"z_photo_div photo_flie"+(i)+" clearfix\">"
     str += "</div>"
     str += "</div>"
     str += "</div>"
     str += "<p class=\"prompt_img\">可添加园长形象照，最多9张</p>"
     str += "</div>"
     str += "</li>"
-
     return str;
 }
