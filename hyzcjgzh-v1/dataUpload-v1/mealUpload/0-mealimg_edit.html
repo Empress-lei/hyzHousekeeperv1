@@ -15,14 +15,6 @@
 
 </head>
 <body style="font-family: myFont;">
-<div class="big_img">
-    <div class="swiper-container2">
-        <div class="swiper-wrapper">
-
-        </div>
-    </div>
-    <div class="swiper-pagination2"></div>
-</div>
 <div class="warp">
     <!--预览可编辑的状态-->
     <div class="mealpreview">
@@ -68,52 +60,10 @@
 </body>
 <script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
 <script src=../../hyzRes/js/swiperjs/swiper-3.4.2.min.js></script>
+<script src=../../hyzRes/js/lightbox-v1.js></script>
 <script>
-    $(document).ready(function () {
-        /*调起大图 S*/
-        var mySwiper = new Swiper('.swiper-container2', {
-            loop: false,
-            pagination: '.swiper-pagination2',
-            observer: false,//修改swiper自己或子元素时，自动初始化swiper
-            observeParents: true,//修改swiper的父元素时，自动初始化swiper
-            onSlideChangeEnd: function () {
-                console.log(mySwiper.activeIndex);
-            },
-            preventLinksPropagation: false, //拖动时阻止click事件
-            slidesPerView: 1, //容器同时显示slides的数量
-            paginationClickable: true, //分页指示点可切换图片
-            speed: 500,
-        })
-        $(".img_ol .z_addImg").on("click",
-            function (e) {
-                console.log(this)
-                var imgBox = $(this).parent().find("img");
-                console.log(imgBox.length)
-                var i = $(this).index();
-                console.log(i)
-                $(".big_img .swiper-wrapper").html("")
-                for (var j = 0, c = imgBox.length; j < c; j++) {
-                    $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
-                }
-                mySwiper.update();
-                $(".big_img").css({
-                    "z-index": 1001,
-                    "opacity": "1"
-                });
-                mySwiper.slideTo(i, 0, false);
-                e.stopPropagation();
-                return false;
-            });
-
-        $(".big_img").on("click",
-            function (e) {
-                $(this).css({
-                    "z-index": "-1",
-                    "opacity": "0"
-                });
-                $(".big_img .swiper-wrapper").html("");
-                e.stopPropagation();
-            });
-    });
+    $(function () {
+        initMyImgShow()
+    })
 </script>
 </html>

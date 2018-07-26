@@ -1,32 +1,3 @@
-// function creatSwiper() {
-//     var str = "";
-//     str += '<div class="big_img">'
-//     str += '<div class="swiper-container2">'
-//     str += '<div class="swiper-wrapper">'
-//     str += '</div>'
-//     str += '</div>'
-//     str += '<div class="swiper-pagination2">'
-//     str += '</div>'
-//     str += '</div>'
-//     return str;
-// }
-// $(document).ready(function () {
-//     $("body").append(creatSwiper());
-// })
-/*调起大图 S*/
-var mySwiper = new Swiper('.swiper-container2', {
-    loop: false,
-    pagination: '.swiper-pagination2',
-    observer:false,//修改swiper自己或子元素时，自动初始化swiper
-    observeParents:true,//修改swiper的父元素时，自动初始化swiper
-    onSlideChangeEnd:function () {
-        console.log(mySwiper.activeIndex);
-    },
-    preventLinksPropagation : false, //拖动时阻止click事件
-    slidesPerView: 1, //容器同时显示slides的数量
-    paginationClickable: true, //分页指示点可切换图片
-    speed: 500,
-})
 function imgChange(obj1, obj2, obj3) {
     //获取点击的文本框
     var file = document.getElementById(obj3);
@@ -73,6 +44,8 @@ function imgChange(obj1, obj2, obj3) {
     // imagesPre();
     initMyImgShow()
 };
+
+//pass
 function imagesPre() {
     $(".z_photo .addimg_par .z_addImg").click(function (e) {
         var imgBox = $(this).parent().parent().find("img");

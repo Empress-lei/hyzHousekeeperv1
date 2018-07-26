@@ -20,14 +20,16 @@ $(function () {
             $(".other_content").hide();
         }
         selectOpt(".other_ul li .charac_p")
-        enviImagesPre();
+        // enviImagesPre();
+        initMyImgShow()
         $(".chara_name").val("");
         $(".add_txt").val("");
         $(".input_content .addimg_par").remove();
     })
     //园所性质
     selectOpt(".characteristic li .charac_p")
-    enviImagesPre();
+    // enviImagesPre();
+    initMyImgShow()
 })
 /*调起大图 S*/
 function enviImagesPre() {
