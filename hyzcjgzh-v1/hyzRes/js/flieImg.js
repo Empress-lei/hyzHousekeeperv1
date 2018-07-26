@@ -50,7 +50,8 @@ function imgChange(obj1, obj2, obj3) {
         imgAdd.appendChild(img);
         //关闭按钮放入 上层div上
         imgPar.appendChild(imgSrc);
-        imgContainer.appendChild(imgPar);
+        input.before(imgPar);
+        // imgContainer.appendChild(imgPar);
         // initMyImgShow();
         $(".close_icon").on("click", function () {
             removeImg(this);
