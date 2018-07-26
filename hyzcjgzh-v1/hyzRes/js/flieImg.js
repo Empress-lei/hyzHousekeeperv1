@@ -1,4 +1,18 @@
-
+// function creatSwiper() {
+//     var str = "";
+//     str += '<div class="big_img">'
+//     str += '<div class="swiper-container2">'
+//     str += '<div class="swiper-wrapper">'
+//     str += '</div>'
+//     str += '</div>'
+//     str += '<div class="swiper-pagination2">'
+//     str += '</div>'
+//     str += '</div>'
+//     return str;
+// }
+// $(document).ready(function () {
+//     $("body").append(creatSwiper());
+// })
 /*调起大图 S*/
 var mySwiper = new Swiper('.swiper-container2', {
     loop: false,
@@ -13,7 +27,6 @@ var mySwiper = new Swiper('.swiper-container2', {
     paginationClickable: true, //分页指示点可切换图片
     speed: 500,
 })
-
 function imgChange(obj1, obj2, obj3) {
     //获取点击的文本框
     var file = document.getElementById(obj3);
@@ -57,12 +70,12 @@ function imgChange(obj1, obj2, obj3) {
             removeImg(this);
         })
     }
-    imagesPre();
-    //imginfo();
+    // imagesPre();
+    initMyImgShow()
 };
 function imagesPre() {
-    $(".z_photo_div .addimg_par").click(function (e) {
-        var imgBox = $(this).parent().find(".img_list");
+    $(".z_photo .addimg_par .z_addImg").click(function (e) {
+        var imgBox = $(this).parent().parent().find("img");
         console.log(imgBox)
         console.log(imgBox.length)
         var i = $(this).index();
@@ -75,13 +88,9 @@ function imagesPre() {
             "z-index": 1001,
             "opacity": "1"
         });
-
         mySwiper.update();
-
-        console.log('mySwiper.slides.length:'+mySwiper.slides.length);
-
+        // console.log('mySwiper.slides.length:'+mySwiper.slides.length);
         mySwiper.slideTo(i, 0, false);
-
         e.stopPropagation();
         return false;
     });
