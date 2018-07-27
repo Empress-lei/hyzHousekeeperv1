@@ -47,6 +47,24 @@ function initMyImgShow() {
         mySwiper.slideTo(i, 0, false);
         e.stopPropagation();
     });
+    $('.img_li').unbind("click").bind('click', function (e) {
+        var imgBox = $(this).parent().find("img").not(".close_icon").not(".edit_icon");;
+        console.log(imgBox);
+        mySwiper.update();
+        var i = $(this).index();
+        console.log(i)
+        $(".big_img .swiper-wrapper").html("");
+        for (var j = 0, c = imgBox.length; j < c; j++) {
+            $(".big_img .swiper-wrapper").append('<div class="swiper-slide"><div class="cell"><img src="' + imgBox.eq(j).attr("src") + '" / ></div></div>');
+        }
+        $(".big_img").css({
+            "z-index": 1001,
+            "opacity": "1"
+        });
+        mySwiper.update();
+        mySwiper.slideTo(i, 0, false);
+        e.stopPropagation();
+    });
     $(".big_img").on("click",
         function (e) {
             $(this).css({
