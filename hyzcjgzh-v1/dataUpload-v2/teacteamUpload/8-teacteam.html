@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园特色教学活动</title>
+    <link rel="stylesheet" href="../css/magic-check.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="teacteamUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress40">
+                    <div class="progress_value">已填写77%</div>
+                </div>
+            </div>
+        </div>
+        <div class="teacteam_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园特色教学活动</h3>
+                <span class="compul fr">必填</span>
+            </div>
+            <div class="envi_mess">
+                <div class="sele_div">
+                    <p class="sele_tit">请选择幼儿园包括以下哪些特色教学活动</p>
+                    <ul class="sele_more">
+                        <li class="moreli_list">
+                            <p class="more_p">社会实践活动</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">文艺表演活动</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">亲子运动活动</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">节日特色活动</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">科学教育活动</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="other_characteristic">
+                    <h3 class="other_title">如有别的特色教学活动，请填写并配有简单描述语句</h3>
+                    <ul class="other_ul">
+                        <!--样板-->
+                        <li class="other_list">
+                            <p class="charac_p">音乐区</p>
+                            <p class="charac_content">
+                                http://localhost:63342/www/hyzHousekeeperv1/hyzcjgzh-v1/dataUpload-v2/enviUpload/2-envi.html?_ijt=eph3bk4opr5d000bmecsug4vks
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="input_content">
+                        <div class="con_text">
+                            <input type="text" placeholder="请输入环境名称" class="chara_name">
+                            <div class="num_teach">
+                                <textarea class="exam_text add_txt" onfocus="$(this).autoHeight();" placeholder="请简单描述该环境~"></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix btn_envi">
+                            <a href="javascript:void (0);" class="look_examples fl">查看示例</a>
+                            <a href="javascript:void (0);" class="enviaddBtn fr">确认添加</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="./9-teacteam.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script src=../../hyzRes/js/seleMore.js></script>
+<script src=../js/enviOther.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress40').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress40').width('77%');
+        },700);
+        selectOpt(".sele_more li");
+
+        //教学示例
+        $(".look_examples").click(function () {
+            $(".teach_idea").show();
+        })
+        $(".idea_close").click(function () {
+            $(".teach_idea").hide();
+        })
+    })
+</script>
+</html>

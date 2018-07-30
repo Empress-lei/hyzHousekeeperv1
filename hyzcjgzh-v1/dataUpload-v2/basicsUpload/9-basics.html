@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园的培养目标</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="basicsUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class=" currProgress18">
+                    <div class="progress_value">已填写72%</div>
+                </div>
+            </div>
+        </div>
+        <div class="basics_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园培养目标</h3>
+                <span class="non_compul fr">必填内容</span>
+            </div>
+            <!--理念-->
+            <div class="render_mess">
+                <div class="basics_teach">
+                    <textarea class="exam_text"  onfocus="$(this).autoHeight();"  placeholder="请填写幼儿园的培养目标"></textarea>
+                </div>
+                <div class="sele_div">
+                    <p class="sele_tit">如果没有请在下方选择一句最贴近您幼儿园培养目标的一句话</p>
+                    <ul class="sele_more">
+                        <li class="moreli_list">
+                            <p class="more_p">让孩子成长为会思考、会探索、有智慧的人</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">挚爱、规范、快乐、艺术、成长</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">优质教育  茁壮成长  成功未来</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">勤于思考、善于交流、懂得关爱、勇于尝试、全面发展</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">注重心智发展，培养良好的思维品质</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">在充满爱与自由的环境中，让每个孩子成为独特的个体</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">用爱心点燃希望，用专业水平放飞每个孩子的梦想</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">以儿童为中心，把握敏感期，提供适时、适性的环境，让孩子成为自己</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">培养健康活泼、好学自信、文明乐群、有审美艺术的儿童</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="./10-basics.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script src=../../hyzRes/js/seleMore.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress18').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress18').width('72%');
+        },700);
+        selectOpt(".sele_more li")
+    })
+
+
+</script>
+</html>

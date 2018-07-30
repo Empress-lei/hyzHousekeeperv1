@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>园所性质</title>
+    <link rel="stylesheet" href="../css/mobiscroll.custom.min.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="basicsUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class=" currProgress13">
+                    <div class="progress_value">已填写27%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="basics_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园性质</h3>
+                <span class="required_star fr">*</span>
+                <span class="required_multi fr">（可多选）</span>
+            </div>
+            <!--幼儿园名称-->
+            <div class="render_mess">
+                <ul class="record_ul">
+                    <li class="record_list">
+                        <p data-text="公立幼儿园">公立幼儿园</p>
+                    </li>
+                    <li class="record_list">
+                        <p data-text="私立幼儿园">私立幼儿园</p>
+                    </li>
+                    <li class="record_list">
+                        <p data-text="国际幼儿园">国际幼儿园</p>
+                    </li>
+                    <li class="record_list">
+                        <p data-text="启蒙园">启蒙园</p>
+                    </li>
+                    <li class="record_list">
+                        <p data-text="早教中心">早教中心</p>
+                    </li>
+                    <li class="record_list record_norbor">
+                        <p data-text="托管中心">托管中心</p>
+                    </li>
+                </ul>
+                <div class="other_characteristic">
+                    <h3 class="other_title">其他类型</h3>
+                    <ul class="other_ul">
+                        <!--样板-->
+                        <li class="other_list sele_cur">
+                            <p class="charac_p current_list" data-text="早教">早教</p>
+                        </li>
+                    </ul>
+
+                    <div class="input_content">
+                        <div class="con_text">
+                            <input type="text" placeholder="请输入类型名称" class="chara_name">
+                        </div>
+                        <a href="javascript:void (0);" class="addBtn">确认添加</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="./5-basics.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/sele/mobiscroll.custom.min.js></script>
+<script>
+
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress13').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress13').width('27%');
+        },700);
+    //园所性质
+            selectOpt(".record_ul li")
+    })
+
+
+
+    $(function () {
+        $(".addBtn").on("click", function () {
+            var txtTitle = $(".chara_name").val();
+            console.log(txtTitle)
+            if(txtTitle == "") {
+                return;
+            }
+            // var srcClose = "";
+            var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
+            $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
+            selectOpt(".other_ul li .charac_p");
+            if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
+                $(".other_p").hide();
+            }
+            selectOpt(".other_ul li .charac_p")
+            $(".chara_name").val("");
+        })
+    })
+    //多选
+    function selectOpt(ele) {
+        var ele = $(ele);
+        // if("true" == ele.data("click")){
+        //     return;
+        // }
+        ele.unbind('click');
+        ele.on("click", function () {
+            if ($(this).hasClass('current_list')) {
+                $(this).removeClass('current_list');
+                $(this).parent().removeClass('sele_cur');
+                $(this).parent().find(".num_list").hide();
+            } else {
+                $(this).addClass('current_list');
+                $(this).parent().addClass('sele_cur');
+                $(this).parent().find(".num_list").show();
+            }
+        })
+        // ele.data("click","true");
+    }
+</script>
+</html>

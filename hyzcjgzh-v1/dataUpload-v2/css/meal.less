@@ -1,0 +1,362 @@
+@import "../../hyzRes/css/base_mob.css";
+html,body {
+  position:relative;
+  height:100%;
+}
+html {
+  overflow:hidden;
+}
+.warp {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  max-width: 540px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /*清除点击高亮效果*/
+  background-color: #fff;
+}
+#top {
+  position:fixed;
+  top:0;
+  z-index:5;
+  width:100%;
+  background:#fff;
+  transform: translateY(0) !important;
+}
+#nav {
+  height: 54/37.5rem;
+  box-shadow: 0 3/37.5rem 6/37.5rem 0 rgba(227, 227, 227, 0.5);
+}
+#nav .swiper-slide span {
+  //margin: 15/37.5rem 0;
+  text-align:center;
+  display:block;
+  line-height: 54/37.5rem;
+  font-size: 14/37.5rem;
+  color: #999999;
+}
+#nav .bar {
+  width: 36/37.5rem;
+  height:3/37.5rem;
+  position:absolute;
+  bottom:0px;
+}
+#nav .bar .color {
+  width: 36/37.5rem;
+  height:3/37.5rem;
+  margin:0 auto;
+  background: rgba(255, 83, 11, 1);
+}
+//#page {
+//  padding-bottom:50/37.5rem;
+//  padding-top: 80/37.5rem;
+//}
+#page {
+  margin-bottom:50/37.5rem;
+  height:100%;
+}
+#page .slidepage {
+  height:100%;
+}
+.scroll {
+  height:100%;
+}
+.slidepage {
+  .guid_li{
+    padding: 0 20/37.5rem 20/37.5rem !important;
+    .line_sp {
+      width: 2/37.5rem;
+      height: 12/37.5rem;
+      margin-top: 3/37.5rem;
+      background-color: #FF530B;
+    }
+    .title_h {
+      font-size: 0.38rem;
+      color: #333;
+      padding-left: 6/37.5rem;
+      font-weight: 800;
+    }
+    .intr_text {
+      padding-left: 8/37.5rem;
+      p {
+        font-size: 0.36rem;
+        line-height: 0.6rem;
+        color: #666;
+        padding: 15/37.5rem 0 30/37.5rem;
+      }
+      .point {
+        font-size: 14/37.5rem;
+        line-height: 20/37.5rem;
+        color: #FF530B;
+        padding: 0/37.5rem 0 30/37.5rem;
+        //margin-top: -15/37.5rem;
+      }
+      .point_text {
+        font-size: 14/37.5rem;
+        line-height: 20/37.5rem;
+        color: #FF530B;
+        padding: 15/37.5rem 15/37.5rem;
+        margin-top: -15/37.5rem;
+        margin-bottom: 30/37.5rem;
+        margin-left: -8/37.5rem;
+        background-color: #F3F3F3;
+        -webkit-border-radius: 8/37.5rem;
+        -moz-border-radius: 8/37.5rem;
+        -ms-border-radius: 8/37.5rem;
+        -o-border-radius: 8/37.5rem;
+        border-radius: 8/37.5rem;
+      }
+      .line_span {
+        display: block;
+        width: 100%;
+        border-bottom: 1/37.5rem solid #DDDDDD;
+        margin-bottom: 30/37.5rem;
+      }
+    }
+  }
+}
+.slidescroll {
+  height:auto;
+}
+
+.week_food {
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  .week_title {
+    width: 100%;
+    height: 55/37.5rem;
+    padding: 0 20/37.5rem;
+    margin-top: -15/37.5rem;
+    background-color: #F2FDF1;
+    .food_title {
+      font-size: 14/37.5rem;
+      line-height: 55/37.5rem;
+      color: #333;
+    }
+    .edit_icon {
+      display: block;
+      width: 12/37.5rem;
+      height: 12/37.5rem;
+      margin: 20/37.5rem 0;
+    }
+  }
+  .food_list {
+    padding: 0 20/37.5rem 64/37.5rem;
+  }
+  //预览人数展示区域u
+  .num_list {
+    padding: 20/37.5rem 0 0;
+    position: relative;
+    .arr_san {
+      display: block;
+      width: 30/75rem;
+      height: 30/75rem;
+      position: absolute;
+      left: 30/37.5rem;
+      top: 15/37.5rem;
+      border: 3px solid transparent;
+      border-top: 3px solid #f3f3f3;
+      border-left: 3px solid #f3f3f3;
+      background-color: #f3f3f3;
+      z-index: 99;
+      opacity: .8;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    .num_ol {
+      width: 100%;
+      padding: 20/37.5rem 20/37.5rem 1/37.5rem;
+      background-color: #F3F3F3;
+      .num_li {
+        padding-bottom: 20/37.5rem;
+        margin-bottom: 20/37.5rem;
+        font-size: 13/37.5rem;
+        line-height: 18/37.5rem;
+        color: #666666;
+        border-bottom: 1px solid #DDDDDD;
+        max-width: 100%;
+        box-sizing: border-box!important;
+        -webkit-box-sizing: border-box!important;
+        word-wrap: break-word!important;
+      }
+      .num_li:nth-last-child(1) {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .img_ol {
+    margin-left: -10/37.5rem;
+    padding: 20/37.5rem 30/37.5rem 0 25/37.5rem;
+    .img_li {
+      float: left;
+      width: 84/37.5rem;
+      height: 84/37.5rem;
+      margin-bottom: 10/37.5rem;
+      margin-left: 10/37.5rem;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+}
+
+.mealpreview {
+  width: 100%;
+  .kinder_na {
+    width: 100%;
+    height: 55/37.5rem;
+    color: #fff;
+    font-size: 16/37.5rem;
+    line-height: 55/37.5rem;
+    padding: 0 20/37.5rem;
+    background-color: #63A431;
+  }
+  .mealimg_title {
+    width: 100%;
+    height: 55/37.5rem;
+    padding: 0 20/37.5rem;
+    background-color: #F2FDF1;
+    .mealimg_h {
+      color: #333;
+      font-size: 14/37.5rem;
+      line-height: 55/37.5rem;
+    }
+    .edit_icon {
+      display: block;
+      width: 12/37.5rem;
+      height: 12/37.5rem;
+      margin: 20/37.5rem 0;
+    }
+  }
+  .mealimg_mess {
+    padding: 10/37.5rem 20/37.5rem 0;
+    //图片区域
+    .img_ol {
+      margin-left: -10/37.5rem;
+      padding: 20/37.5rem 30/37.5rem 0 25/37.5rem;
+      .img_li {
+        float: left;
+        width: 84/37.5rem;
+        height: 84/37.5rem;
+        margin-bottom: 10/37.5rem;
+        margin-left: 10/37.5rem;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+//预览页按钮
+.btnpreview {
+  width: 100%;
+  max-width: 540px;
+  position: fixed;
+  bottom: 0;
+  max-width: 540px;
+  z-index: 10;
+  background-color: #fff;
+  padding-bottom: 20/37.5rem;
+  .stap_div {
+    padding-left: 20/37.5rem;
+    padding-right: 20/37.5rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+  }
+  a {
+    display: block;
+    //float: left;
+    flex: 1;
+    //width: 130/37.5rem;
+    height: 40/37.5rem;
+    text-align: center;
+    line-height: 40/37.5rem;
+    font-size: 14/37.5rem;
+    -webkit-border-radius: 4/37.5rem;
+    -moz-border-radius: 4/37.5rem;
+    -ms-border-radius: 4/37.5rem;
+    -o-border-radius: 4/37.5rem;
+    border-radius: 4/37.5rem;
+  }
+  .upper_btn {
+    color: #999999;
+    background: url("../images/uparr_icon.png") no-repeat 40/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    border: 1px solid #dddddd;
+    margin-right: 20/37.5rem;
+  }
+  .next_btn {
+    color: #fff;
+    background: url("../images/nextarr_icon.png") no-repeat 135/37.5rem center;
+    background-size: 7/37.5rem 10/37.5rem;
+    background-color: #63A431;
+  }
+}
+
+//资料审核中 按钮
+.btnexamine {
+  width: 100%;
+  max-width: 540px;
+  position: fixed;
+  bottom: 0;
+  max-width: 540px;
+  z-index: 10;
+  height: 54/37.5rem;
+  background-color: #F3F3F3;
+  .examine {
+    display: block;
+    line-height: 54/37.5rem;
+    font-size: 14/37.5rem;
+    color: #63A431;
+    text-align: center;
+  }
+}
+
+
+
+//显示原图朦层
+.popup {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+
+  }
+}

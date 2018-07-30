@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>环境展示--室内环境配图</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="enviUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress28">
+                    <div class="progress_value">已填写80%</div>
+                </div>
+            </div>
+        </div>
+        <div class="enviUp_content">
+            <!--幼儿园联系方式a-->
+            <div class="envi_mess">
+                <div class="file_pro">
+                    <img src="../images/envi_icon1.png" alt="" class="pro_img">
+                    <p class="progre_p">
+                        真棒，又完成了一项资料上传工作，在坚持一下
+                        <br>
+                        马上就要看到宣品素材啦~
+                    </p>
+                </div>
+                <div class="mess_images">
+                    <h3 class="images_title">· 室内环境配图</h3>
+                    <p class="images_text">室内环境照，更吸引家长</p>
+                    <div class="container">
+                        <div class="z_photo  photo_flie1 clearfix">
+                            <div class="z_file p_flie1">
+                                <input type="file" name="file" id="file1" value="" accept="image/*" multiple=""
+                                       onchange="imgChange('photo_flie1','p_flie1','file1');">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prompt_img">室内环境配图，最多上传9张</p>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="javascript:void (0);" class="next_btn">继续</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/swiperjs/swiper-3.4.2.min.js></script>
+<script src=../../hyzRes/js/flieImg.js></script>
+<script src=../../hyzRes/js/lightbox-v1.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress28').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress28').width('80%');
+        },700);
+    })
+</script>
+</html>

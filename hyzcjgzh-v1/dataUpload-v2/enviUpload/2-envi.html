@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园室外环境</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
+</head>
+<body style="font-family: myFont;">
+<!--教学理念示例朦层-->
+<div class="teach_idea">
+    <div class="idea_box">
+        <h4 class="idea_tit">示例</h4>
+        <p class="idea_con">蒙台梭利，瑞吉欧</p>
+        <img src="../../hyzRes/images/hyzicon/close_share.png" alt="" class="idea_close">
+    </div>
+</div>
+<div class="warp">
+    <div class="enviUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress25">
+                    <div class="progress_value">已填写20%</div>
+                </div>
+            </div>
+        </div>
+        <div class="enviUp_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园户外环境</h3>
+                <span class="compul fr">必填内容</span>
+            </div>
+            <p class="pro_text">可多选，如有选项之外的内容，可以在下方添加</p>
+            <div class="envi_mess">
+                <div class="sele_div">
+                    <p class="sele_tit">请选择幼儿园户外环境包括下列哪些项目</p>
+                    <ul class="sele_more">
+                        <li class="moreli_list">
+                            <p class="more_p">户外操场</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">安全滑梯</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">平衡木</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">攀爬架</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">车类运动器材</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">球类运动器材</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">秋千</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">天然橡胶轮胎</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">沙坑</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">嬉水池</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">种植区</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="other_characteristic">
+                    <h3 class="other_title">如有别的种类，请填写并配有简单描述语句</h3>
+                    <ul class="other_ul">
+                        <!--样板-->
+                        <li class="other_list">
+                            <p class="charac_p">音乐区</p>
+                            <p class="charac_content">
+                                http://localhost:63342/www/hyzHousekeeperv1/hyzcjgzh-v1/dataUpload-v2/enviUpload/2-envi.html?_ijt=eph3bk4opr5d000bmecsug4vks
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="input_content">
+                        <div class="con_text">
+                            <input type="text" placeholder="请输入环境名称" class="chara_name">
+                            <div class="num_teach">
+                                <textarea class="exam_text add_txt" onfocus="$(this).autoHeight();" placeholder="请简单描述该环境~"></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix btn_envi">
+                            <a href="javascript:void (0);" class="look_examples fl">查看示例</a>
+                            <a href="javascript:void (0);" class="enviaddBtn fr">确认添加</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="./3-envi.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script src=../../hyzRes/js/seleMore.js></script>
+<script src=../js/enviOther.js></script>
+
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress25').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress25').width('20%');
+        },700);
+        selectOpt(".sele_more li");
+        //教学示例
+        $(".look_examples").click(function () {
+            $(".teach_idea").show();
+        })
+        $(".idea_close").click(function () {
+            $(".teach_idea").hide();
+        })
+    })
+
+</script>
+</html>

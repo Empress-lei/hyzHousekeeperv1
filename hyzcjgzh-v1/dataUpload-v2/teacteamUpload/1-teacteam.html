@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园招生年龄范围</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="teacteamUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress34">
+                    <div class="progress_value progress_zeo">已填写0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="teacteam_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园招生年龄范围</h3>
+                <span class="compul fr">必填内容</span>
+            </div>
+            <div class="envi_mess">
+                <div class="clearfix name_content">
+                    <span class="title_content fl">最小年龄</span>
+                </div>
+                <div class="basics_add clearfix">
+                    <input type="number" placeholder="请输入最小年龄" pattern="[0-9]*"class="basics_acre fl"><label
+                        class="fr square">周岁</label>
+                </div>
+            </div>
+            <div class="envi_mess">
+                <div class="clearfix name_content">
+                    <span class="title_content fl">最大年龄</span>
+                </div>
+                <div class="basics_add clearfix">
+                    <input type="number" placeholder="请输入最大年龄" pattern="[0-9]*"class="basics_acre fl"><label
+                        class="fr square">周岁</label>
+                </div>
+            </div>
+            <div class="btnstap3">
+                <div class="clearfix stap_div">
+                    <a href="./2-teacteam.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress34').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress34').width('0');
+        },700);
+    })
+
+</script>
+</html>

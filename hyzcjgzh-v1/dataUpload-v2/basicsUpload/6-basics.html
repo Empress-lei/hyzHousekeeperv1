@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园标语</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+    <link rel="stylesheet" href="../../hyzRes/css/swipercss/swiper-3.4.2.min.css">
+
+</head>
+<body style="font-family: myFont;">
+
+<div class="warp">
+    <div class="basicsUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class=" currProgress15">
+                    <div class="progress_value">已填写45%</div>
+                </div>
+            </div>
+        </div>
+        <div class="basics_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园标语（SLOGAN）</h3>
+                <span class="non_compul fr">必填内容</span>
+            </div>
+            <!--幼儿园联系方式a-->
+            <div class="render_mess">
+                <div class="basics_teach">
+                    <textarea class="exam_text"  onfocus="$(this).autoHeight();"  placeholder="请填写幼儿园slogan"></textarea>
+                </div>
+                <div class="sele_div">
+                    <p class="sele_tit">如果没有请在下方选择一句最贴近您幼儿园风格的标语～</p>
+                    <ul class="sele_more">
+                        <li class="moreli_list">
+                            <p class="more_p">自信 健康 快乐 感恩</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">相信孩子、尊重孩子、用心灵去塑造心灵</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">用心教育，挖掘每个孩子的美</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">教学的艺术不在于教授本领，而在于激励、唤醒、鼓舞</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">给孩子一个美好的童年，是您的期待，也是我们的责任</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">新的希望，爱的阳光，我们与孩子一同成长</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">让欢乐的种子撒在每个孩子的心田</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">一切为了孩子，为了孩子的一切，为了一切的孩子</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">用爱养育，用心教育</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">用我们的爱托起孩子们的美好明天</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">关爱心灵、呵护成长、培养兴趣、鼓励创造</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">培养兴趣，发掘爱好，理智教育，快乐成长</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="./7-basics.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script src=../../hyzRes/js/seleMore.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress15').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress15').width('45%');
+        },700);
+
+        selectOpt(".sele_more li")
+    })
+</script>
+</html>

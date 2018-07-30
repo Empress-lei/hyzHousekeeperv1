@@ -14,7 +14,8 @@ $(function () {
         imgArr.each(function(){
             var li_z_ = $("<li class='img_li z_addImg'>").appendTo(ol_)
             $("<img class='img_list' src='" + $(this).attr('src') + "' />").appendTo(li_z_);
-        });if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
+        });
+        if($(".other_p").text() == "" || $(".other_p").text() == undefined) {
             $(".other_p").hide();
         }if($(".other_content").text() == "" || $(".other_content").text() == undefined) {
             $(".other_content").hide();

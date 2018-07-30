@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>幼儿园的教学特色</title>
+    <link rel="stylesheet" href="../css/dataUp-v2.css">
+
+</head>
+<body style="font-family: myFont;">
+<div class="warp">
+    <div class="basicsUp">
+        <!--进度条-->
+        <div class="progressBar">
+            <div class="currProgress1">
+                <div class="currProgress19">
+                    <div class="progress_value">已填写81%</div>
+                </div>
+            </div>
+        </div>
+        <div class="basics_content">
+            <div class="clearfix content_title">
+                <h3 class="title_h fl">幼儿园教学特色</h3>
+                <span class="non_compul fr">必填</span>
+            </div>
+            <!--教学特色-->
+            <div class="render_mess">
+                <div class="basics_teach">
+                    <textarea class="exam_text"  onfocus="$(this).autoHeight();"  placeholder="请填写幼儿园的教学特色"></textarea>
+                </div>
+                <div class="sele_div">
+                    <p class="sele_tit">如果没有请在下方选择一句最贴近您幼儿园教学特色的一句话</p>
+                    <ul class="sele_more">
+                        <li class="moreli_list">
+                            <p class="more_p">快乐中培养，快乐中学习，快乐中教育</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">实物教学，注重自然科学教育，自主学习</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">以幼儿为中心，以主题活动为依托，在游戏中完成教学</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">科学育儿、德爱教育和家校一体</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">注重于实践和手工活动，利于创新性玩耍的环境</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">在自由、开放的教学环境中，挖掘孩子无限潜能</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">因材施教，实现个性化、差异化的教育</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">在“工作”中练习独立，在“游戏”中完成自我成长</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">尊重孩子天性，培养适应、创造、合作和自主的能力</p>
+                        </li>
+                        <li class="moreli_list">
+                            <p class="more_p">蹲下来讲话 抱起来交流 牵着手教育</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btnstap1">
+                <div class="clearfix stap_div">
+                    <a href="javascript:void (0);" class="upper_btn">上一步</a>
+                    <a href="./11-basics.html" class="next_btn">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../hyzRes/js/jquery-1.11.1.min.js></script>
+<script src=../../hyzRes/js/areaAuto.js></script>
+<script>
+    $(function () {
+        var timer = null;
+        timer = setInterval(function(){
+            $('.currProgress1 .currProgress19').css('transition','width 1s linear');
+            $('.currProgress1 .currProgress19').width('81%');
+        },700);
+    })
+
+
+</script>
+</html>
