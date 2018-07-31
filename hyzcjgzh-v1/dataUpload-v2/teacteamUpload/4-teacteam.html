@@ -79,7 +79,10 @@
             $('.currProgress1 .currProgress36').css('transition','width 1s linear');
             $('.currProgress1 .currProgress36').width('33%');
         },700);
-        selectClass(".sele_li");
+        selectClass(".sele_li .sele_p");
+        $(".basics_eui").focus(function () {
+            $(this).parent().parent().find(".sele_p").addClass('sele_current');
+        })
     })
 
 </script>

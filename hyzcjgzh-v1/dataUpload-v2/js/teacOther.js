@@ -8,13 +8,14 @@ $(function () {
             $(".other_content").hide();
         }else {
             var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
-            $("<p class='charac_p'>" + txtTitle + "</p>").appendTo(li_);
+            $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
             $("<p class='charac_content'>" + contText + "</p>").appendTo(li_);
         }
-
         $(".chara_name").val("");
         $(".add_txt").val("");
+        selectOther(".other_list .charac_p")
     })
+    selectOther(".other_list .charac_p")
 })
 
 //多选
@@ -22,19 +23,34 @@ function selectClass(ele) {
     var ele = $(ele);
     ele.unbind('click');
     ele.on("click", function (e) {
-        if ($(this).find(".sele_p").hasClass('sele_current')) {
-            $(this).find(".sele_p").removeClass('sele_current');
-            $(this).find(".basics_eui").blur();
-            $(this).find(".basics_eui").val("");
-            $(this).find(".basics_eui").blur(function () {
+        if ($(this).hasClass('sele_current')) {
+            $(this).removeClass('sele_current');
+            $(this).parent().parent().find(".basics_eui").blur();
+            $(this).parent().parent().find(".basics_eui").val("");
+            $(this).parent().parent().find(".basics_eui").blur(function () {
                 if($(this).find(".basics_eui").val() == "") {
                     $(this).find(".sele_p").removeClass('sele_current');
                 }
             })
         } else {
-            $(this).find(".sele_p").addClass('sele_current');
-            $(this).find(".basics_eui").focus();
+            $(this).addClass('sele_current');
+            $(this).parent().parent().find(".basics_eui").focus();
         }
         e.stopPropagation();
+    })
+}
+
+//多选
+function selectOther(ele) {
+    var ele = $(ele);
+    ele.unbind('click');
+    ele.on("click", function (e) {
+        if ($(this).hasClass('current_list')) {
+            $(this).removeClass('current_list');
+        } else {
+            $(this).addClass('current_list');
+        }
+        e.stopPropagation();
+
     })
 }

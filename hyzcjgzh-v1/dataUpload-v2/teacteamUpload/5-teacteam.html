@@ -120,7 +120,7 @@
                     <ul class="other_ul">
                         <!--样板-->
                         <li class="other_list">
-                            <p class="charac_p">音乐区</p>
+                            <p class="charac_p current_list">音乐区</p>
                             <p class="charac_content">
                                 http://localhost:63342/www/hyzHousekeeperv1/hyzcjgzh-v1/dataUpload-v2/enviUpload/2-envi.html?_ijt=eph3bk4opr5d000bmecsug4vks
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
@@ -130,9 +130,9 @@
 
                     <div class="input_content">
                         <div class="con_text">
-                            <input type="text" placeholder="请输入环境名称" class="chara_name">
+                            <input type="text" placeholder="其他岗位设置" class="chara_name">
                             <div class="num_teach">
-                                <textarea class="exam_text add_txt" onfocus="$(this).autoHeight();" placeholder="请简单描述该环境~"></textarea>
+                                <input type="number" pattern="[0-9]*"class="exam_text add_txt" placeholder="请输入岗位人数">
                             </div>
                         </div>
                         <a href="javascript:void (0);" class="addBtn">确认添加</a>
@@ -159,7 +159,10 @@
             $('.currProgress1 .currProgress37').css('transition','width 1s linear');
             $('.currProgress1 .currProgress37').width('44%');
         },700);
-        selectClass(".sele_li");
+        selectClass(".sele_li .sele_p");
+        $(".basics_eui").focus(function () {
+            $(this).parent().parent().find(".sele_p").addClass('sele_current');
+        })
     })
 </script>
 </html>
