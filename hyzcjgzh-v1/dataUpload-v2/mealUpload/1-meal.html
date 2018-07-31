@@ -182,9 +182,9 @@
         var ddc=$(item).children("dd");
         dtc.on("click",function(){
             ddc.removeClass("active_side");
-            $(this).parent().siblings("dl").find("dd").hide();
-            $(this).siblings("dd").show();
-            $(this).siblings("dd").eq(0).addClass("active_side");
+            // $(this).parent().siblings("dl").find("dd").hide();
+            $(this).siblings("dd").toggle();
+            // $(this).siblings("dd").eq(0).addClass("active_side");
         })
         ddc.on("click",function(){
             ddc.removeClass("active_side");
