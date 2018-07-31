@@ -2079,17 +2079,69 @@
     .mealUp_content {
       width: 100%;
       position: relative;
-      .basics_title {
+      .content_title {
         width: 100%;
+        padding: 0 20/37.5rem 0;
         height: 55/37.5rem;
-        color: #333;
-        font-size: 14/37.5rem;
-        line-height: 55/37.5rem;
-        padding: 0 20/37.5rem;
-        background-color: #F2FDF1;
+        .title_h {
+          font-size: 16/37.5rem;
+          line-height: 55/37.5rem;
+          color: #333333;
+          font-weight: 800;
+          position: relative;
+          padding-left: 10/37.5rem;
+          span {
+            font-size: 10/37.5rem;
+            line-height: 55/37.5rem;
+            color: #999999;
+            padding-top: 3/37.5rem;
+          }
+        }
+        .title_h:before {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          width: 4/37.5rem;
+          height: 16/37.5rem;
+          left: 0;
+          top: 20/37.5rem;
+          background-color: #63A431;
+        }
+        //非必填
+        .non_compul {
+          display: block;
+          font-size: 10/37.5rem;
+          line-height: 55/37.5rem;
+          color: #C9C9C9;
+        }
+        // 五角星的表示
+        .required_star {
+          display: block;
+          font-size: 14/37.5rem;
+          line-height: 55/37.5rem;
+          color: #FF4539;
+        }
+        //可多选
+        .required_multi {
+          display: block;
+          font-size: 10/37.5rem;
+          line-height: 55/37.5rem;
+          color: #FF4539;
+          padding-right: 10/37.5rem;
+        }
       }
       .envi_mess {
         padding: 10/37.5rem 20/37.5rem 0;
+      }
+      .end_div {
+        padding: 10/37.5rem 0 10/37.5rem ;
+        border-bottom: 1px solid #EEEEEE;
+        .exam_text {
+          width: 100%;
+          height: 20/37.5rem;
+          font-size: 13/37.5rem;
+          line-height: 18/37.5rem;
+        }
       }
     }
   }
