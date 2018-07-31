@@ -1684,6 +1684,7 @@
 }
 .warp .teacteamUp .teacteam_content .envi_mess .name_content {
   padding-top: 0.8rem;
+  padding-left: 0.26666667rem;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .name_content .title_content {
   font-size: 0.37333333rem;
@@ -1697,6 +1698,7 @@
 }
 .warp .teacteamUp .teacteam_content .envi_mess .basics_add {
   padding-top: 0.26666667rem;
+  padding-left: 0.26666667rem;
   border-bottom: 1px solid #EEEEEE;
 }
 .warp .teacteamUp .teacteam_content .envi_mess .basics_add .basics_acre {
