@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>修改板块选择</title>
+    <link rel="stylesheet" href="../../res/dataUpload-v2/css/dataUp-v2.css">
+</head>
+<body style="font-family: myFont;">
+<div class="again_tips">
+    <div class="exchange_share">
+        <div class="exchange_con">
+            <img src="../../res/dataUpload-v2/images/tipsicon.png" alt="" class="tipsicon">
+            <span class="tips_span">重要提示</span>
+            <div class="exchange_text">
+                <p class="text_p">本次资料提交总耗时 <span>2天 18小时 35分</span>，您确定要重新填写吗？</p>
+                <ul class="exchange_ul clearfix">
+                    <li class="exchange_li think_li">在考虑一下</li>
+                    <li class="exchange_li sure_li">确 定</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="warp">
+    <div class="preview">
+        <div class="clearfix content_title">
+            <h3 class="title_h fl">修改板块选择</h3>
+        </div>
+        <div class="preview_content">
+            <div class="sele_edit">
+                <p class="sele_tit">写了那么多，修改也很费劲儿，别急，我们 一点一点的修改 ～</p>
+                <p class="sele_p">请选择请要修改的内容模块</p>
+                <ul class="sele_more">
+                    <li class="moreli_list">
+                        <p class="more_p">园所基础资料</p>
+                    </li>
+                    <li class="moreli_list">
+                        <p class="more_p">园所基础资料</p>
+                    </li>
+                    <li class="moreli_list">
+                        <p class="more_p">园所大小及容量信息</p>
+                    </li>
+                    <li class="moreli_list">
+                        <p class="more_p">特色教学信息</p>
+                    </li>
+                    <li class="moreli_list">
+                        <p class="more_p">食谱样例</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void (0);" class="btn_b btn_nopro">选好了，去修改</a>
+            <a href="javascript:void (0);" class="btn_b btn_edit">全部重新填写</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src=../../res/js/jquery-1.11.1.min.js></script>
+<script src=../../res/js/seleMore.js></script>
+<script>
+    $(function () {
+        $(".btn_edit").click(function () {
+            $(".again_tips").show();
+        })
+        $(".think_li").click(function () {
+            $(".again_tips").hide();
+        })
+        selectOpt(".sele_more li")
+    })
+</script>
+</html>

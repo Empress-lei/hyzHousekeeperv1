@@ -70,6 +70,91 @@
   }
 }
 
+//重新填写朦层提示
+.again_tips {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  .exchange_share {
+    width: 100%;
+    height: 100%;
+    padding: 30/37.5rem;
+    position: relative;
+    .exchange_con {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300/37.5rem;
+      background-color: #fff;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      -webkit-border-radius: 4/37.5rem;
+      -moz-border-radius: 4/37.5rem;
+      -ms-border-radius: 4/37.5rem;
+      -o-border-radius: 4/37.5rem;
+      border-radius: 4/37.5rem;
+      padding: 40/37.5rem 0 0;
+      .tipsicon {
+        display: block;
+        margin: 0 auto 10/37.5rem;
+        width: 50/37.5rem;
+        height: 50/37.5rem;
+      }
+      .tips_span {
+        display: block;
+        text-align: center;
+        font-weight: 800;
+        font-size: 16/37.5rem;
+        color: #63A431;
+      }
+      .exchange_text {
+        padding: 30/37.5rem 10/37.5rem 0;
+        .text_p {
+          text-align: center;
+          padding: 0 10/37.5rem 50/37.5rem;
+          font-size: 14/37.5rem;
+          line-height: 22/37.5rem;
+          color: #333;
+          span {
+            color: #63A431;
+          }
+        }
+        .exchange_ul {
+          width: 100%;
+          padding: 10/37.5rem 0;
+          border-top: 1/37.5rem solid #EEEEEE;
+          .exchange_li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 14/37.5rem;
+            line-height: 40/37.5rem;
+            border-right: 1/37.5rem solid #EEEEEE;
+          }
+          .think_li {
+            color: #999;
+          }
+          .sure_li {
+            color: #63A431;
+          }
+          .exchange_li:nth-last-child(1) {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 .warp {
   width: 100%;
   max-width: 540px;
@@ -325,7 +410,7 @@
     }
     //教学理念
     .basics_teach {
-      padding: 10/37.5rem 0 10/37.5rem ;
+      padding: 10/37.5rem 0 10/37.5rem;
       border-bottom: 1px solid #EEEEEE;
       .exam_text {
         width: 100%;
@@ -1466,11 +1551,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1496,11 +1581,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1526,11 +1611,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1556,11 +1641,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1586,11 +1671,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1616,11 +1701,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1646,11 +1731,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1676,11 +1761,11 @@
         border-radius: 1.333333rem 1.3333rem;
         transition: width 1s linear;
         /* Firefox 4 */
-        -moz-transition:width 1s linear;
+        -moz-transition: width 1s linear;
         /* Safari and Chrome */
-        -webkit-transition:width 1s linear;
+        -webkit-transition: width 1s linear;
         /* Opera */
-        -o-transition:width 1s linear;
+        -o-transition: width 1s linear;
         -webkit-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
         -moz-border-radius: 4/37.5rem 4/37.5rem;
@@ -1852,7 +1937,7 @@
             }
             .square {
               position: absolute;
-              top:  10/37.5rem;
+              top: 10/37.5rem;
               right: 10/37.5rem;
               color: #999;
               font-size: 13/37.5rem;
@@ -2230,7 +2315,7 @@
         }
       }
       .end_div {
-        padding: 10/37.5rem 0 10/37.5rem ;
+        padding: 10/37.5rem 0 10/37.5rem;
         border-bottom: 1px solid #EEEEEE;
         .exam_text {
           width: 100%;
@@ -2241,7 +2326,6 @@
       }
     }
   }
-
   //提交
   .sub_page {
     width: 100%;
@@ -2283,7 +2367,161 @@
       }
     }
     .preview_content {
+      padding: 20/37.5rem;
+      .article {
+        padding: 10/37.5rem 0;
+        font-size: 14/37.5rem;
+        line-height: 22/37.5rem;
+        color: #333;
+        text-align: justify;
+        letter-spacing: 2/37.5rem;
+        text-indent: 30/37.5rem;
+      }
+      .list_term {
+        padding: 5/37.5rem 0;
+        font-size: 14/37.5rem;
+        line-height: 22/37.5rem;
+        color: #333;
+        text-align: justify;
+      }
+      //图片区域
+      .img_ol {
+        margin-left: -10/37.5rem;
+        padding: 20/37.5rem 25/37.5rem 0 20/37.5rem;
+        .img_li {
+          float: left;
+          width: 90/37.5rem;
+          height: 90/37.5rem;
+          margin-bottom: 10/37.5rem;
+          margin-left: 10/37.5rem;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .term {
+        .term_tit {
+          font-size: 14/37.5rem;
+          line-height: 30/37.5rem;
+          color: #333333;
+          font-weight: 800;
+        }
+        .term_p {
+          font-size: 14/37.5rem;
+          line-height: 20/37.5rem;
+          color: #333333;
+        }
+        table {
+          display: block;
+          border-collapse: collapse;
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 30/37.5rem;
+          margin-bottom: 20/37.5rem;
+        }
+        th, td {
+          padding: 10/37.5rem 0;
+          border: 1px solid #e3e3e3;
+          text-align: center;
+          font-size: 12/37.5rem;
+          line-height: 20/37.5rem;
+        }
+        td {
+          width: 14%;
+          padding: 10/37.5rem 3/37.5rem;
+          text-align: justify;
+          word-wrap: break-word;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          -webkit-hyphens: auto;
+          hyphens: auto;
+          word-break: normal
+        }
+        th {
+          color: #333;
+          position: relative;
+        }
+        .out {
+          width: 1/37.5rem;
+          height: 2.5rem;
+          background-color: #e3e3e3;
+          transform: rotate(126deg);
+          position: absolute;
+          top: -0.5rem;
+        }
+      }
+      //选择修改的内容
+      .sele_edit {
+        width: 100%;
+        .sele_tit {
+          padding: 0 0 10/37.5rem;
+          font-size: 14/37.5rem;
+          color: #63A431;
+          line-height: 18/37.5rem;
+        }
+        .sele_p {
+          padding: 0 0 20/37.5rem;
+          font-size: 12/37.5rem;
+          color: #999;
+          line-height: 18/37.5rem;
+        }
+        .sele_more {
+          padding-bottom: 10/37.5rem;
+          .moreli_list {
+            width: 100%;
+            margin-bottom: 10/37.5rem;
+            background-color: #fff;
+            padding-left: 15/37.5rem;
+            .more_p {
+              color: #333333;
+              font-size: 13/37.5rem;
+              line-height: 22/37.5rem;
+              padding: 15/37.5rem 15/37.5rem 15/37.5rem 20/37.5rem;
+              background: url("../images/sele_gray.png") no-repeat left 0.48rem;
+              background-size: 13/37.5rem 13/37.5rem;
+            }
+          }
+          .current_list {
+            width: 100%;
+            margin-bottom: 10/37.5rem;
+            background-color: #F2FDF1;
+            .more_p {
+              color: #333333;
+              font-size: 13/37.5rem;
+              line-height: 22/37.5rem;
+              padding: 15/37.5rem 15/37.5rem 15/37.5rem 20/37.5rem;
+              background: url("../images/sele_cur.png") no-repeat left 0.48rem;
+              background-size: 13/37.5rem 13/37.5rem;
+            }
+          }
 
+        }
+      }
+      .btn_b {
+        display: block;
+        margin: 20/37.5rem auto;
+        width: 100%;
+        text-align: center;
+        height: 50/37.5rem;
+        line-height: 50/37.5rem;
+        font-size: 14/37.5rem;
+
+        -webkit-border-radius: 50/37.5rem 50/37.5rem;
+        -moz-border-radius: 50/37.5rem 50/37.5rem;
+        -ms-border-radius: 50/37.5rem 50/37.5rem;
+        -o-border-radius: 50/37.5rem 50/37.5rem;
+        border-radius: 50/37.5rem 50/37.5rem;
+      }
+      .btn_edit {
+        color: #63A431;
+        background-color: #F2FDF1;
+      }
+      .btn_nopro {
+        color: #fff;
+        background-color: #63A431;
+      }
     }
   }
 }
