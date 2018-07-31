@@ -253,7 +253,7 @@
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   padding: 0.4rem 0.4rem 0.4rem 0.53333333rem;
-  background: url("../images/sele_gray.png") no-repeat left 0.48rem;
+  background: url("../images/sele_gray.png") no-repeat left 0.45rem;
   background-size: 0.34666667rem 0.34666667rem;
 }
 .warp .sele_div .sele_more .current_list {
@@ -266,7 +266,7 @@
   font-size: 0.34666667rem;
   line-height: 0.48rem;
   padding: 0.4rem 0.4rem 0.4rem 0.53333333rem;
-  background: url("../images/sele_cur.png") no-repeat left 0.48rem;
+  background: url("../images/sele_cur.png") no-repeat left 0.45rem;
   background-size: 0.34666667rem 0.34666667rem;
 }
 .warp .file_pro {
