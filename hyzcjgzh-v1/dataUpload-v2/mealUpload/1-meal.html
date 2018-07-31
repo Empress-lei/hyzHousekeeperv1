@@ -172,23 +172,24 @@
         optab(".meal_ul dl");
         $(".week_input").focus(function () {
             $(this).parent().parent().next().find("dd").show();
+            $(this).parent().parent().next().find("dt").addClass("active_side");
             $(this).parent().parent().prev().find("dd").hide();
+            $(this).parent().parent().prev().find("dt").removeClass("active_side");
+
         })
     })
 
     //选择标签
     function optab(item){
         var dtc=$(item).children("dt");
-        var ddc=$(item).children("dd");
-        dtc.on("click",function(){
-            ddc.removeClass("active_side");
-            // $(this).parent().siblings("dl").find("dd").hide();
+        dtc.on("click",function(e){
+            if($(this).hasClass("active_side")){
+                $(this).removeClass("active_side");
+            }else {
+                $(this).addClass("active_side");
+            }
             $(this).siblings("dd").toggle();
-            // $(this).siblings("dd").eq(0).addClass("active_side");
-        })
-        ddc.on("click",function(){
-            ddc.removeClass("active_side");
-            $(this).addClass("active_side");
+            e.stopPropagation();
         })
     }
 </script>

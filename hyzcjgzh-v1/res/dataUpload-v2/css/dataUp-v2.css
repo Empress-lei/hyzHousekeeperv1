@@ -2142,10 +2142,11 @@
   background-size: 0.58666667rem 0.58666667rem;
   background-color: #F2FDF1;
 }
-.warp .mealUp .mealUp_content .envi_mess .meal_ul .week_li .week_titlecur {
+.warp .mealUp .mealUp_content .envi_mess .meal_ul .week_li .active_side {
   line-height: 1.14666667rem;
-  background: url("../images/downicon.png") no-repeat right center;
+  background: url("../images/downicon.png") no-repeat 95% center;
   background-size: 0.58666667rem 0.58666667rem;
+  background-color: #F2FDF1;
 }
 .warp .mealUp .mealUp_content .envi_mess .meal_ul .week_li .food_list {
   display: none;
