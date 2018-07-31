@@ -78,19 +78,19 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; /*清除点击高亮效果*/
   ::-webkit-input-placeholder {
-    font-size: 13/37.5rem;
+    font-size: 12/37.5rem;
     color: #999;
   }
   ::-moz-placeholder {
-    font-size: 13/37.5rem;
+    font-size: 12/37.5rem;
     color: #999;
   }
   :-ms-input-placeholder {
-    font-size: 13/37.5rem;
+    font-size: 12/37.5rem;
     color: #999;
   }
   input:-moz-placeholder {
-    font-size: 13/37.5rem;
+    font-size: 12/37.5rem;
     color: #999;
   }
   //上传图片提示文字
@@ -161,7 +161,7 @@
       .cen_list {
         width: 100%;
         margin-bottom: 10/37.5rem;
-        border: 1px solid #dddddd;
+        border: 1px solid #EEEEEE;
         .list_tit {
           width: 100%;
           padding: 15/37.5rem;
@@ -170,15 +170,15 @@
           font-weight: 800;
         }
         .list_ul {
-          border-top: 1px solid #dddddd;
+          border-top: 1px solid #EEEEEE;
         }
       }
       .data_cenli:nth-child(odd) {
-        border-right: 1px solid #DDDDDD;
-        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
       }
       .data_cenli:nth-child(even) {
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 1px solid #EEEEEE;
       }
       .data_cenli {
         float: left;
@@ -193,10 +193,10 @@
         padding: 15/37.5rem;
         font-size: 12/37.5rem;
         line-height: 0.48rem;
-        background-color: #DDDDDD;
+        background-color: #EEEEEE;
       }
       .meal_p {
-        border-top: 1px solid #dddddd;
+        border-top: 1px solid #EEEEEE;
         width: 100%;
         color: #333;
         padding: 15/37.5rem 15/37.5rem 25/37.5rem;
@@ -311,7 +311,7 @@
       font-size: 14/37.5rem;
       color: #333333;
       font-weight: 800;
-      padding: 10/37.5rem 10/37.5rem 20/37.5rem;
+      padding: 10/37.5rem;
     }
     .images_text {
       text-align: left;
@@ -319,6 +319,16 @@
       font-size: 13/37.5rem;
       line-height: 18/37.5rem;
       padding-left: 28/37.5rem;
+    }
+    .end_div {
+      padding-left: 23/37.5rem;
+    }
+    .basics_render {
+      width: 100%;
+      color: #333;
+      font-size: 13/37.5rem;
+      line-height: 43/37.5rem;
+      border-bottom: 1px solid #EEEEEE;
     }
   }
   //上传图片结束
@@ -672,12 +682,13 @@
         width: 100%;
         padding: 0 20/37.5rem 0;
         height: 55/37.5rem;
-        background-color: #F2FDF1;
         .title_h {
-          font-size: 14/37.5rem;
+          font-size: 16/37.5rem;
           line-height: 55/37.5rem;
           color: #333333;
           font-weight: 800;
+          position: relative;
+          padding-left: 10/37.5rem;
           span {
             font-size: 10/37.5rem;
             line-height: 55/37.5rem;
@@ -685,12 +696,22 @@
             padding-top: 3/37.5rem;
           }
         }
+        .title_h:before {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          width: 4/37.5rem;
+          height: 16/37.5rem;
+          left: 0;
+          top: 20/37.5rem;
+          background-color: #63A431;
+        }
         //非必填
         .non_compul {
           display: block;
           font-size: 10/37.5rem;
           line-height: 55/37.5rem;
-          color: #999999;
+          color: #C9C9C9;
         }
         // 五角星的表示
         .required_star {
@@ -710,12 +731,13 @@
       }
       .render_mess {
         width: 100%;
-        padding: 20/37.5rem 20/37.5rem 10/37.5rem;
+        padding: 10/37.5rem 20/37.5rem 10/37.5rem;
         .class_num {
           padding-bottom: 20/37.5rem;
         }
         .name_content {
           padding-top: 20/37.5rem;
+          padding-left: 10/37.5rem;
           .title_content {
             font-size: 14/37.5rem;
             line-height: 20/37.5rem;
@@ -725,7 +747,7 @@
           .non_compul {
             font-size: 10/37.5rem;
             line-height: 20/37.5rem;
-            color: #999999;
+            color: #C9C9C9;
           }
         }
         // 五角星的表示
@@ -745,9 +767,10 @@
         .basics_render {
           width: 100%;
           color: #333;
-          font-size: 13/37.5rem;
+          padding-left: 10/37.5rem;
+          font-size: 14/37.5rem;
           line-height: 43/37.5rem;
-          border-bottom: 1px solid #DDDDDD;
+          border-bottom: 1px solid #EEEEEE;
         }
 
       }
@@ -756,7 +779,7 @@
         width: 100%;
         padding-top: 15/37.5rem;
         position: relative;
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 1px solid #EEEEEE;
         .demo_date {
           width: 100%;
           height: 47/37.5rem;
@@ -807,7 +830,8 @@
       }
       //园所地址
       .basics_add {
-        border-bottom: 1px solid #DDDDDD;
+        padding-left: 10/37.5rem;
+        border-bottom: 1px solid #EEEEEE;
         .add_input {
           width: 100%;
           font-size: 13/37.5rem;
@@ -830,8 +854,8 @@
         color: #333;
       }
       .add_deta {
-        padding: 20/37.5rem 0 10/37.5rem;
-        border-bottom: 1px solid #DDDDDD;
+        padding: 20/37.5rem 0 10/37.5rem 10/37.5rem;
+        border-bottom: 1px solid #EEEEEE;
         .deta_text {
           width: 100%;
           height: 20/37.5rem;
@@ -896,7 +920,6 @@
 
             }
           }
-
         }
 
         .input_content {
@@ -908,7 +931,7 @@
               width: 100%;
               font-size: 13/37.5rem;
               padding: 11/37.5rem 15/37.5rem;
-              background-color: #fff;
+              border-bottom: 1px solid #dddddd;
               margin-bottom: 10/37.5rem;
             }
           }
@@ -917,6 +940,7 @@
       //联系方式
       .render_tell {
         .tell_li {
+
           margin-bottom: 20/37.5rem;
           .basics_label {
             display: block;
@@ -925,14 +949,15 @@
             line-height: 18/37.5rem;
             font-size: 13/37.5rem;
             color: #333;
-
+            padding-left: 10/37.5rem;
           }
           .tall_input {
             width: 100%;
             height: 40/37.5rem;
-            font-size: 13/37.5rem;
+            font-size: 14/37.5rem;
             line-height: 40/37.5rem;
-            border-bottom: 1px solid #DDDDDD;
+            padding-left: 10/37.5rem;
+            border-bottom: 1px solid #EEEEEE;
           }
         }
       }
@@ -947,7 +972,7 @@
       //教学理念
       .basics_teach {
         padding: 10/37.5rem 0;
-        border-bottom: 1px solid #DDDDDD;
+        border-bottom: 1px solid #EEEEEE;
         .exam_text {
           width: 100%;
           height: 20/37.5rem;
@@ -961,46 +986,6 @@
         font-size: 13/37.5rem;
         line-height: 43/37.5rem;
         color: #333;
-      }
-      //上传图片
-      .file_pro {
-        padding: 20/37.5rem 20/37.5rem 0;
-        .pro_img {
-          display: block;
-          width: 50/37.5rem;
-          height: 50/37.5rem;
-          margin: 0 auto;
-        }
-        .progre_p {
-          text-align: center;
-          padding: 20/37.5rem 0;
-          color: #63A431;
-          font-size: 15/37.5rem;
-          line-height: 25/37.5rem;
-        }
-        .progre_text {
-          text-align: center;
-          padding: 20/37.5rem 0;
-          color: #999;
-          font-size: 13/37.5rem;
-          line-height: 18/37.5rem;
-        }
-      }
-      .mess_images {
-        padding-bottom: 20/37.5rem;
-        .images_title {
-          font-size: 14/37.5rem;
-          color: #333333;
-          font-weight: 800;
-          padding: 10/37.5rem 10/37.5rem 20/37.5rem;
-        }
-        .images_text {
-          text-align: left;
-          color: #999;
-          font-size: 13/37.5rem;
-          line-height: 18/37.5rem;
-          padding-left: 28/37.5rem;
-        }
       }
 
     }
@@ -1205,12 +1190,13 @@
         width: 100%;
         padding: 0 20/37.5rem 0;
         height: 55/37.5rem;
-        background-color: #F2FDF1;
         .title_h {
-          font-size: 14/37.5rem;
+          font-size: 16/37.5rem;
           line-height: 55/37.5rem;
           color: #333333;
           font-weight: 800;
+          position: relative;
+          padding-left: 10/37.5rem;
           span {
             font-size: 10/37.5rem;
             line-height: 55/37.5rem;
@@ -1218,18 +1204,22 @@
             padding-top: 3/37.5rem;
           }
         }
-        //是否必填内容
-        .compul {
-          font-size: 10/37.5rem;
-          line-height: 55/37.5rem;
-          color: #999999;
+        .title_h:before {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          width: 4/37.5rem;
+          height: 16/37.5rem;
+          left: 0;
+          top: 20/37.5rem;
+          background-color: #63A431;
         }
         //非必填
         .non_compul {
           display: block;
           font-size: 10/37.5rem;
           line-height: 55/37.5rem;
-          color: #999999;
+          color: #C9C9C9;
         }
         // 五角星的表示
         .required_star {
@@ -1252,13 +1242,13 @@
         color: #999;
         font-size: 13/37.5rem;
         line-height: 18/37.5rem;
-        padding: 20/37.5rem 20/37.5rem 0;
-        margin-bottom: -10/37.5rem;
+        padding: 0 20/37.5rem 0 30/37.5rem;
       }
       .envi_mess {
-        padding: 10/37.5rem 20/37.5rem 0;
+        padding: 0 20/37.5rem;
         .name_content {
           padding-top: 30/37.5rem;
+          padding-left: 10/37.5rem;
           .title_content {
             font-size: 14/37.5rem;
             line-height: 20/37.5rem;
@@ -1273,12 +1263,13 @@
         }
         .basics_add {
           padding-top: 10/37.5rem;
-          border-bottom: 1px solid #DDDDDD;
+          padding-left: 10/37.5rem;
+          border-bottom: 1px solid #EEEEEE;
           //建筑面积
           .basics_acre {
             width: 80%;
             color: #333;
-            font-size: 13/37.5rem;
+            font-size: 14/37.5rem;
             line-height: 43/37.5rem;
           }
           .square {
@@ -1296,7 +1287,7 @@
             color: #333;
             line-height: 18/37.5rem;
             background-color: #F3F3F3;
-            border: 1px solid #dddddd;
+            border: 1px solid #EEEEEE;
             -webkit-border-radius: 8/37.5rem;
             -moz-border-radius: 8/37.5rem;
             -ms-border-radius: 8/37.5rem;
@@ -1331,12 +1322,12 @@
       .num_teach {
         .exam_text {
           width: 100%;
-          min-height: 70/37.5rem;
           padding: 10/37.5rem;
           font-size: 13/37.5rem;
           color: #333;
           line-height: 18/37.5rem;
-          background-color: #FFFFFF;
+          //background-color: #FFFFFF;
+          border-bottom: 1px solid #dddddd;
         }
         .examples {
           padding-top: 5/37.5rem;
@@ -1373,7 +1364,7 @@
             width: 100%;
             padding-bottom: 20/37.5rem;
             margin-bottom: 10/37.5rem;
-            border-bottom: 1px solid #dddddd;
+            border-bottom: 1px solid #EEEEEE;
             .charac_p {
               color: #333333;
               font-size: 13/37.5rem;
@@ -1420,7 +1411,7 @@
         .btn_envi {
           margin-top: 20/37.5rem;
           padding: 20/37.5rem 0;
-          border-top: 1px solid #dddddd;
+          border-top: 1px solid #EEEEEE;
           a {
             display: block;
             width: 50%;
@@ -1430,7 +1421,7 @@
           }
           .look_examples {
             color: #0099FF;
-            border-right: 1px solid #dddddd;
+            border-right: 1px solid #EEEEEE;
           }
           //确认添加按钮
           .enviaddBtn {
@@ -1732,12 +1723,13 @@
         width: 100%;
         padding: 0 20/37.5rem 0;
         height: 55/37.5rem;
-        background-color: #F2FDF1;
         .title_h {
-          font-size: 14/37.5rem;
+          font-size: 16/37.5rem;
           line-height: 55/37.5rem;
           color: #333333;
           font-weight: 800;
+          position: relative;
+          padding-left: 10/37.5rem;
           span {
             font-size: 10/37.5rem;
             line-height: 55/37.5rem;
@@ -1745,15 +1737,41 @@
             padding-top: 3/37.5rem;
           }
         }
-        .compul {
+        .title_h:before {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          width: 4/37.5rem;
+          height: 16/37.5rem;
+          left: 0;
+          top: 20/37.5rem;
+          background-color: #63A431;
+        }
+        //非必填
+        .non_compul {
           display: block;
           font-size: 10/37.5rem;
           line-height: 55/37.5rem;
-          color: #999999;
+          color: #C9C9C9;
+        }
+        // 五角星的表示
+        .required_star {
+          display: block;
+          font-size: 14/37.5rem;
+          line-height: 55/37.5rem;
+          color: #FF4539;
+        }
+        //可多选
+        .required_multi {
+          display: block;
+          font-size: 10/37.5rem;
+          line-height: 55/37.5rem;
+          color: #FF4539;
+          padding-right: 10/37.5rem;
         }
       }
       .envi_mess {
-        padding: 10/37.5rem 20/37.5rem 0;
+        padding: 0 20/37.5rem;
         .name_content {
           padding-top: 30/37.5rem;
           .title_content {
@@ -1770,12 +1788,12 @@
         }
         .basics_add {
           padding-top: 10/37.5rem;
-          border-bottom: 1px solid #DDDDDD;
+          border-bottom: 1px solid #EEEEEE;
           //建筑面积
           .basics_acre {
             width: 80%;
             color: #333;
-            font-size: 13/37.5rem;
+            font-size: 14/37.5rem;
             line-height: 43/37.5rem;
           }
           .square {
@@ -1785,7 +1803,7 @@
           }
         }
         .num_sele {
-          padding: 30/37.5rem 0 20/37.5rem;
+          padding: 30/37.5rem 0 20/37.5rem 10/37.5rem;
           .class_number {
             font-size: 14/37.5rem;
             line-height: 20/37.5rem;
@@ -1837,7 +1855,7 @@
           }
         }
         .mess_txt {
-          padding: 20/37.5rem 0 0;
+          padding: 0 0 0 10/37.5rem;
           text-align: left;
           color: #999;
           font-size: 13/37.5rem;
@@ -1849,12 +1867,11 @@
         margin-bottom: -20/37.5rem;
         .exam_text {
           width: 100%;
-          min-height: 70/37.5rem;
           padding: 10/37.5rem;
           font-size: 13/37.5rem;
           color: #333;
           line-height: 18/37.5rem;
-          background-color: #FFFFFF;
+          border-bottom: 1px solid #dddddd;
         }
         .examples {
           padding-top: 5/37.5rem;
@@ -1891,7 +1908,7 @@
             width: 100%;
             padding-bottom: 20/37.5rem;
             margin-bottom: 10/37.5rem;
-            border-bottom: 1px solid #dddddd;
+            border-bottom: 1px solid #EEEEEE;
             .charac_p {
               color: #333333;
               font-size: 13/37.5rem;
@@ -1938,7 +1955,7 @@
         .btn_envi {
           margin-top: 20/37.5rem;
           padding: 20/37.5rem 0;
-          border-top: 1px solid #dddddd;
+          border-top: 1px solid #EEEEEE;
           a {
             display: block;
             width: 50%;
@@ -1948,7 +1965,7 @@
           }
           .look_examples {
             color: #0099FF;
-            border-right: 1px solid #dddddd;
+            border-right: 1px solid #EEEEEE;
           }
           //确认添加按钮
           .enviaddBtn {
@@ -2275,7 +2292,7 @@
           font-size: 14/37.5rem;
           line-height: 20/37.5rem;
           color: #333;
-          border-bottom: 1px solid #DDDDDD;
+          border-bottom: 1px solid #EEEEEE;
         }
         //预览人数展示区域u
         .num_list {
@@ -2310,7 +2327,7 @@
               font-size: 13/37.5rem;
               line-height: 18/37.5rem;
               color: #666666;
-              border-bottom: 1px solid #DDDDDD;
+              border-bottom: 1px solid #EEEEEE;
             }
             .num_li:nth-last-child(1) {
               padding-bottom: 20/37.5rem;
@@ -2326,7 +2343,7 @@
               font-size: 0.34666667rem;
               line-height: 0.48rem;
               color: #666666;
-              border-bottom: 1px solid #DDDDDD !important;
+              border-bottom: 1px solid #EEEEEE !important;
             }
           }
           .num_div {
@@ -2409,7 +2426,7 @@
           .other_list {
             padding: 10/37.5rem 20/37.5rem 20/37.5rem;
             margin-bottom: 10/37.5rem;
-            border-bottom: 1px solid #dddddd;
+            border-bottom: 1px solid #EEEEEE;
             .charac_p {
               color: #333;
               font-size: 13/37.5rem;
@@ -2468,7 +2485,7 @@
   font-size: 13/37.5rem;
   margin-top: 20/37.5rem;
   text-align: center;
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #EEEEEE;
 }
 
 .add_teach {
@@ -2521,7 +2538,7 @@
     color: #999999;
     background: url("../images/uparr_icon.png") no-repeat 40/37.5rem center;
     background-size: 7/37.5rem 10/37.5rem;
-    border: 1px solid #dddddd;
+    border: 1px solid #EEEEEE;
     margin-right: 20/37.5rem;
   }
   .next_btn {
@@ -2560,7 +2577,7 @@
     color: #999999;
     background: url("../images/uparr_icon.png") no-repeat 40/37.5rem center;
     background-size: 7/37.5rem 10/37.5rem;
-    border: 1px solid #dddddd;
+    border: 1px solid #EEEEEE;
     margin-right: 20/37.5rem;
   }
   .next_btn {
@@ -2666,7 +2683,7 @@
     color: #999999;
     background: url("../images/uparr_icon.png") no-repeat 40/37.5rem center;
     background-size: 7/37.5rem 10/37.5rem;
-    border: 1px solid #dddddd;
+    border: 1px solid #EEEEEE;
     margin-right: 20/37.5rem;
   }
   .next_btn {
