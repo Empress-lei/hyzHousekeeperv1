@@ -1,4 +1,4 @@
-@import "../../hyzRes/css/base_mob.css";
+@import "../../res/css/base_mob.css";
 .popup {
   width: 100%;
   max-width: 540px;
@@ -732,14 +732,14 @@
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .record_ul .current_list p {
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .basics_add {
@@ -909,14 +909,14 @@
   color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .characteristic .current_list p {
   color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .other_add {
@@ -939,14 +939,14 @@
   color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .other_add .current_list p {
   color: #666;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .basicsUp .basics_content .other_add .add_mess {
@@ -1219,14 +1219,14 @@
   line-height: 0.48rem;
   padding: 0 0.4rem;
   margin: 0.53333333rem 0;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .enviUp .enviUp_content .characteristic .charac_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .enviUp .enviUp_content .num_list {
@@ -1336,14 +1336,14 @@
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .enviUp .enviUp_content .other_characteristic .other_ul .other_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .enviUp .enviUp_content .other_characteristic .other_ul .other_list .charac_content {
@@ -1697,14 +1697,14 @@
   line-height: 0.48rem;
   padding: 0 0.4rem;
   margin: 0.53333333rem 0;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .classUp .classUp_content .characteristic .charac_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .classUp .classUp_content .num_list {
@@ -1789,14 +1789,14 @@
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .classUp .classUp_content .other_characteristic .other_ul .other_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .classUp .classUp_content .other_characteristic .other_ul .other_list .charac_content {
@@ -2058,7 +2058,7 @@
   top: 0.32rem;
   width: 0.4rem;
   height: 0.4rem;
-  background: url("../../hyzRes/images/hyzicon/expand_btn.png") no-repeat center;
+  background: url("../../res/images/hyzicon/expand_btn.png") no-repeat center;
   background-size: 100% 100%;
 }
 .warp .teacteamUp .teacteam_content .teach_mess {
@@ -2112,14 +2112,14 @@
   line-height: 0.48rem;
   padding: 0 0.4rem;
   margin: 0.53333333rem 0;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .teacteamUp .teacteam_content .characteristic .charac_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .teacteamUp .teacteam_content .num_list {
@@ -2204,14 +2204,14 @@
   color: #333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_ul .other_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .other_ul .other_list .charac_content {
@@ -2464,14 +2464,14 @@
   line-height: 0.48rem;
   padding: 0 0.4rem;
   margin: 0.53333333rem 0;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .intrUp .intrUp_content .characteristic .charac_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .intrUp .intrUp_content .num_list {
@@ -2556,14 +2556,14 @@
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/graydui.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .intrUp .intrUp_content .other_characteristic .other_ul .other_list .current_list {
   color: #63A431;
   font-size: 0.34666667rem;
   line-height: 0.48rem;
-  background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+  background: url(../../res/images/hyzicon/curdui1.png) no-repeat right center;
   background-size: 0.42666667rem 0.42666667rem;
 }
 .warp .intrUp .intrUp_content .other_characteristic .other_ul .other_list .charac_content {
@@ -3450,7 +3450,7 @@
 .z_file {
   width: 2.24rem;
   height: 2.24rem;
-  background: url(../../hyzRes/images/hyzicon/z_add.png) no-repeat center;
+  background: url(../../res/images/hyzicon/z_add.png) no-repeat center;
   background-size: 0.96rem 0.96rem;
   float: left;
   margin-left: 0.32rem;

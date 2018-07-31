@@ -1,4 +1,4 @@
-@import "../../hyzRes/css/base_mob.css";
+@import "../../css/base_mob.css";
 
 //显示原图朦层
 .popup {
@@ -812,7 +812,7 @@
             color: #333333;
             font-size: 13/37.5rem;
             line-height: 18/37.5rem;
-            background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+            background: url(../../images/hyzicon/graydui.png) no-repeat right center;
             background-size: 16/37.5rem 16/37.5rem;
           }
         }
@@ -823,7 +823,7 @@
           color: #63A431;
           font-size: 13/37.5rem;
           line-height: 18/37.5rem;
-          background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+          background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
           background-size: 16/37.5rem 16/37.5rem;
         }
       }
@@ -885,14 +885,14 @@
               color: #333333;
               font-size: 13/37.5rem;
               line-height: 18/37.5rem;
-              background: url(../../hyzRes/images/hyzicon/graydui.png) no-repeat right center;
+              background: url(../../images/hyzicon/graydui.png) no-repeat right center;
               background-size: 16/37.5rem 16/37.5rem;
             }
             .current_list {
               color: #63A431;
               font-size: 13/37.5rem;
               line-height: 18/37.5rem;
-              background: url(../../hyzRes/images/hyzicon/curdui1.png) no-repeat right center;
+              background: url(../../images/hyzicon/curdui1.png) no-repeat right center;
               background-size: 16/37.5rem 16/37.5rem;
             }
             .charac_content {
@@ -1921,8 +1921,6 @@
               line-height: 22/37.5rem;
               background: url("../images/sele_gray.png") no-repeat right 4.5/37.5rem;
               background-size: 13/37.5rem 13/37.5rem;
-              //background-color: #fff;
-
             }
             .current_list {
               color: #63A431;
@@ -2154,18 +2152,79 @@
         padding: 0 20/37.5rem 0 30/37.5rem;
       }
       .envi_mess {
-        padding: 10/37.5rem 20/37.5rem;
+        padding: 20/37.5rem 20/37.5rem;
         .meal_ul {
           width: 100%;
           .week_li {
             margin-bottom: 10/37.5rem;
             .week_title {
               width: 100%;
-              padding: 0 15/37.5rem;
               height: 43/37.5rem;
+              padding: 0 15/37.5rem;
               line-height: 43/37.5rem;
-              //background: url("../images/");
+              background: url("../images/upicon.png") no-repeat 95% center;
+              background-size: 22/37.5rem 22/37.5rem;
               background-color: #F2FDF1;
+            }
+            .week_titlecur {
+              line-height: 43/37.5rem;
+              background: url("../images/downicon.png") no-repeat right center;
+              background-size: 22/37.5rem 22/37.5rem;
+            }
+            .food_list {
+              display: none;
+              padding: 20/37.5rem 15/37.5rem 15/37.5rem;
+              border-bottom: 1px solid #EEEEEE;
+              .food_c {
+                display: block;
+                float: left;
+                width: 20%;
+                font-size: 14/37.5rem;
+                line-height: 25/37.5rem;
+              }
+              .breakfast {
+                background: url("../images/breakfasticon.png") no-repeat left center;
+                background-size: 25/37.5rem 25/37.5rem;
+                padding-left: 30/37.5rem;
+              }
+              .inter_pormor {
+                background: url("../images/inter_pormor.png") no-repeat left center;
+                background-size: 25/37.5rem 25/37.5rem;
+                padding-left: 30/37.5rem;
+              }
+              .lunch {
+                background: url("../images/lunchicon.png") no-repeat left center;
+                background-size: 25/37.5rem 25/37.5rem;
+                padding-left: 30/37.5rem;
+              }
+              .inter_pormor2 {
+                background: url("../images/inter_pormor2.png") no-repeat left center;
+                background-size: 25/37.5rem 25/37.5rem;
+                padding-left: 30/37.5rem;
+              }
+              .dinner {
+                background: url("../images/dinnericon.png") no-repeat left center;
+                background-size: 25/37.5rem 25/37.5rem;
+                padding-left: 30/37.5rem;
+              }
+              .week_input {
+                width: 75%;
+                height: 25/37.5rem;
+                float: right;
+                font-size: 14/37.5rem;
+                color: #333;
+                line-height: 25/37.5rem;
+                text-align: justify;
+                word-wrap: break-word;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                -webkit-hyphens: auto;
+                hyphens: auto;
+                word-break: normal
+              }
+            }
+            .week_food {
+              padding-bottom: 10/37.5rem;
             }
           }
         }
@@ -2183,320 +2242,48 @@
     }
   }
 
+  //提交
+  .sub_page {
+    width: 100%;
+    padding: 150/37.5rem 0 20/37.5rem;
+    .send_img {
+      display: block;
+      width: 60/37.5rem;
+      height: 60/37.5rem;
+      margin: 0 auto;
+    }
+    .send_text {
+      text-align: center;
+      padding: 20/37.5rem 0 10/37.5rem;
+      color: #63A431;
+      font-size: 14/37.5rem;
+      line-height: 23/37.5rem;
+    }
+  }
+
   //6大板块资料上传预览
   .preview {
     width: 100%;
-    .kinder_na {
+    .content_title {
       width: 100%;
+      padding: 0 20/37.5rem 0;
       height: 55/37.5rem;
-      color: #fff;
-      font-size: 16/37.5rem;
-      line-height: 55/37.5rem;
-      padding: 0 20/37.5rem;
-      background-color: #63A431;
-    }
-    .basics_title {
-      width: 100%;
-      height: 55/37.5rem;
-      color: #333;
-      font-size: 14/37.5rem;
-      line-height: 55/37.5rem;
-      padding: 0 20/37.5rem;
       background-color: #F2FDF1;
+      .title_h {
+        font-size: 14/37.5rem;
+        line-height: 55/37.5rem;
+        color: #333333;
+        font-weight: 800;
+        span {
+          font-size: 10/37.5rem;
+          line-height: 55/37.5rem;
+          color: #999999;
+          padding-top: 3/37.5rem;
+        }
+      }
     }
-    .basics_mess {
-      padding: 28/37.5rem 20/37.5rem 0;
-      .basicsmess_li {
-        width: 100%;
-        padding-bottom: 20/37.5rem;
-        margin-bottom: 18/37.5rem;
-        border-bottom: 1px solid #EEEEEE;
-        .li_tit {
-          .li_title {
-            font-size: 15/37.5rem;
-            line-height: 21/37.5rem;
-            color: #333;
-            //background: url("../../images/dataUp/edit_icon.png") no-repeat right center;
-            //background-size: 12/37.5rem 12/37.5rem;
-          }
-          .kinder_title {
-            margin-bottom: 10/37.5rem;
-          }
-          .edit_icon {
-            display: block;
-            width: 12/37.5rem;
-            height: 12/37.5rem;
-            margin: 5/37.5rem 0;
-          }
-        }
-        .li_titleback {
-          background: none;
-        }
-        .li_text {
-          padding-top: 14/37.5rem;
-          padding-left: 20/37.5rem;
-          padding-right: 20/37.5rem;
-          font-size: 13/37.5rem;
-          line-height: 18/37.5rem;
-          color: #666666;
-          max-width: 100%;
-          box-sizing: border-box !important;
-          -webkit-box-sizing: border-box !important;
-          word-wrap: break-word !important;
-        }
-        .li_phone {
-          padding-top: 14/37.5rem;
-          font-size: 13/37.5rem;
-          line-height: 30/37.5rem;
-          color: #666666;
-          padding-left: 20/37.5rem;
-        }
-        //图片区域
-        .img_ol {
-          margin-left: -10/37.5rem;
-          padding: 20/37.5rem 30/37.5rem 0 25/37.5rem;
-          .img_li {
-            float: left;
-            width: 84/37.5rem;
-            height: 84/37.5rem;
-            margin-bottom: 10/37.5rem;
-            margin-left: 10/37.5rem;
-            img {
-              display: block;
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-        .kinder_list {
-          width: 100%;
-          margin-top: 10/37.5rem;
-          padding: 20/37.5rem 20/37.5rem 1/37.5rem;
-          background-color: #F3F3F3;
-          .kinder_ol {
-            width: 100%;
-            .kinder_li {
-              float: left;
-              padding-bottom: 20/37.5rem;
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              color: #666666;
-              padding-right: 50/37.5rem;
-            }
-          }
-          .ger_kinderp {
-            font-size: 13/37.5rem;
-            line-height: 18/37.5rem;
-            color: #666;
-            max-width: 100%;
-            box-sizing: border-box !important;
-            -webkit-box-sizing: border-box !important;
-            word-wrap: break-word !important;
-          }
-          //图片区域
-          .kinderimg_ol {
-            margin-left: -10/37.5rem;
-            padding: 20/37.5rem 12/37.5rem 0 10/37.5rem;
-            .img_li {
-              float: left;
-              width: 84/37.5rem;
-              height: 84/37.5rem;
-              margin-bottom: 10/37.5rem;
-              margin-left: 10/37.5rem;
-              img {
-                display: block;
-                width: 100%;
-                height: 100%;
-              }
-            }
+    .preview_content {
 
-          }
-        }
-        .kinder_namep {
-          padding-bottom: 20/37.5rem;
-          margin-bottom: 20/37.5rem;
-          font-size: 14/37.5rem;
-          line-height: 20/37.5rem;
-          color: #333;
-          border-bottom: 1px solid #EEEEEE;
-        }
-        //预览人数展示区域u
-        .num_list {
-          padding: 20/37.5rem 0 0;
-          position: relative;
-          .arr_san {
-            display: block;
-            width: 30/75rem;
-            height: 30/75rem;
-            position: absolute;
-            left: 30/37.5rem;
-            top: 15/37.5rem;
-            border: 3px solid transparent;
-            border-top: 3px solid #f3f3f3;
-            border-left: 3px solid #f3f3f3;
-            background-color: #f3f3f3;
-            z-index: 99;
-            opacity: .8;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-          .num_ol {
-            width: 100%;
-            padding: 20/37.5rem 20/37.5rem 1/37.5rem;
-            background-color: #F3F3F3;
-            .num_li {
-              padding-bottom: 20/37.5rem;
-              margin-bottom: 20/37.5rem;
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              color: #666666;
-              border-bottom: 1px solid #EEEEEE;
-            }
-            .num_li:nth-last-child(1) {
-              padding-bottom: 20/37.5rem;
-              margin-bottom: 0;
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              color: #666666;
-              border-bottom: none;
-            }
-            .other_li {
-              padding-bottom: 0.53333333rem;
-              margin-bottom: 0.53333333rem !important;
-              font-size: 0.34666667rem;
-              line-height: 0.48rem;
-              color: #666666;
-              border-bottom: 1px solid #EEEEEE !important;
-            }
-          }
-          .num_div {
-            width: 100%;
-            padding: 20/37.5rem 0 20/37.5rem;
-            background-color: #F3F3F3;
-            .get_text {
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              color: #333;
-              padding: 0 20/37.5rem;
-            }
-          }
-        }
-        .render_list {
-          .num_div {
-            width: 100%;
-            padding: 0 0 20/37.5rem;
-            background-color: #F3F3F3;
-            .get_text {
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              color: #666;
-              padding: 0 20/37.5rem;
-            }
-            .get_content {
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              color: #666;
-              padding: 10/37.5rem 20/37.5rem 0;
-              max-width: 100%;
-              box-sizing: border-box !important;
-              -webkit-box-sizing: border-box !important;
-              word-wrap: break-word !important;
-            }
-          }
-        }
-        .chara_list {
-          padding: 20/37.5rem 10/37.5rem 0;
-          .chara_ol {
-            width: 100%;
-            .chara_li {
-              float: left;
-              width: 50%;
-              height: 40/37.5rem;
-              color: #666666;
-              font-size: 13/37.5rem;
-              line-height: 40/37.5rem;
-              padding: 0 10/37.5rem;
-              background-color: #F3F3F3;
-              border-bottom: 1px solid #fff;
-              border-right: 1px solid #fff;
-            }
-          }
-        }
-        .basicsmess_other {
-          margin-top: 20/37.5rem;
-          padding: 10/37.5rem 0 0;
-          position: relative;
-          background-color: #f3f3f3;
-          .arr_san {
-            display: block;
-            width: 30/75rem;
-            height: 30/75rem;
-            position: absolute;
-            left: 30/37.5rem;
-            top: -5/37.5rem;
-            border: 3px solid transparent;
-            border-top: 3px solid #f3f3f3;
-            border-left: 3px solid #f3f3f3;
-            background-color: #f3f3f3;
-            z-index: 99;
-            opacity: .8;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-          .other_list {
-            padding: 10/37.5rem 20/37.5rem 20/37.5rem;
-            margin-bottom: 10/37.5rem;
-            border-bottom: 1px solid #EEEEEE;
-            .charac_p {
-              color: #333;
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-            }
-            .charac_content {
-              padding-top: 10/37.5rem;
-              color: #666;
-              font-size: 13/37.5rem;
-              line-height: 18/37.5rem;
-              max-width: 100%;
-              box-sizing: border-box !important;
-              -webkit-box-sizing: border-box !important;
-              word-wrap: break-word !important;
-            }
-            .img_ol {
-              margin-left: -10/37.5rem;
-              padding: 20/37.5rem 0 0 12/37.5rem;
-              .img_li {
-                float: left;
-                width: 84/37.5rem;
-                height: 84/37.5rem;
-                margin-bottom: 10/37.5rem;
-                margin-left: 10/37.5rem;
-                img {
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                }
-              }
-
-            }
-          }
-          .other_list:nth-last-child(1) {
-            border-bottom: none;
-          }
-        }
-      }
-      .basicsmess_li:nth-last-child(1) {
-        border-bottom: none;
-      }
-      .basicsmess_nobor {
-        border-bottom: none;
-      }
     }
   }
 }
@@ -2809,7 +2596,7 @@
 .z_file {
   width: 84/37.5rem;
   height: 84/37.5rem;
-  background: url(../../hyzRes/images/hyzicon/z_add.png) no-repeat center;
+  background: url(../../images/hyzicon/z_add.png) no-repeat center;
   background-size: 36/37.5rem 36/37.5rem;
   float: left;
   margin-left: 12/37.5rem;

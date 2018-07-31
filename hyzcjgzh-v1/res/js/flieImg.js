@@ -7,7 +7,7 @@ function imgChange(obj1, obj2, obj3) {
     var fileList = file.files;
     //文本框的父级元素
     var input = document.getElementsByClassName(obj2)[0];
-    var closeSrc = "../..//hyzRes/images/hyzicon/close_icon.png"
+    var closeSrc = "../..//res/images/hyzicon/close_icon.png"
     var imgArr = [];
     //遍历获取到得图片文件
     for (var i = 0; i < fileList.length; i++) {

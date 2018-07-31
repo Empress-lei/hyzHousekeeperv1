@@ -1,4 +1,4 @@
-@import "../../hyzRes/css/base_mob.css";
+@import "../../res/css/base_mob.css";
 html,
 body {
   position: relative;
@@ -134,14 +134,14 @@ html {
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.53333333rem;
-  background: url("../../hyzRes/images/hyzicon/graydui.png") no-repeat right center;
+  background: url("../../res/images/hyzicon/graydui.png") no-repeat right center;
   background-size: 0.48rem 0.48rem;
 }
 .gar_nature .nature .nature_sele .record_ul .current_list p {
   color: #333333;
   font-size: 0.34666667rem;
   line-height: 0.53333333rem;
-  background: url("../../hyzRes/images/hyzicon/curdui.png") no-repeat right center;
+  background: url("../../res/images/hyzicon/curdui.png") no-repeat right center;
   background-size: 0.48rem 0.48rem;
 }
 .gar_nature .nature .nature_sele .record_ul .record_norbor {
@@ -366,7 +366,7 @@ html {
   display: block;
   width: 0.13333333rem;
   height: 0.13333333rem;
-  background-image: url("../../hyzRes/images/hyzicon/star.png");
+  background-image: url("../../res/images/hyzicon/star.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -520,7 +520,7 @@ html {
   display: block;
   width: 0.13333333rem;
   height: 0.13333333rem;
-  background-image: url("../../hyzRes/images/hyzicon/star.png");
+  background-image: url("../../res/images/hyzicon/star.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -612,7 +612,7 @@ html {
   display: block;
   width: 0.13333333rem;
   height: 0.13333333rem;
-  background-image: url("../../hyzRes/images/hyzicon/star.png");
+  background-image: url("../../res/images/hyzicon/star.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -678,7 +678,7 @@ html {
   display: block;
   width: 0.21333333rem;
   height: 0.21333333rem;
-  background-image: url("../../hyzRes/images/hyzicon/star.png");
+  background-image: url("../../res/images/hyzicon/star.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -730,7 +730,7 @@ html {
   font-size: 0.32rem;
   color: #333;
   line-height: 0.45333333rem;
-  background: url("../../hyzRes/images/hyzicon/expand_btn.png") no-repeat right;
+  background: url("../../res/images/hyzicon/expand_btn.png") no-repeat right;
   background-size: 0.4rem 0.4rem;
   padding-right: 0.53333333rem;
 }
@@ -747,7 +747,7 @@ html {
   font-size: 0.32rem;
   color: #FF530B;
   line-height: 0.45333333rem;
-  background: url("../../hyzRes/images/hyzicon/oraex_btn.png") no-repeat right;
+  background: url("../../res/images/hyzicon/oraex_btn.png") no-repeat right;
   background-size: 0.4rem 0.4rem;
   padding-right: 0.53333333rem;
 }
@@ -864,7 +864,7 @@ html {
 .z_file {
   width: 2.24rem;
   height: 2.24rem;
-  background: url(../../hyzRes/images/hyzicon/z_add.png) no-repeat center;
+  background: url(../../res/images/hyzicon/z_add.png) no-repeat center;
   background-size: 0.96rem 0.96rem;
   float: left;
   margin-left: 0.32rem;
@@ -956,7 +956,7 @@ html {
   font-size: 0.37333333rem;
   line-height: 0.53333333rem;
   border-right: 1px solid #DDDDDD;
-  background: url("../../hyzRes/images/hyzicon/look1.png") no-repeat 2.13333333rem center;
+  background: url("../../res/images/hyzicon/look1.png") no-repeat 2.13333333rem center;
   background-size: 0.42666667rem 0.42666667rem;
   padding-left: 2.66666667rem;
 }

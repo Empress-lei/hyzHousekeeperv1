@@ -16,7 +16,7 @@ $(function () {
             var li_z_ = $("<li class='img_li'>").appendTo(ol_)
             var div_ = $("<div class='z_addImg'>").appendTo(li_z_)
             $("<img class='img_list' src='" + $(this).attr('src') + "' />").appendTo(div_);
-            $("<img class=\"close_icon\" src='../../hyzRes/images/hyzicon/close_icon.png' />").appendTo(li_z_);
+            $("<img class=\"close_icon\" src='../../res/images/hyzicon/close_icon.png' />").appendTo(li_z_);
         });
         $(".close_icon").on("click",function(){
             removeImg(this);

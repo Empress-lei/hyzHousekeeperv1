@@ -1,4 +1,4 @@
-@import "../../hyzRes/css/base_mob.css";
+@import "../../res/css/base_mob.css";
 .warp {
   width: 100%;
   height: auto;
@@ -85,11 +85,11 @@
   left: 0;
   width: 0.45333333rem;
   height: 0.45333333rem;
-  background: url(../../hyzRes/images/hyzicon/read_ico.png) no-repeat;
+  background: url(../../res/images/hyzicon/read_ico.png) no-repeat;
   background-size: cover;
 }
 .warp .babymess .baby_ul .babylist .con .radio input[type=radio]:checked + div {
-  background: url(../../hyzRes/images/hyzicon/read_ico2.png) no-repeat;
+  background: url(../../res/images/hyzicon/read_ico2.png) no-repeat;
   background-size: cover;
 }
 .warp .babymess .baby_ul .babylist .con label {
