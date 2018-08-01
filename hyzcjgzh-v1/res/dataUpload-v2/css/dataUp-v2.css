@@ -150,6 +150,7 @@
 .warp {
   width: 100%;
   max-width: 540px;
+  overflow: hidden;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
