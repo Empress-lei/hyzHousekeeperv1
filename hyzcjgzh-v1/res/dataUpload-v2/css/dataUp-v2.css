@@ -2317,7 +2317,6 @@
 .warp .preview .preview_content .term td {
   width: 14%;
   padding: 0.26666667rem 0.08rem;
-  text-align: justify;
   word-wrap: break-word;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
