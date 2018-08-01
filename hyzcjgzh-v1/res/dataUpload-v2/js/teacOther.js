@@ -2,11 +2,17 @@ $(function () {
     $(".addBtn").on("click", function () {
         var txtTitle = $(".chara_name").val();
         var contText = $(".add_txt").val();
-        if(txtTitle == "" || txtTitle == undefined) {
-            $(".other_p").hide();
-        }if(contText == "" || contText == undefined) {
-            $(".other_content").hide();
-        }else {
+        if(txtTitle == ""  & contText != "") {
+            toast("请输入标题")
+            $(".add_txt").val("");
+            return;
+        }if(txtTitle == ""  & contText == ""){
+            toast("请输入内容")
+            return;
+        }if(contText == "" & txtTitle != "") {
+            var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
+            $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
+        } if(txtTitle != ""  & contText != "") {
             var li_ = $("<li class='other_list sele_cur'>").appendTo($(".other_ul"));
             $("<p class='charac_p current_list'>" + txtTitle + "</p>").appendTo(li_);
             $("<p class='charac_content'>" + contText + "</p>").appendTo(li_);

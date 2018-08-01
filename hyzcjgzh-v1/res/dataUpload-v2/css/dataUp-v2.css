@@ -244,7 +244,7 @@
   width: 100%;
   padding: 0.4rem;
   font-size: 0.37333333rem;
-  color: #333333;
+  color: #63A431;
   font-weight: 800;
 }
 .warp .dataUp .data_cen .cen_list .list_ul {
@@ -366,13 +366,13 @@
   text-align: center;
   padding: 0.53333333rem 0 0.26666667rem;
   color: #63A431;
-  font-size: 0.37333333rem;
-  line-height: 0.61333333rem;
+  font-size: 0.42666667rem;
+  line-height: 0.69333333rem;
 }
 .warp .file_pro .progre_text {
   text-align: center;
   color: #c9c9c9;
-  font-size: 0.32rem;
+  font-size: 0.37333333rem;
   line-height: 0.48rem;
 }
 .warp .line {
@@ -1423,9 +1423,7 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .enviUp .enviUp_content .other_characteristic .btn_envi {
-  margin-top: 0.53333333rem;
   padding: 0.53333333rem 0;
-  border-top: 1px solid #EEEEEE;
 }
 .warp .enviUp .enviUp_content .other_characteristic .btn_envi a {
   display: block;
@@ -1950,9 +1948,7 @@
   border-bottom: 1px solid #dddddd;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .btn_envi {
-  margin-top: 0.53333333rem;
   padding: 0.53333333rem 0;
-  border-top: 1px solid #EEEEEE;
 }
 .warp .teacteamUp .teacteam_content .other_characteristic .btn_envi a {
   display: block;
@@ -2415,9 +2411,7 @@
   color: #63A431;
   line-height: 1.54666667rem;
   font-size: 0.34666667rem;
-  margin-top: 0.53333333rem;
   text-align: center;
-  border-top: 1px solid #EEEEEE;
 }
 .add_teach {
   display: block;

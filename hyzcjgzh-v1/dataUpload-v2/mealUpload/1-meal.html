@@ -170,7 +170,9 @@
             $('.currProgress1 .currProgress34').width('0');
         },700);
         optab(".meal_ul dl");
+        var temp = 0;
         $(".week_input").focus(function () {
+            $(window).scrollTop(temp);
             $(this).parent().parent().next().find("dd").show();
             $(this).parent().parent().next().find("dt").addClass("active_side");
             $(this).parent().parent().prev().find("dd").hide();
