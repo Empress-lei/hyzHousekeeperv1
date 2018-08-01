@@ -2196,6 +2196,7 @@
   -webkit-hyphens: auto;
   hyphens: auto;
   word-break: normal;
+  position: relative;
 }
 .warp .mealUp .mealUp_content .envi_mess .meal_ul .week_li .week_food {
   padding-bottom: 0.26666667rem;

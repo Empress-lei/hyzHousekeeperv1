@@ -4,7 +4,6 @@ $(function () {
         var contText = $(".add_txt").val();
         if(txtTitle == ""  & contText != "") {
             toast("请输入标题")
-            $(".add_txt").val("");
             return;
         }if(txtTitle == ""  & contText == ""){
             toast("请输入内容")
