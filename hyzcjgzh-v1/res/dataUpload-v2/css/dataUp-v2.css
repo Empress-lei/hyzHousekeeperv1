@@ -2146,7 +2146,7 @@
   background-color: #F2FDF1;
 }
 .warp .mealUp .mealUp_content .envi_mess .meal_ul .week_li .food_list {
-  display: none;
+  position: relative;
   padding: 0.53333333rem 0.4rem 0.4rem;
   border-bottom: 1px solid #EEEEEE;
 }
@@ -2196,7 +2196,6 @@
   -webkit-hyphens: auto;
   hyphens: auto;
   word-break: normal;
-  position: relative;
 }
 .warp .mealUp .mealUp_content .envi_mess .meal_ul .week_li .week_food {
   padding-bottom: 0.26666667rem;
