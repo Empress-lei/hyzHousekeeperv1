@@ -9,8 +9,8 @@
           content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <title>特色区域</title>
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/dataUp.css">
+    <link rel="stylesheet" href="../../res/dataUpload-v1/css/app.css">
+    <link rel="stylesheet" href="../../res/dataUpload-v1/css/dataUp.css">
     <link rel="stylesheet" href="../../res/css/swipercss/swiper-3.4.2.min.css">
 
 </head>
@@ -96,8 +96,6 @@
             $('.currProgress1 .currProgress21').css('transition','width 1s linear');
             $('.currProgress1 .currProgress21').width('88%');
         },700);
-
-
         //园所性质
         selectOpt(".characteristic li")
     })
@@ -105,9 +103,6 @@
     //多选
     function selectOpt(ele) {
         var ele = $(ele);
-        // if("true" == ele.data("click")){
-        //     return;
-        // }
         ele.on("click", function () {
             if ($(this).hasClass('current_list')) {
                 $(this).removeClass('current_list');
@@ -115,7 +110,6 @@
                 $(this).addClass('current_list');
             }
         })
-        // ele.data("click","true");
     }
 
 </script>

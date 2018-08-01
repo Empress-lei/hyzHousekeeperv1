@@ -1,4 +1,4 @@
-@import "../../yeyRes/css/base_mob.css";
+@import "../../css/base_mob.css";
 .warp {
   width: 100%;
   max-width: 540px;
@@ -93,7 +93,7 @@
   line-height: 0.42666667rem;
   margin-top: 0.08rem;
   margin-bottom: 0.42666667rem;
-  background: url("../../yeyRes/images/yeyicon/grayarr.png") no-repeat right 0.08rem;
+  background: url("../../images/yeyicon/grayarr.png") no-repeat right 0.08rem;
   background-size: 0.13333333rem 0.24rem;
   padding-right: 0.50666667rem;
 }
