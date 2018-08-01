@@ -2337,6 +2337,12 @@
   position: absolute;
   top: -0.5rem;
 }
+.warp .preview .preview_content .term .meal_listtxt {
+  font-size: 0.26666667rem;
+  line-height: 0.53333333rem;
+  color: #333333;
+  font-weight: 400;
+}
 .warp .preview .preview_content .sele_edit {
   width: 100%;
 }
