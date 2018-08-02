@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>自动接管流程</title>
+    <link rel="stylesheet" href="../res/wxtakeover-v0/css/wxtakeover-v0.css">
+    <script src="../res/js/jquery-1.11.1.min.js"></script>
+</head>
+<body style="font-family: myFont;">
+<!--失败朦层-->
+<div class="fail_page">
+    <div class="fail_share">
+        <div class="fail_con">
+            <img src="../res/wxtakeover-v0/images/fail_icon.png" alt="" class="failicon">
+            <span class="fail_span">操作失败</span>
+            <div class="fail_text">
+                <p class="text_p">您还没有提交园所资料哦 ~</p>
+                <ul class="btn_ul clearfix">
+                    <li class="btn_li think_li">取  消</li>
+                    <li class="btn_li sure_li">去提交资料</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--成功朦层-->
+<div class="suc_page">
+    <div class="suc_share">
+        <div class="suc_con">
+            <img src="../res/wxtakeover-v0/images/suc_icon.png" alt="" class="suc_icon">
+            <span class="suc_span">接管成功</span>
+            <div class="suc_text">
+                <p class="text_p">
+                    已成功接管 xxx 服务号</p>
+                <ul class="btn_ul">
+                    <li class="btn_li suc_li">好  的</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--二维码朦层-->
+<div class="tips_page">
+    <div class="tips_share">
+        <div class="tips_con">
+            <img src="../res/wxtakeover-v0/images/envi_icon.png" alt="" class="tips_icon">
+            <span class="tips_span">提 示</span>
+            <div class="tips_text">
+                <p class="text_p">
+                    请由幼儿园服务号管理员扫描下方二维码，
+                    完成服务号接管。
+                </p>
+                <div class="cord_pos">
+                    <img src="../res/wxtakeover-v0/images/WechatIMG147.jpeg" alt="" >
+                </div>
+                <ul class="btn_ul">
+                    <li class="btn_li tips_li">好  的</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="warp" style="background-color: #F3F3F3;">
+    <div class="wxtake_pages">
+        <div class="flow_content">
+            <img src="../res/wxtakeover-v0/images/ldicon.png" alt="" class="pro_img">
+            <h3 class="take_title">幼儿园微信服务号接管</h3>
+            <div class="flow_step clearfix">
+                <img src="../res/wxtakeover-v0/images/one_icon.png" alt="" class="stepicon fl">
+                <p class="step_title fl">什么是微信服务号？</p>
+            </div>
+            <p class="step_p">
+                服务号：为幼儿园提供更强大的园所宣传和家长管理能力，主要偏向服务类交互。<br>
+                <span>服务号1个月（按自然月）内可发送4条群发消息。</span>
+            </p>
+            <div class="flow_step clearfix">
+                <img src="../res/wxtakeover-v0/images/twoicon.png" alt="" class="stepicon fl">
+                <p class="step_title fl">为什么要给慧园长管家开通权限？</p>
+            </div>
+            <p class="step_p">
+                慧园长 - 幼儿园公众号超级管家功能有：<br>
+                1）幼儿园微官网定制<br>
+                2）育儿好文智能推送<br>
+                3）招生解决方案指导
+            </p>
+            <p class="step_p">
+                三大主要功能均可<span>提升在园家长满意度，帮助园所塑造专业、高品质园所形象，</span>为保证服务效果，慧园长管家必须获得幼儿园微信服务号管理权限。
+            </p>
+            <div class="ensure_text clearfix">
+                <img src="../res/wxtakeover-v0/images/ensureicon.png" alt="" class="ensure_img fl">
+                <p class="ensure_p fl">
+                    慧园长超级管家仅获取园所服务号基础功 <br>
+                    能操作权限,无任何数据窃取及转让风险！
+                </p>
+            </div>
+            <img src="../res/wxtakeover-v0/images/wicon.png" alt="" class="pro_mimg">
+            <h3 class="take_mtitle">幼儿园微信服务号接管</h3>
+            <a href="javascript:void (0)" class="look_manual">超详细 & 超实用 服务号注册指导手册</a>
+            <img src="../res/wxtakeover-v0/images/szicon.png" alt="" class="pro_mimg">
+            <p class="look_text">点击查阅</p>
+        </div>
+        <div class="sele_id">
+            <h2 class="sele_tit">快速接管</h2>
+            <p class="sele_pro">通过幼儿园微信服务号管理员授权登录微信服务号</p>
+            <h4 class="id_title">请选择您的身份</h4>
+            <div class="admin_step clearfix">
+                <img src="../res/wxtakeover-v0/images/dui.png" alt="" class="stepicon fr">
+                <p class="step_title fl">我是管理员</p>
+            </div>
+            <div class="anminno_step clearfix">
+                <img src="../res/wxtakeover-v0/images/cuo.png" alt="" class="stepicon fl">
+                <p class="step_title fr">我不是管理员</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 失败朦层
+    $(".think_li").click(function () {
+        $(".fail_page").hide();
+    })
+
+    // 成功朦层
+    $(".suc_li").click(function () {
+        $(".suc_page").hide();
+    })
+    // 二维码朦层
+    $(".tips_li").click(function () {
+        $(".tips_page").hide();
+    })
+</script>
+</body>
+</html>
