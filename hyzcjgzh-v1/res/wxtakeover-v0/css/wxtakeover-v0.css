@@ -311,7 +311,7 @@
 }
 .warp .wxtake_pages .flow_content .ensure_text {
   width: 100%;
-  margin-bottom: 0.98666667rem;
+  margin: 0.53333333rem auto 1.33333333rem;
   border: 1px solid #63A431;
   padding: 0.53333333rem 0.26666667rem;
   -webkit-border-radius: 0.10666667rem;
@@ -330,7 +330,7 @@
   height: 0.93333333rem;
 }
 .warp .wxtake_pages .flow_content .ensure_text .ensure_p {
-  width: 87%;
+  width: 88%;
   padding-left: 0.26666667rem;
 }
 .warp .wxtake_pages .flow_content .pro_mimg {
@@ -470,7 +470,6 @@
   -ms-border-radius: 0.10666667rem;
   -o-border-radius: 0.10666667rem;
   border-radius: 0.10666667rem;
-  padding: 1.06666667rem 0 0;
 }
 .warp .suc_pages .suc_share .suc_con .suc_icon {
   display: block;
